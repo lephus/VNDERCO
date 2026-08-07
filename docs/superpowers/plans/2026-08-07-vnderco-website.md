@@ -362,7 +362,10 @@ export type PresetKey = keyof typeof PRESETS
 export const DEFAULT_PRESET_KEY: PresetKey = 'violet'
 
 export function isPresetKey(value: string): value is PresetKey {
-  return value in PRESETS
+  // Object.hasOwn, KHÔNG dùng `in`: `in` đi cả chuỗi prototype nên 'toString',
+  // 'constructor', '__proto__' đều lọt. Hàm này là validator cho dữ liệu người
+  // dùng gửi lên ở Task 13 — lọt là ghi rác vào DB.
+  return Object.hasOwn(PRESETS, value)
 }
 ```
 
@@ -560,13 +563,17 @@ Thêm vào cuối `app/globals.css` (Tailwind v4 khai báo theme bằng CSS):
 
 /* Giá trị dự phòng khi biến chưa được layout nhúng vào (ví dụ trang lỗi toàn cục) */
 :root {
-  --vnd-primary-50:  #f3efff; --vnd-primary-100: #e6ddff; --vnd-primary-200: #cdbaff;
-  --vnd-primary-300: #ae90fb; --vnd-primary-400: #8c63f7; --vnd-primary-500: #6c3df4;
-  --vnd-primary-600: #5a2fd6; --vnd-primary-700: #4826ad; --vnd-primary-800: #371d85;
-  --vnd-primary-900: #27155e; --vnd-primary-fg: #ffffff;
-  --vnd-gradient-from: #6c3df4; --vnd-gradient-via: #b33bf6; --vnd-gradient-to: #ff6b57;
+  /* 12 biến, giá trị SINH RA từ code chứ không gõ tay — xem hướng dẫn ngay dưới */
 }
 ```
+
+**Không tự gõ các giá trị hex này.** Chúng phải là đầu ra thật của `buildPalette('#6C3DF4')`, nếu không trang admin login và trang 404 toàn cục sẽ hiển thị một sắc tím khác với phần còn lại của site. Sinh ra bằng:
+
+```bash
+npx tsx -e "import {buildPalette,paletteToCssVars} from './lib/theme/palette'; console.log(JSON.stringify(paletteToCssVars(buildPalette('#6C3DF4')),null,2))"
+```
+
+rồi chép nguyên 12 cặp `--vnd-*` từ đầu ra vào khối `:root`. Lưu ý `--vnd-primary-500` **không** bằng `#6C3DF4` — mã đầu vào là hạt giống để tính dải màu, không phải một bậc trong dải.
 
 - [ ] **Step 7: Commit**
 
