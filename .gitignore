@@ -14,7 +14,8 @@ next-env.d.ts
 
 # Môi trường
 .env
-.env*.local
+.env.*
+!.env.example
 
 # Kiểm thử
 coverage/
