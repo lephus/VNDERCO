@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { buildPalette, paletteToCssVars, SHADES } from '@/lib/theme/palette'
-import { PRESETS } from '@/lib/theme/presets'
+import { isPresetKey, PRESETS } from '@/lib/theme/presets'
 
 const isHex = (v: string) => /^#[0-9a-f]{6}$/i.test(v)
 
@@ -59,5 +59,18 @@ describe('paletteToCssVars', () => {
     expect(vars['--vnd-gradient-from']).toMatch(/^#/)
     expect(vars['--vnd-gradient-via']).toMatch(/^#/)
     expect(vars['--vnd-gradient-to']).toMatch(/^#/)
+  })
+})
+
+describe('isPresetKey', () => {
+  it('nhận đúng 6 khoá preset hợp lệ', () => {
+    for (const key of Object.keys(PRESETS)) expect(isPresetKey(key)).toBe(true)
+  })
+
+  it('từ chối các thuộc tính kế thừa từ prototype', () => {
+    expect(isPresetKey('toString')).toBe(false)
+    expect(isPresetKey('constructor')).toBe(false)
+    expect(isPresetKey('__proto__')).toBe(false)
+    expect(isPresetKey('hasOwnProperty')).toBe(false)
   })
 })

@@ -11,5 +11,5 @@ export type PresetKey = keyof typeof PRESETS
 export const DEFAULT_PRESET_KEY: PresetKey = 'violet'
 
 export function isPresetKey(value: string): value is PresetKey {
-  return value in PRESETS
+  return Object.hasOwn(PRESETS, value)
 }

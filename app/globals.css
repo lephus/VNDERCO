@@ -25,12 +25,13 @@
 }
 
 /* Giá trị dự phòng khi biến chưa được layout nhúng vào (ví dụ trang lỗi toàn cục) */
+/* Sinh bởi buildPalette('#6C3DF4') qua paletteToCssVars — xem báo cáo Task 3 để đối chiếu. */
 :root {
-  --vnd-primary-50:  #f3efff; --vnd-primary-100: #e6ddff; --vnd-primary-200: #cdbaff;
-  --vnd-primary-300: #ae90fb; --vnd-primary-400: #8c63f7; --vnd-primary-500: #6c3df4;
-  --vnd-primary-600: #5a2fd6; --vnd-primary-700: #4826ad; --vnd-primary-800: #371d85;
-  --vnd-primary-900: #27155e; --vnd-primary-fg: #ffffff;
-  --vnd-gradient-from: #6c3df4; --vnd-gradient-via: #b33bf6; --vnd-gradient-to: #ff6b57;
+  --vnd-primary-50:  #f1f0ff; --vnd-primary-100: #e5e2ff; --vnd-primary-200: #cfc8ff;
+  --vnd-primary-300: #b6a5ff; --vnd-primary-400: #987cff; --vnd-primary-500: #825cff;
+  --vnd-primary-600: #7043f9; --vnd-primary-700: #5a2cd3; --vnd-primary-800: #4617ab;
+  --vnd-primary-900: #320482; --vnd-primary-fg: #ffffff;
+  --vnd-gradient-from: #825cff; --vnd-gradient-via: #e24ce9; --vnd-gradient-to: #ff5a3d;
 }
 
 body {
