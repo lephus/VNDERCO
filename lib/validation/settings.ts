@@ -4,7 +4,9 @@ import { DEFAULT_PRESET_KEY, isPresetKey, PRESETS } from '@/lib/theme/presets'
 const HEX = /^#[0-9a-fA-F]{6}$/
 const blankToNull = z.string().trim().optional().transform((v) => (v ? v : null))
 const url = z.string().trim().optional()
-  .refine((v) => !v || v.startsWith('/') || /^https?:\/\//.test(v), 'Link phải bắt đầu bằng / hoặc http(s)://')
+  // `//evil.com` cũng bắt đầu bằng "/" nhưng trình duyệt hiểu là URL protocol-relative
+  // (tự suy ra http/https), tức là đi ra ngoài site — chỉ chấp nhận MỘT dấu "/" đứng đầu.
+  .refine((v) => !v || (v.startsWith('/') && !v.startsWith('//')) || /^https?:\/\//.test(v), 'Link phải bắt đầu bằng / hoặc http(s)://')
   .transform((v) => (v ? v : null))
 
 export const settingsSchema = z.object({

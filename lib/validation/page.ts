@@ -1,11 +1,23 @@
 import { z } from 'zod'
-import { slugify } from '@/lib/slug'
+import { slugify, uniqueSlug } from '@/lib/slug'
 import { sanitizeHtml } from '@/lib/sanitize'
 
 // `/[slug]` là route bắt tất cả ở tầng gốc, nên trang tĩnh không được dùng
 // slug trùng với route đã có (hoặc sẽ có) — kiểm tra ở action (lib/actions/page.ts)
 // chứ không ở đây, vì thông báo cần nêu đúng slug đã sinh ra sau khi chuẩn hoá.
 export const RESERVED_SLUGS = ['tin-tuc', 'san-pham', 'admin', 'api', 'sitemap.xml', 'robots.txt', 'rss.xml']
+
+// Đặt ở đây (chứ không ở lib/actions/page.ts, nơi có nhiều CRUD khác cùng dùng
+// khuôn "loại trừ bằng id qua Prisma") vì module này không đụng CSDL — nhờ vậy
+// test được toàn bộ luật chọn slug (kể cả trường hợp sửa trang mà không đổi
+// slug) mà không cần chạy Postgres thật. `existingSlugs` là slug của MỌI trang
+// hiện có (kể cả bản ghi đang sửa); `ownSlug` — nếu có — là slug hiện tại của
+// bản ghi đang sửa, được loại khỏi danh sách "đã bị chiếm" trước khi so khớp,
+// để lưu lại mà không đổi slug thì không tự nhiên bị thêm hậu tố "-2".
+export function resolvePageSlug(desiredSlug: string, existingSlugs: string[], ownSlug?: string): string {
+  const others = ownSlug ? existingSlugs.filter((slug) => slug !== ownSlug) : existingSlugs
+  return uniqueSlug(desiredSlug, [...others, ...RESERVED_SLUGS])
+}
 
 const hasText = (html: string) => sanitizeHtml(html).replace(/<[^>]*>/g, '').trim().length > 0
 

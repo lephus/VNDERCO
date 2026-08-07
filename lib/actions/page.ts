@@ -2,16 +2,12 @@
 
 import { prisma } from '@/lib/db'
 import { TAGS } from '@/lib/cache-tags'
-import { uniqueSlug } from '@/lib/slug'
 import { createAction } from './helper'
-import { pageCreateSchema, pageDeleteSchema, pageUpdateSchema, RESERVED_SLUGS } from '@/lib/validation/page'
+import { pageCreateSchema, pageDeleteSchema, pageUpdateSchema, resolvePageSlug } from '@/lib/validation/page'
 
-async function takenSlugs(exceptId?: string) {
-  const rows = await prisma.page.findMany({
-    where: exceptId ? { NOT: { id: exceptId } } : {},
-    select: { slug: true },
-  })
-  return [...rows.map((r) => r.slug), ...RESERVED_SLUGS]
+async function allSlugs() {
+  const rows = await prisma.page.findMany({ select: { slug: true } })
+  return rows.map((r) => r.slug)
 }
 
 export const createPageAction = createAction({
@@ -20,7 +16,7 @@ export const createPageAction = createAction({
   // từ giá trị trả về của handler, còn tham số thứ hai của tags cũng có kiểu
   // T — nếu tags đứng trước, T chưa được suy ra sẽ mặc định là `unknown`.
   handler: async (input) => prisma.page.create({
-    data: { ...input, slug: uniqueSlug(input.slug, await takenSlugs()) },
+    data: { ...input, slug: resolvePageSlug(input.slug, await allSlugs()) },
   }),
   tags: (_input, page) => [TAGS.pages, TAGS.page(page.slug)],
 })
@@ -31,7 +27,7 @@ export const updatePageAction = createAction({
     const current = await prisma.page.findUniqueOrThrow({ where: { id }, select: { slug: true } })
     const page = await prisma.page.update({
       where: { id },
-      data: { ...input, slug: uniqueSlug(input.slug, await takenSlugs(id)) },
+      data: { ...input, slug: resolvePageSlug(input.slug, await allSlugs(), current.slug) },
     })
     return current.slug === page.slug ? page : Object.assign(page, { previousSlug: current.slug })
   },

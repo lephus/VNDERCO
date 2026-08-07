@@ -6,7 +6,9 @@ import { z } from 'zod'
 const checkbox = z.string().optional().transform((v) => v === 'on' || v === 'true')
 
 const href = z.string().trim().refine(
-  (v) => v === '' || v.startsWith('/') || /^https?:\/\//.test(v),
+  // `//evil.com` cũng bắt đầu bằng "/" nhưng trình duyệt hiểu là URL protocol-relative
+  // (tự suy ra http/https), tức là đi ra ngoài site — chỉ chấp nhận MỘT dấu "/" đứng đầu.
+  (v) => v === '' || (v.startsWith('/') && !v.startsWith('//')) || /^https?:\/\//.test(v),
   'Link phải bắt đầu bằng / hoặc http(s)://',
 )
 

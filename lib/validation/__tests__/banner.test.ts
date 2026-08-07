@@ -28,4 +28,17 @@ describe('bannerCreateSchema', () => {
     expect(bannerCreateSchema.safeParse({ ...base, ctaLabel: '', ctaHref: '/san-pham' }).error!.flatten().fieldErrors.ctaLabel)
       .toContain('Nhập nhãn cho nút')
   })
+
+  it('từ chối link protocol-relative (//evil.com) dù có vẻ như bắt đầu bằng "/"', () => {
+    expect(bannerCreateSchema.safeParse({ ...base, ctaLabel: 'X', ctaHref: '//evil.com' }).success).toBe(false)
+  })
+
+  it('chấp nhận đường dẫn nội bộ một dấu gạch chéo', () => {
+    expect(bannerCreateSchema.parse({ ...base, ctaLabel: 'Xem', ctaHref: '/san-pham' }).ctaHref).toBe('/san-pham')
+  })
+
+  it('chấp nhận URL tuyệt đối https', () => {
+    expect(bannerCreateSchema.parse({ ...base, ctaLabel: 'Xem', ctaHref: 'https://vnderco.vn' }).ctaHref)
+      .toBe('https://vnderco.vn')
+  })
 })

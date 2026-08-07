@@ -30,6 +30,17 @@ describe('settingsSchema', () => {
   it('không đòi customPrimary khi đang ở chế độ preset', () => {
     expect(settingsSchema.safeParse({ ...base, themeMode: 'PRESET', customPrimary: '' }).success).toBe(true)
   })
+
+  it('từ chối link protocol-relative (//evil.com) ở các trường URL', () => {
+    expect(settingsSchema.safeParse({ ...base, facebookUrl: '//evil.com' }).success).toBe(false)
+    expect(settingsSchema.safeParse({ ...base, homeIntroCtaHref: '//evil.com' }).success).toBe(false)
+  })
+
+  it('chấp nhận đường dẫn nội bộ một dấu gạch chéo và URL tuyệt đối https ở các trường URL', () => {
+    expect(settingsSchema.parse({ ...base, facebookUrl: 'https://facebook.com/vnderco' }).facebookUrl)
+      .toBe('https://facebook.com/vnderco')
+    expect(settingsSchema.parse({ ...base, homeIntroCtaHref: '/san-pham' }).homeIntroCtaHref).toBe('/san-pham')
+  })
 })
 
 describe('resolvePrimary', () => {
