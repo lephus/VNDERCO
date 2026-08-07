@@ -10,6 +10,10 @@ const credentialsSchema = z.object({
   password: z.string().min(1),
 })
 
+// Hash tính sẵn một lần lúc khởi động, dùng khi không tìm thấy user để chi
+// phí bcrypt luôn tốn như nhau — tránh lộ email nào tồn tại qua thời gian phản hồi.
+const DUMMY_PASSWORD_HASH = bcrypt.hashSync('vnderco-dummy-password', 10)
+
 export const { handlers, auth, signIn, signOut } = NextAuth({
   ...authConfig,
   session: { strategy: 'jwt' },
@@ -20,7 +24,10 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
         if (!parsed.success) return null
 
         const user = await prisma.user.findUnique({ where: { email: parsed.data.email } })
-        if (!user) return null
+        if (!user) {
+          await bcrypt.compare(parsed.data.password, DUMMY_PASSWORD_HASH)
+          return null
+        }
         if (!(await bcrypt.compare(parsed.data.password, user.passwordHash))) return null
 
         return {
