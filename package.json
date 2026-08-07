@@ -11,16 +11,19 @@
     "test:watch": "vitest",
     "db:up": "docker compose up -d",
     "db:push": "prisma db push",
-    "db:seed": "tsx prisma/seed.ts",
-    "db:studio": "prisma studio"
+    "db:seed": "dotenv -e .env -- tsx prisma/seed.ts",
+    "db:studio": "prisma studio",
+    "test:db": "dotenv -e .env.test -- vitest run --config vitest.config.db.ts"
   },
   "dependencies": {
+    "@prisma/adapter-pg": "^7.9.1",
     "@prisma/client": "^7.9.1",
     "@vercel/blob": "^2.7.0",
     "bcryptjs": "^3.0.3",
     "culori": "^4.0.2",
     "next": "16.3.0",
     "next-auth": "^5.0.0-beta.32",
+    "pg": "^8.22.0",
     "react": "19.2.8",
     "react-dom": "19.2.8",
     "zod": "^4.4.3"
