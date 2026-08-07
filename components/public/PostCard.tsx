@@ -1,0 +1,29 @@
+import Image from 'next/image'
+import Link from 'next/link'
+import type { Category, Post } from '@prisma/client'
+
+export function PostCard({ post }: { post: Post & { category?: Category | null } }) {
+  return (
+    <article className="group overflow-hidden rounded-2xl bg-white shadow-[0_4px_20px_-8px_var(--vnd-primary-300)] transition hover:-translate-y-1">
+      <Link href={`/tin-tuc/${post.slug}`}>
+        <div className="relative h-44 bg-primary-50">
+          {post.coverImageUrl && (
+            <Image src={post.coverImageUrl} alt={post.coverImageAlt ?? ''} fill className="object-cover" />
+          )}
+        </div>
+        <div className="p-5">
+          {post.category && (
+            <span className="text-xs font-bold uppercase tracking-wide text-primary-600">{post.category.name}</span>
+          )}
+          <h3 className="mt-1 line-clamp-2 font-bold leading-snug text-slate-900">{post.title}</h3>
+          {post.excerpt && <p className="mt-2 line-clamp-2 text-sm text-slate-600">{post.excerpt}</p>}
+          {post.publishedAt && (
+            <time dateTime={post.publishedAt.toISOString()} className="mt-3 block text-xs text-slate-400">
+              {post.publishedAt.toLocaleDateString('vi-VN')}
+            </time>
+          )}
+        </div>
+      </Link>
+    </article>
+  )
+}
