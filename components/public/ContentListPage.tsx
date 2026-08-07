@@ -1,5 +1,6 @@
 import type { Category, CategoryType } from '@prisma/client'
 import { getCategories } from '@/lib/queries/categories'
+import { parsePageParam } from '@/lib/pagination'
 import { CategoryFilter } from './CategoryFilter'
 import { Pagination } from './Pagination'
 
@@ -18,7 +19,7 @@ export async function ContentListPage<T extends { id: string }>({
   searchParams: Promise<{ trang?: string; 'danh-muc'?: string }>
 }) {
   const params = await searchParams
-  const page = Math.max(1, Number(params.trang) || 1)
+  const page = parsePageParam(params.trang)
   const categorySlug = params['danh-muc']
 
   const [{ items, pageCount }, categories] = await Promise.all([
