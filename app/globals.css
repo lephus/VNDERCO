@@ -10,6 +10,27 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  --color-primary-50:  var(--vnd-primary-50);
+  --color-primary-100: var(--vnd-primary-100);
+  --color-primary-200: var(--vnd-primary-200);
+  --color-primary-300: var(--vnd-primary-300);
+  --color-primary-400: var(--vnd-primary-400);
+  --color-primary-500: var(--vnd-primary-500);
+  --color-primary-600: var(--vnd-primary-600);
+  --color-primary-700: var(--vnd-primary-700);
+  --color-primary-800: var(--vnd-primary-800);
+  --color-primary-900: var(--vnd-primary-900);
+  --color-primary-fg:  var(--vnd-primary-fg);
+}
+
+/* Giá trị dự phòng khi biến chưa được layout nhúng vào (ví dụ trang lỗi toàn cục) */
+:root {
+  --vnd-primary-50:  #f3efff; --vnd-primary-100: #e6ddff; --vnd-primary-200: #cdbaff;
+  --vnd-primary-300: #ae90fb; --vnd-primary-400: #8c63f7; --vnd-primary-500: #6c3df4;
+  --vnd-primary-600: #5a2fd6; --vnd-primary-700: #4826ad; --vnd-primary-800: #371d85;
+  --vnd-primary-900: #27155e; --vnd-primary-fg: #ffffff;
+  --vnd-gradient-from: #6c3df4; --vnd-gradient-via: #b33bf6; --vnd-gradient-to: #ff6b57;
 }
 
 body {
