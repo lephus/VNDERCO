@@ -8,6 +8,7 @@ export const TAGS = {
   page: (slug: string) => `page:${slug}`,
   banners: 'banners',
   categories: 'categories',
+  media: 'media',
 } as const
 
 export const PAGE_SIZE = 12
