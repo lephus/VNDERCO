@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
-import { assertUploadable, MAX_SIZE_BYTES, storageKey } from '@/lib/storage'
+import { assertUploadable, storageKey } from '@/lib/storage'
+import { MAX_SIZE_BYTES } from '@/lib/upload-constraints'
 
 describe('assertUploadable', () => {
   it('chấp nhận các định dạng ảnh cho phép', () => {

@@ -1,8 +1,6 @@
 import { createClient } from '@supabase/supabase-js'
 import { slugify } from '@/lib/slug'
-
-export const ALLOWED_MIME = ['image/jpeg', 'image/png', 'image/webp', 'image/avif']
-export const MAX_SIZE_BYTES = 5 * 1024 * 1024
+import { ALLOWED_MIME, MAX_SIZE_BYTES } from '@/lib/upload-constraints'
 
 export function assertUploadable(file: { type: string; size: number }): void {
   if (!ALLOWED_MIME.includes(file.type)) {

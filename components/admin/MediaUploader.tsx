@@ -3,7 +3,7 @@
 import { useRouter } from 'next/navigation'
 import { useState } from 'react'
 import { uploadMediaAction } from '@/lib/actions/media'
-import { ALLOWED_MIME, MAX_SIZE_BYTES } from '@/lib/storage'
+import { ALLOWED_MIME, MAX_SIZE_BYTES } from '@/lib/upload-constraints'
 
 export function MediaUploader({ onUploaded }: { onUploaded?: (url: string) => void }) {
   const router = useRouter()
