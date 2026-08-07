@@ -1,8 +1,13 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import type { Category, Post } from '@prisma/client'
+import { asDate } from '@/lib/seo'
 
 export function PostCard({ post }: { post: Post & { category?: Category | null } }) {
+  // asDate(): xem chú thích trong lib/seo.ts — post đến từ getPublishedPosts (bọc
+  // unstable_cache) nên publishedAt có thể là chuỗi ISO thay vì Date thật tuỳ trạng thái cache.
+  const publishedAt = asDate(post.publishedAt)
+
   return (
     <article className="group overflow-hidden rounded-2xl bg-white shadow-[0_4px_20px_-8px_var(--vnd-primary-300)] transition hover:-translate-y-1">
       <Link href={`/tin-tuc/${post.slug}`}>
@@ -17,9 +22,9 @@ export function PostCard({ post }: { post: Post & { category?: Category | null }
           )}
           <h3 className="mt-1 line-clamp-2 font-bold leading-snug text-slate-900">{post.title}</h3>
           {post.excerpt && <p className="mt-2 line-clamp-2 text-sm text-slate-600">{post.excerpt}</p>}
-          {post.publishedAt && (
-            <time dateTime={post.publishedAt.toISOString()} className="mt-3 block text-xs text-slate-400">
-              {post.publishedAt.toLocaleDateString('vi-VN')}
+          {publishedAt && (
+            <time dateTime={publishedAt.toISOString()} className="mt-3 block text-xs text-slate-400">
+              {publishedAt.toLocaleDateString('vi-VN')}
             </time>
           )}
         </div>

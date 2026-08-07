@@ -1,11 +1,31 @@
+import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { getProductBySlug } from '@/lib/queries/products'
 import { getSiteSettings } from '@/lib/queries/settings'
+import { breadcrumbJsonLd, pickOgImage, productJsonLd, siteUrl } from '@/lib/seo'
 import { ProductGallery } from '@/components/public/ProductGallery'
 import { ContactButtons } from '@/components/public/ContactButtons'
 import { RichContent } from '@/components/public/RichContent'
 
 export const revalidate = 3600
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params
+  const [product, settings] = await Promise.all([getProductBySlug(slug), getSiteSettings()])
+  if (!product) return { title: 'Không tìm thấy' }
+
+  return {
+    title: product.seoTitle ?? product.name,
+    description: product.seoDescription ?? product.summary ?? undefined,
+    alternates: { canonical: `/san-pham/${product.slug}` },
+    openGraph: {
+      type: 'website',
+      title: product.seoTitle ?? product.name,
+      description: product.seoDescription ?? product.summary ?? undefined,
+      images: [pickOgImage({ contentImage: product.images[0]?.url, settingsImage: settings.seoOgImageUrl })],
+    },
+  }
+}
 
 export default async function ProductDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
@@ -16,6 +36,14 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 pb-24 sm:pb-12">
+      <script type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd(product, `${siteUrl()}/san-pham/${product.slug}`)) }} />
+      <script type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd([
+          { name: 'Trang chủ', url: siteUrl() },
+          { name: 'Sản phẩm', url: `${siteUrl()}/san-pham` },
+          { name: product.name, url: `${siteUrl()}/san-pham/${product.slug}` },
+        ])) }} />
       <div className="grid gap-10 sm:grid-cols-2">
         <ProductGallery images={product.images} name={product.name} />
 
