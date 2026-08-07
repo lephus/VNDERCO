@@ -1,0 +1,11 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: vnderco
+      POSTGRES_PASSWORD: vnderco
+      POSTGRES_DB: vnderco
+    ports: ["5433:5432"]
+    volumes: ["vnderco_pg:/var/lib/postgresql/data"]
+volumes:
+  vnderco_pg:
