@@ -13,6 +13,7 @@
     "db:up": "docker compose up -d",
     "db:push": "prisma db push",
     "db:seed": "dotenv -e .env -- tsx prisma/seed.ts",
+    "db:seed:demo": "dotenv -e .env -- tsx prisma/seed-demo.ts",
     "db:studio": "prisma studio",
     "test:db": "dotenv -e .env.test -- vitest run --config vitest.config.db.ts",
     "test:e2e": "dotenv -e .env.test -- playwright test",
