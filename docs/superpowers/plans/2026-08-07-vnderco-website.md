@@ -1570,14 +1570,18 @@ test('hiện cảnh báo khi còn dùng mật khẩu mặc định, mất đi sa
   await page.getByLabel('Mật khẩu mới').fill('Vnderco@2026')
   await page.getByLabel('Nhập lại mật khẩu mới').fill('Vnderco@2026')
   await page.getByRole('button', { name: 'Đổi mật khẩu' }).click()
-  await expect(page.getByText('Đã đổi mật khẩu')).toBeVisible()
+
+  // Đổi mật khẩu xong là bị đăng xuất, không ở lại trang admin
+  await expect(page).toHaveURL(/\/admin\/login/)
+  await expect(page.getByText('Đã đổi mật khẩu, vui lòng đăng nhập lại')).toBeVisible()
 
   // Đăng nhập lại bằng mật khẩu mới, cảnh báo phải biến mất
-  await page.goto('/admin/login')
   await login(page, 'Vnderco@2026')
   await expect(page.getByRole('alert')).toHaveCount(0)
 })
 ```
+
+**Vì sao phải đăng xuất chứ không chỉ hiện thông báo tại chỗ.** Phiên đăng nhập là JWT, và callback `jwt` chỉ ghi `usingDefaultPassword` đúng một lần lúc đăng nhập. Đổi mật khẩu xong mà giữ nguyên phiên thì cookie vẫn mang `usingDefaultPassword: true`, nên dải cảnh báo đỏ vẫn nhắc mãi dù admin đã làm đúng việc được nhắc — người dùng sẽ tưởng thao tác thất bại. Đăng xuất giải quyết triệt để, và huỷ phiên sau khi đổi thông tin đăng nhập vốn cũng là cách làm chuẩn.
 
 Test này đổi trạng thái DB, nên phải reset trước khi chạy. Thêm script:
 
@@ -1659,6 +1663,21 @@ export const changePasswordAction = createAction({
     return { changed: true }
   },
 })
+
+// Huỷ phiên sau khi đổi mật khẩu. Gọi tách rời khỏi createAction vì signOut()
+// ném redirect có chủ đích của Next.js — để nó chạy trong handler sẽ bị khối
+// try/catch của helper nuốt mất và biến thành "có lỗi xảy ra".
+export async function changePasswordAndSignOut(formData: FormData) {
+  const result = await changePasswordAction(formData)
+  if (!result.ok) return result
+  await signOut({ redirectTo: '/admin/login?doi-mat-khau=1' })
+  return result
+}
+```
+
+Thêm `import { signOut } from '@/lib/auth'` ở đầu file.
+
+Trang `app/admin/login/page.tsx` đọc `searchParams` và hiện dòng *"Đã đổi mật khẩu, vui lòng đăng nhập lại."* khi có `?doi-mat-khau=1`. Form đổi mật khẩu gọi `changePasswordAndSignOut` thay vì `changePasswordAction`, và không cần hiện thông báo thành công tại chỗ nữa — người dùng đã bị chuyển sang trang đăng nhập.
 ```
 
 Bổ sung nhánh lỗi vào `lib/actions/helper.ts`, ngay trước nhánh `P2002`:
