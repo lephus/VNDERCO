@@ -1,14 +1,12 @@
-import { revalidateTag as revalidateTagRaw } from 'next/cache'
+import { revalidateTag } from 'next/cache'
 import { z } from 'zod'
 import { requireAdmin } from '@/lib/auth'
 
-// Next 16.3 khai báo `revalidateTag(tag, profile)` với tham số profile bắt
-// buộc, nhưng gọi chỉ 1 tham số vẫn chạy đúng ở runtime (chỉ in cảnh báo
-// deprecated ra console) — xem node_modules/next/dist/.../revalidate.js.
-// Giữ chữ ký 1 tham số ở đây vì đó đúng là hợp đồng mà test của task 6 xác
-// nhận (revalidateTag được gọi với đúng 1 đối số là tên tag). Việc chọn
-// cacheLife profile là quyết định kiến trúc nằm ngoài phạm vi task này.
-const revalidateTag = revalidateTagRaw as (tag: string) => void
+// `{ expire: 0 }` yêu cầu Next thanh lọc tag ngay lập tức cho cả các trang
+// tĩnh lẫn động — đúng ngữ nghĩa "admin vừa lưu nội dung, trang công khai
+// phải render lại ở lượt truy cập kế tiếp". Không dùng `updateTag`: hàm đó
+// dành cho read-your-own-writes trong cùng một Server Action (người vừa ghi
+// tự đọc lại), còn ở đây người đọc là khách công khai ở một request khác hẳn.
 
 export type ActionResult<T> =
   | { ok: true; data: T }
@@ -61,7 +59,7 @@ export function createAction<S extends z.ZodTypeAny, T>({ schema, handler, tags 
       return { ok: false, formError: 'Có lỗi xảy ra, vui lòng thử lại.' }
     }
 
-    for (const tag of tags(parsed.data, result)) revalidateTag(tag)
+    for (const tag of tags(parsed.data, result)) revalidateTag(tag, { expire: 0 })
     return { ok: true, data: result }
   }
 }

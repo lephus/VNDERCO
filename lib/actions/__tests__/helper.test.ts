@@ -55,7 +55,7 @@ describe('createAction', () => {
   })
 
   it('revalidate đúng các tag sau khi ghi thành công', async () => {
-    const handler = vi.fn().mockResolvedValue({ slug: 'tin-moi' })
+    const handler = vi.fn<() => Promise<{ slug: string }>>().mockResolvedValue({ slug: 'tin-moi' })
     const action = createAction({
       schema,
       handler,
@@ -64,8 +64,8 @@ describe('createAction', () => {
 
     await action({ name: 'Tin mới' })
 
-    expect(revalidateTag).toHaveBeenCalledWith('posts')
-    expect(revalidateTag).toHaveBeenCalledWith('post:tin-moi')
+    expect(revalidateTag).toHaveBeenCalledWith('posts', { expire: 0 })
+    expect(revalidateTag).toHaveBeenCalledWith('post:tin-moi', { expire: 0 })
   })
 
   it('biến lỗi trùng khoá của Prisma thành thông báo tiếng Việt', async () => {
