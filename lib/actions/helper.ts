@@ -49,6 +49,9 @@ export function createAction<S extends z.ZodTypeAny, T>({ schema, handler, tags 
     try {
       result = await handler(parsed.data)
     } catch (error) {
+      if ((error as { code?: string }).code === 'WRONG_PASSWORD') {
+        return { ok: false, fieldErrors: { currentPassword: ['Mật khẩu hiện tại không đúng'] } }
+      }
       if ((error as { code?: string }).code === 'P2002') {
         return { ok: false, formError: 'Dữ liệu đã tồn tại (slug hoặc email bị trùng).' }
       }
