@@ -1678,7 +1678,6 @@ export async function changePasswordAndSignOut(formData: FormData) {
 Thêm `import { signOut } from '@/lib/auth'` ở đầu file.
 
 Trang `app/admin/login/page.tsx` đọc `searchParams` và hiện dòng *"Đã đổi mật khẩu, vui lòng đăng nhập lại."* khi có `?doi-mat-khau=1`. Form đổi mật khẩu gọi `changePasswordAndSignOut` thay vì `changePasswordAction`, và không cần hiện thông báo thành công tại chỗ nữa — người dùng đã bị chuyển sang trang đăng nhập.
-```
 
 Bổ sung nhánh lỗi vào `lib/actions/helper.ts`, ngay trước nhánh `P2002`:
 
