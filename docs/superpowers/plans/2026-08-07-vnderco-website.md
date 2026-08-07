@@ -3013,10 +3013,6 @@ import Youtube from '@tiptap/extension-youtube'
 import { useState } from 'react'
 import { MediaPicker } from './MediaPicker'
 
-const BUTTONS = [
-  { label: 'H2', isActive: 'heading', attrs: { level: 2 as const }, run: (e: never) => e },
-]
-
 export function RichTextEditor({ name, defaultValue = '' }: { name: string; defaultValue?: string }) {
   const [html, setHtml] = useState(defaultValue)
 
@@ -3083,8 +3079,6 @@ export function RichTextEditor({ name, defaultValue = '' }: { name: string; defa
   )
 }
 ```
-
-Xoá hằng `BUTTONS` ở đầu file — nó là tàn dư, không dùng tới.
 
 - [ ] **Step 12: Màn hình tin tức**
 
@@ -4352,9 +4346,9 @@ git commit -m "feat: add site settings with preset and custom theme picker"
 Đây là nơi hệ thống màu gặp người dùng thật. Biến CSS phải nằm trong HTML server trả về — nạp phía client sẽ gây chớp màu, đúng thứ đã bị loại ở giai đoạn thiết kế.
 
 **Files:**
-- Create: `app/(public)/layout.tsx`, `app/(public)/page.tsx`, `components/public/SiteHeader.tsx`, `components/public/SiteFooter.tsx`, `components/public/HeroSlider.tsx`, `components/public/PostCard.tsx`, `components/public/ProductCard.tsx`, `components/public/SectionHeading.tsx`
+- Create: `app/(public)/layout.tsx`, `app/(public)/page.tsx`, `app/(public)/not-found.tsx`, `app/(public)/error.tsx`, `app/not-found.tsx`, `app/admin/(dashboard)/error.tsx`, `components/public/SiteHeader.tsx`, `components/public/SiteFooter.tsx`, `components/public/HeroSlider.tsx`, `components/public/PostCard.tsx`, `components/public/ProductCard.tsx`, `components/public/SectionHeading.tsx`
 - Modify: `app/layout.tsx` (giữ tối thiểu), xoá `app/page.tsx` mặc định
-- Test: `e2e/theme.spec.ts`
+- Test: `e2e/theme.spec.ts`, `e2e/not-found.spec.ts`
 
 **Interfaces:**
 - Consumes: `getSiteSettings`, `getActiveBanners`, `getFeaturedPosts`, `getFeaturedProducts` (Task 6, 8), `resolvePrimary` (Task 13), `buildPalette`/`paletteToCssVars` (Task 3)
@@ -4742,18 +4736,108 @@ export default async function HomePage() {
 }
 ```
 
-- [ ] **Step 8: Chạy E2E để xác nhận pass**
+- [ ] **Step 8: Trang 404 và trang lỗi**
+
+Làm ngay ở task này chứ không để sau: các task sau kiểm tra 404 bằng chữ *"Không tìm thấy"*, nếu chưa có thì test phải viết yếu đi rồi sửa lại — vòng vo và để lại một assert vô nghĩa trong lịch sử.
+
+`e2e/not-found.spec.ts`:
+
+```ts
+import { expect, test } from '@playwright/test'
+
+test('slug không tồn tại trả 404 mang giao diện site', async ({ page }) => {
+  const response = await page.goto('/khong-co-trang-nay')
+  expect(response!.status()).toBe(404)
+  await expect(page.getByText('Không tìm thấy')).toBeVisible()
+  await expect(page.getByRole('navigation', { name: 'Điều hướng chính' })).toBeVisible()
+})
+```
+
+Test này fail cho tới khi có `app/(public)/[slug]/page.tsx` ở Task 17 — trước đó Next.js không có route nào khớp `/khong-co-trang-nay` nên dùng `app/not-found.tsx` toàn cục (không có header). Vì vậy **ở task này chỉ tạo file, chưa chạy `not-found.spec.ts`**; Task 17 mới bật nó lên. Không được nới lỏng assert để nó xanh sớm.
+
+`app/(public)/not-found.tsx` — nằm trong `(public)` nên tự hưởng header, footer và màu của site:
+
+```tsx
+import Link from 'next/link'
+
+export default function NotFound() {
+  return (
+    <div className="mx-auto max-w-xl px-4 py-24 text-center">
+      <p className="text-6xl font-extrabold text-primary-600">404</p>
+      <h1 className="mt-4 text-2xl font-extrabold text-slate-900">Không tìm thấy trang</h1>
+      <p className="mt-2 text-slate-600">Trang bạn tìm có thể đã bị xoá hoặc đổi đường dẫn.</p>
+      <Link href="/" className="mt-8 inline-block rounded-full bg-primary-600 px-6 py-3 font-semibold text-primary-fg">
+        Về trang chủ
+      </Link>
+    </div>
+  )
+}
+```
+
+`app/(public)/error.tsx`:
+
+```tsx
+'use client'
+
+export default function PublicError({ reset }: { error: Error; reset: () => void }) {
+  return (
+    <div className="mx-auto max-w-xl px-4 py-24 text-center">
+      <h1 className="text-2xl font-extrabold text-slate-900">Đã có lỗi xảy ra</h1>
+      <p className="mt-2 text-slate-600">Vui lòng thử lại. Nếu vẫn lỗi, hãy liên hệ với chúng tôi.</p>
+      <button type="button" onClick={reset}
+        className="mt-8 rounded-full bg-primary-600 px-6 py-3 font-semibold text-primary-fg">
+        Thử lại
+      </button>
+    </div>
+  )
+}
+```
+
+`app/admin/(dashboard)/error.tsx` — tông trung tính, hiện `error.digest` để đối chiếu log:
+
+```tsx
+'use client'
+
+export default function AdminError({ error, reset }: { error: Error & { digest?: string }; reset: () => void }) {
+  return (
+    <div className="rounded-xl bg-white p-8 text-center shadow-sm">
+      <h1 className="text-lg font-bold text-slate-900">Không tải được nội dung</h1>
+      <p className="mt-2 text-sm text-slate-600">Thử lại, nếu vẫn lỗi hãy gửi mã sự cố bên dưới cho kỹ thuật.</p>
+      {error.digest && <code className="mt-3 block text-xs text-slate-400">{error.digest}</code>}
+      <button type="button" onClick={reset}
+        className="mt-6 rounded-lg bg-primary-600 px-5 py-2 font-semibold text-primary-fg">Thử lại</button>
+    </div>
+  )
+}
+```
+
+`app/not-found.tsx` — bắt 404 ngoài mọi route group (ví dụ `/admin/khong-ton-tai`), giao diện tối giản không phụ thuộc dữ liệu:
+
+```tsx
+import Link from 'next/link'
+
+export default function GlobalNotFound() {
+  return (
+    <div className="flex min-h-screen flex-col items-center justify-center gap-4 p-6 text-center">
+      <h1 className="text-2xl font-extrabold">Không tìm thấy trang</h1>
+      <Link href="/" className="text-primary-600 underline">Về trang chủ</Link>
+    </div>
+  )
+}
+```
+
+- [ ] **Step 9: Chạy E2E để xác nhận pass**
 
 Run: `npm run test:e2e:reset && npm run test:e2e -- e2e/theme.spec.ts`
 Expected: PASS (2 test)
 
 Nếu test 2 fail vì màu không đổi: `updateSettingsAction` chưa revalidate đủ tag — kiểm tra nó trả về mảng gồm cả `TAGS.posts`, `TAGS.products`, `TAGS.pages`, `TAGS.banners` chứ không chỉ `TAGS.settings`, vì layout công khai bọc mọi trang.
 
-- [ ] **Step 9: Commit**
+- [ ] **Step 10: Commit**
 
 ```bash
-git add app components/public
-git commit -m "feat: add public layout with server-rendered theme and homepage"
+git add app components/public e2e
+git commit -m "feat: add public layout with server-rendered theme, homepage and error boundaries"
 ```
 
 ---
@@ -4761,12 +4845,14 @@ git commit -m "feat: add public layout with server-rendered theme and homepage"
 ## Task 15: Trang tin tức công khai
 
 **Files:**
-- Create: `app/(public)/tin-tuc/page.tsx`, `app/(public)/tin-tuc/[slug]/page.tsx`, `components/public/Pagination.tsx`, `components/public/CategoryFilter.tsx`, `components/public/RichContent.tsx`
+- Create: `app/(public)/tin-tuc/page.tsx`, `app/(public)/tin-tuc/[slug]/page.tsx`, `components/public/Pagination.tsx`, `components/public/CategoryFilter.tsx`, `components/public/RichContent.tsx`, `components/public/ContentListPage.tsx`
 - Test: `e2e/publish-flow.spec.ts`
 
 **Interfaces:**
 - Consumes: `getPublishedPosts`, `getPostBySlug`, `getRelatedPosts`, `getCategories` (Task 6), `PostCard`/`SectionHeading` (Task 14)
-- Produces: `<Pagination page pageCount basePath searchParams />`, `<CategoryFilter categories active basePath />`, `<RichContent html />` — dùng lại ở Task 16–17
+- Produces: `<Pagination page pageCount basePath extraQuery />`, `<CategoryFilter categories active basePath />`, `<RichContent html />`, `<ContentListPage … />` — dùng lại ở Task 16–17
+
+**Quyết định của chủ dự án (ghi đè plan gốc):** trang danh sách tin và trang danh sách sản phẩm dùng **chung một component** `ContentListPage`, không viết hai file song song gần giống nhau. Task 16 chỉ gọi lại component này với prop khác.
 
 - [ ] **Step 1: Viết E2E test fail — luồng quan trọng nhất của dự án**
 
@@ -4890,53 +4976,88 @@ export function RichContent({ html }: { html: string }) {
 
 Cài plugin typography: `npm i -D @tailwindcss/typography` và thêm `@plugin "@tailwindcss/typography";` vào `app/globals.css` ngay sau `@import "tailwindcss";`.
 
-- [ ] **Step 4: Danh sách tin**
+- [ ] **Step 4: Component danh sách dùng chung**
 
-`app/(public)/tin-tuc/page.tsx`:
+Trang tin và trang sản phẩm khác nhau ở nguồn dữ liệu và cách hiển thị thẻ, còn khung thì y hệt: đọc `searchParams`, tải danh mục, lọc, lưới, phân trang. Viết một lần.
+
+`components/public/ContentListPage.tsx`:
 
 ```tsx
+import type { Category, CategoryType } from '@prisma/client'
 import { getCategories } from '@/lib/queries/categories'
-import { getPublishedPosts } from '@/lib/queries/posts'
-import { PostCard } from '@/components/public/PostCard'
-import { CategoryFilter } from '@/components/public/CategoryFilter'
-import { Pagination } from '@/components/public/Pagination'
+import { CategoryFilter } from './CategoryFilter'
+import { Pagination } from './Pagination'
 
-export const revalidate = 3600
-export const metadata = { title: 'Tin tức' }
+type ListResult<T> = { items: T[]; pageCount: number }
 
-export default async function NewsListPage({
-  searchParams,
-}: { searchParams: Promise<{ trang?: string; 'danh-muc'?: string }> }) {
+export async function ContentListPage<T extends { id: string }>({
+  title, basePath, categoryType, emptyMessage, gridClassName, fetchItems, renderItem, searchParams,
+}: {
+  title: string
+  basePath: string
+  categoryType: CategoryType
+  emptyMessage: string
+  gridClassName: string
+  fetchItems: (args: { page: number; categorySlug?: string }) => Promise<ListResult<T>>
+  renderItem: (item: T) => React.ReactNode
+  searchParams: Promise<{ trang?: string; 'danh-muc'?: string }>
+}) {
   const params = await searchParams
   const page = Math.max(1, Number(params.trang) || 1)
   const categorySlug = params['danh-muc']
 
   const [{ items, pageCount }, categories] = await Promise.all([
-    getPublishedPosts({ page, categorySlug }),
-    getCategories('NEWS'),
+    fetchItems({ page, categorySlug }),
+    getCategories(categoryType),
   ])
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-12">
-      <h1 className="mb-8 text-3xl font-extrabold tracking-tight">Tin tức</h1>
-      <CategoryFilter categories={categories} active={categorySlug} basePath="/tin-tuc" />
+      <h1 className="mb-8 text-3xl font-extrabold tracking-tight">{title}</h1>
+      <CategoryFilter categories={categories as Category[]} active={categorySlug} basePath={basePath} />
 
-      {items.length === 0 ? (
-        <p className="py-16 text-center text-slate-500">Chưa có bài viết nào trong mục này.</p>
-      ) : (
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {items.map((post) => <PostCard key={post.id} post={post} />)}
-        </div>
-      )}
+      {items.length === 0
+        ? <p className="py-16 text-center text-slate-500">{emptyMessage}</p>
+        : <div className={gridClassName}>{items.map(renderItem)}</div>}
 
-      <Pagination page={page} pageCount={pageCount} basePath="/tin-tuc"
+      <Pagination page={page} pageCount={pageCount} basePath={basePath}
         extraQuery={{ 'danh-muc': categorySlug }} />
     </div>
   )
 }
 ```
 
-- [ ] **Step 5: Chi tiết tin**
+- [ ] **Step 5: Danh sách tin**
+
+`app/(public)/tin-tuc/page.tsx` — chỉ còn phần khác biệt:
+
+```tsx
+import { getPublishedPosts } from '@/lib/queries/posts'
+import { PostCard } from '@/components/public/PostCard'
+import { ContentListPage } from '@/components/public/ContentListPage'
+
+export const revalidate = 3600
+export const metadata = { title: 'Tin tức' }
+
+export default function NewsListPage({
+  searchParams,
+}: { searchParams: Promise<{ trang?: string; 'danh-muc'?: string }> }) {
+  return (
+    <ContentListPage
+      title="Tin tức"
+      basePath="/tin-tuc"
+      categoryType="NEWS"
+      emptyMessage="Chưa có bài viết nào trong mục này."
+      gridClassName="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
+      fetchItems={getPublishedPosts}
+      renderItem={(post) => <PostCard key={post.id} post={post} />}
+      searchParams={searchParams}
+    />
+  )
+}
+```
+
+- [ ] **Step 6: Chi tiết tin**
 
 `app/(public)/tin-tuc/[slug]/page.tsx`:
 
@@ -4989,14 +5110,14 @@ export default async function PostDetailPage({ params }: { params: Promise<{ slu
 }
 ```
 
-- [ ] **Step 6: Chạy E2E để xác nhận pass**
+- [ ] **Step 7: Chạy E2E để xác nhận pass**
 
 Run: `npm run test:e2e:reset && npm run test:e2e -- e2e/publish-flow.spec.ts`
 Expected: PASS
 
-Test kiểm tra chữ *"Không tìm thấy"* — chữ này đến từ trang 404 sẽ viết ở Task 17. Nếu Task 17 chưa xong, tạm chấp nhận trang 404 mặc định của Next.js và đổi assert thành `expect(page.locator('body')).not.toContainText('Bản tin thử nghiệm ISR')`, rồi khôi phục assert gốc sau Task 17.
+Assert *"Không tìm thấy"* dựa vào `app/(public)/not-found.tsx` đã có từ Task 14. Route `/tin-tuc/[slug]` tồn tại ở task này, nên `notFound()` trong đó dùng đúng trang 404 có header của site. Không nới lỏng assert này trong bất kỳ tình huống nào — nếu nó fail thì `notFound()` chưa được gọi hoặc bài nháp đang lọt ra ngoài, cả hai đều là lỗi thật.
 
-- [ ] **Step 7: Commit**
+- [ ] **Step 8: Commit**
 
 ```bash
 git add app/\(public\)/tin-tuc components/public app/globals.css package.json
@@ -5014,7 +5135,7 @@ Nút liên hệ là lý do tồn tại của phần sản phẩm — sản phẩ
 - Test: `e2e/product-contact.spec.ts`
 
 **Interfaces:**
-- Consumes: `getPublishedProducts`, `getProductBySlug`, `getCategories`, `getSiteSettings` (Task 6), `Pagination`/`CategoryFilter`/`RichContent`/`ProductCard` (Task 14–15)
+- Consumes: `getPublishedProducts`, `getProductBySlug`, `getSiteSettings` (Task 6), `ContentListPage`/`RichContent` (Task 15), `ProductCard` (Task 14)
 - Produces: `<ContactButtons settings productName sticky />`
 
 - [ ] **Step 1: Viết E2E test fail trước**
@@ -5146,8 +5267,35 @@ export function ProductGallery({ images, name }: { images: ProductImage[]; name:
 
 - [ ] **Step 5: Danh sách sản phẩm**
 
-`app/(public)/san-pham/page.tsx` — giống `tin-tuc/page.tsx` ở Task 15, thay:
-`getPublishedProducts` thay `getPublishedPosts` · `getCategories('PRODUCT')` · `ProductCard` thay `PostCard` · `basePath="/san-pham"` · tiêu đề `Sản phẩm` · lưới `lg:grid-cols-4` · thông báo rỗng *"Chưa có sản phẩm nào trong mục này."*
+Dùng lại `ContentListPage` của Task 15 — **không** viết lại khung danh sách.
+
+`app/(public)/san-pham/page.tsx`:
+
+```tsx
+import { getPublishedProducts } from '@/lib/queries/products'
+import { ProductCard } from '@/components/public/ProductCard'
+import { ContentListPage } from '@/components/public/ContentListPage'
+
+export const revalidate = 3600
+export const metadata = { title: 'Sản phẩm' }
+
+export default function ProductListPage({
+  searchParams,
+}: { searchParams: Promise<{ trang?: string; 'danh-muc'?: string }> }) {
+  return (
+    <ContentListPage
+      title="Sản phẩm"
+      basePath="/san-pham"
+      categoryType="PRODUCT"
+      emptyMessage="Chưa có sản phẩm nào trong mục này."
+      gridClassName="grid gap-6 sm:grid-cols-2 lg:grid-cols-4"
+      fetchItems={getPublishedProducts}
+      renderItem={(product) => <ProductCard key={product.id} product={product} />}
+      searchParams={searchParams}
+    />
+  )
+}
+```
 
 - [ ] **Step 6: Chi tiết sản phẩm**
 
@@ -5228,11 +5376,13 @@ git commit -m "feat: add public product pages with contact call-to-action"
 
 ---
 
-## Task 17: Trang tĩnh công khai + trang lỗi
+## Task 17: Trang tĩnh công khai
+
+Trang 404 và các `error.tsx` đã làm ở Task 14. Task này thêm route `/[slug]` — cũng chính là thứ khiến `e2e/not-found.spec.ts` (viết ở Task 14, chưa chạy) bắt đầu xanh, vì từ giờ mọi đường dẫn lạ mới rơi vào `(public)` và dùng trang 404 có header.
 
 **Files:**
-- Create: `app/(public)/[slug]/page.tsx`, `app/(public)/not-found.tsx`, `app/(public)/error.tsx`, `app/admin/(dashboard)/error.tsx`, `app/not-found.tsx`
-- Test: `e2e/static-page.spec.ts`
+- Create: `app/(public)/[slug]/page.tsx`
+- Test: `e2e/static-page.spec.ts`, bật lại `e2e/not-found.spec.ts`
 
 **Interfaces:**
 - Consumes: `getPageBySlug` (Task 6), `RichContent` (Task 15)
@@ -5262,14 +5412,9 @@ test('trang tĩnh đã xuất bản hiện đúng nội dung, giữ header của
   await expect(page.getByText('VNDERCO thành lập năm 2015')).toBeVisible()
   await expect(page.getByRole('navigation', { name: 'Điều hướng chính' })).toBeVisible()
 })
-
-test('slug không tồn tại trả về trang 404 mang giao diện site', async ({ page }) => {
-  const response = await page.goto('/khong-co-trang-nay')
-  expect(response!.status()).toBe(404)
-  await expect(page.getByText('Không tìm thấy')).toBeVisible()
-  await expect(page.getByRole('navigation', { name: 'Điều hướng chính' })).toBeVisible()
-})
 ```
+
+Chỉ một test ở đây — phần 404 đã có `e2e/not-found.spec.ts` từ Task 14, đừng viết lại.
 
 - [ ] **Step 2: Chạy E2E để xác nhận fail**
 
@@ -5303,91 +5448,18 @@ export default async function StaticPage({ params }: { params: Promise<{ slug: s
 
 Next.js ưu tiên route tĩnh hơn route động, nên `/tin-tuc` và `/san-pham` vẫn thắng `[slug]`. Danh sách `RESERVED_SLUGS` ở Task 12 chỉ để chặn admin tạo slug vô dụng, không phải để tránh xung đột routing.
 
-- [ ] **Step 4: Trang 404 và trang lỗi**
+- [ ] **Step 4: Chạy E2E để xác nhận pass**
 
-`app/(public)/not-found.tsx` — nằm trong `(public)` nên tự hưởng header, footer và màu của site:
-
-```tsx
-import Link from 'next/link'
-
-export default function NotFound() {
-  return (
-    <div className="mx-auto max-w-xl px-4 py-24 text-center">
-      <p className="text-6xl font-extrabold text-primary-600">404</p>
-      <h1 className="mt-4 text-2xl font-extrabold text-slate-900">Không tìm thấy trang</h1>
-      <p className="mt-2 text-slate-600">Trang bạn tìm có thể đã bị xoá hoặc đổi đường dẫn.</p>
-      <Link href="/" className="mt-8 inline-block rounded-full bg-primary-600 px-6 py-3 font-semibold text-primary-fg">
-        Về trang chủ
-      </Link>
-    </div>
-  )
-}
-```
-
-`app/(public)/error.tsx`:
-
-```tsx
-'use client'
-
-export default function PublicError({ reset }: { error: Error; reset: () => void }) {
-  return (
-    <div className="mx-auto max-w-xl px-4 py-24 text-center">
-      <h1 className="text-2xl font-extrabold text-slate-900">Đã có lỗi xảy ra</h1>
-      <p className="mt-2 text-slate-600">Vui lòng thử lại. Nếu vẫn lỗi, hãy liên hệ với chúng tôi.</p>
-      <button type="button" onClick={reset}
-        className="mt-8 rounded-full bg-primary-600 px-6 py-3 font-semibold text-primary-fg">
-        Thử lại
-      </button>
-    </div>
-  )
-}
-```
-
-`app/admin/(dashboard)/error.tsx` — tông trung tính, hiện `error.digest` để đối chiếu log:
-
-```tsx
-'use client'
-
-export default function AdminError({ error, reset }: { error: Error & { digest?: string }; reset: () => void }) {
-  return (
-    <div className="rounded-xl bg-white p-8 text-center shadow-sm">
-      <h1 className="text-lg font-bold text-slate-900">Không tải được nội dung</h1>
-      <p className="mt-2 text-sm text-slate-600">Thử lại, nếu vẫn lỗi hãy gửi mã sự cố bên dưới cho kỹ thuật.</p>
-      {error.digest && <code className="mt-3 block text-xs text-slate-400">{error.digest}</code>}
-      <button type="button" onClick={reset}
-        className="mt-6 rounded-lg bg-primary-600 px-5 py-2 font-semibold text-primary-fg">Thử lại</button>
-    </div>
-  )
-}
-```
-
-`app/not-found.tsx` — bắt 404 ở ngoài mọi route group (ví dụ `/admin/khong-ton-tai`), dùng giao diện tối giản không phụ thuộc dữ liệu:
-
-```tsx
-import Link from 'next/link'
-
-export default function GlobalNotFound() {
-  return (
-    <div className="flex min-h-screen flex-col items-center justify-center gap-4 p-6 text-center">
-      <h1 className="text-2xl font-extrabold">Không tìm thấy trang</h1>
-      <Link href="/" className="text-primary-600 underline">Về trang chủ</Link>
-    </div>
-  )
-}
-```
-
-- [ ] **Step 5: Chạy E2E để xác nhận pass**
-
-Run: `npm run test:e2e:reset && npm run test:e2e -- e2e/static-page.spec.ts e2e/publish-flow.spec.ts`
+Run: `npm run test:e2e:reset && npm run test:e2e -- e2e/static-page.spec.ts e2e/not-found.spec.ts e2e/publish-flow.spec.ts`
 Expected: PASS
 
-Khôi phục assert gốc `expect(page.getByText('Không tìm thấy')).toBeVisible()` trong `e2e/publish-flow.spec.ts` nếu Task 15 đã tạm nới lỏng nó.
+`e2e/not-found.spec.ts` được viết ở Task 14 nhưng chưa chạy vì thiếu route `/[slug]`; từ task này nó phải xanh. Nếu nó vẫn fail với 404 không có header, nghĩa là `app/(public)/[slug]/page.tsx` chưa gọi `notFound()` hoặc file đặt sai route group.
 
-- [ ] **Step 6: Commit**
+- [ ] **Step 5: Commit**
 
 ```bash
-git add app
-git commit -m "feat: add static pages and branded error boundaries"
+git add app e2e
+git commit -m "feat: add public static pages by slug"
 ```
 
 ---
@@ -5818,10 +5890,18 @@ git commit -m "docs: add setup guide and CI workflow"
 **Đã sửa trong lúc soát:**
 
 - `app/admin/page.tsx` tạo tạm ở Task 5 sẽ xung đột với `app/admin/(dashboard)/page.tsx` — Task 7 Step 5 nói rõ phải chuyển file, không phải tạo thêm.
-- `e2e/publish-flow.spec.ts` (Task 15) kiểm tra chữ *"Không tìm thấy"* vốn đến từ trang 404 ở Task 17 — đã ghi rõ cách nới lỏng tạm và khôi phục.
 - `updatePostAction`/`updateProductAction`/`updatePageAction` ban đầu chỉ revalidate slug mới; nếu admin đổi slug thì trang cũ kẹt vĩnh viễn — đã thêm cơ chế `previousSlug`.
 - `RichTextEditor` cần `immediatelyRender: false`, thiếu sẽ lỗi hydration với SSR — đã ghi trong code kèm lý do.
 - `auth.config.ts` không được import Prisma vì middleware chạy trên Edge — đã cảnh báo ở đầu Task 5 và trong bước gỡ lỗi.
 
 **Nhất quán kiểu:** `ActionResult<T>` (Task 6) được `useActionForm` (Task 9) và mọi form dùng đúng một hình dạng. `buildPalette`/`paletteToCssVars` (Task 3) dùng cùng tên ở Task 13, 14, 18. `resolvePrimary` khai báo ở Task 13 và tiêu thụ ở Task 14, 18. `TAGS` (Task 6) dùng thống nhất ở mọi action.
+
+## Sửa đổi trước khi thực thi (2026-08-07, chủ dự án quyết)
+
+Hai mâu thuẫn giữa plan và tiêu chuẩn review đã được đưa ra hỏi và chốt trước khi dispatch task đầu tiên:
+
+1. **Trang danh sách tin và sản phẩm dùng chung `ContentListPage`.** Plan gốc bảo viết hai file song song gần giống hệt nhau, điều mà reviewer buộc phải báo là trùng lặp. Nay Task 15 dựng component nhận prop (hàm query, loại danh mục, component thẻ, số cột, tiêu đề, thông báo rỗng) và Task 16 chỉ gọi lại.
+2. **Trang 404 và `error.tsx` chuyển từ Task 17 lên Task 14.** Plan gốc cho phép tạm làm yếu một assert E2E ở Task 15 rồi khôi phục ở Task 17 — reviewer coi assert bị làm yếu là lỗi, và một assert vô nghĩa nằm lại trong lịch sử git là cái giá không đáng. Chúng không phụ thuộc gì nên làm sớm được. `e2e/not-found.spec.ts` viết ở Task 14 nhưng chỉ chạy từ Task 17, khi route `/[slug]` tồn tại.
+
+Ngoài ra đã tự sửa một lỗi soạn thảo: hằng `BUTTONS` chết trong `RichTextEditor` (Task 10) đã được gỡ khỏi plan.
 
