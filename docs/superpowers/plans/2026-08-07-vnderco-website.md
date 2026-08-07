@@ -81,7 +81,7 @@ Khi được hỏi ghi đè `.gitignore` hoặc `README.md`: **chọn không**. 
 - [ ] **Step 2: Cài phụ thuộc**
 
 ```bash
-npm i @prisma/client @prisma/adapter-pg pg next-auth@beta bcryptjs zod culori @vercel/blob
+npm i @prisma/client @prisma/adapter-pg pg next-auth@beta bcryptjs zod culori @supabase/supabase-js
 npm i -D prisma vitest @vitejs/plugin-react @types/bcryptjs @types/culori @types/pg tsx dotenv-cli
 ```
 
@@ -108,13 +108,22 @@ volumes:
 `.env.example` (commit file này; `.env` và `.env.test` đã bị `.gitignore` bỏ qua):
 
 ```
-DATABASE_URL="postgresql://vnderco:vnderco@localhost:5433/vnderco"
+# Dev trỏ tới Supabase cloud; .env.test giữ Docker cục bộ cho E2E
+DATABASE_URL="postgresql://postgres.<ref>:<mật khẩu>@aws-0-<vùng>.pooler.supabase.com:5432/postgres?sslmode=require"
 AUTH_SECRET=""
 AUTH_URL="http://localhost:3000"
-BLOB_READ_WRITE_TOKEN=""
+SUPABASE_URL="https://<ref>.supabase.co"
+SUPABASE_SERVICE_ROLE_KEY=""
+SUPABASE_STORAGE_BUCKET="media"
 SEED_ADMIN_EMAIL="admin@app.com"
 SEED_ADMIN_PASSWORD="Admin@6868"
 ```
+
+Dùng **Session pooler** (cổng 5432) chứ không phải Transaction pooler (6543): Prisma cần session mode để chạy `db push`.
+
+`SUPABASE_SERVICE_ROLE_KEY` bỏ qua toàn bộ Row Level Security, nên **chỉ được dùng ở phía server** — không bao giờ đặt tiền tố `NEXT_PUBLIC_`, không bao giờ import vào client component.
+
+`.env.test` khác biệt duy nhất ở `DATABASE_URL`, luôn trỏ `postgresql://vnderco:vnderco@localhost:5433/vnderco_test`. E2E phải xoá sạch database trước mỗi lần chạy nên tuyệt đối không được trỏ ra cloud — `scripts/assert-test-db.ts` chặn việc đó ở tầng script.
 
 Tạo `.env` bằng cách copy `.env.example` rồi sinh `AUTH_SECRET`:
 
@@ -1967,7 +1976,8 @@ Expected: FAIL — `Cannot find module '@/lib/storage'`
 `lib/storage.ts`:
 
 ```ts
-import { del, put } from '@vercel/blob'
+import { createClient } from '@supabase/supabase-js'
+import { slugify } from '@/lib/slug'
 
 export const ALLOWED_MIME = ['image/jpeg', 'image/png', 'image/webp', 'image/avif']
 export const MAX_SIZE_BYTES = 5 * 1024 * 1024
@@ -1981,19 +1991,49 @@ export function assertUploadable(file: { type: string; size: number }): void {
   }
 }
 
-export async function uploadImage(file: File): Promise<{ url: string; pathname: string }> {
-  assertUploadable(file)
-  const blob = await put(`vnderco/${Date.now()}-${file.name}`, file, {
-    access: 'public',
-    addRandomSuffix: true,
-  })
-  return { url: blob.url, pathname: blob.pathname }
+// Service role key bỏ qua RLS — file này chỉ được import từ server.
+function storageClient() {
+  const url = process.env.SUPABASE_URL
+  const key = process.env.SUPABASE_SERVICE_ROLE_KEY
+  if (!url || !key) throw new Error('Thiếu SUPABASE_URL hoặc SUPABASE_SERVICE_ROLE_KEY')
+  return createClient(url, key, { auth: { persistSession: false } })
 }
 
-export async function deleteImage(url: string): Promise<void> {
-  await del(url)
+function bucket() {
+  return process.env.SUPABASE_STORAGE_BUCKET ?? 'media'
+}
+
+// Tên file gốc có dấu tiếng Việt và khoảng trắng sẽ hỏng key của Storage,
+// nên chuẩn hoá phần tên và giữ lại đuôi mở rộng.
+export function storageKey(filename: string): string {
+  const dot = filename.lastIndexOf('.')
+  const base = dot > 0 ? filename.slice(0, dot) : filename
+  const ext = dot > 0 ? filename.slice(dot + 1).toLowerCase().replace(/[^a-z0-9]/g, '') : 'bin'
+  return `vnderco/${Date.now()}-${slugify(base)}.${ext}`
+}
+
+export async function uploadImage(file: File): Promise<{ url: string; pathname: string }> {
+  assertUploadable(file)
+  const pathname = storageKey(file.name)
+  const supabase = storageClient()
+
+  const { error } = await supabase.storage
+    .from(bucket())
+    .upload(pathname, file, { contentType: file.type, upsert: false })
+  if (error) throw new Error(`Tải ảnh thất bại: ${error.message}`)
+
+  const { data } = supabase.storage.from(bucket()).getPublicUrl(pathname)
+  return { url: data.publicUrl, pathname }
+}
+
+// Nhận pathname (key trong bucket), KHÔNG phải URL công khai.
+export async function deleteImage(pathname: string): Promise<void> {
+  const { error } = await storageClient().storage.from(bucket()).remove([pathname])
+  if (error) throw new Error(`Xoá ảnh thất bại: ${error.message}`)
 }
 ```
+
+Bucket phải được tạo sẵn trên Supabase và đặt **public**, vì trang công khai load ảnh trực tiếp qua URL.
 
 - [ ] **Step 4: Chạy test để xác nhận pass**
 
@@ -2044,8 +2084,9 @@ export const deleteMediaAction = createAction({
   tags: () => [TAGS.media],
   handler: async ({ id }) => {
     const media = await prisma.media.delete({ where: { id } })
+    // Truyền pathname (key trong bucket), không phải URL công khai.
     // Xoá bản ghi trước, xoá file sau: file mồ côi vô hại, bản ghi mồ côi thì vỡ giao diện.
-    await deleteImage(media.url).catch((err) => console.error('[blob-delete]', err))
+    await deleteImage(media.pathname).catch((err) => console.error('[storage-delete]', err))
     return media
   },
 })
@@ -2080,12 +2121,14 @@ import type { NextConfig } from 'next'
 
 const config: NextConfig = {
   images: {
-    remotePatterns: [{ protocol: 'https', hostname: '*.public.blob.vercel-storage.com' }],
+    remotePatterns: [{ protocol: 'https', hostname: '*.supabase.co', pathname: '/storage/v1/object/public/**' }],
   },
 }
 
 export default config
 ```
+
+**Giữ nguyên `agentRules: false` đang có sẵn trong `next.config.ts`** — Task 1 thêm nó để Next 16 khỏi tự sinh file `AGENTS.md`/`CLAUDE.md` mỗi lần chạy. Gộp `images` vào cạnh nó, đừng thay cả file.
 
 - [ ] **Step 7: Giao diện thư viện ảnh và bộ chọn ảnh**
 

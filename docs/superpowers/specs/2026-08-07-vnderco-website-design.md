@@ -29,12 +29,12 @@ Giỏ hàng và thanh toán · đa ngôn ngữ · bình luận · đăng ký tà
 | Hạng mục | Lựa chọn |
 |---|---|
 | Framework | Next.js (App Router), TypeScript |
-| CSDL | PostgreSQL trên Neon hoặc Supabase |
+| CSDL | PostgreSQL trên Supabase (dev + prod); Docker cục bộ chỉ dùng cho E2E |
 | ORM | Prisma |
 | Giao diện | Tailwind CSS + shadcn/ui |
 | Soạn thảo | Tiptap |
 | Xác thực | Auth.js (NextAuth v5), Credentials provider |
-| Lưu ảnh | Vercel Blob |
+| Lưu ảnh | Supabase Storage (bucket công khai) |
 | Kiểm thử | Vitest (unit) + Playwright (E2E) |
 | Deploy | Vercel |
 
@@ -46,7 +46,9 @@ Một codebase duy nhất cho cả web công khai lẫn admin.
 DATABASE_URL=            # chuỗi kết nối Postgres
 AUTH_SECRET=             # khoá ký JWT phiên đăng nhập
 AUTH_URL=                # URL gốc của site
-BLOB_READ_WRITE_TOKEN=   # token Vercel Blob
+SUPABASE_URL=            # https://<ref>.supabase.co
+SUPABASE_SERVICE_ROLE_KEY=  # chỉ dùng phía server, bỏ qua RLS
+SUPABASE_STORAGE_BUCKET= # tên bucket công khai, mặc định "media"
 SEED_ADMIN_EMAIL=admin@app.com
 SEED_ADMIN_PASSWORD=Admin@6868
 ```
