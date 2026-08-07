@@ -81,9 +81,11 @@ Khi được hỏi ghi đè `.gitignore` hoặc `README.md`: **chọn không**. 
 - [ ] **Step 2: Cài phụ thuộc**
 
 ```bash
-npm i @prisma/client next-auth@beta bcryptjs zod culori @vercel/blob
-npm i -D prisma vitest @vitejs/plugin-react @types/bcryptjs @types/culori tsx dotenv-cli
+npm i @prisma/client @prisma/adapter-pg pg next-auth@beta bcryptjs zod culori @vercel/blob
+npm i -D prisma vitest @vitejs/plugin-react @types/bcryptjs @types/culori @types/pg tsx dotenv-cli
 ```
+
+`@prisma/adapter-pg` và `pg` là bắt buộc, không phải tuỳ chọn: từ Prisma 7, `new PrismaClient()` không có driver adapter sẽ ném `PrismaClientInitializationError`. Cùng một adapter dùng được cho cả Postgres trong Docker lúc dev lẫn Neon/Supabase lúc chạy thật.
 
 - [ ] **Step 3: Postgres cục bộ**
 
@@ -615,19 +617,30 @@ datasource db {
 
 Kiểm tra lại đủ 9 model và 4 enum (`Role`, `CategoryType`, `ContentStatus`, `ThemeMode`).
 
-- [ ] **Step 2: Prisma client singleton**
+- [ ] **Step 2: Prisma client singleton (qua driver adapter)**
 
-`lib/db.ts` — singleton để hot-reload lúc dev không tạo hàng chục kết nối:
+Prisma 7 bỏ engine nhị phân mặc định: `new PrismaClient()` trần sẽ ném `PrismaClientInitializationError: A driver adapter is required`. Kết nối đi qua `@prisma/adapter-pg`, và chuỗi kết nối **không** còn đặt trong khối `datasource` của `schema.prisma` nữa.
+
+`lib/db.ts` — singleton để hot-reload lúc dev không mở hàng chục kết nối:
 
 ```ts
+import { PrismaPg } from '@prisma/adapter-pg'
 import { PrismaClient } from '@prisma/client'
 
 const globalForPrisma = globalThis as unknown as { prisma?: PrismaClient }
 
-export const prisma = globalForPrisma.prisma ?? new PrismaClient()
+function createPrismaClient() {
+  const connectionString = process.env.DATABASE_URL
+  if (!connectionString) throw new Error('Thiếu biến môi trường DATABASE_URL')
+  return new PrismaClient({ adapter: new PrismaPg({ connectionString }) })
+}
+
+export const prisma = globalForPrisma.prisma ?? createPrismaClient()
 
 if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = prisma
 ```
+
+Ngoài ra cần `prisma.config.ts` ở gốc repo để CLI (`prisma db push`, `prisma studio`) biết schema ở đâu và nạp được `.env`. Tra tài liệu Prisma 7 cho đúng API hiện hành thay vì chép mù — tối thiểu nó phải trỏ tới `prisma/schema.prisma` và khai báo lệnh seed là `tsx prisma/seed.ts`.
 
 - [ ] **Step 3: Đẩy schema lên DB dev**
 
