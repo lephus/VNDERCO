@@ -77,4 +77,18 @@ describe('createAction', () => {
     expect(result).toEqual({ ok: false, formError: 'Dữ liệu đã tồn tại (slug hoặc email bị trùng).' })
     expect(revalidateTag).not.toHaveBeenCalled()
   })
+
+  it('bắt lỗi ném ra từ transform của schema (không phải ZodError), trả về formError thay vì làm sập action', async () => {
+    const throwingSchema = z.object({ name: z.string() }).transform(() => {
+      throw new TypeError('label.trim is not a function')
+    })
+    const handler = vi.fn()
+    const action = createAction({ schema: throwingSchema, handler, tags: () => [] })
+
+    const result = await action({ name: 'x' })
+
+    expect(result).toEqual({ ok: false, formError: 'Dữ liệu gửi lên không hợp lệ.' })
+    expect(handler).not.toHaveBeenCalled()
+    expect(revalidateTag).not.toHaveBeenCalled()
+  })
 })

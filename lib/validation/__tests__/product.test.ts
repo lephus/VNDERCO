@@ -35,4 +35,17 @@ describe('productCreateSchema', () => {
     expect(productCreateSchema.safeParse({ ...base, name: '' }).error!.flatten().fieldErrors.name)
       .toContain('Tên sản phẩm không được để trống')
   })
+
+  it('loại dòng thông số sai kiểu (nhãn là số, giá trị là object) thay vì ném lỗi, và chỉ mất mô tả ảnh sai kiểu chứ không mất cả ảnh', () => {
+    const specs = JSON.stringify([
+      { label: 123, value: 'x' },
+      { label: 'Màu', value: { a: 1 } },
+      { label: 'Cân nặng', value: '3kg' },
+    ])
+    const images = JSON.stringify([{ url: 'https://a/1.jpg', alt: { not: 'a string' } }])
+    expect(() => productCreateSchema.parse({ ...base, specs, images })).not.toThrow()
+    const result = productCreateSchema.parse({ ...base, specs, images })
+    expect(result.specs).toEqual([{ label: 'Cân nặng', value: '3kg' }])
+    expect(result.images).toEqual([{ url: 'https://a/1.jpg', alt: null, order: 0 }])
+  })
 })

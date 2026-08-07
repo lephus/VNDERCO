@@ -32,6 +32,20 @@ function toPlainObject(input: FormData | unknown): unknown {
   return out
 }
 
+// `.safeParse()` chỉ bắt lỗi kiểu ZodError của chính zod — một `.transform()` ném
+// lỗi khác (vd. TypeError khi gọi .trim() trên giá trị hoá ra không phải chuỗi) thoát
+// thẳng ra ngoài .safeParse(), KHÔNG được bọc thành { success: false }. Bọc thêm một
+// lớp try/catch ở đây để lỗi bất ngờ từ BẤT KỲ schema nào (hiện tại lẫn sau này) cũng
+// hạ cánh mềm thành ActionResult thay vì làm sập cả Server Action.
+function safeParse<S extends z.ZodTypeAny>(schema: S, data: unknown): z.ZodSafeParseResult<z.infer<S>> | null {
+  try {
+    return schema.safeParse(data)
+  } catch (error) {
+    console.error('[action:validate]', error)
+    return null
+  }
+}
+
 export function createAction<S extends z.ZodTypeAny, T>({ schema, handler, tags }: Options<S, T>) {
   return async (input: FormData | unknown): Promise<ActionResult<T>> => {
     try {
@@ -40,7 +54,10 @@ export function createAction<S extends z.ZodTypeAny, T>({ schema, handler, tags 
       return { ok: false, formError: 'Bạn cần đăng nhập lại.' }
     }
 
-    const parsed = schema.safeParse(toPlainObject(input))
+    const parsed = safeParse(schema, toPlainObject(input))
+    if (!parsed) {
+      return { ok: false, formError: 'Dữ liệu gửi lên không hợp lệ.' }
+    }
     if (!parsed.success) {
       return { ok: false, fieldErrors: parsed.error.flatten().fieldErrors as Record<string, string[]> }
     }
