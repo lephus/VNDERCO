@@ -9,8 +9,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-sans-vnd), ui-sans-serif, system-ui, sans-serif;
 
   --color-primary-50:  var(--vnd-primary-50);
   --color-primary-100: var(--vnd-primary-100);
@@ -38,5 +37,67 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans-vnd), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* ------------------------------------------------------------------ chuyển động
+   Một bộ nhịp dùng chung cho cả site, để mọi hiệu ứng cảm giác cùng một tay làm
+   ra chứ không phải mỗi chỗ một kiểu. */
+:root {
+  --vnd-ease: cubic-bezier(0.22, 0.61, 0.36, 1);   /* ra nhanh, dừng êm */
+  --vnd-dur-fast: 150ms;
+  --vnd-dur: 260ms;
+  --vnd-dur-slow: 620ms;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* Header dính trên cùng, nên khi nhảy tới một mục phải chừa chỗ cho nó,
+     không thì tiêu đề bị header che mất. */
+  scroll-padding-top: 5rem;
+}
+
+/* Vòng focus thấy rõ và mang màu thương hiệu — bàn phím dùng được, chuột không
+   bị làm phiền (:focus-visible chỉ hiện khi trình duyệt cho là cần). */
+:focus-visible {
+  outline: 2px solid var(--vnd-primary-500);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Không có hiệu ứng mờ-dần-khi-ảnh-tải-xong ở đây, và đó là có chủ ý:
+   next/image đánh dấu ảnh đã tải bằng thuộc tính JS `data-loaded-src` trên phần
+   tử, KHÔNG phải attribute HTML, nên không selector CSS nào chạm tới được. Chỗ
+   đặt ảnh đã có nền bg-primary-50 làm nền chờ sẵn. Muốn mờ dần thật thì phải
+   dùng placeholder="blur" kèm blurDataURL cho từng ảnh. */
+
+/* Hiện dần khi cuộn tới, thuần CSS — không cần JS, không cần hydrate.
+   Bọc trong @supports là bắt buộc: nếu trình duyệt không hiểu animation-timeline
+   thì animation không chạy, và nếu trạng thái ẩn nằm ngoài khối này, nội dung sẽ
+   ĐỨNG YÊN Ở OPACITY 0 vĩnh viễn. Bên trong @supports thì không hiểu = không ẩn. */
+@keyframes vnd-reveal {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: none; }
+}
+
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .vnd-reveal {
+      animation: vnd-reveal linear both;
+      animation-timeline: view();
+      animation-range: entry 0% cover 24%;
+    }
+  }
+}
+
+/* Tôn trọng cài đặt "giảm chuyển động" của hệ điều hành. Đặt CUỐI FILE để đè
+   được mọi transition/animation khai báo phía trên, kể cả trong utility class. */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

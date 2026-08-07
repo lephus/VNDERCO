@@ -19,10 +19,16 @@ export function SiteHeader({ settings }: { settings: SiteSetting }) {
         </Link>
         <nav aria-label="Điều hướng chính" className="flex items-center gap-6 text-sm">
           {NAV.map((item) => (
-            <Link key={item.href} href={item.href} className="text-slate-600 hover:text-slate-900">{item.label}</Link>
+            <Link key={item.href} href={item.href}
+              className="relative text-slate-600 transition-colors duration-200 hover:text-slate-900
+                after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:origin-left after:scale-x-0
+                after:bg-primary-600 after:transition-transform after:duration-300 after:ease-out hover:after:scale-x-100">
+              {item.label}
+            </Link>
           ))}
           <Link href="/lien-he"
-            className="rounded-full bg-primary-600 px-4 py-1.5 font-semibold text-primary-fg">
+            className="rounded-full bg-primary-600 px-4 py-1.5 font-semibold text-primary-fg
+              transition duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:brightness-110 active:translate-y-0">
             Liên hệ
           </Link>
         </nav>
