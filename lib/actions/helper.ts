@@ -4,9 +4,10 @@ import { requireAdmin } from '@/lib/auth'
 
 // `{ expire: 0 }` yêu cầu Next thanh lọc tag ngay lập tức cho cả các trang
 // tĩnh lẫn động — đúng ngữ nghĩa "admin vừa lưu nội dung, trang công khai
-// phải render lại ở lượt truy cập kế tiếp". Không dùng `updateTag`: hàm đó
-// dành cho read-your-own-writes trong cùng một Server Action (người vừa ghi
-// tự đọc lại), còn ở đây người đọc là khách công khai ở một request khác hẳn.
+// phải render lại ở lượt truy cập kế tiếp". Bên trong, `updateTag` gọi đúng
+// cùng một đường thanh lọc toàn cục, nên hai hàm tương đương về tác dụng;
+// chọn `revalidateTag` vì nó chạy được cả ngoài Server Action (Route Handler
+// chẳng hạn), nơi `updateTag` bị từ chối.
 
 export type ActionResult<T> =
   | { ok: true; data: T }

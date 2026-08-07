@@ -23,6 +23,7 @@ describe('postCreateSchema', () => {
   it('hiểu checkbox: "on" là bật, thiếu là tắt', () => {
     expect(postCreateSchema.parse({ ...base, featured: 'on' }).featured).toBe(true)
     const { featured, ...withoutFeatured } = base
+    void featured // chỉ dùng để loại field này khỏi withoutFeatured, không cần giá trị
     expect(postCreateSchema.parse(withoutFeatured).featured).toBe(false)
   })
 

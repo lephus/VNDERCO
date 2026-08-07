@@ -16,7 +16,8 @@
     "db:studio": "prisma studio",
     "test:db": "dotenv -e .env.test -- vitest run --config vitest.config.db.ts",
     "test:e2e": "dotenv -e .env.test -- playwright test",
-    "test:e2e:reset": "dotenv -e .env.test -- tsx scripts/assert-test-db.ts && dotenv -e .env.test -- prisma db push --force-reset && dotenv -e .env.test -- tsx prisma/seed.ts"
+    "test:e2e:reset": "dotenv -e .env.test -- tsx scripts/assert-test-db.ts && dotenv -e .env.test -- prisma db push --force-reset && dotenv -e .env.test -- tsx prisma/seed.ts",
+    "test:all": "npm run typecheck && npm run lint && npm test && npm run test:db && npm run test:e2e:reset && npm run test:e2e"
   },
   "dependencies": {
     "@prisma/adapter-pg": "^7.9.1",

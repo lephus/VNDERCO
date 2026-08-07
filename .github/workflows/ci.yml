@@ -1,0 +1,66 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    # Cùng ảnh Postgres với docker-compose.yml dùng khi chạy cục bộ. Tên
+    # database phải đúng bằng `vnderco_test`: scripts/assert-test-db.ts từ chối
+    # chạy `prisma db push --force-reset` lên bất kỳ database nào khác, nên đặt
+    # sai tên ở đây sẽ làm CI dừng ở bước reset thay vì xoá nhầm thứ gì đó.
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_USER: vnderco
+          POSTGRES_PASSWORD: vnderco
+          POSTGRES_DB: vnderco_test
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+
+      - run: npm ci
+
+      # `.env.test` không được commit (.gitignore chặn mọi `.env.*`), nên CI tự
+      # dựng lại. Toàn bộ giá trị ở đây đều trỏ vào service Postgres tạm thời
+      # bên trên — không có bí mật thật nào, và không cần biến Supabase vì
+      # lib/storage.ts chỉ tạo client lúc thực sự upload, việc mà E2E không làm.
+      - name: Tạo .env.test
+        run: |
+          cat > .env.test <<EOF
+          DATABASE_URL="postgresql://vnderco:vnderco@localhost:5432/vnderco_test"
+          AUTH_SECRET="$(openssl rand -base64 32)"
+          AUTH_URL="http://localhost:3000"
+          SEED_ADMIN_EMAIL="admin@app.com"
+          SEED_ADMIN_PASSWORD="Admin@6868"
+          EOF
+
+      - run: npx prisma generate
+
+      # Tạo schema lần đầu. `npm run test:all` có chạy `test:db` TRƯỚC bước
+      # `test:e2e:reset` (bước duy nhất tự push schema), nên thiếu lệnh này thì
+      # test:db sẽ chạy trên một database chưa có bảng nào.
+      - name: Đẩy schema vào database test
+        run: npx dotenv -e .env.test -- prisma db push
+
+      - run: npx playwright install --with-deps chromium
+
+      # Đúng một cổng kiểm thử với lệnh mà lập trình viên chạy cục bộ:
+      # typecheck → lint → unit test → test DB → reset DB test → E2E.
+      - run: npm run test:all
