@@ -5853,8 +5853,10 @@ git commit -m "feat: add SEO metadata, JSON-LD, sitemap, robots and RSS"
 Thêm vào `package.json`:
 
 ```json
-"test:all": "npm run lint && npm test && npm run test:e2e:reset && npm run test:e2e"
+"test:all": "npm run typecheck && npm run lint && npm test && npm run test:db && npm run test:e2e:reset && npm run test:e2e"
 ```
+
+`typecheck` (`tsc --noEmit`) phải nằm trong cổng này. Bài học từ Task 6: `next lint` xanh trong khi `tsc` đỏ — ESLint không kiểm tra kiểu, nên nếu thiếu bước này thì không có gì bắt lỗi kiểu cho tới lúc `next build` vỡ. `test:db` cũng phải có mặt, nếu không toàn bộ test seed sẽ không bao giờ chạy trong cổng cuối.
 
 - [ ] **Step 2: Chạy toàn bộ**
 
