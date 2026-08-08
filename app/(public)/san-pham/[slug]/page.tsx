@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import { getProductBySlug } from '@/lib/queries/products'
+import { getAllPublishedProductSlugs, getProductBySlug } from '@/lib/queries/products'
 import { getSiteSettings } from '@/lib/queries/settings'
 import { breadcrumbJsonLd, pickOgImage, productJsonLd, siteUrl } from '@/lib/seo'
 import { ProductGallery } from '@/components/public/ProductGallery'
@@ -9,6 +9,17 @@ import { Breadcrumb } from '@/components/public/Breadcrumb'
 import { RichContent } from '@/components/public/RichContent'
 
 export const revalidate = 3600
+
+// Prerender sẵn mọi trang chi tiết đã xuất bản ngay lúc build, thay vì để lượt
+// khách đầu tiên phải chờ render. Trên Vercel, mỗi instance serverless mới khởi
+// động sẽ phải truy vấn Supabase (đặt ở ap-northeast-1) rồi mới dựng được HTML;
+// prerender xong thì trang được phục vụ thẳng từ CDN.
+// KHÔNG đặt `dynamicParams = false`: bài viết/sản phẩm tạo sau lần build vẫn
+// phải hiện ra được, chúng chỉ render theo yêu cầu ở lượt truy cập đầu tiên rồi
+// được cache như cũ.
+export async function generateStaticParams() {
+  return (await getAllPublishedProductSlugs()).map(({ slug }) => ({ slug }))
+}
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params

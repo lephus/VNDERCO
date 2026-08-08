@@ -17,7 +17,14 @@ function createPrismaClient() {
   // node-postgres — set nhỏ để một tiến trình không bao giờ tự chiếm hết pool
   // phía Supabase, dù chạy build (nhiều worker) hay chạy production (nhiều
   // instance serverless, nơi bảng khuyến nghị dùng transaction pooler 6543).
-  return new PrismaClient({ adapter: new PrismaPg({ connectionString, max: 3 }) })
+  //
+  // Lúc BUILD phải siết chặt hơn nữa. Từ khi thêm generateStaticParams, build
+  // prerender hàng chục trang chi tiết song song: 7 worker × 3 kết nối = 21,
+  // vượt 15 và build vỡ giữa chừng. Mỗi worker chỉ giữ 1 kết nối thì 7 worker
+  // vẫn nằm gọn trong giới hạn, và build vốn không cần thông lượng — nó chạy
+  // một lần, không phải phục vụ khách.
+  const max = process.env.NEXT_PHASE === 'phase-production-build' ? 1 : 3
+  return new PrismaClient({ adapter: new PrismaPg({ connectionString, max }) })
 }
 
 export const prisma = globalForPrisma.prisma ?? createPrismaClient()
