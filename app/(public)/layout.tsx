@@ -5,6 +5,7 @@ import { buildPalette, paletteToCssVars } from '@/lib/theme/palette'
 import { organizationJsonLd, siteUrl } from '@/lib/seo'
 import { SiteHeader } from '@/components/public/SiteHeader'
 import { SiteFooter } from '@/components/public/SiteFooter'
+import { BackToTop } from '@/components/public/BackToTop'
 
 export const revalidate = 3600
 
@@ -25,12 +26,14 @@ export default async function PublicLayout({ children }: { children: React.React
 
   return (
     // Biến nằm ngay trong HTML server trả về → không có nhịp chớp màu khi tải.
-    <div style={vars as React.CSSProperties} className="flex min-h-screen flex-col">
+    // `relative` để mốc theo dõi cuộn của BackToTop (đặt absolute) neo vào đây.
+    <div style={vars as React.CSSProperties} className="relative flex min-h-screen flex-col">
       <script type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd(settings, siteUrl())) }} />
       <SiteHeader settings={settings} />
       <main className="flex-1">{children}</main>
       <SiteFooter settings={settings} />
+      <BackToTop />
     </div>
   )
 }

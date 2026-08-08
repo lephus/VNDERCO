@@ -4,7 +4,21 @@ import { useState } from 'react'
 
 type Spec = { label: string; value: string }
 
-export function SpecsEditor({ name, defaultValue = [] }: { name: string; defaultValue?: Spec[] }) {
+// Nhận nhãn qua prop để dùng lại được cho cả bảng thông số sản phẩm lẫn dải con
+// số ở trang chủ — cùng một hình dạng dữ liệu (cặp nhãn/giá trị), khác mỗi chữ
+// hiển thị. Mặc định giữ nguyên như cũ nên các chỗ đang gọi không phải sửa gì.
+export function SpecsEditor({
+  name, defaultValue = [],
+  legend = 'Thông số kỹ thuật',
+  labelPlaceholder = 'Công suất',
+  valuePlaceholder = '500W',
+  labelName = 'Tên thông số',
+  valueName = 'Giá trị thông số',
+}: {
+  name: string; defaultValue?: Spec[]
+  legend?: string; labelPlaceholder?: string; valuePlaceholder?: string
+  labelName?: string; valueName?: string
+}) {
   const [rows, setRows] = useState<Spec[]>(defaultValue.length ? defaultValue : [{ label: '', value: '' }])
 
   const update = (index: number, patch: Partial<Spec>) =>
@@ -13,14 +27,14 @@ export function SpecsEditor({ name, defaultValue = [] }: { name: string; default
   return (
     <div>
       <input type="hidden" name={name} value={JSON.stringify(rows)} />
-      <span className="block text-sm font-medium text-slate-700">Thông số kỹ thuật</span>
+      <span className="block text-sm font-medium text-slate-700">{legend}</span>
       <div className="mt-2 space-y-2">
         {rows.map((row, index) => (
           <div key={index} className="flex gap-2">
-            <input aria-label={`Tên thông số ${index + 1}`} value={row.label} placeholder="Công suất"
+            <input aria-label={`${labelName} ${index + 1}`} value={row.label} placeholder={labelPlaceholder}
               onChange={(e) => update(index, { label: e.target.value })}
               className="w-1/3 rounded-lg border border-slate-300 px-3 py-2 text-sm" />
-            <input aria-label={`Giá trị thông số ${index + 1}`} value={row.value} placeholder="500W"
+            <input aria-label={`${valueName} ${index + 1}`} value={row.value} placeholder={valuePlaceholder}
               onChange={(e) => update(index, { value: e.target.value })}
               className="flex-1 rounded-lg border border-slate-300 px-3 py-2 text-sm" />
             <button type="button" onClick={() => setRows(rows.filter((_, i) => i !== index))}

@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import type { Product, ProductImage } from '@prisma/client'
+import { BLUR_DATA_URL } from '@/lib/image-placeholder'
 
 export function ProductCard({ product }: { product: Product & { images: ProductImage[] } }) {
   const image = product.images[0]
@@ -12,6 +13,7 @@ export function ProductCard({ product }: { product: Product & { images: ProductI
         <div className="relative h-44 overflow-hidden bg-primary-50">
           {image && (
             <Image src={image.url} alt={image.alt ?? ''} fill
+              placeholder="blur" blurDataURL={BLUR_DATA_URL}
               className="object-cover transition-transform duration-500 ease-out group-hover:scale-105" />
           )}
         </div>

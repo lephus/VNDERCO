@@ -5,6 +5,7 @@ import { getPostBySlug, getRelatedPosts } from '@/lib/queries/posts'
 import { getSiteSettings } from '@/lib/queries/settings'
 import { articleJsonLd, asDate, breadcrumbJsonLd, pickOgImage, siteUrl } from '@/lib/seo'
 import { RichContent } from '@/components/public/RichContent'
+import { Breadcrumb } from '@/components/public/Breadcrumb'
 import { PostCard } from '@/components/public/PostCard'
 import { SectionHeading } from '@/components/public/SectionHeading'
 
@@ -49,6 +50,11 @@ export default async function PostDetailPage({ params }: { params: Promise<{ slu
           { name: 'Tin tức', url: `${siteUrl()}/tin-tuc` },
           { name: post.title, url: `${siteUrl()}/tin-tuc/${post.slug}` },
         ])) }} />
+      <Breadcrumb items={[
+        { name: 'Trang chủ', href: '/' },
+        { name: 'Tin tức', href: '/tin-tuc' },
+        { name: post.title },
+      ]} />
       {post.category && (
         <span className="text-xs font-bold uppercase tracking-wide text-primary-600">{post.category.name}</span>
       )}

@@ -1,5 +1,6 @@
 import { z } from 'zod'
 import { DEFAULT_PRESET_KEY, isPresetKey, PRESETS } from '@/lib/theme/presets'
+import { parseLabelValueRows } from '@/lib/validation/label-value'
 
 const HEX = /^#[0-9a-fA-F]{6}$/
 const blankToNull = z.string().trim().optional().transform((v) => (v ? v : null))
@@ -29,6 +30,7 @@ export const settingsSchema = z.object({
   homeIntroImageUrl: blankToNull,
   homeIntroCtaLabel: blankToNull,
   homeIntroCtaHref: url,
+  homeStats: z.string().optional().default('[]'),
 
   seoTitleTemplate: z.string().trim().min(1, 'Mẫu tiêu đề không được để trống'),
   seoDescription: z.string().trim().max(300, 'Mô tả tối đa 300 ký tự').optional().default(''),
@@ -38,7 +40,12 @@ export const settingsSchema = z.object({
     path: ['customPrimary'],
     message: 'Mã màu phải có dạng #RRGGBB',
   })
-  .transform((v) => ({ ...v, customPrimary: v.customPrimary || null }))
+  // Giới hạn 4 ô: dải con số ở trang chủ xếp 4 cột, nhiều hơn sẽ vỡ bố cục.
+  .transform((v) => ({
+    ...v,
+    customPrimary: v.customPrimary || null,
+    homeStats: parseLabelValueRows(v.homeStats).slice(0, 4),
+  }))
 
 type ThemeFields = { themeMode: string; presetKey: string; customPrimary: string | null }
 

@@ -8,6 +8,7 @@ import { HeroSlider } from '@/components/public/HeroSlider'
 import { PostCard } from '@/components/public/PostCard'
 import { ProductCard } from '@/components/public/ProductCard'
 import { SectionHeading } from '@/components/public/SectionHeading'
+import { parseLabelValueRows } from '@/lib/validation/label-value'
 
 export const revalidate = 3600
 
@@ -16,9 +17,29 @@ export default async function HomePage() {
     getActiveBanners(), getFeaturedPosts(), getFeaturedProducts(), getSiteSettings(),
   ])
 
+  // Prisma trả Json về kiểu unknown; đưa qua đúng bộ đọc mà form admin dùng lúc
+  // lưu, nên dữ liệu rác trong cột cũng chỉ thành mảng rỗng chứ không làm sập trang.
+  const stats = parseLabelValueRows(JSON.stringify(settings.homeStats ?? []))
+
   return (
     <>
       <HeroSlider banners={banners} fallbackTitle={settings.homeIntroTitle} />
+
+      {stats.length > 0 && (
+        <section aria-label="Con số nổi bật" className="vnd-reveal border-b border-slate-100 bg-white">
+          <dl className="mx-auto grid max-w-6xl grid-cols-2 gap-x-6 gap-y-8 px-4 py-12 sm:grid-cols-4">
+            {stats.map((stat) => (
+              <div key={stat.label} className="text-center">
+                <dt className="sr-only">{stat.label}</dt>
+                <dd>
+                  <span className="block text-3xl font-extrabold tracking-tight text-primary-700 sm:text-4xl">{stat.value}</span>
+                  <span className="mt-1 block text-sm text-slate-600">{stat.label}</span>
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </section>
+      )}
 
       {posts.length > 0 && (
         <section className="vnd-reveal mx-auto max-w-6xl px-4 py-16">

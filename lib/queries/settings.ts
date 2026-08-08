@@ -1,4 +1,5 @@
 import { unstable_cache } from 'next/cache'
+import type { Prisma } from '@prisma/client'
 import { prisma } from '@/lib/db'
 import { TAGS } from '@/lib/cache-tags'
 import { DEFAULT_PRESET_KEY } from '@/lib/theme/presets'
@@ -14,6 +15,7 @@ export const getSiteSettings = unstable_cache(
       themeMode: 'PRESET' as const, presetKey: DEFAULT_PRESET_KEY, customPrimary: null,
       homeIntroTitle: '', homeIntroBody: '', homeIntroImageUrl: null,
       homeIntroCtaLabel: null, homeIntroCtaHref: null,
+      homeStats: [] as Prisma.JsonValue,
       seoTitleTemplate: '%s | VNDERCO', seoDescription: '', seoOgImageUrl: null,
       updatedAt: new Date(),
     }

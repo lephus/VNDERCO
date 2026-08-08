@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 import { getPageBySlug } from '@/lib/queries/pages'
 import { breadcrumbJsonLd, siteUrl } from '@/lib/seo'
 import { RichContent } from '@/components/public/RichContent'
+import { Breadcrumb } from '@/components/public/Breadcrumb'
 
 export const revalidate = 3600
 
@@ -30,6 +31,10 @@ export default async function StaticPage({ params }: { params: Promise<{ slug: s
           { name: 'Trang chủ', url: siteUrl() },
           { name: page.title, url: `${siteUrl()}/${page.slug}` },
         ])) }} />
+      <Breadcrumb items={[
+        { name: 'Trang chủ', href: '/' },
+        { name: page.title },
+      ]} />
       <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl">{page.title}</h1>
       <div className="mt-8"><RichContent html={page.content} /></div>
     </article>

@@ -404,24 +404,48 @@ async function main() {
     ],
   })
 
-  await prisma.siteSetting.update({
-    where: { id: 1 },
-    data: {
-      contactEmail: 'lienhe@vnderco.vn',
-      contactPhone: '0900000000',
-      contactAddress: 'Số 128 Nguyễn Văn Linh, Quận 7, TP. Hồ Chí Minh',
-      zaloUrl: 'https://zalo.me/0900000000',
-      facebookUrl: 'https://facebook.com/vnderco',
-      homeIntroTitle: 'Đồng hành cùng nhà máy Việt từ năm 2009',
-      homeIntroBody:
-        'VNDERCO cung cấp thiết bị khí nén, giải pháp giám sát năng lượng và dịch vụ bảo trì cho hơn 800 nhà máy trên cả nước.\n\nĐội ngũ kỹ thuật của chúng tôi có mặt tại 3 miền, cam kết phản hồi trong 24 giờ.',
-      homeIntroImageUrl: introImg,
-      homeIntroCtaLabel: 'Tìm hiểu về VNDERCO',
-      homeIntroCtaHref: '/gioi-thieu',
-      seoDescription: 'VNDERCO — thiết bị và giải pháp khí nén công nghiệp cho doanh nghiệp Việt.',
-      seoOgImageUrl: bannerImgs[0],
-    },
-  })
+  // Cài đặt site KHÔNG bị ghi đè. Khác với bài viết/sản phẩm/trang (thuộc về
+  // script này, mang slug cố định, xoá tạo lại thoải mái), SiteSetting là bản
+  // ghi đơn dùng chung mà người dùng sửa qua trang admin. Lần trước script ghi
+  // đè thẳng và xoá mất số điện thoại, địa chỉ, đoạn giới thiệu người dùng vừa
+  // nhập tay. Giờ chỉ điền vào ô nào đang trống — có sẵn giá trị thì để yên.
+  const current = await prisma.siteSetting.findUniqueOrThrow({ where: { id: 1 } })
+  const demoSettings = {
+    contactEmail: 'lienhe@vnderco.vn',
+    contactPhone: '0900000000',
+    contactAddress: 'Số 128 Nguyễn Văn Linh, Quận 7, TP. Hồ Chí Minh',
+    zaloUrl: 'https://zalo.me/0900000000',
+    facebookUrl: 'https://facebook.com/vnderco',
+    homeIntroTitle: 'Đồng hành cùng nhà máy Việt từ năm 2009',
+    homeIntroBody:
+      'VNDERCO cung cấp thiết bị khí nén, giải pháp giám sát năng lượng và dịch vụ bảo trì cho hơn 800 nhà máy trên cả nước.\n\nĐội ngũ kỹ thuật của chúng tôi có mặt tại 3 miền, cam kết phản hồi trong 24 giờ.',
+    homeIntroImageUrl: introImg,
+    homeIntroCtaLabel: 'Tìm hiểu về VNDERCO',
+    homeIntroCtaHref: '/gioi-thieu',
+    seoDescription: 'VNDERCO — thiết bị và giải pháp khí nén công nghiệp cho doanh nghiệp Việt.',
+    seoOgImageUrl: bannerImgs[0],
+    homeStats: [
+      { label: 'Nhà máy tin dùng', value: '800+' },
+      { label: 'Năm kinh nghiệm', value: '17' },
+      { label: 'Kỹ thuật viên', value: '35' },
+      { label: 'Phản hồi trong', value: '24h' },
+    ],
+  }
+
+  const fills = Object.fromEntries(
+    Object.entries(demoSettings).filter(([key]) => {
+      const existing = current[key as keyof typeof current]
+      if (Array.isArray(existing)) return existing.length === 0
+      return existing === null || existing === ''
+    }),
+  )
+
+  if (Object.keys(fills).length > 0) {
+    await prisma.siteSetting.update({ where: { id: 1 }, data: fills })
+    console.log(`  điền ${Object.keys(fills).length} ô cài đặt còn trống:`, Object.keys(fills).join(', '))
+  }
+  const kept = Object.keys(demoSettings).length - Object.keys(fills).length
+  if (kept > 0) console.log(`  giữ nguyên ${kept} ô cài đặt bạn đã tự nhập`)
 
   const counts = {
     Post: await prisma.post.count(),

@@ -85,7 +85,8 @@ Mật khẩu: Admin@6868
 | `npm run test:all` | Cổng kiểm thử gộp — typecheck → lint → unit test → test DB → reset DB test → E2E |
 | `npm run db:up` | Khởi động Postgres cục bộ qua Docker (chỉ dùng cho E2E) |
 | `npm run db:push` | `prisma db push` (dùng `.env` hiện tại) |
-| `npm run db:seed` | Seed tài khoản admin + dữ liệu mẫu |
+| `npm run db:seed` | Seed tài khoản admin + dữ liệu mẫu tối thiểu (an toàn cho production) |
+| `npm run db:seed:demo` | Tạo nội dung DEMO để xem thử giao diện — bài viết, sản phẩm, trang, banner, ảnh. Chỉ dùng cho môi trường phát triển. Chạy lại được nhiều lần; không ghi đè ô cài đặt bạn đã tự nhập. Chạy xong nhớ `rm -rf .next` vì script ghi thẳng vào DB nên không dọn được cache của Next |
 | `npm run db:studio` | Mở Prisma Studio |
 
 ## Deploy (Vercel)

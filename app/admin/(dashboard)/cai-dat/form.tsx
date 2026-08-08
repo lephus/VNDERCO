@@ -7,6 +7,8 @@ import { useActionForm } from '@/components/admin/useActionForm'
 import { FieldError } from '@/components/admin/FieldError'
 import { MediaPicker } from '@/components/admin/MediaPicker'
 import { ThemePicker } from '@/components/admin/ThemePicker'
+import { SpecsEditor } from '@/components/admin/SpecsEditor'
+import { parseLabelValueRows } from '@/lib/validation/label-value'
 import { DEFAULT_PRESET_KEY, isPresetKey } from '@/lib/theme/presets'
 
 export function SettingsForm({ settings }: { settings: SiteSetting }) {
@@ -125,6 +127,19 @@ export function SettingsForm({ settings }: { settings: SiteSetting }) {
             <FieldError errors={fieldError('homeIntroCtaHref')} />
           </div>
         </div>
+        {/* Dải con số tạo niềm tin ở trang chủ. Dùng lại SpecsEditor vì dữ liệu
+            cùng hình dạng (cặp nhãn/giá trị), chỉ khác chữ hiển thị. Prisma trả
+            Json về kiểu unknown nên đưa qua đúng bộ đọc mà server sẽ dùng lúc lưu. */}
+        <SpecsEditor
+          name="homeStats"
+          defaultValue={parseLabelValueRows(JSON.stringify(settings.homeStats ?? []))}
+          legend="Con số nổi bật (tối đa 4, hiện ở trang chủ)"
+          labelPlaceholder="Nhà máy tin dùng"
+          valuePlaceholder="800+"
+          labelName="Nhãn con số"
+          valueName="Giá trị con số"
+        />
+        <FieldError errors={fieldError('homeStats')} />
       </fieldset>
 
       <fieldset className="min-w-0 space-y-4 border-0 p-0">

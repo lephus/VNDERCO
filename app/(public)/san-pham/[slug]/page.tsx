@@ -5,6 +5,7 @@ import { getSiteSettings } from '@/lib/queries/settings'
 import { breadcrumbJsonLd, pickOgImage, productJsonLd, siteUrl } from '@/lib/seo'
 import { ProductGallery } from '@/components/public/ProductGallery'
 import { ContactButtons } from '@/components/public/ContactButtons'
+import { Breadcrumb } from '@/components/public/Breadcrumb'
 import { RichContent } from '@/components/public/RichContent'
 
 export const revalidate = 3600
@@ -44,6 +45,11 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
           { name: 'Sản phẩm', url: `${siteUrl()}/san-pham` },
           { name: product.name, url: `${siteUrl()}/san-pham/${product.slug}` },
         ])) }} />
+      <Breadcrumb items={[
+        { name: 'Trang chủ', href: '/' },
+        { name: 'Sản phẩm', href: '/san-pham' },
+        { name: product.name },
+      ]} />
       <div className="grid gap-10 sm:grid-cols-2">
         <ProductGallery images={product.images} name={product.name} />
 

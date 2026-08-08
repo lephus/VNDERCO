@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import type { Category, Post } from '@prisma/client'
 import { asDate } from '@/lib/seo'
+import { BLUR_DATA_URL } from '@/lib/image-placeholder'
 
 export function PostCard({ post }: { post: Post & { category?: Category | null } }) {
   // asDate(): xem chú thích trong lib/seo.ts — post đến từ getPublishedPosts (bọc
@@ -17,6 +18,7 @@ export function PostCard({ post }: { post: Post & { category?: Category | null }
         <div className="relative h-44 overflow-hidden bg-primary-50">
           {post.coverImageUrl && (
             <Image src={post.coverImageUrl} alt={post.coverImageAlt ?? ''} fill
+              placeholder="blur" blurDataURL={BLUR_DATA_URL}
               className="object-cover transition-transform duration-500 ease-out group-hover:scale-105" />
           )}
         </div>

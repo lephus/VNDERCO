@@ -168,6 +168,7 @@ model SiteSetting {
   homeIntroImageUrl  String?
   homeIntroCtaLabel  String?
   homeIntroCtaHref   String?
+  homeStats          Json      @default("[]")  // [{ "label": "Nhà máy tin dùng", "value": "800+" }]
   seoTitleTemplate   String    @default("%s | VNDERCO")
   seoDescription     String    @default("")
   seoOgImageUrl      String?
