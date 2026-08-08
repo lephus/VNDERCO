@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { buttonClass } from '@/lib/ui/button'
 
 type Spec = { label: string; value: string }
 
@@ -43,7 +44,7 @@ export function SpecsEditor({
         ))}
       </div>
       <button type="button" onClick={() => setRows([...rows, { label: '', value: '' }])}
-        className="mt-2 rounded-lg border border-slate-300 px-3 py-1.5 text-sm">+ Thêm dòng</button>
+        className={`mt-2 ${buttonClass({ size: 'sm', variant: 'neutral', shape: 'rounded', lift: false })}`}>+ Thêm dòng</button>
       <p className="mt-1 text-xs text-slate-500">Dòng để trống nhãn hoặc giá trị sẽ tự bị bỏ qua khi lưu.</p>
     </div>
   )

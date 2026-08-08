@@ -10,6 +10,7 @@ import { ThemePicker } from '@/components/admin/ThemePicker'
 import { SpecsEditor } from '@/components/admin/SpecsEditor'
 import { parseLabelValueRows } from '@/lib/validation/label-value'
 import { DEFAULT_PRESET_KEY, isPresetKey } from '@/lib/theme/presets'
+import { buttonClass } from '@/lib/ui/button'
 
 export function SettingsForm({ settings }: { settings: SiteSetting }) {
   const [logoUrl, setLogoUrl] = useState<string | null>(settings.logoUrl)
@@ -165,7 +166,7 @@ export function SettingsForm({ settings }: { settings: SiteSetting }) {
       {state && !state.ok && state.formError && <p role="alert" className="text-sm text-red-600">{state.formError}</p>}
 
       <button type="submit" disabled={pending}
-        className="rounded-lg bg-primary-600 px-5 py-2 font-semibold text-primary-fg disabled:opacity-60">
+        className={buttonClass({ size: 'md', shape: 'rounded' })}>
         {pending ? 'Đang lưu…' : 'Lưu cài đặt'}
       </button>
     </form>

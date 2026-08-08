@@ -3,6 +3,7 @@ import { prisma } from '@/lib/db'
 import { AdminListShell } from '@/components/admin/AdminListShell'
 import { DeleteButton } from '@/components/admin/DeleteButton'
 import { deletePostAction } from '@/lib/actions/post'
+import { buttonClass } from '@/lib/ui/button'
 
 export const metadata = { title: 'Tin tức' }
 
@@ -27,14 +28,14 @@ export default async function PostListPage({
       toolbar={
         <form className="flex w-full flex-wrap gap-2">
           <input name="q" defaultValue={q ?? ''} placeholder="Tìm theo tiêu đề"
-            className="min-w-0 flex-1 rounded-lg border border-slate-300 px-3 py-1.5 text-sm sm:flex-none" />
+            className="h-9 min-w-0 flex-1 rounded-lg border border-slate-300 px-3 text-sm sm:flex-none" />
           <select name="trang_thai" defaultValue={trang_thai ?? ''}
-            className="rounded-lg border border-slate-300 px-3 py-1.5 text-sm">
+            className="h-9 rounded-lg border border-slate-300 px-3 text-sm">
             <option value="">Mọi trạng thái</option>
             <option value="DRAFT">Nháp</option>
             <option value="PUBLISHED">Đã xuất bản</option>
           </select>
-          <button type="submit" className="rounded-lg border border-slate-300 px-3 py-1.5 text-sm">Lọc</button>
+          <button type="submit" className={buttonClass({ size: 'sm', variant: 'neutral', shape: 'rounded', lift: false })}>Lọc</button>
         </form>
       }
     >

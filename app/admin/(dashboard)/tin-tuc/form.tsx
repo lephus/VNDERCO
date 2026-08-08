@@ -8,6 +8,7 @@ import { FieldError } from '@/components/admin/FieldError'
 import { SlugField } from '@/components/admin/SlugField'
 import { MediaPicker } from '@/components/admin/MediaPicker'
 import { RichTextEditor } from '@/components/admin/RichTextEditor'
+import { buttonClass } from '@/lib/ui/button'
 
 export function PostForm({ post, categories }: { post?: Post; categories: Category[] }) {
   const [title, setTitle] = useState(post?.title ?? '')
@@ -94,7 +95,7 @@ export function PostForm({ post, categories }: { post?: Post; categories: Catego
         {state && !state.ok && state.formError && <p role="alert" className="text-sm text-red-600">{state.formError}</p>}
 
         <button type="submit" disabled={pending}
-          className="w-full rounded-lg bg-primary-600 px-5 py-2 font-semibold text-primary-fg disabled:opacity-60">
+          className={buttonClass({ size: 'md', shape: 'rounded', className: 'w-full' })}>
           {pending ? 'Đang lưu…' : 'Lưu'}
         </button>
       </aside>

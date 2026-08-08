@@ -1,4 +1,5 @@
 'use client'
+import { buttonClass } from '@/lib/ui/button'
 
 import { useRouter } from 'next/navigation'
 import { useState } from 'react'
@@ -14,7 +15,7 @@ export function DeleteButton({
     <button
       type="button"
       disabled={pending}
-      className="text-sm text-red-600 hover:underline disabled:opacity-50"
+      className={buttonClass({ size: 'sm', variant: 'danger', shape: 'rounded', lift: false })}
       onClick={async () => {
         if (!window.confirm(confirmText)) return
         setPending(true)

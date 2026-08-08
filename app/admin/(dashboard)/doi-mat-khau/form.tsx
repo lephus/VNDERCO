@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { changePasswordAndSignOut } from '@/lib/actions/account'
 import type { ActionResult } from '@/lib/actions/helper'
+import { buttonClass } from '@/lib/ui/button'
 
 const FIELDS = [
   { name: 'currentPassword', label: 'Mật khẩu hiện tại' },
@@ -41,7 +42,7 @@ export function ChangePasswordForm() {
       {state?.ok && <p className="text-sm text-green-700">Đã đổi mật khẩu thành công.</p>}
 
       <button type="submit" disabled={pending}
-        className="rounded-lg bg-primary-600 px-4 py-2 font-semibold text-primary-fg disabled:opacity-60">
+        className={buttonClass({ size: 'md', shape: 'rounded' })}>
         Đổi mật khẩu
       </button>
     </form>

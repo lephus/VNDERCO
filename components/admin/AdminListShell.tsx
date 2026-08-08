@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { buttonClass } from '@/lib/ui/button'
 
 export function AdminListShell({
   title, createHref, createLabel = 'Thêm mới', toolbar, children,
@@ -11,7 +12,7 @@ export function AdminListShell({
       <div className="flex items-center justify-between">
         <h1 className="text-xl font-bold text-slate-900">{title}</h1>
         {createHref && (
-          <Link href={createHref} className="rounded-lg bg-primary-600 px-4 py-2 text-sm font-semibold text-primary-fg">
+          <Link href={createHref} className={buttonClass({ size: 'md', shape: 'rounded' })}>
             {createLabel}
           </Link>
         )}

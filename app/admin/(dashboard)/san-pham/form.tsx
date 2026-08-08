@@ -9,6 +9,7 @@ import { SlugField } from '@/components/admin/SlugField'
 import { RichTextEditor } from '@/components/admin/RichTextEditor'
 import { SpecsEditor } from '@/components/admin/SpecsEditor'
 import { GalleryEditor } from '@/components/admin/GalleryEditor'
+import { buttonClass } from '@/lib/ui/button'
 
 type ProductWithImages = Product & { images: ProductImage[] }
 
@@ -91,7 +92,7 @@ export function ProductForm({ product, categories }: { product?: ProductWithImag
         {state && !state.ok && state.formError && <p role="alert" className="text-sm text-red-600">{state.formError}</p>}
 
         <button type="submit" disabled={pending}
-          className="w-full rounded-lg bg-primary-600 px-5 py-2 font-semibold text-primary-fg disabled:opacity-60">
+          className={buttonClass({ size: 'md', shape: 'rounded', className: 'w-full' })}>
           {pending ? 'Đang lưu…' : 'Lưu'}
         </button>
       </aside>

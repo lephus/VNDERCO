@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import { MediaUploader } from './MediaUploader'
+import { buttonClass } from '@/lib/ui/button'
 
 type Media = { id: string; url: string; filename: string; alt: string | null }
 
@@ -27,7 +28,7 @@ export function MediaPicker({
             Chưa có
           </div>
         )}
-        <button type="button" onClick={() => setOpen(true)} className="rounded-lg border border-slate-300 px-3 py-1.5 text-sm">
+        <button type="button" onClick={() => setOpen(true)} className={buttonClass({ size: 'sm', variant: 'neutral', shape: 'rounded', lift: false })}>
           Chọn ảnh
         </button>
         {value && (

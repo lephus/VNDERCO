@@ -6,6 +6,7 @@ import { createBannerAction, updateBannerAction } from '@/lib/actions/banner'
 import { useActionForm } from '@/components/admin/useActionForm'
 import { FieldError } from '@/components/admin/FieldError'
 import { MediaPicker } from '@/components/admin/MediaPicker'
+import { buttonClass } from '@/lib/ui/button'
 
 export function BannerForm({ banner }: { banner?: Banner }) {
   const [image, setImage] = useState<string | null>(banner?.imageUrl ?? null)
@@ -70,7 +71,7 @@ export function BannerForm({ banner }: { banner?: Banner }) {
       {state && !state.ok && state.formError && <p role="alert" className="text-sm text-red-600">{state.formError}</p>}
 
       <button type="submit" disabled={pending}
-        className="rounded-lg bg-primary-600 px-5 py-2 font-semibold text-primary-fg disabled:opacity-60">
+        className={buttonClass({ size: 'md', shape: 'rounded' })}>
         {pending ? 'Đang lưu…' : 'Lưu'}
       </button>
     </form>

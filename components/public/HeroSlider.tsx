@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import type { Banner } from '@prisma/client'
+import { buttonClass } from '@/lib/ui/button'
 
 export function HeroSlider({ banners, fallbackTitle }: { banners: Banner[]; fallbackTitle: string }) {
   const [index, setIndex] = useState(0)
@@ -65,9 +66,7 @@ export function HeroSlider({ banners, fallbackTitle }: { banners: Banner[]; fall
           <h1 className="max-w-2xl text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl">{banner.title}</h1>
           {banner.subtitle && <p className="mt-4 max-w-xl text-lg text-white/80">{banner.subtitle}</p>}
           {banner.ctaHref && banner.ctaLabel && (
-            <Link href={banner.ctaHref}
-              className="mt-8 inline-block rounded-full bg-primary-600 px-7 py-3 font-semibold text-primary-fg shadow-lg
-                transition duration-200 hover:-translate-y-0.5 hover:shadow-xl hover:brightness-110 active:translate-y-0">
+            <Link href={banner.ctaHref} className={`mt-8 ${buttonClass({ size: 'lg' })}`}>
               {banner.ctaLabel}
             </Link>
           )}

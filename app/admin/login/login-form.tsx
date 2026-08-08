@@ -2,6 +2,7 @@
 
 import { useActionState } from 'react'
 import { loginAction } from '@/lib/actions/auth'
+import { buttonClass } from '@/lib/ui/button'
 
 export function LoginForm() {
   const [state, action, pending] = useActionState(loginAction, {})
@@ -20,7 +21,7 @@ export function LoginForm() {
       </div>
       {state.error && <p role="alert" className="text-sm text-red-600">{state.error}</p>}
       <button type="submit" disabled={pending}
-        className="w-full rounded-lg bg-primary-600 px-4 py-2 font-semibold text-primary-fg disabled:opacity-60">
+        className={buttonClass({ size: 'md', shape: 'rounded', className: 'w-full' })}>
         {pending ? 'Đang đăng nhập…' : 'Đăng nhập'}
       </button>
     </form>

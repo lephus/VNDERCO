@@ -4,6 +4,7 @@ import { useRouter } from 'next/navigation'
 import { useState } from 'react'
 import { uploadMediaAction } from '@/lib/actions/media'
 import { ALLOWED_MIME, MAX_SIZE_BYTES } from '@/lib/upload-constraints'
+import { buttonClass } from '@/lib/ui/button'
 
 export function MediaUploader({ onUploaded }: { onUploaded?: (url: string) => void }) {
   const router = useRouter()
@@ -12,7 +13,7 @@ export function MediaUploader({ onUploaded }: { onUploaded?: (url: string) => vo
 
   return (
     <div>
-      <label className="inline-block cursor-pointer rounded-lg bg-primary-600 px-4 py-2 text-sm font-semibold text-primary-fg">
+      <label className={buttonClass({ size: 'md', shape: 'rounded', className: 'cursor-pointer' })}>
         {pending ? 'Đang tải lên…' : 'Tải ảnh lên'}
         <input
           type="file"

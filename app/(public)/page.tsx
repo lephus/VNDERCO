@@ -9,6 +9,7 @@ import { PostCard } from '@/components/public/PostCard'
 import { ProductCard } from '@/components/public/ProductCard'
 import { SectionHeading } from '@/components/public/SectionHeading'
 import { parseLabelValueRows } from '@/lib/validation/label-value'
+import { buttonClass } from '@/lib/ui/button'
 
 export const revalidate = 3600
 
@@ -67,8 +68,7 @@ export default async function HomePage() {
             <h2 className="text-3xl font-extrabold tracking-tight text-slate-900">{settings.homeIntroTitle}</h2>
             <p className="mt-4 whitespace-pre-line text-slate-600">{settings.homeIntroBody}</p>
             {settings.homeIntroCtaHref && settings.homeIntroCtaLabel && (
-              <Link href={settings.homeIntroCtaHref}
-                className="mt-6 inline-block rounded-full bg-primary-600 px-6 py-3 font-semibold text-primary-fg transition duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:brightness-110 active:translate-y-0">
+              <Link href={settings.homeIntroCtaHref} className={`mt-6 ${buttonClass({ size: 'lg' })}`}>
                 {settings.homeIntroCtaLabel}
               </Link>
             )}
@@ -89,14 +89,13 @@ export default async function HomePage() {
           <h2 className="text-2xl font-extrabold sm:text-3xl">Cần tư vấn cho doanh nghiệp của bạn?</h2>
           <div className="mt-6 flex flex-wrap justify-center gap-3">
             {settings.contactPhone && (
-              <a href={`tel:${settings.contactPhone}`}
-                className="rounded-full bg-white px-6 py-3 font-semibold text-slate-900 transition duration-200 hover:-translate-y-0.5 hover:shadow-lg active:translate-y-0">
+              <a href={`tel:${settings.contactPhone}`} className={buttonClass({ size: 'lg', variant: 'onDark' })}>
                 Gọi {settings.contactPhone}
               </a>
             )}
             {settings.contactEmail && (
               <a href={`mailto:${settings.contactEmail}`}
-                className="rounded-full border border-white/60 px-6 py-3 font-semibold transition duration-200 hover:-translate-y-0.5 hover:bg-white/10 active:translate-y-0">
+                className={buttonClass({ size: 'lg', variant: 'onDarkOutline' })}>
                 Gửi email
               </a>
             )}

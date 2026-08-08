@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useEffect, useRef, useSyncExternalStore } from 'react'
 import { createPortal } from 'react-dom'
 import { useMenuDisclosure } from '@/components/useMenuDisclosure'
+import { buttonClass } from '@/lib/ui/button'
 
 type NavItem = { href: string; label: string }
 
@@ -109,7 +110,7 @@ export function MobileNav({ items, ctaHref, ctaLabel }: { items: NavItem[]; ctaH
           ))}
 
           <Link href={ctaHref}
-            className="mt-3 rounded-full bg-primary-600 px-4 py-3 text-center font-semibold text-primary-fg transition hover:brightness-110">
+            className={`mt-3 w-full ${buttonClass({ size: 'md', lift: false })}`}>
             {ctaLabel}
           </Link>
         </div>

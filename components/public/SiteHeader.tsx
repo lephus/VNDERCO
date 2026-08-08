@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import type { SiteSetting } from '@prisma/client'
 import { MobileNav } from '@/components/public/MobileNav'
+import { buttonClass } from '@/lib/ui/button'
 
 const NAV = [
   { href: '/san-pham', label: 'Sản phẩm' },
@@ -33,11 +34,7 @@ export function SiteHeader({ settings }: { settings: SiteSetting }) {
               {item.label}
             </Link>
           ))}
-          <Link href={CTA.href}
-            className="rounded-full bg-primary-600 px-4 py-2 font-semibold text-primary-fg
-              transition duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:brightness-110 active:translate-y-0">
-            {CTA.label}
-          </Link>
+          <Link href={CTA.href} className={buttonClass({ size: 'md' })}>{CTA.label}</Link>
         </nav>
 
         <MobileNav items={NAV} ctaHref={CTA.href} ctaLabel={CTA.label} />
