@@ -25,9 +25,9 @@ export default async function ProductListPage({
       createHref="/admin/san-pham/moi"
       createLabel="Thêm sản phẩm"
       toolbar={
-        <form className="flex gap-2">
+        <form className="flex w-full flex-wrap gap-2">
           <input name="q" defaultValue={q ?? ''} placeholder="Tìm theo tên"
-            className="rounded-lg border border-slate-300 px-3 py-1.5 text-sm" />
+            className="min-w-0 flex-1 rounded-lg border border-slate-300 px-3 py-1.5 text-sm sm:flex-none" />
           <select name="trang_thai" defaultValue={trang_thai ?? ''}
             className="rounded-lg border border-slate-300 px-3 py-1.5 text-sm">
             <option value="">Mọi trạng thái</option>

@@ -17,7 +17,11 @@ export function AdminListShell({
         )}
       </div>
       {toolbar && <div className="flex flex-wrap gap-3">{toolbar}</div>}
-      <div className="overflow-hidden rounded-xl bg-white shadow-sm">{children}</div>
+      {/* overflow-x-auto chứ không phải overflow-hidden: bảng danh sách rộng hơn
+          màn hình điện thoại, mà overflow-hidden thì bảng không cuộn được nên nó
+          đẩy toàn trang giãn ra (đo được 674px trong khung 390px). Cho nó tự cuộn
+          trong thẻ này thì phần cuộn ngang nằm gọn ở bảng, header và menu đứng yên. */}
+      <div className="overflow-x-auto rounded-xl bg-white shadow-sm">{children}</div>
     </div>
   )
 }
