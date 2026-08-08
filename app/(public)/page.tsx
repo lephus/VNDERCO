@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { getActiveBanners } from '@/lib/queries/banners'
+import { getFolderBanners } from '@/lib/queries/banner-folder'
 import { getFeaturedPosts } from '@/lib/queries/posts'
 import { getFeaturedProducts } from '@/lib/queries/products'
 import { getSiteSettings } from '@/lib/queries/settings'
@@ -22,9 +23,18 @@ export default async function HomePage() {
   // lưu, nên dữ liệu rác trong cột cũng chỉ thành mảng rỗng chứ không làm sập trang.
   const stats = parseLabelValueRows(JSON.stringify(settings.homeStats ?? []))
 
+  // Banner đến từ hai nguồn: bảng Banner (khách tự tạo trong admin, có tiêu đề và
+  // nút riêng) và thư mục `public/banners` (chỉ cần thả ảnh vào rồi deploy — xem
+  // public/banners/README.md). Banner trong admin đứng trước vì nó được soạn có
+  // chủ đích; ảnh trong thư mục chạy tiếp sau và mượn tiêu đề chung của site.
+  const slides = [
+    ...banners,
+    ...getFolderBanners({ title: settings.siteName, subtitle: settings.seoDescription }),
+  ]
+
   return (
     <>
-      <HeroSlider banners={banners} fallbackTitle={settings.homeIntroTitle} />
+      <HeroSlider banners={slides} fallbackTitle={settings.homeIntroTitle} />
 
       {stats.length > 0 && (
         <section aria-label="Con số nổi bật" className="vnd-reveal border-b border-slate-100 bg-white">

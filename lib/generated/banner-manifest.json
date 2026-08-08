@@ -1,0 +1,15 @@
+{
+  "note": "File này do scripts/build-banner-manifest.ts sinh ra — đừng sửa tay. Thêm ảnh vào public/banners/.",
+  "files": [
+    "01-thi-cong-tam-op-tuong-phong-khach.jpg",
+    "02-logo-thuong-hieu.jpg"
+  ],
+  "captions": {
+    "01-thi-cong-tam-op-tuong-phong-khach.jpg": {
+      "alt": "Phòng khách ốp tấm vân đá kết hợp lam gỗ và đèn hắt"
+    },
+    "02-logo-thuong-hieu.jpg": {
+      "alt": "Logo thương hiệu"
+    }
+  }
+}

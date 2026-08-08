@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "prisma generate && next build",
+    "build": "npm run banners:manifest && prisma generate && next build",
+    "banners:manifest": "tsx scripts/build-banner-manifest.ts",
     "postinstall": "prisma generate",
     "start": "next start",
     "lint": "eslint",
