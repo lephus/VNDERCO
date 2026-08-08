@@ -26,8 +26,11 @@ export function PostCard({ post }: { post: Post & { category?: Category | null }
           )}
           <h3 className="mt-1 line-clamp-2 font-bold leading-snug text-slate-900 transition-colors duration-200 group-hover:text-primary-700">{post.title}</h3>
           {post.excerpt && <p className="mt-2 line-clamp-2 text-sm text-slate-600">{post.excerpt}</p>}
+          {/* slate-500 chứ không phải slate-400: trên nền trắng, slate-400 chỉ
+              đạt tương phản 2,56:1 — dưới mức 4,5:1 của WCAG AA cho chữ nhỏ.
+              slate-500 đạt 4,76:1 mà nhìn vẫn nhạt hơn phần chữ chính. */}
           {publishedAt && (
-            <time dateTime={publishedAt.toISOString()} className="mt-3 block text-xs text-slate-400">
+            <time dateTime={publishedAt.toISOString()} className="mt-3 block text-xs text-slate-500">
               {publishedAt.toLocaleDateString('vi-VN')}
             </time>
           )}

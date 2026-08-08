@@ -72,13 +72,18 @@ export function HeroSlider({ banners, fallbackTitle }: { banners: Banner[]; fall
             </Link>
           )}
         </div>
+        {/* Vùng bấm của mỗi chấm là cả nút cao 24px, còn cái gạch nhìn thấy chỉ
+            cao 2px nằm bên trong. Trước đây nút chính là cái gạch 8px — nhỏ hơn
+            mức tối thiểu 24×24px của WCAG 2.5.8 và rất khó bấm trúng bằng ngón tay. */}
         {banners.length > 1 && (
-          <div className="mt-8 flex gap-2">
+          <div className="mt-6 flex gap-1">
             {banners.map((b, i) => (
               <button key={b.id} type="button" onClick={() => setIndex(i)}
                 aria-label={`Chuyển tới banner ${i + 1}`} aria-current={i === index}
-                className={`h-2 rounded-full transition-all duration-500 ease-out hover:bg-white ${
+                className="group flex h-6 min-w-6 items-center justify-center">
+                <span aria-hidden className={`h-2 rounded-full transition-all duration-500 ease-out group-hover:bg-white ${
                   i === index ? 'w-8 bg-white' : 'w-2 bg-white/50'}`} />
+              </button>
             ))}
           </div>
         )}

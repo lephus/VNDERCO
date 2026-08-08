@@ -34,7 +34,16 @@ export async function ContentListPage<T extends { id: string }>({
 
       {items.length === 0
         ? <p className="py-16 text-center text-slate-500">{emptyMessage}</p>
-        : <div className={gridClassName}>{items.map(renderItem)}</div>}
+        : (
+          <section aria-labelledby="danh-sach">
+            {/* Tiêu đề thẻ trong danh sách là h3, mà trước đó trang chỉ có h1 —
+                nhảy thẳng h1 → h3 làm trình đọc màn hình hiểu sai cấp bậc. Thêm
+                một h2 cho đúng bậc; nó không cần hiện ra vì h1 phía trên đã nói
+                đủ, nên để sr-only. */}
+            <h2 id="danh-sach" className="sr-only">Danh sách {title.toLowerCase()}</h2>
+            <div className={gridClassName}>{items.map(renderItem)}</div>
+          </section>
+        )}
 
       <Pagination page={page} pageCount={pageCount} basePath={basePath}
         extraQuery={{ 'danh-muc': categorySlug }} />

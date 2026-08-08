@@ -11,15 +11,15 @@ export function SiteFooter({ settings }: { settings: SiteSetting }) {
         </div>
         <div className="text-sm text-slate-600">
           <p className="mb-2 font-semibold text-slate-900">Liên hệ</p>
-          {settings.contactPhone && <p><a href={`tel:${settings.contactPhone}`} className="hover:underline">{settings.contactPhone}</a></p>}
-          {settings.contactEmail && <p><a href={`mailto:${settings.contactEmail}`} className="hover:underline">{settings.contactEmail}</a></p>}
+          {settings.contactPhone && <p><a href={`tel:${settings.contactPhone}`} className="inline-block py-1.5 hover:underline">{settings.contactPhone}</a></p>}
+          {settings.contactEmail && <p><a href={`mailto:${settings.contactEmail}`} className="inline-block py-1.5 hover:underline">{settings.contactEmail}</a></p>}
         </div>
         <div className="text-sm text-slate-600">
           <p className="mb-2 font-semibold text-slate-900">Liên kết</p>
-          <p><Link href="/san-pham" className="hover:underline">Sản phẩm</Link></p>
-          <p><Link href="/tin-tuc" className="hover:underline">Tin tức</Link></p>
-          {settings.facebookUrl && <p><a href={settings.facebookUrl} className="hover:underline">Facebook</a></p>}
-          {settings.zaloUrl && <p><a href={settings.zaloUrl} className="hover:underline">Zalo</a></p>}
+          <p><Link href="/san-pham" className="inline-block py-1.5 hover:underline">Sản phẩm</Link></p>
+          <p><Link href="/tin-tuc" className="inline-block py-1.5 hover:underline">Tin tức</Link></p>
+          {settings.facebookUrl && <p><a href={settings.facebookUrl} className="inline-block py-1.5 hover:underline">Facebook</a></p>}
+          {settings.zaloUrl && <p><a href={settings.zaloUrl} className="inline-block py-1.5 hover:underline">Zalo</a></p>}
         </div>
       </div>
       <p className="border-t border-slate-200 py-4 text-center text-xs text-slate-500">
