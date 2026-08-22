@@ -23,17 +23,20 @@ if (!KEY) {
 
 /** Từ khoá tìm ảnh cho từng danh mục — tiếng Anh vì kho ảnh gắn thẻ bằng tiếng Anh. */
 const QUERIES: Record<string, string> = {
-  'Tấm ốp vân đá': 'marble wall interior luxury',
-  'Tấm ốp Nano': 'modern white wall panel interior',
-  'Lam sóng': 'wood slat wall panel interior',
-  'Tấm ốp than tre': 'bamboo wood wall texture interior',
-  'Trần nhựa giật cấp': 'modern ceiling light interior',
-  'Tranh tráng gương': 'framed art living room wall',
-  'Trần than tre': 'wooden ceiling architecture',
-  'Lam hộp cầu thang': 'wooden staircase railing modern',
-  'Tấm ốp - Sàn gỗ ngoài trời': 'wooden deck terrace outdoor',
-  'Sàn gỗ sàn nhựa': 'wooden floor parquet room',
-  'Cửa nhựa - Vách ngăn - Thảm lót sàn': 'modern interior door hallway',
+  // Từ khoá chọn theo BỀ MẶT VẬT LIỆU chứ không theo căn phòng: tìm "marble wall
+  // interior luxury" thì Pexels trả về ảnh phòng tắm đẹp, còn "marble slab
+  // texture" mới ra đúng mặt đá — thứ khách cần nhìn để chọn hàng.
+  'Tấm ốp vân đá': 'marble slab texture',
+  'Tấm ốp Nano': 'white paneled wall',
+  'Lam sóng': 'wood slat wall',
+  'Tấm ốp than tre': 'dark wood panel wall',
+  'Trần nhựa giật cấp': 'modern ceiling design',
+  'Tranh tráng gương': 'framed wall art living room',
+  'Trần than tre': 'wood plank ceiling',
+  'Lam hộp cầu thang': 'wooden staircase railing',
+  'Tấm ốp - Sàn gỗ ngoài trời': 'terrace decking wood',
+  'Sàn gỗ sàn nhựa': 'parquet floor',
+  'Cửa nhựa - Vách ngăn - Thảm lót sàn': 'wooden door hallway',
 }
 
 const POST_QUERIES = [

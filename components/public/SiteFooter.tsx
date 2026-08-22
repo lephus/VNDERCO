@@ -54,6 +54,14 @@ export function SiteFooter({ settings }: { settings: SiteSetting }) {
       <div className="bg-[#5b5b5b] pt-[10px] pb-[15px] text-center text-[14.4px]/[23.04px] text-white/50">
         <div className="vnd-container">
           © {new Date().getFullYear()} {settings.siteName}
+          {/* Điều khoản API của Pexels đòi một liên kết dễ thấy trỏ về họ ở nơi
+              hiển thị ảnh lấy qua API. Bản thiết kế tham chiếu không có dòng này
+              — nó ở đây vì nghĩa vụ giấy phép, không phải vì thiết kế. Khi nào
+              thay hết bằng ảnh công trình thật của VNDERCO thì bỏ đi được. */}
+          {' · '}
+          <a href="https://www.pexels.com" rel="noopener" className="underline hover:text-white/80">
+            Ảnh: Pexels
+          </a>
         </div>
       </div>
     </footer>
