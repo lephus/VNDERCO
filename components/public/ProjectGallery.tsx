@@ -131,28 +131,40 @@ export function ProjectGallery({ projects }: { projects: Project[] }) {
           aria-modal="true"
           aria-label={lightbox.title}
           onClick={close}
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/85 p-4 motion-safe:animate-[vnd-fade_220ms_ease-out]"
+          className="fixed inset-0 z-50 overflow-y-auto bg-black/85 motion-safe:animate-[vnd-fade_220ms_ease-out]"
         >
-          <div className="relative max-h-full w-full max-w-4xl" onClick={(e) => e.stopPropagation()}>
-            <div className="relative aspect-[4/3] w-full">
-              <Image src={lightbox.imageUrl} alt={lightbox.title} fill sizes="90vw" className="object-contain" />
+          {/* Bọc thêm một lớp `min-h-full` rồi mới căn giữa, thay vì đặt
+              `items-center` thẳng trên khung cuộn: căn giữa trực tiếp trên một
+              phần tử cuộn được thì khi nội dung cao hơn khung, phần đầu bị cắt
+              mất và không cuộn ngược lên được. */}
+          <div className="flex min-h-full items-center justify-center p-4">
+            <div className="relative w-full max-w-4xl" onClick={(e) => e.stopPropagation()}>
+              {/* Chiều cao khoá theo màn hình chứ không theo tỉ lệ ảnh: để
+                  `aspect-[4/3]` thì trên màn thấp ảnh cao 672px cộng chú thích
+                  vượt quá tầm nhìn. `object-contain` lo phần còn lại — ảnh ngang
+                  hay dọc đều nằm gọn, chỉ khác chỗ viền đen thừa ra. */}
+              <div className="relative h-[68vh] w-full">
+                <Image src={lightbox.imageUrl} alt={lightbox.title} fill sizes="90vw" className="object-contain" />
+              </div>
+              <div className="mt-3 pb-2 text-center text-white">
+                <p className="text-[18px] font-bold">{lightbox.title}</p>
+                <p className="mt-1 text-[14.4px] text-white/75">
+                  {lightbox.kind} · {lightbox.place} · {lightbox.area} · {lightbox.year}
+                </p>
+              </div>
+              {/* Nút đóng bám mép trên khung nhìn, không bám mép ảnh: khung đã
+                  cuộn được nên nút gắn vào ảnh sẽ trôi khỏi tầm mắt khi kéo xuống. */}
+              <button
+                type="button"
+                onClick={close}
+                aria-label="Đóng"
+                className="fixed top-4 right-4 flex size-11 items-center justify-center rounded-full bg-white/15 text-white transition hover:bg-white/30"
+              >
+                <svg aria-hidden viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" className="size-5">
+                  <path d="M6 6l12 12M18 6L6 18" />
+                </svg>
+              </button>
             </div>
-            <div className="mt-3 text-center text-white">
-              <p className="text-[18px] font-bold">{lightbox.title}</p>
-              <p className="mt-1 text-[14.4px] text-white/75">
-                {lightbox.kind} · {lightbox.place} · {lightbox.area} · {lightbox.year}
-              </p>
-            </div>
-            <button
-              type="button"
-              onClick={close}
-              aria-label="Đóng"
-              className="absolute -top-2 right-0 flex size-10 items-center justify-center rounded-full bg-white/15 text-white transition hover:bg-white/30"
-            >
-              <svg aria-hidden viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" className="size-5">
-                <path d="M6 6l12 12M18 6L6 18" />
-              </svg>
-            </button>
           </div>
         </div>,
         document.body,
