@@ -1,0 +1,117 @@
+{
+  "projects": [
+    {
+      "q": "modern living room wood wall",
+      "title": "Căn hộ Vinhomes Central Park",
+      "area": "120 m²",
+      "kind": "Căn hộ",
+      "place": "Bình Thạnh, TP.HCM",
+      "year": 2025,
+      "imageUrl": "https://wtxifntzxrkpzaxzzjyq.supabase.co/storage/v1/object/public/media/vnderco/1787401009813-page-can-ho-vinhomes-central-park-7166934.jpg"
+    },
+    {
+      "q": "luxury hotel lobby interior",
+      "title": "Sảnh khách sạn Mường Thanh",
+      "area": "340 m²",
+      "kind": "Khách sạn",
+      "place": "Đà Nẵng",
+      "year": 2025,
+      "imageUrl": "https://wtxifntzxrkpzaxzzjyq.supabase.co/storage/v1/object/public/media/vnderco/1787401011870-page-sanh-khach-san-muong-thanh-14011664.jpg"
+    },
+    {
+      "q": "modern office interior wood",
+      "title": "Văn phòng Công ty Tân Hiệp",
+      "area": "260 m²",
+      "kind": "Văn phòng",
+      "place": "Quận 7, TP.HCM",
+      "year": 2025,
+      "imageUrl": "https://wtxifntzxrkpzaxzzjyq.supabase.co/storage/v1/object/public/media/vnderco/1787401013024-page-van-phong-cong-ty-tan-hiep-265101.jpg"
+    },
+    {
+      "q": "restaurant interior wooden",
+      "title": "Nhà hàng Bếp Nhà Tôi",
+      "area": "180 m²",
+      "kind": "Nhà hàng",
+      "place": "Thủ Đức, TP.HCM",
+      "year": 2024,
+      "imageUrl": "https://wtxifntzxrkpzaxzzjyq.supabase.co/storage/v1/object/public/media/vnderco/1787401014023-page-nha-hang-bep-nha-toi-2387675.jpg"
+    },
+    {
+      "q": "modern bedroom wood panel wall",
+      "title": "Nhà phố Lakeview City",
+      "area": "95 m²",
+      "kind": "Nhà phố",
+      "place": "Quận 2, TP.HCM",
+      "year": 2024,
+      "imageUrl": "https://wtxifntzxrkpzaxzzjyq.supabase.co/storage/v1/object/public/media/vnderco/1787401015316-page-nha-pho-lakeview-city-6920442.jpg"
+    },
+    {
+      "q": "wooden deck terrace house",
+      "title": "Sân vườn biệt thự Thảo Điền",
+      "area": "210 m²",
+      "kind": "Biệt thự",
+      "place": "Quận 2, TP.HCM",
+      "year": 2024,
+      "imageUrl": "https://wtxifntzxrkpzaxzzjyq.supabase.co/storage/v1/object/public/media/vnderco/1787401017034-page-san-vuon-biet-thu-thao-dien-7587879.jpg"
+    },
+    {
+      "q": "coffee shop interior wood",
+      "title": "Chuỗi cà phê An Nhiên",
+      "area": "140 m²",
+      "kind": "Cà phê",
+      "place": "Gò Vấp, TP.HCM",
+      "year": 2024,
+      "imageUrl": "https://wtxifntzxrkpzaxzzjyq.supabase.co/storage/v1/object/public/media/vnderco/1787401018423-page-chuoi-ca-phe-an-nhien-9683612.jpg"
+    },
+    {
+      "q": "showroom interior modern",
+      "title": "Showroom nội thất Hòa Phát",
+      "area": "420 m²",
+      "kind": "Showroom",
+      "place": "Biên Hòa, Đồng Nai",
+      "year": 2024,
+      "imageUrl": "https://wtxifntzxrkpzaxzzjyq.supabase.co/storage/v1/object/public/media/vnderco/1787401020045-page-showroom-noi-that-hoa-phat-33257666.jpg"
+    },
+    {
+      "q": "staircase modern interior wood",
+      "title": "Biệt thự Nine South Estates",
+      "area": "380 m²",
+      "kind": "Biệt thự",
+      "place": "Nhà Bè, TP.HCM",
+      "year": 2023,
+      "imageUrl": "https://wtxifntzxrkpzaxzzjyq.supabase.co/storage/v1/object/public/media/vnderco/1787401021344-page-biet-thu-nine-south-estates-15758636.jpg"
+    },
+    {
+      "q": "clinic interior modern white",
+      "title": "Phòng khám Đa khoa Sài Gòn",
+      "area": "230 m²",
+      "kind": "Y tế",
+      "place": "Tân Bình, TP.HCM",
+      "year": 2023,
+      "imageUrl": "https://wtxifntzxrkpzaxzzjyq.supabase.co/storage/v1/object/public/media/vnderco/1787401022435-page-phong-kham-da-khoa-sai-gon-7789616.jpg"
+    },
+    {
+      "q": "apartment hallway interior",
+      "title": "Hành lang căn hộ Masteri",
+      "area": "160 m²",
+      "kind": "Căn hộ",
+      "place": "Thủ Đức, TP.HCM",
+      "year": 2023,
+      "imageUrl": "https://wtxifntzxrkpzaxzzjyq.supabase.co/storage/v1/object/public/media/vnderco/1787401024427-page-hanh-lang-can-ho-masteri-7546322.jpg"
+    },
+    {
+      "q": "wooden ceiling restaurant",
+      "title": "Trần gỗ Nhà hàng Sen Việt",
+      "area": "150 m²",
+      "kind": "Nhà hàng",
+      "place": "Quận 1, TP.HCM",
+      "year": 2023,
+      "imageUrl": "https://wtxifntzxrkpzaxzzjyq.supabase.co/storage/v1/object/public/media/vnderco/1787401026310-page-tran-go-nha-hang-sen-viet-1146568.jpg"
+    }
+  ],
+  "singles": {
+    "about-hero": "https://wtxifntzxrkpzaxzzjyq.supabase.co/storage/v1/object/public/media/vnderco/1787401027424-page-about-hero-8961298.jpg",
+    "about-workshop": "https://wtxifntzxrkpzaxzzjyq.supabase.co/storage/v1/object/public/media/vnderco/1787401028911-page-about-workshop-32357250.jpg",
+    "contact-office": "https://wtxifntzxrkpzaxzzjyq.supabase.co/storage/v1/object/public/media/vnderco/1787401030151-page-contact-office-518244.jpg"
+  }
+}

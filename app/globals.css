@@ -113,6 +113,13 @@ html {
   to   { opacity: 1; transform: none; }
 }
 
+/* Hiện dần tại chỗ — dùng cho lớp phủ ảnh lớn, nơi không có chuyện cuộn tới
+   nên animation-timeline: view() không kích hoạt được. */
+@keyframes vnd-fade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
 @supports (animation-timeline: view()) {
   @media (prefers-reduced-motion: no-preference) {
     .vnd-reveal {
