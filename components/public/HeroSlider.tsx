@@ -6,6 +6,21 @@ import { useCallback, useEffect, useState } from 'react'
 import type { HeroSlide } from '@/lib/hero-slide'
 import { buttonClass } from '@/lib/ui/button'
 
+/**
+ * Băng ảnh đầu trang.
+ *
+ * Tỉ lệ khung 1050/426 (≈2,463:1) GIỮ NGUYÊN ở mọi bề rộng — đo trên bản tham
+ * chiếu ở cả ba cỡ màn: 1050×426, 738×299, 360×146, ra cùng một tỉ lệ. Vì vậy ở
+ * đây chỉ có một `aspect-[1050/426]` chứ không phải mỗi điểm ngắt một tỉ lệ.
+ *
+ * Hàng chấm ĐÈ LÊN mép dưới của ảnh (tâm chấm cách đáy 24,5px), không nằm dưới
+ * khung. Mũi tên là nút tròn 36px. Khung không tự bọc container: trang chủ dựng
+ * một khung 1050px chung cho mọi khối, bọc thêm ở đây là lồng hai lớp đệm.
+ *
+ * Bản tham chiếu chạy slide toàn ảnh, không có chữ. Ở đây vẫn giữ hộp chữ vì
+ * banner trong admin có tiêu đề/mô tả/nút riêng — nhưng chỉ dựng hộp khi banner
+ * thực sự có tiêu đề, nên banner chỉ-có-ảnh trông đúng như bản gốc.
+ */
 export function HeroSlider({ banners, fallbackTitle }: { banners: HeroSlide[]; fallbackTitle: string }) {
   const [index, setIndex] = useState(0)
   const [paused, setPaused] = useState(false)
@@ -23,14 +38,12 @@ export function HeroSlider({ banners, fallbackTitle }: { banners: HeroSlide[]; f
 
   if (count === 0) {
     return (
-      <section className="px-4 py-24 text-center"
-        style={{
-          backgroundImage: 'linear-gradient(125deg, var(--vnd-gradient-from), var(--vnd-gradient-via), var(--vnd-gradient-to))',
-          color: 'var(--vnd-primary-fg)',
-        }}>
-        <h1 className="mx-auto max-w-3xl text-4xl font-extrabold tracking-tight sm:text-5xl">
-          {fallbackTitle || 'Giải pháp cho doanh nghiệp Việt'}
-        </h1>
+      <section>
+        <div className="flex aspect-[1050/426] items-center justify-center bg-primary-600 px-4 text-center">
+          <h1 className="max-w-3xl text-[24px]/[1.3] font-bold text-primary-fg tile:text-[36px]">
+            {fallbackTitle || 'Giải pháp cho doanh nghiệp Việt'}
+          </h1>
+        </div>
       </section>
     )
   }
@@ -38,61 +51,59 @@ export function HeroSlider({ banners, fallbackTitle }: { banners: HeroSlide[]; f
   const banner = banners[index]
 
   return (
-    <section aria-roledescription="carousel" aria-label="Banner giới thiệu"
-      className="mx-auto w-full max-w-[1680px] px-3 pt-4 pb-2 sm:px-6"
-      onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)}
-      onFocusCapture={() => setPaused(true)} onBlurCapture={() => setPaused(false)}>
-      {/* Khung ảnh giữ tỉ lệ cố định theo từng cỡ màn hình nên trang không bị
-          giật layout lúc ảnh tải xong. Mobile để 4:3 (ảnh chụp phòng ốc dựng
-          đứng hơn, cắt ngang quá là mất hết trần và sàn), desktop kéo rộng ra
-          21:9 cho đúng dáng banner. */}
-      <div className="relative aspect-4/3 w-full overflow-hidden rounded-lg bg-slate-950 sm:aspect-16/9 lg:aspect-[21/9]">
+    <section
+      aria-roledescription="carousel"
+      aria-label="Banner giới thiệu"
+      onMouseEnter={() => setPaused(true)}
+      onMouseLeave={() => setPaused(false)}
+      onFocusCapture={() => setPaused(true)}
+      onBlurCapture={() => setPaused(false)}
+    >
+      <div className="relative aspect-[1050/426] w-full overflow-hidden bg-slate-950">
         {/* Mọi ảnh đều nằm sẵn trong DOM và chuyển bằng opacity, nên đổi slide là
             một nhịp mờ chồng chứ không phải ảnh cũ biến mất rồi ảnh mới bật ra.
             Chỉ ảnh đầu đặt priority — các ảnh sau tải thường, không tranh băng
             thông với nội dung đầu trang. */}
-        {banners.map((b, i) => (
+        {banners.map((b, i) =>
           b.imageUrl ? (
-            <Image key={b.id} src={b.imageUrl} alt={i === index ? (b.imageAlt ?? '') : ''} fill
-              sizes="(max-width: 640px) 100vw, (max-width: 1680px) 100vw, 1680px"
-              priority={i === 0} aria-hidden={i !== index}
+            <Image
+              key={b.id}
+              src={b.imageUrl}
+              alt={i === index ? (b.imageAlt ?? '') : ''}
+              fill
+              sizes="(max-width: 1080px) 100vw, 1050px"
+              priority={i === 0}
+              aria-hidden={i !== index}
               className={`absolute inset-0 object-cover transition-opacity duration-[1200ms] ease-[cubic-bezier(0.22,0.61,0.36,1)] ${
-                i === index ? 'opacity-100' : 'opacity-0'}`} />
-          ) : null
-        ))}
+                i === index ? 'opacity-100' : 'opacity-0'
+              }`}
+            />
+          ) : null,
+        )}
 
-        {/* Lớp phủ mỏng trên toàn ảnh: chữ nằm giữa nên không thể dồn tối về một
-            phía như bố cục cũ, nhưng vẫn cần hạ sáng nền đủ để chữ trắng đọc
-            được trên ảnh phòng ốc sáng trưng. */}
-        <div aria-hidden className="absolute inset-0 bg-slate-950/25" />
-
-        {/* Hộp chữ: nền tối bán trong suốt, bo nhẹ, rộng theo nội dung. Chính cái
-            hộp này (chứ không phải lớp phủ) là thứ bảo đảm tương phản chữ/nền
-            đạt chuẩn dù khách thay ảnh nào vào. */}
-        <div className="absolute inset-0 flex items-center justify-center px-4">
-          {/* Cỡ chữ trên mobile phải nhỏ hẳn: khung 4:3 ở màn 390px chỉ cao khoảng
-              270px, mà tiêu đề cỡ desktop ăn hết chỗ rồi đè lên hàng chấm. */}
-          <div key={banner.id}
-            className="max-w-3xl bg-slate-900/45 px-5 py-4 text-center text-white backdrop-blur-[2px] sm:px-12 sm:py-8 motion-safe:animate-[vnd-reveal_620ms_cubic-bezier(0.22,0.61,0.36,1)_both]">
-            <h1 className="text-xl font-semibold uppercase tracking-[0.1em] drop-shadow-sm sm:text-4xl lg:text-5xl">
-              {banner.title}
-            </h1>
-            {banner.subtitle && (
-              <p className="mx-auto mt-2 max-w-2xl text-sm italic leading-snug text-white/95 sm:mt-4 sm:text-xl lg:text-2xl">
-                {banner.subtitle}
-              </p>
-            )}
-            {banner.ctaHref && banner.ctaLabel && (
-              <Link href={banner.ctaHref} className={`mt-4 ${buttonClass({ size: 'md' })} sm:mt-6 sm:h-12 sm:px-7 sm:text-base`}>
-                {banner.ctaLabel}
-              </Link>
-            )}
+        {banner.title && (
+          <div className="absolute inset-0 flex items-center justify-center px-4">
+            <div
+              key={banner.id}
+              className="max-w-3xl bg-slate-900/45 px-5 py-4 text-center text-white backdrop-blur-[2px] tile:px-12 tile:py-8 motion-safe:animate-[vnd-reveal_620ms_cubic-bezier(0.22,0.61,0.36,1)_both]"
+            >
+              <h1 className="text-[18px]/[1.25] font-bold uppercase tracking-[0.05em] tile:text-[32px] nav:text-[40px]">
+                {banner.title}
+              </h1>
+              {banner.subtitle && (
+                <p className="mx-auto mt-2 max-w-2xl text-[13px]/[1.4] text-white/95 tile:mt-4 tile:text-[18px]">
+                  {banner.subtitle}
+                </p>
+              )}
+              {banner.ctaHref && banner.ctaLabel && (
+                <Link href={banner.ctaHref} className={`mt-4 ${buttonClass({ size: 'md' })}`}>
+                  {banner.ctaLabel}
+                </Link>
+              )}
+            </div>
           </div>
-        </div>
+        )}
 
-        {/* Mũi tên trái/phải: vòng tròn viền mảnh nổi trên ảnh. Ẩn trên màn hình
-            hẹp — ở đó chúng đè lên chữ, và người dùng mobile vẫn còn hàng chấm
-            để chuyển slide. */}
         {count > 1 && (
           <>
             <SliderArrow direction="prev" onClick={() => go(index - 1)} />
@@ -100,17 +111,30 @@ export function HeroSlider({ banners, fallbackTitle }: { banners: HeroSlide[]; f
           </>
         )}
 
-        {/* Vùng bấm của mỗi chấm là cả nút 24×24px, còn cái chấm nhìn thấy chỉ
-            rộng 10px nằm bên trong — WCAG 2.5.8 đòi tối thiểu 24×24px, mà một
-            cái chấm 10px thì không tài nào bấm trúng bằng ngón tay. */}
+        {/* Hàng chấm nằm ĐÈ LÊN mép dưới của ảnh, không nằm dưới khung. Đo trên
+            bản tham chiếu: tâm chấm cách đáy khung 24,5px, chấm trắng 12px, hai
+            chấm cách nhau 22px.
+
+            Vùng bấm là cả nút 22×24px chứ không chỉ cái chấm 12px: WCAG 2.5.8
+            đòi tối thiểu 24px một chiều, mà bấm trúng chấm 12px bằng ngón tay
+            thì gần như không thể. */}
         {count > 1 && (
-          <div className="absolute inset-x-0 bottom-3 flex justify-center gap-2 sm:bottom-5">
+          <div className="absolute inset-x-0 bottom-[12px] flex justify-center">
             {banners.map((b, i) => (
-              <button key={b.id} type="button" onClick={() => go(i)}
-                aria-label={`Chuyển tới banner ${i + 1}`} aria-current={i === index}
-                className="group flex size-6 items-center justify-center">
-                <span aria-hidden className={`size-2.5 rounded-full ring-1 ring-slate-900/20 transition-all duration-300 ease-out group-hover:bg-white ${
-                  i === index ? 'bg-white' : 'bg-white/45'}`} />
+              <button
+                key={b.id}
+                type="button"
+                onClick={() => go(i)}
+                aria-label={`Chuyển tới banner ${i + 1}`}
+                aria-current={i === index}
+                className="group flex h-6 w-[22px] items-center justify-center"
+              >
+                <span
+                  aria-hidden
+                  className={`size-3 rounded-full bg-white transition-opacity duration-300 ease-out group-hover:opacity-100 ${
+                    i === index ? 'opacity-100' : 'opacity-40'
+                  }`}
+                />
               </button>
             ))}
           </div>
@@ -123,12 +147,26 @@ export function HeroSlider({ banners, fallbackTitle }: { banners: HeroSlide[]; f
 function SliderArrow({ direction, onClick }: { direction: 'prev' | 'next'; onClick: () => void }) {
   const isPrev = direction === 'prev'
   return (
-    <button type="button" onClick={onClick}
+    // Nút tròn 36px, nền trắng mờ — đo được `border-radius: 100%` và 36×36 trên
+    // bản tham chiếu. Ẩn dưới 550px: ở đó nút đè lên ảnh và đã có hàng chấm.
+    <button
+      type="button"
+      onClick={onClick}
       aria-label={isPrev ? 'Banner trước' : 'Banner kế tiếp'}
-      className={`absolute top-1/2 hidden size-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/70 text-white transition duration-200 ease-out hover:bg-white/20 sm:flex ${
-        isPrev ? 'left-4 lg:left-8' : 'right-4 lg:right-8'}`}>
-      <svg aria-hidden viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"
-        strokeLinecap="round" strokeLinejoin="round" className="size-5">
+      className={`absolute top-1/2 hidden size-9 -translate-y-1/2 items-center justify-center rounded-full bg-white/25 text-white backdrop-blur-[2px] transition duration-200 ease-out hover:bg-white/40 tile:flex ${
+        isPrev ? 'left-4' : 'right-4'
+      }`}
+    >
+      <svg
+        aria-hidden
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="size-5"
+      >
         <path d={isPrev ? 'M15 5 8 12l7 7' : 'M9 5l7 7-7 7'} />
       </svg>
     </button>

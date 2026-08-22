@@ -1,0 +1,4829 @@
+{
+  "tile1": {
+    "tag": "div",
+    "cls": "col-inner",
+    "rect": {
+      "w": 225,
+      "h": 267
+    },
+    "text": null,
+    "img": null,
+    "href": null,
+    "styles": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "25.6px",
+      "color": "rgb(0, 0, 0)",
+      "textAlign": "start",
+      "width": "225px",
+      "height": "266.594px",
+      "display": "block",
+      "border": "0px none rgb(0, 0, 0)",
+      "overflow": "visible",
+      "position": "relative",
+      "objectFit": "fill",
+      "transition": "all",
+      "opacity": "1"
+    },
+    "children": [
+      {
+        "tag": "div",
+        "cls": "img has-hover x md-x lg-x y md-y lg-y",
+        "rect": {
+          "w": 225,
+          "h": 225
+        },
+        "text": null,
+        "img": null,
+        "href": null,
+        "styles": {
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "25.6px",
+          "color": "rgb(0, 0, 0)",
+          "textAlign": "start",
+          "margin": "0px 0px 16px",
+          "width": "225px",
+          "height": "225px",
+          "display": "block",
+          "border": "0px none rgb(0, 0, 0)",
+          "overflow": "visible",
+          "position": "relative",
+          "objectFit": "fill",
+          "transition": "all",
+          "opacity": "1"
+        },
+        "children": [
+          {
+            "tag": "a",
+            "cls": "",
+            "rect": {
+              "w": 225,
+              "h": 225
+            },
+            "text": null,
+            "img": null,
+            "href": "https://minhdathanh.com/thi-cong-tam-op-van-da-tai-da-nang-bao-gia-moi-nhat/",
+            "styles": {
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "25.6px",
+              "color": "rgb(34, 143, 245)",
+              "textAlign": "start",
+              "display": "inline",
+              "border": "0px none rgb(34, 143, 245)",
+              "overflow": "visible",
+              "position": "static",
+              "objectFit": "fill",
+              "transition": "all",
+              "opacity": "1"
+            },
+            "children": [
+              {
+                "tag": "div",
+                "cls": "img-inner dark",
+                "rect": {
+                  "w": 225,
+                  "h": 225
+                },
+                "text": null,
+                "img": null,
+                "href": null,
+                "styles": {
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "lineHeight": "25.6px",
+                  "color": "rgb(241, 241, 241)",
+                  "textAlign": "start",
+                  "width": "225px",
+                  "height": "225px",
+                  "display": "block",
+                  "border": "0px none rgb(241, 241, 241)",
+                  "overflow": "hidden",
+                  "position": "relative",
+                  "objectFit": "fill",
+                  "transition": "all",
+                  "opacity": "1"
+                },
+                "children": [
+                  {
+                    "tag": "img",
+                    "cls": "attachment-large size-large lazy-load-active",
+                    "rect": {
+                      "w": 225,
+                      "h": 225
+                    },
+                    "text": "",
+                    "img": {
+                      "src": "https://minhdathanh.com/wp-content/uploads/2024/03/z5226172652933_c3a38db8bcd7f60138aad755424982f2-1024x1024.jpg",
+                      "nw": 1019,
+                      "nh": 1019
+                    },
+                    "href": null,
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "25.6px",
+                      "color": "rgb(241, 241, 241)",
+                      "textAlign": "start",
+                      "width": "225px",
+                      "height": "225px",
+                      "maxWidth": "100%",
+                      "display": "inline-block",
+                      "border": "0px none rgb(241, 241, 241)",
+                      "overflow": "clip",
+                      "position": "static",
+                      "objectFit": "fill",
+                      "transition": "opacity 1s",
+                      "opacity": "1",
+                      "aspectRatio": "auto 1020 / 1020"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "style",
+            "cls": "",
+            "rect": {
+              "w": 0,
+              "h": 0
+            },
+            "text": "#image_1559618297 {\n  width: 100%;\n}",
+            "img": null,
+            "href": null,
+            "styles": {
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "25.6px",
+              "color": "rgb(0, 0, 0)",
+              "textAlign": "start",
+              "border": "0px none rgb(0, 0, 0)",
+              "overflow": "visible",
+              "position": "static",
+              "objectFit": "fill",
+              "transition": "all",
+              "opacity": "1"
+            },
+            "children": []
+          }
+        ]
+      },
+      {
+        "tag": "p",
+        "cls": "",
+        "rect": {
+          "w": 225,
+          "h": 26
+        },
+        "text": null,
+        "img": null,
+        "href": null,
+        "styles": {
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "25.6px",
+          "color": "rgb(0, 0, 0)",
+          "textAlign": "center",
+          "margin": "0px 0px 20.8px",
+          "width": "225px",
+          "height": "25.5938px",
+          "display": "block",
+          "border": "0px none rgb(0, 0, 0)",
+          "overflow": "visible",
+          "position": "static",
+          "objectFit": "fill",
+          "transition": "all",
+          "opacity": "1"
+        },
+        "children": [
+          {
+            "tag": "a",
+            "cls": "",
+            "rect": {
+              "w": 106,
+              "h": 19
+            },
+            "text": null,
+            "img": null,
+            "href": "https://minhdathanh.com/thi-cong-tam-op-van-da-tai-da-nang-bao-gia-moi-nhat/",
+            "styles": {
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "25.6px",
+              "color": "rgb(34, 143, 245)",
+              "textAlign": "center",
+              "display": "inline",
+              "border": "0px none rgb(34, 143, 245)",
+              "overflow": "visible",
+              "position": "static",
+              "objectFit": "fill",
+              "transition": "all",
+              "opacity": "1"
+            },
+            "children": [
+              {
+                "tag": "span",
+                "cls": "",
+                "rect": {
+                  "w": 106,
+                  "h": 19
+                },
+                "text": "Tấm ốp vân đá",
+                "img": null,
+                "href": null,
+                "styles": {
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "lineHeight": "25.6px",
+                  "color": "rgb(6, 147, 227)",
+                  "textAlign": "center",
+                  "display": "inline",
+                  "border": "0px none rgb(6, 147, 227)",
+                  "overflow": "visible",
+                  "position": "static",
+                  "objectFit": "fill",
+                  "transition": "all",
+                  "opacity": "1"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "sec2": {
+    "tag": "div",
+    "cls": "row",
+    "rect": {
+      "w": 1020,
+      "h": 637
+    },
+    "text": null,
+    "img": null,
+    "href": null,
+    "styles": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "25.6px",
+      "color": "rgb(0, 0, 0)",
+      "textAlign": "start",
+      "margin": "0px -15px",
+      "width": "1020px",
+      "height": "636.781px",
+      "maxWidth": "1080px",
+      "display": "flex",
+      "border": "0px none rgb(0, 0, 0)",
+      "overflow": "visible",
+      "position": "static",
+      "objectFit": "fill",
+      "transition": "all",
+      "opacity": "1"
+    },
+    "children": [
+      {
+        "tag": "div",
+        "cls": "col medium-3 small-6 large-3",
+        "rect": {
+          "w": 255,
+          "h": 318
+        },
+        "text": null,
+        "img": null,
+        "href": null,
+        "styles": {
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "25.6px",
+          "color": "rgb(0, 0, 0)",
+          "textAlign": "start",
+          "padding": "0px 15px 30px",
+          "width": "255px",
+          "height": "318.391px",
+          "maxWidth": "25%",
+          "display": "block",
+          "border": "0px none rgb(0, 0, 0)",
+          "overflow": "visible",
+          "position": "relative",
+          "objectFit": "fill",
+          "transition": "all",
+          "opacity": "1"
+        },
+        "children": [
+          {
+            "tag": "div",
+            "cls": "col-inner",
+            "rect": {
+              "w": 225,
+              "h": 267
+            },
+            "text": null,
+            "img": null,
+            "href": null,
+            "styles": {
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "25.6px",
+              "color": "rgb(0, 0, 0)",
+              "textAlign": "start",
+              "width": "225px",
+              "height": "266.594px",
+              "display": "block",
+              "border": "0px none rgb(0, 0, 0)",
+              "overflow": "visible",
+              "position": "relative",
+              "objectFit": "fill",
+              "transition": "all",
+              "opacity": "1"
+            },
+            "children": [
+              {
+                "tag": "div",
+                "cls": "img has-hover x md-x lg-x y md-y lg-y",
+                "rect": {
+                  "w": 225,
+                  "h": 225
+                },
+                "text": null,
+                "img": null,
+                "href": null,
+                "styles": {
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "lineHeight": "25.6px",
+                  "color": "rgb(0, 0, 0)",
+                  "textAlign": "start",
+                  "margin": "0px 0px 16px",
+                  "width": "225px",
+                  "height": "225px",
+                  "display": "block",
+                  "border": "0px none rgb(0, 0, 0)",
+                  "overflow": "visible",
+                  "position": "relative",
+                  "objectFit": "fill",
+                  "transition": "all",
+                  "opacity": "1"
+                },
+                "children": [
+                  {
+                    "tag": "a",
+                    "cls": "",
+                    "rect": {
+                      "w": 225,
+                      "h": 225
+                    },
+                    "text": null,
+                    "img": null,
+                    "href": "https://minhdathanh.com/go-nhua-composite-awood-tai-da-nang/",
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "25.6px",
+                      "color": "rgb(34, 143, 245)",
+                      "textAlign": "start",
+                      "display": "inline",
+                      "border": "0px none rgb(34, 143, 245)",
+                      "overflow": "visible",
+                      "position": "static",
+                      "objectFit": "fill",
+                      "transition": "all",
+                      "opacity": "1"
+                    },
+                    "children": [
+                      {
+                        "tag": "div",
+                        "cls": "img-inner dark",
+                        "rect": {
+                          "w": 225,
+                          "h": 225
+                        },
+                        "text": null,
+                        "img": null,
+                        "href": null,
+                        "styles": {
+                          "fontSize": "16px",
+                          "fontWeight": "400",
+                          "lineHeight": "25.6px",
+                          "color": "rgb(241, 241, 241)",
+                          "textAlign": "start",
+                          "width": "225px",
+                          "height": "225px",
+                          "display": "block",
+                          "border": "0px none rgb(241, 241, 241)",
+                          "overflow": "hidden",
+                          "position": "relative",
+                          "objectFit": "fill",
+                          "transition": "all",
+                          "opacity": "1"
+                        },
+                        "children": [
+                          {
+                            "tag": "img",
+                            "cls": "attachment-large size-large lazy-load-active",
+                            "rect": {
+                              "w": 225,
+                              "h": 225
+                            },
+                            "text": "",
+                            "img": {
+                              "src": "https://minhdathanh.com/wp-content/uploads/2024/03/Awood_WG148x21_wood.png",
+                              "nw": 800,
+                              "nh": 800
+                            },
+                            "href": null,
+                            "styles": {
+                              "fontSize": "16px",
+                              "fontWeight": "400",
+                              "lineHeight": "25.6px",
+                              "color": "rgb(241, 241, 241)",
+                              "textAlign": "start",
+                              "width": "225px",
+                              "height": "225px",
+                              "maxWidth": "100%",
+                              "display": "inline-block",
+                              "border": "0px none rgb(241, 241, 241)",
+                              "overflow": "clip",
+                              "position": "static",
+                              "objectFit": "fill",
+                              "transition": "opacity 1s",
+                              "opacity": "1",
+                              "aspectRatio": "auto 800 / 800"
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "style",
+                    "cls": "",
+                    "rect": {
+                      "w": 0,
+                      "h": 0
+                    },
+                    "text": "#image_710525972 {\n  width: 100%;\n}",
+                    "img": null,
+                    "href": null,
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "25.6px",
+                      "color": "rgb(0, 0, 0)",
+                      "textAlign": "start",
+                      "border": "0px none rgb(0, 0, 0)",
+                      "overflow": "visible",
+                      "position": "static",
+                      "objectFit": "fill",
+                      "transition": "all",
+                      "opacity": "1"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "tag": "p",
+                "cls": "",
+                "rect": {
+                  "w": 225,
+                  "h": 26
+                },
+                "text": null,
+                "img": null,
+                "href": null,
+                "styles": {
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "lineHeight": "25.6px",
+                  "color": "rgb(0, 0, 0)",
+                  "textAlign": "center",
+                  "margin": "0px 0px 20.8px",
+                  "width": "225px",
+                  "height": "25.5938px",
+                  "display": "block",
+                  "border": "0px none rgb(0, 0, 0)",
+                  "overflow": "visible",
+                  "position": "static",
+                  "objectFit": "fill",
+                  "transition": "all",
+                  "opacity": "1"
+                },
+                "children": [
+                  {
+                    "tag": "a",
+                    "cls": "",
+                    "rect": {
+                      "w": 185,
+                      "h": 19
+                    },
+                    "text": "Gỗ nhựa ngoài trời Awood",
+                    "img": null,
+                    "href": "https://minhdathanh.com/go-nhua-composite-awood-tai-da-nang/",
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "25.6px",
+                      "color": "rgb(34, 143, 245)",
+                      "textAlign": "center",
+                      "display": "inline",
+                      "border": "0px none rgb(34, 143, 245)",
+                      "overflow": "visible",
+                      "position": "static",
+                      "objectFit": "fill",
+                      "transition": "all",
+                      "opacity": "1"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "div",
+        "cls": "col medium-3 small-6 large-3",
+        "rect": {
+          "w": 255,
+          "h": 318
+        },
+        "text": null,
+        "img": null,
+        "href": null,
+        "styles": {
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "25.6px",
+          "color": "rgb(0, 0, 0)",
+          "textAlign": "start",
+          "padding": "0px 15px 30px",
+          "width": "255px",
+          "height": "318.391px",
+          "maxWidth": "25%",
+          "display": "block",
+          "border": "0px none rgb(0, 0, 0)",
+          "overflow": "visible",
+          "position": "relative",
+          "objectFit": "fill",
+          "transition": "all",
+          "opacity": "1"
+        },
+        "children": [
+          {
+            "tag": "div",
+            "cls": "col-inner",
+            "rect": {
+              "w": 225,
+              "h": 267
+            },
+            "text": null,
+            "img": null,
+            "href": null,
+            "styles": {
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "25.6px",
+              "color": "rgb(0, 0, 0)",
+              "textAlign": "start",
+              "width": "225px",
+              "height": "266.594px",
+              "display": "block",
+              "border": "0px none rgb(0, 0, 0)",
+              "overflow": "visible",
+              "position": "relative",
+              "objectFit": "fill",
+              "transition": "all",
+              "opacity": "1"
+            },
+            "children": [
+              {
+                "tag": "div",
+                "cls": "img has-hover x md-x lg-x y md-y lg-y",
+                "rect": {
+                  "w": 225,
+                  "h": 225
+                },
+                "text": null,
+                "img": null,
+                "href": null,
+                "styles": {
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "lineHeight": "25.6px",
+                  "color": "rgb(0, 0, 0)",
+                  "textAlign": "start",
+                  "margin": "0px 0px 16px",
+                  "width": "225px",
+                  "height": "225px",
+                  "display": "block",
+                  "border": "0px none rgb(0, 0, 0)",
+                  "overflow": "visible",
+                  "position": "relative",
+                  "objectFit": "fill",
+                  "transition": "all",
+                  "opacity": "1"
+                },
+                "children": [
+                  {
+                    "tag": "a",
+                    "cls": "",
+                    "rect": {
+                      "w": 225,
+                      "h": 225
+                    },
+                    "text": null,
+                    "img": null,
+                    "href": "https://minhdathanh.com/san-go-ngoai-troi-san-ho-boi-awood-tai-resort-hyatt-da-nang/",
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "25.6px",
+                      "color": "rgb(34, 143, 245)",
+                      "textAlign": "start",
+                      "display": "inline",
+                      "border": "0px none rgb(34, 143, 245)",
+                      "overflow": "visible",
+                      "position": "static",
+                      "objectFit": "fill",
+                      "transition": "all",
+                      "opacity": "1"
+                    },
+                    "children": [
+                      {
+                        "tag": "div",
+                        "cls": "img-inner dark",
+                        "rect": {
+                          "w": 225,
+                          "h": 225
+                        },
+                        "text": null,
+                        "img": null,
+                        "href": null,
+                        "styles": {
+                          "fontSize": "16px",
+                          "fontWeight": "400",
+                          "lineHeight": "25.6px",
+                          "color": "rgb(241, 241, 241)",
+                          "textAlign": "start",
+                          "width": "225px",
+                          "height": "225px",
+                          "display": "block",
+                          "border": "0px none rgb(241, 241, 241)",
+                          "overflow": "hidden",
+                          "position": "relative",
+                          "objectFit": "fill",
+                          "transition": "all",
+                          "opacity": "1"
+                        },
+                        "children": [
+                          {
+                            "tag": "img",
+                            "cls": "attachment-large size-large lazy-load-active",
+                            "rect": {
+                              "w": 225,
+                              "h": 225
+                            },
+                            "text": "",
+                            "img": {
+                              "src": "https://minhdathanh.com/wp-content/uploads/2024/03/z5226327746325_76bea21df7c92a902f09dd920fc74f73-1024x1024.jpg",
+                              "nw": 1019,
+                              "nh": 1019
+                            },
+                            "href": null,
+                            "styles": {
+                              "fontSize": "16px",
+                              "fontWeight": "400",
+                              "lineHeight": "25.6px",
+                              "color": "rgb(241, 241, 241)",
+                              "textAlign": "start",
+                              "width": "225px",
+                              "height": "225px",
+                              "maxWidth": "100%",
+                              "display": "inline-block",
+                              "border": "0px none rgb(241, 241, 241)",
+                              "overflow": "clip",
+                              "position": "static",
+                              "objectFit": "fill",
+                              "transition": "opacity 1s",
+                              "opacity": "1",
+                              "aspectRatio": "auto 1020 / 1020"
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "style",
+                    "cls": "",
+                    "rect": {
+                      "w": 0,
+                      "h": 0
+                    },
+                    "text": "#image_358558475 {\n  width: 100%;\n}",
+                    "img": null,
+                    "href": null,
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "25.6px",
+                      "color": "rgb(0, 0, 0)",
+                      "textAlign": "start",
+                      "border": "0px none rgb(0, 0, 0)",
+                      "overflow": "visible",
+                      "position": "static",
+                      "objectFit": "fill",
+                      "transition": "all",
+                      "opacity": "1"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "tag": "p",
+                "cls": "",
+                "rect": {
+                  "w": 225,
+                  "h": 26
+                },
+                "text": null,
+                "img": null,
+                "href": null,
+                "styles": {
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "lineHeight": "25.6px",
+                  "color": "rgb(0, 0, 0)",
+                  "textAlign": "center",
+                  "margin": "0px 0px 20.8px",
+                  "width": "225px",
+                  "height": "25.5938px",
+                  "display": "block",
+                  "border": "0px none rgb(0, 0, 0)",
+                  "overflow": "visible",
+                  "position": "static",
+                  "objectFit": "fill",
+                  "transition": "all",
+                  "opacity": "1"
+                },
+                "children": [
+                  {
+                    "tag": "a",
+                    "cls": "",
+                    "rect": {
+                      "w": 174,
+                      "h": 19
+                    },
+                    "text": "Sàn gỗ ngoài trời Awood",
+                    "img": null,
+                    "href": "https://minhdathanh.com/san-go-ngoai-troi-san-ho-boi-awood-tai-resort-hyatt-da-nang/",
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "25.6px",
+                      "color": "rgb(34, 143, 245)",
+                      "textAlign": "center",
+                      "display": "inline",
+                      "border": "0px none rgb(34, 143, 245)",
+                      "overflow": "visible",
+                      "position": "static",
+                      "objectFit": "fill",
+                      "transition": "all",
+                      "opacity": "1"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "div",
+        "cls": "col medium-3 small-6 large-3",
+        "rect": {
+          "w": 255,
+          "h": 318
+        },
+        "text": null,
+        "img": null,
+        "href": null,
+        "styles": {
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "25.6px",
+          "color": "rgb(0, 0, 0)",
+          "textAlign": "start",
+          "padding": "0px 15px 30px",
+          "width": "255px",
+          "height": "318.391px",
+          "maxWidth": "25%",
+          "display": "block",
+          "border": "0px none rgb(0, 0, 0)",
+          "overflow": "visible",
+          "position": "relative",
+          "objectFit": "fill",
+          "transition": "all",
+          "opacity": "1"
+        },
+        "children": [
+          {
+            "tag": "div",
+            "cls": "col-inner",
+            "rect": {
+              "w": 225,
+              "h": 267
+            },
+            "text": null,
+            "img": null,
+            "href": null,
+            "styles": {
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "25.6px",
+              "color": "rgb(0, 0, 0)",
+              "textAlign": "start",
+              "width": "225px",
+              "height": "266.594px",
+              "display": "block",
+              "border": "0px none rgb(0, 0, 0)",
+              "overflow": "visible",
+              "position": "relative",
+              "objectFit": "fill",
+              "transition": "all",
+              "opacity": "1"
+            },
+            "children": [
+              {
+                "tag": "div",
+                "cls": "img has-hover x md-x lg-x y md-y lg-y",
+                "rect": {
+                  "w": 225,
+                  "h": 225
+                },
+                "text": null,
+                "img": null,
+                "href": null,
+                "styles": {
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "lineHeight": "25.6px",
+                  "color": "rgb(0, 0, 0)",
+                  "textAlign": "start",
+                  "margin": "0px 0px 16px",
+                  "width": "225px",
+                  "height": "225px",
+                  "display": "block",
+                  "border": "0px none rgb(0, 0, 0)",
+                  "overflow": "visible",
+                  "position": "relative",
+                  "objectFit": "fill",
+                  "transition": "all",
+                  "opacity": "1"
+                },
+                "children": [
+                  {
+                    "tag": "a",
+                    "cls": "",
+                    "rect": {
+                      "w": 225,
+                      "h": 225
+                    },
+                    "text": null,
+                    "img": null,
+                    "href": "https://minhdathanh.com/lam-go-nhua-ngoai-troi-awood-tai-da-nang-mien-trung/",
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "25.6px",
+                      "color": "rgb(34, 143, 245)",
+                      "textAlign": "start",
+                      "display": "inline",
+                      "border": "0px none rgb(34, 143, 245)",
+                      "overflow": "visible",
+                      "position": "static",
+                      "objectFit": "fill",
+                      "transition": "all",
+                      "opacity": "1"
+                    },
+                    "children": [
+                      {
+                        "tag": "div",
+                        "cls": "img-inner dark",
+                        "rect": {
+                          "w": 225,
+                          "h": 225
+                        },
+                        "text": null,
+                        "img": null,
+                        "href": null,
+                        "styles": {
+                          "fontSize": "16px",
+                          "fontWeight": "400",
+                          "lineHeight": "25.6px",
+                          "color": "rgb(241, 241, 241)",
+                          "textAlign": "start",
+                          "width": "225px",
+                          "height": "225px",
+                          "display": "block",
+                          "border": "0px none rgb(241, 241, 241)",
+                          "overflow": "hidden",
+                          "position": "relative",
+                          "objectFit": "fill",
+                          "transition": "all",
+                          "opacity": "1"
+                        },
+                        "children": [
+                          {
+                            "tag": "img",
+                            "cls": "attachment-large size-large lazy-load-active",
+                            "rect": {
+                              "w": 225,
+                              "h": 225
+                            },
+                            "text": "",
+                            "img": {
+                              "src": "https://minhdathanh.com/wp-content/uploads/2024/03/2-1024x1024.jpg",
+                              "nw": 1019,
+                              "nh": 1019
+                            },
+                            "href": null,
+                            "styles": {
+                              "fontSize": "16px",
+                              "fontWeight": "400",
+                              "lineHeight": "25.6px",
+                              "color": "rgb(241, 241, 241)",
+                              "textAlign": "start",
+                              "width": "225px",
+                              "height": "225px",
+                              "maxWidth": "100%",
+                              "display": "inline-block",
+                              "border": "0px none rgb(241, 241, 241)",
+                              "overflow": "clip",
+                              "position": "static",
+                              "objectFit": "fill",
+                              "transition": "opacity 1s",
+                              "opacity": "1",
+                              "aspectRatio": "auto 1020 / 1020"
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "style",
+                    "cls": "",
+                    "rect": {
+                      "w": 0,
+                      "h": 0
+                    },
+                    "text": "#image_1520064382 {\n  width: 100%;\n}",
+                    "img": null,
+                    "href": null,
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "25.6px",
+                      "color": "rgb(0, 0, 0)",
+                      "textAlign": "start",
+                      "border": "0px none rgb(0, 0, 0)",
+                      "overflow": "visible",
+                      "position": "static",
+                      "objectFit": "fill",
+                      "transition": "all",
+                      "opacity": "1"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "tag": "p",
+                "cls": "",
+                "rect": {
+                  "w": 225,
+                  "h": 26
+                },
+                "text": null,
+                "img": null,
+                "href": null,
+                "styles": {
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "lineHeight": "25.6px",
+                  "color": "rgb(0, 0, 0)",
+                  "textAlign": "center",
+                  "margin": "0px 0px 20.8px",
+                  "width": "225px",
+                  "height": "25.5938px",
+                  "display": "block",
+                  "border": "0px none rgb(0, 0, 0)",
+                  "overflow": "visible",
+                  "position": "static",
+                  "objectFit": "fill",
+                  "transition": "all",
+                  "opacity": "1"
+                },
+                "children": [
+                  {
+                    "tag": "a",
+                    "cls": "",
+                    "rect": {
+                      "w": 187,
+                      "h": 19
+                    },
+                    "text": "Lam hộp ngoài trời Awood",
+                    "img": null,
+                    "href": "https://minhdathanh.com/lam-go-nhua-ngoai-troi-awood-tai-da-nang-mien-trung/",
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "25.6px",
+                      "color": "rgb(34, 143, 245)",
+                      "textAlign": "center",
+                      "display": "inline",
+                      "border": "0px none rgb(34, 143, 245)",
+                      "overflow": "visible",
+                      "position": "static",
+                      "objectFit": "fill",
+                      "transition": "all",
+                      "opacity": "1"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "div",
+        "cls": "col medium-3 small-6 large-3",
+        "rect": {
+          "w": 255,
+          "h": 318
+        },
+        "text": null,
+        "img": null,
+        "href": null,
+        "styles": {
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "25.6px",
+          "color": "rgb(0, 0, 0)",
+          "textAlign": "start",
+          "padding": "0px 15px 30px",
+          "width": "255px",
+          "height": "318.391px",
+          "maxWidth": "25%",
+          "display": "block",
+          "border": "0px none rgb(0, 0, 0)",
+          "overflow": "visible",
+          "position": "relative",
+          "objectFit": "fill",
+          "transition": "all",
+          "opacity": "1"
+        },
+        "children": [
+          {
+            "tag": "div",
+            "cls": "col-inner",
+            "rect": {
+              "w": 225,
+              "h": 268
+            },
+            "text": null,
+            "img": null,
+            "href": null,
+            "styles": {
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "25.6px",
+              "color": "rgb(0, 0, 0)",
+              "textAlign": "start",
+              "width": "225px",
+              "height": "267.594px",
+              "display": "block",
+              "border": "0px none rgb(0, 0, 0)",
+              "overflow": "visible",
+              "position": "relative",
+              "objectFit": "fill",
+              "transition": "all",
+              "opacity": "1"
+            },
+            "children": [
+              {
+                "tag": "div",
+                "cls": "img has-hover x md-x lg-x y md-y lg-y",
+                "rect": {
+                  "w": 225,
+                  "h": 225
+                },
+                "text": null,
+                "img": null,
+                "href": null,
+                "styles": {
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "lineHeight": "25.6px",
+                  "color": "rgb(0, 0, 0)",
+                  "textAlign": "start",
+                  "margin": "0px 0px 16px",
+                  "width": "225px",
+                  "height": "225px",
+                  "display": "block",
+                  "border": "0px none rgb(0, 0, 0)",
+                  "overflow": "visible",
+                  "position": "relative",
+                  "objectFit": "fill",
+                  "transition": "all",
+                  "opacity": "1"
+                },
+                "children": [
+                  {
+                    "tag": "a",
+                    "cls": "",
+                    "rect": {
+                      "w": 225,
+                      "h": 225
+                    },
+                    "text": null,
+                    "img": null,
+                    "href": "https://minhdathanh.com/bao-gia-op-go-ngoai-troi-cho-villa-biet-thu-tai-da-nang-mien-trung/",
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "25.6px",
+                      "color": "rgb(34, 143, 245)",
+                      "textAlign": "start",
+                      "display": "inline",
+                      "border": "0px none rgb(34, 143, 245)",
+                      "overflow": "visible",
+                      "position": "static",
+                      "objectFit": "fill",
+                      "transition": "all",
+                      "opacity": "1"
+                    },
+                    "children": [
+                      {
+                        "tag": "div",
+                        "cls": "img-inner dark",
+                        "rect": {
+                          "w": 225,
+                          "h": 225
+                        },
+                        "text": null,
+                        "img": null,
+                        "href": null,
+                        "styles": {
+                          "fontSize": "16px",
+                          "fontWeight": "400",
+                          "lineHeight": "25.6px",
+                          "color": "rgb(241, 241, 241)",
+                          "textAlign": "start",
+                          "width": "225px",
+                          "height": "225px",
+                          "display": "block",
+                          "border": "0px none rgb(241, 241, 241)",
+                          "overflow": "hidden",
+                          "position": "relative",
+                          "objectFit": "fill",
+                          "transition": "all",
+                          "opacity": "1"
+                        },
+                        "children": [
+                          {
+                            "tag": "img",
+                            "cls": "attachment-large size-large lazy-load-active",
+                            "rect": {
+                              "w": 225,
+                              "h": 225
+                            },
+                            "text": "",
+                            "img": {
+                              "src": "https://minhdathanh.com/wp-content/uploads/2022/12/316284429_1402282606966887_5337370943267008309_n-e1731492341747-1024x1024.jpg",
+                              "nw": 1019,
+                              "nh": 1019
+                            },
+                            "href": null,
+                            "styles": {
+                              "fontSize": "16px",
+                              "fontWeight": "400",
+                              "lineHeight": "25.6px",
+                              "color": "rgb(241, 241, 241)",
+                              "textAlign": "start",
+                              "width": "225px",
+                              "height": "225px",
+                              "maxWidth": "100%",
+                              "display": "inline-block",
+                              "border": "0px none rgb(241, 241, 241)",
+                              "overflow": "clip",
+                              "position": "static",
+                              "objectFit": "fill",
+                              "transition": "opacity 1s",
+                              "opacity": "1",
+                              "aspectRatio": "auto 1020 / 1020"
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "style",
+                    "cls": "",
+                    "rect": {
+                      "w": 0,
+                      "h": 0
+                    },
+                    "text": "#image_1402551746 {\n  width: 100%;\n}",
+                    "img": null,
+                    "href": null,
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "25.6px",
+                      "color": "rgb(0, 0, 0)",
+                      "textAlign": "start",
+                      "border": "0px none rgb(0, 0, 0)",
+                      "overflow": "visible",
+                      "position": "static",
+                      "objectFit": "fill",
+                      "transition": "all",
+                      "opacity": "1"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "tag": "p",
+                "cls": "",
+                "rect": {
+                  "w": 225,
+                  "h": 27
+                },
+                "text": null,
+                "img": null,
+                "href": null,
+                "styles": {
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "lineHeight": "25.6px",
+                  "color": "rgb(0, 0, 0)",
+                  "textAlign": "center",
+                  "margin": "0px 0px 20.8px",
+                  "width": "225px",
+                  "height": "26.5938px",
+                  "display": "block",
+                  "border": "0px none rgb(0, 0, 0)",
+                  "overflow": "visible",
+                  "position": "static",
+                  "objectFit": "fill",
+                  "transition": "all",
+                  "opacity": "1"
+                },
+                "children": [
+                  {
+                    "tag": "a",
+                    "cls": "",
+                    "rect": {
+                      "w": 175,
+                      "h": 19
+                    },
+                    "text": null,
+                    "img": null,
+                    "href": "https://minhdathanh.com/san-pham/go-nhua-ngoai-troi/",
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "25.6px",
+                      "color": "rgb(34, 143, 245)",
+                      "textAlign": "center",
+                      "display": "inline",
+                      "border": "0px none rgb(34, 143, 245)",
+                      "overflow": "visible",
+                      "position": "static",
+                      "objectFit": "fill",
+                      "transition": "all",
+                      "opacity": "1"
+                    },
+                    "children": [
+                      {
+                        "tag": "span",
+                        "cls": "",
+                        "rect": {
+                          "w": 175,
+                          "h": 19
+                        },
+                        "text": "Gỗ nhựa Pvc Greenwood",
+                        "img": null,
+                        "href": null,
+                        "styles": {
+                          "fontSize": "16px",
+                          "fontWeight": "400",
+                          "lineHeight": "25.6px",
+                          "color": "rgb(34, 143, 245)",
+                          "textAlign": "center",
+                          "display": "inline",
+                          "border": "0px none rgb(34, 143, 245)",
+                          "overflow": "visible",
+                          "position": "static",
+                          "objectFit": "fill",
+                          "transition": "all",
+                          "opacity": "1"
+                        },
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "div",
+        "cls": "col medium-3 small-6 large-3",
+        "rect": {
+          "w": 255,
+          "h": 318
+        },
+        "text": null,
+        "img": null,
+        "href": null,
+        "styles": {
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "25.6px",
+          "color": "rgb(0, 0, 0)",
+          "textAlign": "start",
+          "padding": "0px 15px 30px",
+          "width": "255px",
+          "height": "318.391px",
+          "maxWidth": "25%",
+          "display": "block",
+          "border": "0px none rgb(0, 0, 0)",
+          "overflow": "visible",
+          "position": "relative",
+          "objectFit": "fill",
+          "transition": "all",
+          "opacity": "1"
+        },
+        "children": [
+          {
+            "tag": "div",
+            "cls": "col-inner",
+            "rect": {
+              "w": 225,
+              "h": 267
+            },
+            "text": null,
+            "img": null,
+            "href": null,
+            "styles": {
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "25.6px",
+              "color": "rgb(0, 0, 0)",
+              "textAlign": "start",
+              "width": "225px",
+              "height": "266.594px",
+              "display": "block",
+              "border": "0px none rgb(0, 0, 0)",
+              "overflow": "visible",
+              "position": "relative",
+              "objectFit": "fill",
+              "transition": "all",
+              "opacity": "1"
+            },
+            "children": [
+              {
+                "tag": "div",
+                "cls": "img has-hover x md-x lg-x y md-y lg-y",
+                "rect": {
+                  "w": 225,
+                  "h": 225
+                },
+                "text": null,
+                "img": null,
+                "href": null,
+                "styles": {
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "lineHeight": "25.6px",
+                  "color": "rgb(0, 0, 0)",
+                  "textAlign": "start",
+                  "margin": "0px 0px 16px",
+                  "width": "225px",
+                  "height": "225px",
+                  "display": "block",
+                  "border": "0px none rgb(0, 0, 0)",
+                  "overflow": "visible",
+                  "position": "relative",
+                  "objectFit": "fill",
+                  "transition": "all",
+                  "opacity": "1"
+                },
+                "children": [
+                  {
+                    "tag": "a",
+                    "cls": "",
+                    "rect": {
+                      "w": 225,
+                      "h": 225
+                    },
+                    "text": null,
+                    "img": null,
+                    "href": "https://minhdathanh.com/go-nhua-phu-asa-tai-da-nang-erawood-cong-nghe-moi-cho-do-ben-cao/",
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "25.6px",
+                      "color": "rgb(34, 143, 245)",
+                      "textAlign": "start",
+                      "display": "inline",
+                      "border": "0px none rgb(34, 143, 245)",
+                      "overflow": "visible",
+                      "position": "static",
+                      "objectFit": "fill",
+                      "transition": "all",
+                      "opacity": "1"
+                    },
+                    "children": [
+                      {
+                        "tag": "div",
+                        "cls": "img-inner dark",
+                        "rect": {
+                          "w": 225,
+                          "h": 225
+                        },
+                        "text": null,
+                        "img": null,
+                        "href": null,
+                        "styles": {
+                          "fontSize": "16px",
+                          "fontWeight": "400",
+                          "lineHeight": "25.6px",
+                          "color": "rgb(241, 241, 241)",
+                          "textAlign": "start",
+                          "width": "225px",
+                          "height": "225px",
+                          "display": "block",
+                          "border": "0px none rgb(241, 241, 241)",
+                          "overflow": "hidden",
+                          "position": "relative",
+                          "objectFit": "fill",
+                          "transition": "all",
+                          "opacity": "1"
+                        },
+                        "children": [
+                          {
+                            "tag": "img",
+                            "cls": "attachment-large size-large lazy-load-active",
+                            "rect": {
+                              "w": 225,
+                              "h": 225
+                            },
+                            "text": "",
+                            "img": {
+                              "src": "https://minhdathanh.com/wp-content/uploads/2024/02/423235739_1209577580005922_2902256099652880025_n-e1722501488606-1024x1024.jpg",
+                              "nw": 1019,
+                              "nh": 1019
+                            },
+                            "href": null,
+                            "styles": {
+                              "fontSize": "16px",
+                              "fontWeight": "400",
+                              "lineHeight": "25.6px",
+                              "color": "rgb(241, 241, 241)",
+                              "textAlign": "start",
+                              "width": "225px",
+                              "height": "225px",
+                              "maxWidth": "100%",
+                              "display": "inline-block",
+                              "border": "0px none rgb(241, 241, 241)",
+                              "overflow": "clip",
+                              "position": "static",
+                              "objectFit": "fill",
+                              "transition": "opacity 1s",
+                              "opacity": "1",
+                              "aspectRatio": "auto 1020 / 1020"
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "style",
+                    "cls": "",
+                    "rect": {
+                      "w": 0,
+                      "h": 0
+                    },
+                    "text": "#image_798831890 {\n  width: 100%;\n}",
+                    "img": null,
+                    "href": null,
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "25.6px",
+                      "color": "rgb(0, 0, 0)",
+                      "textAlign": "start",
+                      "border": "0px none rgb(0, 0, 0)",
+                      "overflow": "visible",
+                      "position": "static",
+                      "objectFit": "fill",
+                      "transition": "all",
+                      "opacity": "1"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "tag": "p",
+                "cls": "",
+                "rect": {
+                  "w": 225,
+                  "h": 26
+                },
+                "text": null,
+                "img": null,
+                "href": null,
+                "styles": {
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "lineHeight": "25.6px",
+                  "color": "rgb(0, 0, 0)",
+                  "textAlign": "center",
+                  "margin": "0px 0px 20.8px",
+                  "width": "225px",
+                  "height": "25.5938px",
+                  "display": "block",
+                  "border": "0px none rgb(0, 0, 0)",
+                  "overflow": "visible",
+                  "position": "static",
+                  "objectFit": "fill",
+                  "transition": "all",
+                  "opacity": "1"
+                },
+                "children": [
+                  {
+                    "tag": "a",
+                    "cls": "",
+                    "rect": {
+                      "w": 191,
+                      "h": 19
+                    },
+                    "text": "Gỗ nhựa phủ ASA Erawood",
+                    "img": null,
+                    "href": "https://minhdathanh.com/go-nhua-phu-asa-tai-da-nang-erawood-cong-nghe-moi-cho-do-ben-cao/",
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "25.6px",
+                      "color": "rgb(34, 143, 245)",
+                      "textAlign": "center",
+                      "display": "inline",
+                      "border": "0px none rgb(34, 143, 245)",
+                      "overflow": "visible",
+                      "position": "static",
+                      "objectFit": "fill",
+                      "transition": "all",
+                      "opacity": "1"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "div",
+        "cls": "col medium-3 small-6 large-3",
+        "rect": {
+          "w": 255,
+          "h": 318
+        },
+        "text": null,
+        "img": null,
+        "href": null,
+        "styles": {
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "25.6px",
+          "color": "rgb(0, 0, 0)",
+          "textAlign": "start",
+          "padding": "0px 15px 30px",
+          "width": "255px",
+          "height": "318.391px",
+          "maxWidth": "25%",
+          "display": "block",
+          "border": "0px none rgb(0, 0, 0)",
+          "overflow": "visible",
+          "position": "relative",
+          "objectFit": "fill",
+          "transition": "all",
+          "opacity": "1"
+        },
+        "children": [
+          {
+            "tag": "div",
+            "cls": "col-inner",
+            "rect": {
+              "w": 225,
+              "h": 268
+            },
+            "text": null,
+            "img": null,
+            "href": null,
+            "styles": {
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "25.6px",
+              "color": "rgb(0, 0, 0)",
+              "textAlign": "start",
+              "width": "225px",
+              "height": "267.594px",
+              "display": "block",
+              "border": "0px none rgb(0, 0, 0)",
+              "overflow": "visible",
+              "position": "relative",
+              "objectFit": "fill",
+              "transition": "all",
+              "opacity": "1"
+            },
+            "children": [
+              {
+                "tag": "div",
+                "cls": "img has-hover x md-x lg-x y md-y lg-y",
+                "rect": {
+                  "w": 225,
+                  "h": 225
+                },
+                "text": null,
+                "img": null,
+                "href": null,
+                "styles": {
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "lineHeight": "25.6px",
+                  "color": "rgb(0, 0, 0)",
+                  "textAlign": "start",
+                  "margin": "0px 0px 16px",
+                  "width": "225px",
+                  "height": "225px",
+                  "display": "block",
+                  "border": "0px none rgb(0, 0, 0)",
+                  "overflow": "visible",
+                  "position": "relative",
+                  "objectFit": "fill",
+                  "transition": "all",
+                  "opacity": "1"
+                },
+                "children": [
+                  {
+                    "tag": "a",
+                    "cls": "",
+                    "rect": {
+                      "w": 225,
+                      "h": 225
+                    },
+                    "text": null,
+                    "img": null,
+                    "href": "https://minhdathanh.com/go-nhua-southwood-ngoai-troi-tai-villa-bien-da-nang/",
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "25.6px",
+                      "color": "rgb(34, 143, 245)",
+                      "textAlign": "start",
+                      "display": "inline",
+                      "border": "0px none rgb(34, 143, 245)",
+                      "overflow": "visible",
+                      "position": "static",
+                      "objectFit": "fill",
+                      "transition": "all",
+                      "opacity": "1"
+                    },
+                    "children": [
+                      {
+                        "tag": "div",
+                        "cls": "img-inner dark",
+                        "rect": {
+                          "w": 225,
+                          "h": 225
+                        },
+                        "text": null,
+                        "img": null,
+                        "href": null,
+                        "styles": {
+                          "fontSize": "16px",
+                          "fontWeight": "400",
+                          "lineHeight": "25.6px",
+                          "color": "rgb(241, 241, 241)",
+                          "textAlign": "start",
+                          "width": "225px",
+                          "height": "225px",
+                          "display": "block",
+                          "border": "0px none rgb(241, 241, 241)",
+                          "overflow": "hidden",
+                          "position": "relative",
+                          "objectFit": "fill",
+                          "transition": "all",
+                          "opacity": "1"
+                        },
+                        "children": [
+                          {
+                            "tag": "img",
+                            "cls": "attachment-large size-large lazy-load-active",
+                            "rect": {
+                              "w": 225,
+                              "h": 225
+                            },
+                            "text": "",
+                            "img": {
+                              "src": "https://minhdathanh.com/wp-content/uploads/2024/08/tam-op-tuong-op-tran-go-nhua-ngoai-troi-sw-w148h21-3d-mau-deep-grey-700x700-1.jpg",
+                              "nw": 700,
+                              "nh": 700
+                            },
+                            "href": null,
+                            "styles": {
+                              "fontSize": "16px",
+                              "fontWeight": "400",
+                              "lineHeight": "25.6px",
+                              "color": "rgb(241, 241, 241)",
+                              "textAlign": "start",
+                              "width": "225px",
+                              "height": "225px",
+                              "maxWidth": "100%",
+                              "display": "inline-block",
+                              "border": "0px none rgb(241, 241, 241)",
+                              "overflow": "clip",
+                              "position": "static",
+                              "objectFit": "fill",
+                              "transition": "opacity 1s",
+                              "opacity": "1",
+                              "aspectRatio": "auto 700 / 700"
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "style",
+                    "cls": "",
+                    "rect": {
+                      "w": 0,
+                      "h": 0
+                    },
+                    "text": "#image_542741439 {\n  width: 100%;\n}",
+                    "img": null,
+                    "href": null,
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "25.6px",
+                      "color": "rgb(0, 0, 0)",
+                      "textAlign": "start",
+                      "border": "0px none rgb(0, 0, 0)",
+                      "overflow": "visible",
+                      "position": "static",
+                      "objectFit": "fill",
+                      "transition": "all",
+                      "opacity": "1"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "tag": "p",
+                "cls": "",
+                "rect": {
+                  "w": 225,
+                  "h": 27
+                },
+                "text": null,
+                "img": null,
+                "href": null,
+                "styles": {
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "lineHeight": "25.6px",
+                  "color": "rgb(0, 0, 0)",
+                  "textAlign": "center",
+                  "margin": "0px 0px 20.8px",
+                  "width": "225px",
+                  "height": "26.5938px",
+                  "display": "block",
+                  "border": "0px none rgb(0, 0, 0)",
+                  "overflow": "visible",
+                  "position": "static",
+                  "objectFit": "fill",
+                  "transition": "all",
+                  "opacity": "1"
+                },
+                "children": [
+                  {
+                    "tag": "a",
+                    "cls": "",
+                    "rect": {
+                      "w": 218,
+                      "h": 19
+                    },
+                    "text": null,
+                    "img": null,
+                    "href": "https://minhdathanh.com/go-nhua-southwood-ngoai-troi-tai-villa-bien-da-nang/",
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "25.6px",
+                      "color": "rgb(34, 143, 245)",
+                      "textAlign": "center",
+                      "display": "inline",
+                      "border": "0px none rgb(34, 143, 245)",
+                      "overflow": "visible",
+                      "position": "static",
+                      "objectFit": "fill",
+                      "transition": "all",
+                      "opacity": "1"
+                    },
+                    "children": [
+                      {
+                        "tag": "span",
+                        "cls": "",
+                        "rect": {
+                          "w": 218,
+                          "h": 19
+                        },
+                        "text": "Gỗ nhựa ngoài trời SouthWood",
+                        "img": null,
+                        "href": null,
+                        "styles": {
+                          "fontSize": "16px",
+                          "fontWeight": "400",
+                          "lineHeight": "25.6px",
+                          "color": "rgb(6, 147, 227)",
+                          "textAlign": "center",
+                          "display": "inline",
+                          "border": "0px none rgb(6, 147, 227)",
+                          "overflow": "visible",
+                          "position": "static",
+                          "objectFit": "fill",
+                          "transition": "all",
+                          "opacity": "1"
+                        },
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "div",
+        "cls": "col medium-3 small-6 large-3",
+        "rect": {
+          "w": 255,
+          "h": 318
+        },
+        "text": null,
+        "img": null,
+        "href": null,
+        "styles": {
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "25.6px",
+          "color": "rgb(0, 0, 0)",
+          "textAlign": "start",
+          "padding": "0px 15px 30px",
+          "width": "255px",
+          "height": "318.391px",
+          "maxWidth": "25%",
+          "display": "block",
+          "border": "0px none rgb(0, 0, 0)",
+          "overflow": "visible",
+          "position": "relative",
+          "objectFit": "fill",
+          "transition": "all",
+          "opacity": "1"
+        },
+        "children": [
+          {
+            "tag": "div",
+            "cls": "col-inner",
+            "rect": {
+              "w": 225,
+              "h": 267
+            },
+            "text": null,
+            "img": null,
+            "href": null,
+            "styles": {
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "25.6px",
+              "color": "rgb(0, 0, 0)",
+              "textAlign": "start",
+              "width": "225px",
+              "height": "266.594px",
+              "display": "block",
+              "border": "0px none rgb(0, 0, 0)",
+              "overflow": "visible",
+              "position": "relative",
+              "objectFit": "fill",
+              "transition": "all",
+              "opacity": "1"
+            },
+            "children": [
+              {
+                "tag": "div",
+                "cls": "img has-hover x md-x lg-x y md-y lg-y",
+                "rect": {
+                  "w": 225,
+                  "h": 225
+                },
+                "text": null,
+                "img": null,
+                "href": null,
+                "styles": {
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "lineHeight": "25.6px",
+                  "color": "rgb(0, 0, 0)",
+                  "textAlign": "start",
+                  "margin": "0px 0px 16px",
+                  "width": "225px",
+                  "height": "225px",
+                  "display": "block",
+                  "border": "0px none rgb(0, 0, 0)",
+                  "overflow": "visible",
+                  "position": "relative",
+                  "objectFit": "fill",
+                  "transition": "all",
+                  "opacity": "1"
+                },
+                "children": [
+                  {
+                    "tag": "a",
+                    "cls": "",
+                    "rect": {
+                      "w": 225,
+                      "h": 225
+                    },
+                    "text": null,
+                    "img": null,
+                    "href": "https://minhdathanh.com/go-nhua-ngoai-troi-plawood-da-nang-lam-go-nhua-phu-asa/",
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "25.6px",
+                      "color": "rgb(34, 143, 245)",
+                      "textAlign": "start",
+                      "display": "inline",
+                      "border": "0px none rgb(34, 143, 245)",
+                      "overflow": "visible",
+                      "position": "static",
+                      "objectFit": "fill",
+                      "transition": "all",
+                      "opacity": "1"
+                    },
+                    "children": [
+                      {
+                        "tag": "div",
+                        "cls": "img-inner dark",
+                        "rect": {
+                          "w": 225,
+                          "h": 225
+                        },
+                        "text": null,
+                        "img": null,
+                        "href": null,
+                        "styles": {
+                          "fontSize": "16px",
+                          "fontWeight": "400",
+                          "lineHeight": "25.6px",
+                          "color": "rgb(241, 241, 241)",
+                          "textAlign": "start",
+                          "width": "225px",
+                          "height": "225px",
+                          "display": "block",
+                          "border": "0px none rgb(241, 241, 241)",
+                          "overflow": "hidden",
+                          "position": "relative",
+                          "objectFit": "fill",
+                          "transition": "all",
+                          "opacity": "1"
+                        },
+                        "children": [
+                          {
+                            "tag": "img",
+                            "cls": "attachment-large size-large lazy-load-active",
+                            "rect": {
+                              "w": 225,
+                              "h": 225
+                            },
+                            "text": "",
+                            "img": {
+                              "src": "https://minhdathanh.com/wp-content/uploads/2024/05/423944204_1438234533737154_5333263531782161695_n-e1722504525747-1024x1024.jpg",
+                              "nw": 1019,
+                              "nh": 1019
+                            },
+                            "href": null,
+                            "styles": {
+                              "fontSize": "16px",
+                              "fontWeight": "400",
+                              "lineHeight": "25.6px",
+                              "color": "rgb(241, 241, 241)",
+                              "textAlign": "start",
+                              "width": "225px",
+                              "height": "225px",
+                              "maxWidth": "100%",
+                              "display": "inline-block",
+                              "border": "0px none rgb(241, 241, 241)",
+                              "overflow": "clip",
+                              "position": "static",
+                              "objectFit": "fill",
+                              "transition": "opacity 1s",
+                              "opacity": "1",
+                              "aspectRatio": "auto 1020 / 1020"
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "style",
+                    "cls": "",
+                    "rect": {
+                      "w": 0,
+                      "h": 0
+                    },
+                    "text": "#image_915105762 {\n  width: 100%;\n}",
+                    "img": null,
+                    "href": null,
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "25.6px",
+                      "color": "rgb(0, 0, 0)",
+                      "textAlign": "start",
+                      "border": "0px none rgb(0, 0, 0)",
+                      "overflow": "visible",
+                      "position": "static",
+                      "objectFit": "fill",
+                      "transition": "all",
+                      "opacity": "1"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "tag": "p",
+                "cls": "",
+                "rect": {
+                  "w": 225,
+                  "h": 26
+                },
+                "text": null,
+                "img": null,
+                "href": null,
+                "styles": {
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "lineHeight": "25.6px",
+                  "color": "rgb(0, 0, 0)",
+                  "textAlign": "center",
+                  "margin": "0px 0px 20.8px",
+                  "width": "225px",
+                  "height": "25.5938px",
+                  "display": "block",
+                  "border": "0px none rgb(0, 0, 0)",
+                  "overflow": "visible",
+                  "position": "static",
+                  "objectFit": "fill",
+                  "transition": "all",
+                  "opacity": "1"
+                },
+                "children": [
+                  {
+                    "tag": "a",
+                    "cls": "",
+                    "rect": {
+                      "w": 156,
+                      "h": 19
+                    },
+                    "text": "Gỗ nhựa Pvc Plawood",
+                    "img": null,
+                    "href": "https://minhdathanh.com/go-nhua-ngoai-troi-plawood-da-nang-lam-go-nhua-phu-asa/",
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "25.6px",
+                      "color": "rgb(34, 143, 245)",
+                      "textAlign": "center",
+                      "display": "inline",
+                      "border": "0px none rgb(34, 143, 245)",
+                      "overflow": "visible",
+                      "position": "static",
+                      "objectFit": "fill",
+                      "transition": "all",
+                      "opacity": "1"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "div",
+        "cls": "col medium-3 small-6 large-3",
+        "rect": {
+          "w": 255,
+          "h": 318
+        },
+        "text": null,
+        "img": null,
+        "href": null,
+        "styles": {
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "25.6px",
+          "color": "rgb(0, 0, 0)",
+          "textAlign": "start",
+          "padding": "0px 15px 30px",
+          "width": "255px",
+          "height": "318.391px",
+          "maxWidth": "25%",
+          "display": "block",
+          "border": "0px none rgb(0, 0, 0)",
+          "overflow": "visible",
+          "position": "relative",
+          "objectFit": "fill",
+          "transition": "all",
+          "opacity": "1"
+        },
+        "children": [
+          {
+            "tag": "div",
+            "cls": "col-inner",
+            "rect": {
+              "w": 225,
+              "h": 267
+            },
+            "text": null,
+            "img": null,
+            "href": null,
+            "styles": {
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "25.6px",
+              "color": "rgb(0, 0, 0)",
+              "textAlign": "start",
+              "width": "225px",
+              "height": "266.594px",
+              "display": "block",
+              "border": "0px none rgb(0, 0, 0)",
+              "overflow": "visible",
+              "position": "relative",
+              "objectFit": "fill",
+              "transition": "all",
+              "opacity": "1"
+            },
+            "children": [
+              {
+                "tag": "div",
+                "cls": "img has-hover x md-x lg-x y md-y lg-y",
+                "rect": {
+                  "w": 225,
+                  "h": 225
+                },
+                "text": null,
+                "img": null,
+                "href": null,
+                "styles": {
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "lineHeight": "25.6px",
+                  "color": "rgb(0, 0, 0)",
+                  "textAlign": "start",
+                  "margin": "0px 0px 16px",
+                  "width": "225px",
+                  "height": "225px",
+                  "display": "block",
+                  "border": "0px none rgb(0, 0, 0)",
+                  "overflow": "visible",
+                  "position": "relative",
+                  "objectFit": "fill",
+                  "transition": "all",
+                  "opacity": "1"
+                },
+                "children": [
+                  {
+                    "tag": "a",
+                    "cls": "",
+                    "rect": {
+                      "w": 225,
+                      "h": 225
+                    },
+                    "text": null,
+                    "img": null,
+                    "href": "https://minhdathanh.com/ecowood-da-nang-go-nhua-ngoai-troi-chinh-hang-0905183169/",
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "25.6px",
+                      "color": "rgb(34, 143, 245)",
+                      "textAlign": "start",
+                      "display": "inline",
+                      "border": "0px none rgb(34, 143, 245)",
+                      "overflow": "visible",
+                      "position": "static",
+                      "objectFit": "fill",
+                      "transition": "all",
+                      "opacity": "1"
+                    },
+                    "children": [
+                      {
+                        "tag": "div",
+                        "cls": "img-inner dark",
+                        "rect": {
+                          "w": 225,
+                          "h": 225
+                        },
+                        "text": null,
+                        "img": null,
+                        "href": null,
+                        "styles": {
+                          "fontSize": "16px",
+                          "fontWeight": "400",
+                          "lineHeight": "25.6px",
+                          "color": "rgb(241, 241, 241)",
+                          "textAlign": "start",
+                          "width": "225px",
+                          "height": "225px",
+                          "display": "block",
+                          "border": "0px none rgb(241, 241, 241)",
+                          "overflow": "hidden",
+                          "position": "relative",
+                          "objectFit": "fill",
+                          "transition": "all",
+                          "opacity": "1"
+                        },
+                        "children": [
+                          {
+                            "tag": "img",
+                            "cls": "attachment-large size-large lazy-load-active",
+                            "rect": {
+                              "w": 225,
+                              "h": 225
+                            },
+                            "text": "",
+                            "img": {
+                              "src": "https://minhdathanh.com/wp-content/uploads/2024/11/123435601_1420545324815140_3771873423382203650_n.jpg",
+                              "nw": 461,
+                              "nh": 461
+                            },
+                            "href": null,
+                            "styles": {
+                              "fontSize": "16px",
+                              "fontWeight": "400",
+                              "lineHeight": "25.6px",
+                              "color": "rgb(241, 241, 241)",
+                              "textAlign": "start",
+                              "width": "225px",
+                              "height": "225px",
+                              "maxWidth": "100%",
+                              "display": "inline-block",
+                              "border": "0px none rgb(241, 241, 241)",
+                              "overflow": "clip",
+                              "position": "static",
+                              "objectFit": "fill",
+                              "transition": "opacity 1s",
+                              "opacity": "1",
+                              "aspectRatio": "auto 461 / 461"
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "style",
+                    "cls": "",
+                    "rect": {
+                      "w": 0,
+                      "h": 0
+                    },
+                    "text": "#image_1625591407 {\n  width: 100%;\n}",
+                    "img": null,
+                    "href": null,
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "25.6px",
+                      "color": "rgb(0, 0, 0)",
+                      "textAlign": "start",
+                      "border": "0px none rgb(0, 0, 0)",
+                      "overflow": "visible",
+                      "position": "static",
+                      "objectFit": "fill",
+                      "transition": "all",
+                      "opacity": "1"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "tag": "p",
+                "cls": "",
+                "rect": {
+                  "w": 225,
+                  "h": 26
+                },
+                "text": null,
+                "img": null,
+                "href": null,
+                "styles": {
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "lineHeight": "25.6px",
+                  "color": "rgb(0, 0, 0)",
+                  "textAlign": "center",
+                  "margin": "0px 0px 20.8px",
+                  "width": "225px",
+                  "height": "25.5938px",
+                  "display": "block",
+                  "border": "0px none rgb(0, 0, 0)",
+                  "overflow": "visible",
+                  "position": "static",
+                  "objectFit": "fill",
+                  "transition": "all",
+                  "opacity": "1"
+                },
+                "children": [
+                  {
+                    "tag": "a",
+                    "cls": "",
+                    "rect": {
+                      "w": 130,
+                      "h": 19
+                    },
+                    "text": "Gỗ nhựa Ecowood",
+                    "img": null,
+                    "href": "https://minhdathanh.com/ecowood-da-nang-go-nhua-ngoai-troi-chinh-hang-0905183169/",
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "25.6px",
+                      "color": "rgb(34, 143, 245)",
+                      "textAlign": "center",
+                      "display": "inline",
+                      "border": "0px none rgb(34, 143, 245)",
+                      "overflow": "visible",
+                      "position": "static",
+                      "objectFit": "fill",
+                      "transition": "all",
+                      "opacity": "1"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "sec3": {
+    "tag": "section",
+    "cls": "section",
+    "rect": {
+      "w": 1050,
+      "h": 493
+    },
+    "text": null,
+    "img": null,
+    "href": null,
+    "styles": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "25.6px",
+      "color": "rgb(0, 0, 0)",
+      "textAlign": "start",
+      "backgroundColor": "rgb(20, 135, 201)",
+      "padding": "30px",
+      "width": "1050px",
+      "height": "493.094px",
+      "display": "flex",
+      "alignItems": "center",
+      "border": "0px none rgb(0, 0, 0)",
+      "overflow": "visible",
+      "position": "relative",
+      "objectFit": "fill",
+      "transition": "all",
+      "opacity": "1"
+    },
+    "children": [
+      {
+        "tag": "div",
+        "cls": "bg section-bg fill bg-fill bg-loaded",
+        "rect": {
+          "w": 1050,
+          "h": 493
+        },
+        "text": "",
+        "img": null,
+        "href": null,
+        "styles": {
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "25.6px",
+          "color": "rgb(0, 0, 0)",
+          "textAlign": "start",
+          "width": "1050px",
+          "height": "493.094px",
+          "display": "block",
+          "border": "0px none rgb(0, 0, 0)",
+          "overflow": "hidden",
+          "position": "absolute",
+          "objectFit": "fill",
+          "transition": "opacity 1s",
+          "opacity": "1"
+        },
+        "children": []
+      },
+      {
+        "tag": "div",
+        "cls": "section-content relative",
+        "rect": {
+          "w": 990,
+          "h": 433
+        },
+        "text": null,
+        "img": null,
+        "href": null,
+        "styles": {
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "25.6px",
+          "color": "rgb(0, 0, 0)",
+          "textAlign": "start",
+          "width": "990px",
+          "height": "433.094px",
+          "display": "block",
+          "border": "0px none rgb(0, 0, 0)",
+          "overflow": "visible",
+          "position": "relative",
+          "objectFit": "fill",
+          "transition": "all",
+          "opacity": "1"
+        },
+        "children": [
+          {
+            "tag": "div",
+            "cls": "row row-full-width align-center",
+            "rect": {
+              "w": 990,
+              "h": 433
+            },
+            "text": null,
+            "img": null,
+            "href": null,
+            "styles": {
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "25.6px",
+              "color": "rgb(0, 0, 0)",
+              "textAlign": "start",
+              "margin": "0px -15px",
+              "width": "990px",
+              "height": "433.094px",
+              "maxWidth": "100%",
+              "display": "flex",
+              "justifyContent": "center",
+              "border": "0px none rgb(0, 0, 0)",
+              "overflow": "visible",
+              "position": "static",
+              "objectFit": "fill",
+              "transition": "all",
+              "opacity": "1"
+            },
+            "children": [
+              {
+                "tag": "div",
+                "cls": "col medium-5 small-12 large-5",
+                "rect": {
+                  "w": 413,
+                  "h": 433
+                },
+                "text": null,
+                "img": null,
+                "href": null,
+                "styles": {
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "lineHeight": "25.6px",
+                  "color": "rgb(0, 0, 0)",
+                  "textAlign": "start",
+                  "padding": "0px 15px 30px",
+                  "width": "412.5px",
+                  "height": "433.094px",
+                  "maxWidth": "41.6667%",
+                  "display": "block",
+                  "border": "0px none rgb(0, 0, 0)",
+                  "overflow": "visible",
+                  "position": "relative",
+                  "objectFit": "fill",
+                  "transition": "filter 1.3s, transform 1.6s, opacity 0.7s ease-in",
+                  "transform": "matrix(1, 0, 0, 1, 0, 0)",
+                  "opacity": "1"
+                },
+                "children": [
+                  {
+                    "tag": "div",
+                    "cls": "col-inner text-center",
+                    "rect": {
+                      "w": 383,
+                      "h": 383
+                    },
+                    "text": null,
+                    "img": null,
+                    "href": null,
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "25.6px",
+                      "color": "rgb(0, 0, 0)",
+                      "textAlign": "center",
+                      "width": "382.5px",
+                      "height": "382.5px",
+                      "display": "block",
+                      "border": "0px none rgb(0, 0, 0)",
+                      "overflow": "visible",
+                      "position": "relative",
+                      "objectFit": "fill",
+                      "transition": "all",
+                      "opacity": "1"
+                    },
+                    "children": [
+                      {
+                        "tag": "div",
+                        "cls": "img has-hover x md-x lg-x y md-y lg-y",
+                        "rect": {
+                          "w": 383,
+                          "h": 383
+                        },
+                        "text": null,
+                        "img": null,
+                        "href": null,
+                        "styles": {
+                          "fontSize": "16px",
+                          "fontWeight": "400",
+                          "lineHeight": "25.6px",
+                          "color": "rgb(0, 0, 0)",
+                          "textAlign": "center",
+                          "width": "382.5px",
+                          "height": "382.5px",
+                          "display": "block",
+                          "border": "0px none rgb(0, 0, 0)",
+                          "overflow": "visible",
+                          "position": "relative",
+                          "objectFit": "fill",
+                          "transition": "all",
+                          "opacity": "1"
+                        },
+                        "children": [
+                          {
+                            "tag": "div",
+                            "cls": "img-inner image-cover dark",
+                            "rect": {
+                              "w": 383,
+                              "h": 383
+                            },
+                            "text": null,
+                            "img": null,
+                            "href": null,
+                            "styles": {
+                              "fontSize": "16px",
+                              "fontWeight": "400",
+                              "lineHeight": "25.6px",
+                              "color": "rgb(241, 241, 241)",
+                              "textAlign": "center",
+                              "padding": "382.5px 0px 0px",
+                              "width": "382.5px",
+                              "height": "382.5px",
+                              "display": "block",
+                              "border": "0px none rgb(241, 241, 241)",
+                              "overflow": "hidden",
+                              "position": "relative",
+                              "objectFit": "fill",
+                              "transition": "all",
+                              "opacity": "1"
+                            },
+                            "children": []
+                          },
+                          {
+                            "tag": "style",
+                            "cls": "",
+                            "rect": {
+                              "w": 0,
+                              "h": 0
+                            },
+                            "text": "#image_2036973906 {\n  width: 100%;\n}",
+                            "img": null,
+                            "href": null,
+                            "styles": {
+                              "fontSize": "16px",
+                              "fontWeight": "400",
+                              "lineHeight": "25.6px",
+                              "color": "rgb(0, 0, 0)",
+                              "textAlign": "center",
+                              "border": "0px none rgb(0, 0, 0)",
+                              "overflow": "visible",
+                              "position": "static",
+                              "objectFit": "fill",
+                              "transition": "all",
+                              "opacity": "1"
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "div",
+                "cls": "col medium-7 small-12 large-7",
+                "rect": {
+                  "w": 577,
+                  "h": 433
+                },
+                "text": null,
+                "img": null,
+                "href": null,
+                "styles": {
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "lineHeight": "25.6px",
+                  "color": "rgb(0, 0, 0)",
+                  "textAlign": "start",
+                  "padding": "0px 15px 30px",
+                  "width": "577.484px",
+                  "height": "433.094px",
+                  "maxWidth": "58.3333%",
+                  "display": "block",
+                  "border": "0px none rgb(0, 0, 0)",
+                  "overflow": "visible",
+                  "position": "relative",
+                  "objectFit": "fill",
+                  "transition": "filter 1.3s 0.2s, transform 1.6s 0.2s, opacity 0.7s ease-in 0.2s",
+                  "transform": "matrix(1, 0, 0, 1, 0.0165691, 0)",
+                  "opacity": "1"
+                },
+                "children": [
+                  {
+                    "tag": "div",
+                    "cls": "col-inner",
+                    "rect": {
+                      "w": 547,
+                      "h": 382
+                    },
+                    "text": null,
+                    "img": null,
+                    "href": null,
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "25.6px",
+                      "color": "rgb(0, 0, 0)",
+                      "textAlign": "start",
+                      "width": "547.484px",
+                      "height": "382.297px",
+                      "display": "block",
+                      "border": "0px none rgb(0, 0, 0)",
+                      "overflow": "visible",
+                      "position": "relative",
+                      "objectFit": "fill",
+                      "transition": "all",
+                      "opacity": "1"
+                    },
+                    "children": [
+                      {
+                        "tag": "p",
+                        "cls": "",
+                        "rect": {
+                          "w": 547,
+                          "h": 26
+                        },
+                        "text": null,
+                        "img": null,
+                        "href": null,
+                        "styles": {
+                          "fontSize": "16px",
+                          "fontWeight": "400",
+                          "lineHeight": "25.6px",
+                          "color": "rgb(0, 0, 0)",
+                          "textAlign": "start",
+                          "margin": "0px 0px 20.8px",
+                          "width": "547.484px",
+                          "height": "25.5938px",
+                          "display": "block",
+                          "border": "0px none rgb(0, 0, 0)",
+                          "overflow": "visible",
+                          "position": "static",
+                          "objectFit": "fill",
+                          "transition": "all",
+                          "opacity": "1"
+                        },
+                        "children": [
+                          {
+                            "tag": "span",
+                            "cls": "",
+                            "rect": {
+                              "w": 424,
+                              "h": 19
+                            },
+                            "text": "CAM KẾT CHẤT LƯỢNG CÔNG TRÌNH TỪ MINH ĐÀ THÀNH:",
+                            "img": null,
+                            "href": null,
+                            "styles": {
+                              "fontSize": "16px",
+                              "fontWeight": "400",
+                              "lineHeight": "25.6px",
+                              "color": "rgb(245, 240, 240)",
+                              "textAlign": "start",
+                              "display": "inline",
+                              "border": "0px none rgb(245, 240, 240)",
+                              "overflow": "visible",
+                              "position": "static",
+                              "objectFit": "fill",
+                              "transition": "all",
+                              "opacity": "1"
+                            },
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "ul",
+                        "cls": "",
+                        "rect": {
+                          "w": 547,
+                          "h": 336
+                        },
+                        "text": null,
+                        "img": null,
+                        "href": null,
+                        "styles": {
+                          "fontSize": "16px",
+                          "fontWeight": "400",
+                          "lineHeight": "25.6px",
+                          "color": "rgb(0, 0, 0)",
+                          "textAlign": "start",
+                          "margin": "0px 0px 20.8px",
+                          "width": "547.484px",
+                          "height": "335.906px",
+                          "display": "block",
+                          "border": "0px none rgb(0, 0, 0)",
+                          "overflow": "visible",
+                          "position": "static",
+                          "objectFit": "fill",
+                          "transition": "all",
+                          "opacity": "1"
+                        },
+                        "children": [
+                          {
+                            "tag": "li",
+                            "cls": "",
+                            "rect": {
+                              "w": 527,
+                              "h": 102
+                            },
+                            "text": null,
+                            "img": null,
+                            "href": null,
+                            "styles": {
+                              "fontSize": "16px",
+                              "fontWeight": "400",
+                              "lineHeight": "25.6px",
+                              "color": "rgb(0, 0, 0)",
+                              "textAlign": "start",
+                              "margin": "0px 0px 9.6px 20.8px",
+                              "width": "526.688px",
+                              "height": "102.375px",
+                              "display": "list-item",
+                              "border": "0px none rgb(0, 0, 0)",
+                              "overflow": "visible",
+                              "position": "static",
+                              "objectFit": "fill",
+                              "transition": "all",
+                              "opacity": "1"
+                            },
+                            "children": []
+                          },
+                          {
+                            "tag": "li",
+                            "cls": "",
+                            "rect": {
+                              "w": 527,
+                              "h": 77
+                            },
+                            "text": null,
+                            "img": null,
+                            "href": null,
+                            "styles": {
+                              "fontSize": "16px",
+                              "fontWeight": "400",
+                              "lineHeight": "25.6px",
+                              "color": "rgb(0, 0, 0)",
+                              "textAlign": "start",
+                              "margin": "0px 0px 9.6px 20.8px",
+                              "width": "526.688px",
+                              "height": "76.7812px",
+                              "display": "list-item",
+                              "border": "0px none rgb(0, 0, 0)",
+                              "overflow": "visible",
+                              "position": "static",
+                              "objectFit": "fill",
+                              "transition": "all",
+                              "opacity": "1"
+                            },
+                            "children": []
+                          },
+                          {
+                            "tag": "li",
+                            "cls": "",
+                            "rect": {
+                              "w": 527,
+                              "h": 51
+                            },
+                            "text": null,
+                            "img": null,
+                            "href": null,
+                            "styles": {
+                              "fontSize": "16px",
+                              "fontWeight": "400",
+                              "lineHeight": "25.6px",
+                              "color": "rgb(0, 0, 0)",
+                              "textAlign": "start",
+                              "margin": "0px 0px 9.6px 20.8px",
+                              "width": "526.688px",
+                              "height": "51.1875px",
+                              "display": "list-item",
+                              "border": "0px none rgb(0, 0, 0)",
+                              "overflow": "visible",
+                              "position": "static",
+                              "objectFit": "fill",
+                              "transition": "all",
+                              "opacity": "1"
+                            },
+                            "children": []
+                          },
+                          {
+                            "tag": "li",
+                            "cls": "",
+                            "rect": {
+                              "w": 527,
+                              "h": 77
+                            },
+                            "text": null,
+                            "img": null,
+                            "href": null,
+                            "styles": {
+                              "fontSize": "16px",
+                              "fontWeight": "400",
+                              "lineHeight": "25.6px",
+                              "color": "rgb(0, 0, 0)",
+                              "textAlign": "start",
+                              "margin": "0px 0px 9.6px 20.8px",
+                              "width": "526.688px",
+                              "height": "76.7812px",
+                              "display": "list-item",
+                              "border": "0px none rgb(0, 0, 0)",
+                              "overflow": "visible",
+                              "position": "static",
+                              "objectFit": "fill",
+                              "transition": "all",
+                              "opacity": "1"
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "style",
+        "cls": "",
+        "rect": {
+          "w": 0,
+          "h": 0
+        },
+        "text": "#section_1472717551 {\n  padding-top: 30px;\n  padding-bottom: 30px;\n  background-color: rgb",
+        "img": null,
+        "href": null,
+        "styles": {
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "25.6px",
+          "color": "rgb(0, 0, 0)",
+          "textAlign": "start",
+          "border": "0px none rgb(0, 0, 0)",
+          "overflow": "visible",
+          "position": "static",
+          "objectFit": "fill",
+          "transition": "all",
+          "opacity": "1"
+        },
+        "children": []
+      }
+    ]
+  },
+  "footerFull": {
+    "tag": "footer",
+    "cls": "footer-wrapper",
+    "rect": {
+      "w": 1440,
+      "h": 279
+    },
+    "text": null,
+    "img": null,
+    "href": null,
+    "styles": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "25.6px",
+      "color": "rgb(0, 0, 0)",
+      "textAlign": "start",
+      "width": "1440px",
+      "height": "279.062px",
+      "display": "block",
+      "border": "0px none rgb(0, 0, 0)",
+      "overflow": "visible",
+      "position": "relative",
+      "objectFit": "fill",
+      "transition": "all",
+      "opacity": "1"
+    },
+    "children": [
+      {
+        "tag": "div",
+        "cls": "footer-widgets footer footer-2 dark",
+        "rect": {
+          "w": 1440,
+          "h": 231
+        },
+        "text": null,
+        "img": null,
+        "href": null,
+        "styles": {
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "25.6px",
+          "color": "rgb(241, 241, 241)",
+          "textAlign": "start",
+          "backgroundColor": "rgb(30, 115, 190)",
+          "padding": "30px 0px 0px",
+          "width": "1440px",
+          "height": "231.016px",
+          "display": "block",
+          "overflow": "visible",
+          "position": "static",
+          "objectFit": "fill",
+          "transition": "all",
+          "opacity": "1"
+        },
+        "children": [
+          {
+            "tag": "div",
+            "cls": "row dark large-columns-2 mb-0",
+            "rect": {
+              "w": 1080,
+              "h": 200
+            },
+            "text": null,
+            "img": null,
+            "href": null,
+            "styles": {
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "25.6px",
+              "color": "rgb(241, 241, 241)",
+              "textAlign": "start",
+              "margin": "0px 180px",
+              "width": "1080px",
+              "height": "200.016px",
+              "maxWidth": "1080px",
+              "display": "flex",
+              "border": "0px none rgb(241, 241, 241)",
+              "overflow": "visible",
+              "position": "static",
+              "objectFit": "fill",
+              "transition": "all",
+              "opacity": "1"
+            },
+            "children": [
+              {
+                "tag": "div",
+                "cls": "col pb-0 widget widget_block",
+                "rect": {
+                  "w": 540,
+                  "h": 176
+                },
+                "text": null,
+                "img": null,
+                "href": null,
+                "styles": {
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "lineHeight": "25.6px",
+                  "color": "rgb(241, 241, 241)",
+                  "textAlign": "start",
+                  "padding": "0px 15px",
+                  "margin": "0px 0px 24px",
+                  "width": "540px",
+                  "height": "176.016px",
+                  "maxWidth": "50%",
+                  "display": "block",
+                  "border": "0px none rgb(241, 241, 241)",
+                  "overflow": "visible",
+                  "position": "relative",
+                  "objectFit": "fill",
+                  "transition": "all",
+                  "opacity": "1"
+                },
+                "children": [
+                  {
+                    "tag": "span",
+                    "cls": "widget-title",
+                    "rect": {
+                      "w": 310,
+                      "h": 19
+                    },
+                    "text": "KIẾN TRÚC NỘI THẤT MINH ĐÀ THÀNH",
+                    "img": null,
+                    "href": null,
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "600",
+                      "lineHeight": "16.8px",
+                      "letterSpacing": "0.8px",
+                      "color": "rgb(241, 241, 241)",
+                      "textAlign": "start",
+                      "display": "inline",
+                      "border": "0px none rgb(241, 241, 241)",
+                      "overflow": "visible",
+                      "position": "static",
+                      "objectFit": "fill",
+                      "transition": "all",
+                      "opacity": "1"
+                    },
+                    "children": []
+                  },
+                  {
+                    "tag": "div",
+                    "cls": "is-divider small",
+                    "rect": {
+                      "w": 30,
+                      "h": 3
+                    },
+                    "text": "",
+                    "img": null,
+                    "href": null,
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "25.6px",
+                      "color": "rgb(241, 241, 241)",
+                      "textAlign": "start",
+                      "backgroundColor": "rgba(255, 255, 255, 0.3)",
+                      "margin": "10.56px 0px 16px",
+                      "width": "30px",
+                      "height": "3px",
+                      "maxWidth": "30px",
+                      "display": "block",
+                      "border": "0px none rgb(241, 241, 241)",
+                      "overflow": "visible",
+                      "position": "static",
+                      "objectFit": "fill",
+                      "transition": "all",
+                      "opacity": "1"
+                    },
+                    "children": []
+                  },
+                  {
+                    "tag": "div",
+                    "cls": "wp-widget-group__inner-blocks",
+                    "rect": {
+                      "w": 510,
+                      "h": 104
+                    },
+                    "text": null,
+                    "img": null,
+                    "href": null,
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "25.6px",
+                      "color": "rgb(241, 241, 241)",
+                      "textAlign": "start",
+                      "width": "510px",
+                      "height": "103.984px",
+                      "display": "block",
+                      "border": "0px none rgb(241, 241, 241)",
+                      "overflow": "visible",
+                      "position": "static",
+                      "objectFit": "fill",
+                      "transition": "all",
+                      "opacity": "1"
+                    },
+                    "children": [
+                      {
+                        "tag": "p",
+                        "cls": "has-text-align-left has-small-font-size",
+                        "rect": {
+                          "w": 510,
+                          "h": 104
+                        },
+                        "text": null,
+                        "img": null,
+                        "href": null,
+                        "styles": {
+                          "fontSize": "13px",
+                          "fontWeight": "400",
+                          "lineHeight": "20.8px",
+                          "color": "rgb(241, 241, 241)",
+                          "textAlign": "start",
+                          "margin": "0px 0px 16.9px",
+                          "width": "510px",
+                          "height": "103.984px",
+                          "display": "block",
+                          "border": "0px none rgb(241, 241, 241)",
+                          "overflow": "visible",
+                          "position": "static",
+                          "objectFit": "fill",
+                          "transition": "all",
+                          "opacity": "1"
+                        },
+                        "children": [
+                          {
+                            "tag": "br",
+                            "cls": "",
+                            "rect": {
+                              "w": 0,
+                              "h": 15
+                            },
+                            "text": "",
+                            "img": null,
+                            "href": null,
+                            "styles": {
+                              "fontSize": "13px",
+                              "fontWeight": "400",
+                              "lineHeight": "20.8px",
+                              "color": "rgb(241, 241, 241)",
+                              "textAlign": "start",
+                              "display": "inline",
+                              "border": "0px none rgb(241, 241, 241)",
+                              "overflow": "visible",
+                              "position": "static",
+                              "objectFit": "fill",
+                              "transition": "all",
+                              "opacity": "1"
+                            },
+                            "children": []
+                          },
+                          {
+                            "tag": "br",
+                            "cls": "",
+                            "rect": {
+                              "w": 0,
+                              "h": 15
+                            },
+                            "text": "",
+                            "img": null,
+                            "href": null,
+                            "styles": {
+                              "fontSize": "13px",
+                              "fontWeight": "400",
+                              "lineHeight": "20.8px",
+                              "color": "rgb(241, 241, 241)",
+                              "textAlign": "start",
+                              "display": "inline",
+                              "border": "0px none rgb(241, 241, 241)",
+                              "overflow": "visible",
+                              "position": "static",
+                              "objectFit": "fill",
+                              "transition": "all",
+                              "opacity": "1"
+                            },
+                            "children": []
+                          },
+                          {
+                            "tag": "br",
+                            "cls": "",
+                            "rect": {
+                              "w": 0,
+                              "h": 15
+                            },
+                            "text": "",
+                            "img": null,
+                            "href": null,
+                            "styles": {
+                              "fontSize": "13px",
+                              "fontWeight": "400",
+                              "lineHeight": "20.8px",
+                              "color": "rgb(241, 241, 241)",
+                              "textAlign": "start",
+                              "display": "inline",
+                              "border": "0px none rgb(241, 241, 241)",
+                              "overflow": "visible",
+                              "position": "static",
+                              "objectFit": "fill",
+                              "transition": "all",
+                              "opacity": "1"
+                            },
+                            "children": []
+                          },
+                          {
+                            "tag": "a",
+                            "cls": "",
+                            "rect": {
+                              "w": 87,
+                              "h": 15
+                            },
+                            "text": "Minh Đà Thành",
+                            "img": null,
+                            "href": "https://www.facebook.com/nhathauminhdathanh",
+                            "styles": {
+                              "fontSize": "13px",
+                              "fontWeight": "400",
+                              "lineHeight": "20.8px",
+                              "color": "rgb(241, 241, 241)",
+                              "textAlign": "start",
+                              "display": "inline",
+                              "border": "0px none rgb(241, 241, 241)",
+                              "overflow": "visible",
+                              "position": "static",
+                              "objectFit": "fill",
+                              "transition": "all",
+                              "opacity": "1"
+                            },
+                            "children": []
+                          },
+                          {
+                            "tag": "br",
+                            "cls": "",
+                            "rect": {
+                              "w": 0,
+                              "h": 15
+                            },
+                            "text": "",
+                            "img": null,
+                            "href": null,
+                            "styles": {
+                              "fontSize": "13px",
+                              "fontWeight": "400",
+                              "lineHeight": "20.8px",
+                              "color": "rgb(241, 241, 241)",
+                              "textAlign": "start",
+                              "display": "inline",
+                              "border": "0px none rgb(241, 241, 241)",
+                              "overflow": "visible",
+                              "position": "static",
+                              "objectFit": "fill",
+                              "transition": "all",
+                              "opacity": "1"
+                            },
+                            "children": []
+                          },
+                          {
+                            "tag": "a",
+                            "cls": "",
+                            "rect": {
+                              "w": 87,
+                              "h": 15
+                            },
+                            "text": "Minh Đà Thành",
+                            "img": null,
+                            "href": "https://www.youtube.com/channel/UCYvaNReVAmH3eF-Jf2ao6ag/videos",
+                            "styles": {
+                              "fontSize": "13px",
+                              "fontWeight": "400",
+                              "lineHeight": "20.8px",
+                              "color": "rgb(241, 241, 241)",
+                              "textAlign": "start",
+                              "display": "inline",
+                              "border": "0px none rgb(241, 241, 241)",
+                              "overflow": "visible",
+                              "position": "static",
+                              "objectFit": "fill",
+                              "transition": "all",
+                              "opacity": "1"
+                            },
+                            "children": []
+                          },
+                          {
+                            "tag": "br",
+                            "cls": "",
+                            "rect": {
+                              "w": 0,
+                              "h": 15
+                            },
+                            "text": "",
+                            "img": null,
+                            "href": null,
+                            "styles": {
+                              "fontSize": "13px",
+                              "fontWeight": "400",
+                              "lineHeight": "20.8px",
+                              "color": "rgb(241, 241, 241)",
+                              "textAlign": "start",
+                              "display": "inline",
+                              "border": "0px none rgb(241, 241, 241)",
+                              "overflow": "visible",
+                              "position": "static",
+                              "objectFit": "fill",
+                              "transition": "all",
+                              "opacity": "1"
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "div",
+                "cls": "col pb-0 widget widget_block",
+                "rect": {
+                  "w": 540,
+                  "h": 176
+                },
+                "text": null,
+                "img": null,
+                "href": null,
+                "styles": {
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "lineHeight": "25.6px",
+                  "color": "rgb(241, 241, 241)",
+                  "textAlign": "start",
+                  "padding": "0px 15px",
+                  "margin": "0px 0px 24px",
+                  "width": "540px",
+                  "height": "176.016px",
+                  "maxWidth": "50%",
+                  "display": "block",
+                  "border": "0px none rgb(241, 241, 241)",
+                  "overflow": "visible",
+                  "position": "relative",
+                  "objectFit": "fill",
+                  "transition": "all",
+                  "opacity": "1"
+                },
+                "children": [
+                  {
+                    "tag": "div",
+                    "cls": "wp-widget-group__inner-blocks",
+                    "rect": {
+                      "w": 510,
+                      "h": 118
+                    },
+                    "text": null,
+                    "img": null,
+                    "href": null,
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "25.6px",
+                      "color": "rgb(241, 241, 241)",
+                      "textAlign": "start",
+                      "width": "510px",
+                      "height": "117.531px",
+                      "display": "block",
+                      "border": "0px none rgb(241, 241, 241)",
+                      "overflow": "visible",
+                      "position": "static",
+                      "objectFit": "fill",
+                      "transition": "all",
+                      "opacity": "1"
+                    },
+                    "children": [
+                      {
+                        "tag": "span",
+                        "cls": "widget-title",
+                        "rect": {
+                          "w": 323,
+                          "h": 19
+                        },
+                        "text": "TRÁCH NHIỆM - CHẤT LƯỢNG - GIÁ TỐT",
+                        "img": null,
+                        "href": null,
+                        "styles": {
+                          "fontSize": "16px",
+                          "fontWeight": "600",
+                          "lineHeight": "16.8px",
+                          "letterSpacing": "0.8px",
+                          "color": "rgb(241, 241, 241)",
+                          "textAlign": "start",
+                          "display": "inline",
+                          "border": "0px none rgb(241, 241, 241)",
+                          "overflow": "visible",
+                          "position": "static",
+                          "objectFit": "fill",
+                          "transition": "all",
+                          "opacity": "1"
+                        },
+                        "children": []
+                      },
+                      {
+                        "tag": "div",
+                        "cls": "is-divider small",
+                        "rect": {
+                          "w": 30,
+                          "h": 3
+                        },
+                        "text": "",
+                        "img": null,
+                        "href": null,
+                        "styles": {
+                          "fontSize": "16px",
+                          "fontWeight": "400",
+                          "lineHeight": "25.6px",
+                          "color": "rgb(241, 241, 241)",
+                          "textAlign": "start",
+                          "backgroundColor": "rgba(255, 255, 255, 0.3)",
+                          "margin": "10.56px 0px 16px",
+                          "width": "30px",
+                          "height": "3px",
+                          "maxWidth": "30px",
+                          "display": "block",
+                          "border": "0px none rgb(241, 241, 241)",
+                          "overflow": "visible",
+                          "position": "static",
+                          "objectFit": "fill",
+                          "transition": "all",
+                          "opacity": "1"
+                        },
+                        "children": []
+                      },
+                      {
+                        "tag": "div",
+                        "cls": "wp-widget-group__inner-blocks",
+                        "rect": {
+                          "w": 510,
+                          "h": 62
+                        },
+                        "text": null,
+                        "img": null,
+                        "href": null,
+                        "styles": {
+                          "fontSize": "16px",
+                          "fontWeight": "400",
+                          "lineHeight": "25.6px",
+                          "color": "rgb(241, 241, 241)",
+                          "textAlign": "start",
+                          "width": "510px",
+                          "height": "62.3906px",
+                          "display": "block",
+                          "border": "0px none rgb(241, 241, 241)",
+                          "overflow": "visible",
+                          "position": "static",
+                          "objectFit": "fill",
+                          "transition": "all",
+                          "opacity": "1"
+                        },
+                        "children": [
+                          {
+                            "tag": "p",
+                            "cls": "has-small-font-size",
+                            "rect": {
+                              "w": 510,
+                              "h": 62
+                            },
+                            "text": "Minh Đà Thành chuyên cung cấp và thi công trọn gói các hạng mục tấm ốp tường vân đá, lam n",
+                            "img": null,
+                            "href": null,
+                            "styles": {
+                              "fontSize": "13px",
+                              "fontWeight": "400",
+                              "lineHeight": "20.8px",
+                              "color": "rgb(241, 241, 241)",
+                              "textAlign": "start",
+                              "margin": "0px 0px 16.9px",
+                              "width": "510px",
+                              "height": "62.3906px",
+                              "display": "block",
+                              "border": "0px none rgb(241, 241, 241)",
+                              "overflow": "visible",
+                              "position": "static",
+                              "objectFit": "fill",
+                              "transition": "all",
+                              "opacity": "1"
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "div",
+        "cls": "absolute-footer dark medium-text-center text-center",
+        "rect": {
+          "w": 1440,
+          "h": 48
+        },
+        "text": null,
+        "img": null,
+        "href": null,
+        "styles": {
+          "fontSize": "14.4px",
+          "fontWeight": "400",
+          "lineHeight": "23.04px",
+          "color": "rgba(255, 255, 255, 0.5)",
+          "textAlign": "center",
+          "backgroundColor": "rgb(91, 91, 91)",
+          "padding": "10px 0px 15px",
+          "width": "1440px",
+          "height": "48.0469px",
+          "display": "block",
+          "border": "0px none rgba(255, 255, 255, 0.5)",
+          "overflow": "visible",
+          "position": "static",
+          "objectFit": "fill",
+          "transition": "all",
+          "opacity": "1"
+        },
+        "children": [
+          {
+            "tag": "div",
+            "cls": "container clearfix",
+            "rect": {
+              "w": 1080,
+              "h": 23
+            },
+            "text": null,
+            "img": null,
+            "href": null,
+            "styles": {
+              "fontSize": "14.4px",
+              "fontWeight": "400",
+              "lineHeight": "23.04px",
+              "color": "rgba(255, 255, 255, 0.5)",
+              "textAlign": "center",
+              "padding": "0px 15px",
+              "margin": "0px 180px",
+              "width": "1080px",
+              "height": "23.0469px",
+              "maxWidth": "1080px",
+              "display": "block",
+              "border": "0px none rgba(255, 255, 255, 0.5)",
+              "overflow": "visible",
+              "position": "static",
+              "objectFit": "fill",
+              "transition": "all",
+              "opacity": "1"
+            },
+            "children": [
+              {
+                "tag": "div",
+                "cls": "footer-primary pull-left",
+                "rect": {
+                  "w": 1050,
+                  "h": 23
+                },
+                "text": null,
+                "img": null,
+                "href": null,
+                "styles": {
+                  "fontSize": "14.4px",
+                  "fontWeight": "400",
+                  "lineHeight": "23.04px",
+                  "color": "rgba(255, 255, 255, 0.5)",
+                  "textAlign": "center",
+                  "width": "1050px",
+                  "height": "23.0469px",
+                  "display": "block",
+                  "border": "0px none rgba(255, 255, 255, 0.5)",
+                  "overflow": "visible",
+                  "position": "static",
+                  "objectFit": "fill",
+                  "transition": "all",
+                  "opacity": "1"
+                },
+                "children": [
+                  {
+                    "tag": "div",
+                    "cls": "copyright-footer",
+                    "rect": {
+                      "w": 1050,
+                      "h": 23
+                    },
+                    "text": "Copyright 2022 © Minh Đà Thành",
+                    "img": null,
+                    "href": null,
+                    "styles": {
+                      "fontSize": "14.4px",
+                      "fontWeight": "400",
+                      "lineHeight": "23.04px",
+                      "color": "rgba(255, 255, 255, 0.5)",
+                      "textAlign": "center",
+                      "width": "1050px",
+                      "height": "23.0469px",
+                      "display": "block",
+                      "border": "0px none rgba(255, 255, 255, 0.5)",
+                      "overflow": "visible",
+                      "position": "static",
+                      "objectFit": "fill",
+                      "transition": "all",
+                      "opacity": "1"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "a",
+        "cls": "back-to-top button icon invert plain fixed bottom z-1 is-outline round hide-for-medium",
+        "rect": {
+          "w": 39,
+          "h": 39
+        },
+        "text": null,
+        "img": null,
+        "href": "#top",
+        "styles": {
+          "fontSize": "15.52px",
+          "fontWeight": "700",
+          "lineHeight": "33.9888px",
+          "letterSpacing": "0.4656px",
+          "color": "rgb(0, 0, 0)",
+          "textAlign": "center",
+          "padding": "0px 9.312px",
+          "margin": "0px 1.8624px",
+          "width": "38.7969px",
+          "height": "38.7969px",
+          "maxWidth": "100%",
+          "minHeight": "38.8px",
+          "display": "block",
+          "borderRadius": "5px",
+          "border": "2px solid rgb(0, 0, 0)",
+          "overflow": "visible",
+          "position": "fixed",
+          "objectFit": "fill",
+          "transition": "color 0.3s, opacity 0.3s, transform 0.3s",
+          "transform": "matrix(1, 0, 0, 1, 0, 11.6391)",
+          "opacity": "0"
+        },
+        "children": [
+          {
+            "tag": "i",
+            "cls": "icon-angle-up",
+            "rect": {
+              "w": 12,
+              "h": 22
+            },
+            "text": "",
+            "img": null,
+            "href": null,
+            "styles": {
+              "fontSize": "18.624px",
+              "fontWeight": "400",
+              "lineHeight": "22.3488px",
+              "letterSpacing": "0.4656px",
+              "color": "rgb(0, 0, 0)",
+              "textAlign": "center",
+              "width": "12.4375px",
+              "height": "22.3438px",
+              "display": "inline-block",
+              "border": "0px none rgb(0, 0, 0)",
+              "overflow": "visible",
+              "position": "relative",
+              "objectFit": "fill",
+              "transition": "all",
+              "opacity": "1"
+            },
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "slider": {
+    "tag": "div",
+    "cls": "slider-wrapper relative",
+    "rect": {
+      "w": 1050,
+      "h": 426
+    },
+    "text": null,
+    "img": null,
+    "href": null,
+    "styles": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "25.6px",
+      "color": "rgb(0, 0, 0)",
+      "textAlign": "start",
+      "width": "1050px",
+      "height": "425.516px",
+      "display": "block",
+      "border": "0px none rgb(0, 0, 0)",
+      "overflow": "visible",
+      "position": "relative",
+      "objectFit": "fill",
+      "transition": "all",
+      "opacity": "1"
+    },
+    "children": [
+      {
+        "tag": "div",
+        "cls": "slider slider-nav-circle slider-nav-large slider-nav-light slider-style-normal is-draggable flickity",
+        "rect": {
+          "w": 1050,
+          "h": 426
+        },
+        "text": null,
+        "img": null,
+        "href": null,
+        "styles": {
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "25.6px",
+          "color": "rgb(0, 0, 0)",
+          "textAlign": "start",
+          "width": "1050px",
+          "height": "425.516px",
+          "display": "block",
+          "border": "0px none rgb(0, 0, 0)",
+          "overflow": "visible",
+          "position": "relative",
+          "objectFit": "fill",
+          "transition": "all",
+          "opacity": "1"
+        },
+        "children": [
+          {
+            "tag": "div",
+            "cls": "flickity-viewport",
+            "rect": {
+              "w": 1050,
+              "h": 426
+            },
+            "text": null,
+            "img": null,
+            "href": null,
+            "styles": {
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "25.6px",
+              "color": "rgb(0, 0, 0)",
+              "textAlign": "start",
+              "width": "1050px",
+              "height": "425.516px",
+              "display": "block",
+              "border": "0px none rgb(0, 0, 0)",
+              "overflow": "hidden",
+              "position": "relative",
+              "objectFit": "fill",
+              "transition": "all",
+              "opacity": "1"
+            },
+            "children": [
+              {
+                "tag": "div",
+                "cls": "flickity-slider",
+                "rect": {
+                  "w": 1050,
+                  "h": 426
+                },
+                "text": null,
+                "img": null,
+                "href": null,
+                "styles": {
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "lineHeight": "25.6px",
+                  "color": "rgb(0, 0, 0)",
+                  "textAlign": "start",
+                  "width": "1050px",
+                  "height": "425.516px",
+                  "display": "block",
+                  "border": "0px none rgb(0, 0, 0)",
+                  "overflow": "visible",
+                  "position": "absolute",
+                  "objectFit": "fill",
+                  "transition": "all",
+                  "transform": "matrix(1, 0, 0, 1, 0, 0)",
+                  "opacity": "1"
+                },
+                "children": [
+                  {
+                    "tag": "div",
+                    "cls": "img has-hover x md-x lg-x y md-y lg-y is-selected",
+                    "rect": {
+                      "w": 1050,
+                      "h": 426
+                    },
+                    "text": null,
+                    "img": null,
+                    "href": null,
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "25.6px",
+                      "color": "rgb(0, 0, 0)",
+                      "textAlign": "start",
+                      "width": "1050px",
+                      "height": "425.531px",
+                      "display": "block",
+                      "border": "0px none rgb(0, 0, 0)",
+                      "overflow": "visible",
+                      "position": "absolute",
+                      "objectFit": "fill",
+                      "transition": "transform 0.6s, opacity 0.6s, box-shadow 0.6s",
+                      "opacity": "1"
+                    },
+                    "children": [
+                      {
+                        "tag": "a",
+                        "cls": "",
+                        "rect": {
+                          "w": 1050,
+                          "h": 426
+                        },
+                        "text": null,
+                        "img": null,
+                        "href": "https://minhdathanh.com/top-99-cong-trinh-op-tuong-nhua-gia-go-tam-op-than-tre-tran-nhua-gia-go-san-go-go-ngoai-troi-chat-luong-nhat-can-xem-truoc-khi-lam-nha/",
+                        "styles": {
+                          "fontSize": "16px",
+                          "fontWeight": "400",
+                          "lineHeight": "25.6px",
+                          "color": "rgb(34, 143, 245)",
+                          "textAlign": "start",
+                          "display": "inline",
+                          "border": "0px none rgb(34, 143, 245)",
+                          "overflow": "visible",
+                          "position": "static",
+                          "objectFit": "fill",
+                          "transition": "all",
+                          "opacity": "1"
+                        },
+                        "children": [
+                          {
+                            "tag": "div",
+                            "cls": "img-inner dark",
+                            "rect": {
+                              "w": 1050,
+                              "h": 426
+                            },
+                            "text": null,
+                            "img": null,
+                            "href": null,
+                            "styles": {
+                              "fontSize": "16px",
+                              "fontWeight": "400",
+                              "lineHeight": "25.6px",
+                              "color": "rgb(241, 241, 241)",
+                              "textAlign": "start",
+                              "width": "1050px",
+                              "height": "425.531px",
+                              "display": "block",
+                              "border": "0px none rgb(241, 241, 241)",
+                              "overflow": "hidden",
+                              "position": "relative",
+                              "objectFit": "fill",
+                              "transition": "all",
+                              "opacity": "1"
+                            },
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "style",
+                        "cls": "",
+                        "rect": {
+                          "w": 0,
+                          "h": 0
+                        },
+                        "text": "#image_272204068 {\n  width: 100%;\n}",
+                        "img": null,
+                        "href": null,
+                        "styles": {
+                          "fontSize": "16px",
+                          "fontWeight": "400",
+                          "lineHeight": "25.6px",
+                          "color": "rgb(0, 0, 0)",
+                          "textAlign": "start",
+                          "border": "0px none rgb(0, 0, 0)",
+                          "overflow": "visible",
+                          "position": "static",
+                          "objectFit": "fill",
+                          "transition": "all",
+                          "opacity": "1"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "cls": "img has-hover x md-x lg-x y md-y lg-y",
+                    "rect": {
+                      "w": 1050,
+                      "h": 425
+                    },
+                    "text": null,
+                    "img": null,
+                    "href": null,
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "25.6px",
+                      "color": "rgb(0, 0, 0)",
+                      "textAlign": "start",
+                      "width": "1050px",
+                      "height": "425.141px",
+                      "display": "block",
+                      "border": "0px none rgb(0, 0, 0)",
+                      "overflow": "visible",
+                      "position": "absolute",
+                      "objectFit": "fill",
+                      "transition": "transform 0.6s, opacity 0.6s, box-shadow 0.6s",
+                      "opacity": "1"
+                    },
+                    "children": [
+                      {
+                        "tag": "a",
+                        "cls": "",
+                        "rect": {
+                          "w": 1050,
+                          "h": 425
+                        },
+                        "text": null,
+                        "img": null,
+                        "href": "https://minhdathanh.com/top-99-cong-trinh-op-tuong-nhua-gia-go-tam-op-than-tre-tran-nhua-gia-go-san-go-go-ngoai-troi-chat-luong-nhat-can-xem-truoc-khi-lam-nha/",
+                        "styles": {
+                          "fontSize": "16px",
+                          "fontWeight": "400",
+                          "lineHeight": "25.6px",
+                          "color": "rgb(34, 143, 245)",
+                          "textAlign": "start",
+                          "display": "inline",
+                          "border": "0px none rgb(34, 143, 245)",
+                          "overflow": "visible",
+                          "position": "static",
+                          "objectFit": "fill",
+                          "transition": "all",
+                          "opacity": "1"
+                        },
+                        "children": [
+                          {
+                            "tag": "div",
+                            "cls": "img-inner dark",
+                            "rect": {
+                              "w": 1050,
+                              "h": 425
+                            },
+                            "text": null,
+                            "img": null,
+                            "href": null,
+                            "styles": {
+                              "fontSize": "16px",
+                              "fontWeight": "400",
+                              "lineHeight": "25.6px",
+                              "color": "rgb(241, 241, 241)",
+                              "textAlign": "start",
+                              "width": "1050px",
+                              "height": "425.141px",
+                              "display": "block",
+                              "border": "0px none rgb(241, 241, 241)",
+                              "overflow": "hidden",
+                              "position": "relative",
+                              "objectFit": "fill",
+                              "transition": "all",
+                              "opacity": "1"
+                            },
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "style",
+                        "cls": "",
+                        "rect": {
+                          "w": 0,
+                          "h": 0
+                        },
+                        "text": "#image_1990883283 {\n  width: 100%;\n}",
+                        "img": null,
+                        "href": null,
+                        "styles": {
+                          "fontSize": "16px",
+                          "fontWeight": "400",
+                          "lineHeight": "25.6px",
+                          "color": "rgb(0, 0, 0)",
+                          "textAlign": "start",
+                          "border": "0px none rgb(0, 0, 0)",
+                          "overflow": "visible",
+                          "position": "static",
+                          "objectFit": "fill",
+                          "transition": "all",
+                          "opacity": "1"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "cls": "img has-hover x md-x lg-x y md-y lg-y",
+                    "rect": {
+                      "w": 1050,
+                      "h": 425
+                    },
+                    "text": null,
+                    "img": null,
+                    "href": null,
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "25.6px",
+                      "color": "rgb(0, 0, 0)",
+                      "textAlign": "start",
+                      "width": "1050px",
+                      "height": "425.141px",
+                      "display": "block",
+                      "border": "0px none rgb(0, 0, 0)",
+                      "overflow": "visible",
+                      "position": "absolute",
+                      "objectFit": "fill",
+                      "transition": "transform 0.6s, opacity 0.6s, box-shadow 0.6s",
+                      "opacity": "1"
+                    },
+                    "children": [
+                      {
+                        "tag": "a",
+                        "cls": "",
+                        "rect": {
+                          "w": 1050,
+                          "h": 425
+                        },
+                        "text": null,
+                        "img": null,
+                        "href": "https://minhdathanh.com/top-99-cong-trinh-op-tuong-nhua-gia-go-tam-op-than-tre-tran-nhua-gia-go-san-go-go-ngoai-troi-chat-luong-nhat-can-xem-truoc-khi-lam-nha/",
+                        "styles": {
+                          "fontSize": "16px",
+                          "fontWeight": "400",
+                          "lineHeight": "25.6px",
+                          "color": "rgb(34, 143, 245)",
+                          "textAlign": "start",
+                          "display": "inline",
+                          "border": "0px none rgb(34, 143, 245)",
+                          "overflow": "visible",
+                          "position": "static",
+                          "objectFit": "fill",
+                          "transition": "all",
+                          "opacity": "1"
+                        },
+                        "children": [
+                          {
+                            "tag": "div",
+                            "cls": "img-inner dark",
+                            "rect": {
+                              "w": 1050,
+                              "h": 425
+                            },
+                            "text": null,
+                            "img": null,
+                            "href": null,
+                            "styles": {
+                              "fontSize": "16px",
+                              "fontWeight": "400",
+                              "lineHeight": "25.6px",
+                              "color": "rgb(241, 241, 241)",
+                              "textAlign": "start",
+                              "width": "1050px",
+                              "height": "425.141px",
+                              "display": "block",
+                              "border": "0px none rgb(241, 241, 241)",
+                              "overflow": "hidden",
+                              "position": "relative",
+                              "objectFit": "fill",
+                              "transition": "all",
+                              "opacity": "1"
+                            },
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "style",
+                        "cls": "",
+                        "rect": {
+                          "w": 0,
+                          "h": 0
+                        },
+                        "text": "#image_1609699490 {\n  width: 100%;\n}",
+                        "img": null,
+                        "href": null,
+                        "styles": {
+                          "fontSize": "16px",
+                          "fontWeight": "400",
+                          "lineHeight": "25.6px",
+                          "color": "rgb(0, 0, 0)",
+                          "textAlign": "start",
+                          "border": "0px none rgb(0, 0, 0)",
+                          "overflow": "visible",
+                          "position": "static",
+                          "objectFit": "fill",
+                          "transition": "all",
+                          "opacity": "1"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "cls": "img has-hover x md-x lg-x y md-y lg-y",
+                    "rect": {
+                      "w": 1050,
+                      "h": 425
+                    },
+                    "text": null,
+                    "img": null,
+                    "href": null,
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "25.6px",
+                      "color": "rgb(0, 0, 0)",
+                      "textAlign": "start",
+                      "width": "1050px",
+                      "height": "425.141px",
+                      "display": "block",
+                      "border": "0px none rgb(0, 0, 0)",
+                      "overflow": "visible",
+                      "position": "absolute",
+                      "objectFit": "fill",
+                      "transition": "transform 0.6s, opacity 0.6s, box-shadow 0.6s",
+                      "opacity": "1"
+                    },
+                    "children": [
+                      {
+                        "tag": "a",
+                        "cls": "",
+                        "rect": {
+                          "w": 1050,
+                          "h": 425
+                        },
+                        "text": null,
+                        "img": null,
+                        "href": "https://minhdathanh.com/top-99-cong-trinh-op-tuong-nhua-gia-go-tam-op-than-tre-tran-nhua-gia-go-san-go-go-ngoai-troi-chat-luong-nhat-can-xem-truoc-khi-lam-nha/",
+                        "styles": {
+                          "fontSize": "16px",
+                          "fontWeight": "400",
+                          "lineHeight": "25.6px",
+                          "color": "rgb(34, 143, 245)",
+                          "textAlign": "start",
+                          "display": "inline",
+                          "border": "0px none rgb(34, 143, 245)",
+                          "overflow": "visible",
+                          "position": "static",
+                          "objectFit": "fill",
+                          "transition": "all",
+                          "opacity": "1"
+                        },
+                        "children": [
+                          {
+                            "tag": "div",
+                            "cls": "img-inner dark",
+                            "rect": {
+                              "w": 1050,
+                              "h": 425
+                            },
+                            "text": null,
+                            "img": null,
+                            "href": null,
+                            "styles": {
+                              "fontSize": "16px",
+                              "fontWeight": "400",
+                              "lineHeight": "25.6px",
+                              "color": "rgb(241, 241, 241)",
+                              "textAlign": "start",
+                              "width": "1050px",
+                              "height": "425.141px",
+                              "display": "block",
+                              "border": "0px none rgb(241, 241, 241)",
+                              "overflow": "hidden",
+                              "position": "relative",
+                              "objectFit": "fill",
+                              "transition": "all",
+                              "opacity": "1"
+                            },
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "style",
+                        "cls": "",
+                        "rect": {
+                          "w": 0,
+                          "h": 0
+                        },
+                        "text": "#image_1816665445 {\n  width: 100%;\n}",
+                        "img": null,
+                        "href": null,
+                        "styles": {
+                          "fontSize": "16px",
+                          "fontWeight": "400",
+                          "lineHeight": "25.6px",
+                          "color": "rgb(0, 0, 0)",
+                          "textAlign": "start",
+                          "border": "0px none rgb(0, 0, 0)",
+                          "overflow": "visible",
+                          "position": "static",
+                          "objectFit": "fill",
+                          "transition": "all",
+                          "opacity": "1"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "cls": "img has-hover x md-x lg-x y md-y lg-y",
+                    "rect": {
+                      "w": 1050,
+                      "h": 425
+                    },
+                    "text": null,
+                    "img": null,
+                    "href": null,
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "25.6px",
+                      "color": "rgb(0, 0, 0)",
+                      "textAlign": "start",
+                      "width": "1050px",
+                      "height": "425.141px",
+                      "display": "block",
+                      "border": "0px none rgb(0, 0, 0)",
+                      "overflow": "visible",
+                      "position": "absolute",
+                      "objectFit": "fill",
+                      "transition": "transform 0.6s, opacity 0.6s, box-shadow 0.6s",
+                      "opacity": "1"
+                    },
+                    "children": [
+                      {
+                        "tag": "a",
+                        "cls": "",
+                        "rect": {
+                          "w": 1050,
+                          "h": 425
+                        },
+                        "text": null,
+                        "img": null,
+                        "href": "https://minhdathanh.com/top-99-cong-trinh-op-tuong-nhua-gia-go-tam-op-than-tre-tran-nhua-gia-go-san-go-go-ngoai-troi-chat-luong-nhat-can-xem-truoc-khi-lam-nha/",
+                        "styles": {
+                          "fontSize": "16px",
+                          "fontWeight": "400",
+                          "lineHeight": "25.6px",
+                          "color": "rgb(34, 143, 245)",
+                          "textAlign": "start",
+                          "display": "inline",
+                          "border": "0px none rgb(34, 143, 245)",
+                          "overflow": "visible",
+                          "position": "static",
+                          "objectFit": "fill",
+                          "transition": "all",
+                          "opacity": "1"
+                        },
+                        "children": [
+                          {
+                            "tag": "div",
+                            "cls": "img-inner dark",
+                            "rect": {
+                              "w": 1050,
+                              "h": 425
+                            },
+                            "text": null,
+                            "img": null,
+                            "href": null,
+                            "styles": {
+                              "fontSize": "16px",
+                              "fontWeight": "400",
+                              "lineHeight": "25.6px",
+                              "color": "rgb(241, 241, 241)",
+                              "textAlign": "start",
+                              "width": "1050px",
+                              "height": "425.141px",
+                              "display": "block",
+                              "border": "0px none rgb(241, 241, 241)",
+                              "overflow": "hidden",
+                              "position": "relative",
+                              "objectFit": "fill",
+                              "transition": "all",
+                              "opacity": "1"
+                            },
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "style",
+                        "cls": "",
+                        "rect": {
+                          "w": 0,
+                          "h": 0
+                        },
+                        "text": "#image_1623106068 {\n  width: 100%;\n}",
+                        "img": null,
+                        "href": null,
+                        "styles": {
+                          "fontSize": "16px",
+                          "fontWeight": "400",
+                          "lineHeight": "25.6px",
+                          "color": "rgb(0, 0, 0)",
+                          "textAlign": "start",
+                          "border": "0px none rgb(0, 0, 0)",
+                          "overflow": "visible",
+                          "position": "static",
+                          "objectFit": "fill",
+                          "transition": "all",
+                          "opacity": "1"
+                        },
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "button",
+            "cls": "flickity-button flickity-prev-next-button previous",
+            "rect": {
+              "w": 36,
+              "h": 85
+            },
+            "text": null,
+            "img": null,
+            "href": null,
+            "styles": {
+              "fontSize": "15.52px",
+              "fontWeight": "700",
+              "lineHeight": "37.248px",
+              "letterSpacing": "0.4656px",
+              "color": "rgb(255, 255, 255)",
+              "textAlign": "center",
+              "width": "36px",
+              "height": "85.1094px",
+              "maxWidth": "100%",
+              "minHeight": "38.8px",
+              "display": "block",
+              "border": "0px none rgb(255, 255, 255)",
+              "overflow": "visible",
+              "position": "absolute",
+              "objectFit": "fill",
+              "transition": "transform 0.3s, opacity 0.3s, background 0.3s, box-shadow 0.3s",
+              "transform": "matrix(1, 0, 0, 1, 7.2, 0)",
+              "opacity": "0"
+            },
+            "children": [
+              {
+                "tag": "svg",
+                "cls": "[object SVGAnimatedString]",
+                "rect": {
+                  "w": 36,
+                  "h": 36
+                },
+                "text": null,
+                "img": null,
+                "href": null,
+                "styles": {
+                  "fontSize": "15.52px",
+                  "fontWeight": "700",
+                  "lineHeight": "37.248px",
+                  "letterSpacing": "0.4656px",
+                  "color": "rgb(255, 255, 255)",
+                  "textAlign": "center",
+                  "padding": "7.1875px",
+                  "width": "36px",
+                  "height": "36px",
+                  "maxWidth": "100%",
+                  "display": "block",
+                  "borderRadius": "100%",
+                  "border": "2px solid rgb(255, 255, 255)",
+                  "overflow": "hidden",
+                  "position": "absolute",
+                  "objectFit": "fill",
+                  "transition": "0.3s",
+                  "transform": "matrix(1, 0, 0, 1, -18, -18)",
+                  "opacity": "1"
+                },
+                "children": [
+                  {
+                    "tag": "path",
+                    "cls": "[object SVGAnimatedString]",
+                    "rect": {
+                      "w": 11,
+                      "h": 18
+                    },
+                    "text": "",
+                    "img": null,
+                    "href": null,
+                    "styles": {
+                      "fontSize": "15.52px",
+                      "fontWeight": "700",
+                      "lineHeight": "37.248px",
+                      "letterSpacing": "0.4656px",
+                      "color": "rgb(255, 255, 255)",
+                      "textAlign": "center",
+                      "display": "inline",
+                      "borderRadius": "100%",
+                      "border": "2px solid rgb(255, 255, 255)",
+                      "overflow": "visible",
+                      "position": "static",
+                      "objectFit": "fill",
+                      "transition": "0.3s",
+                      "opacity": "1"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "button",
+            "cls": "flickity-button flickity-prev-next-button next",
+            "rect": {
+              "w": 36,
+              "h": 85
+            },
+            "text": null,
+            "img": null,
+            "href": null,
+            "styles": {
+              "fontSize": "15.52px",
+              "fontWeight": "700",
+              "lineHeight": "37.248px",
+              "letterSpacing": "0.4656px",
+              "color": "rgb(255, 255, 255)",
+              "textAlign": "center",
+              "width": "36px",
+              "height": "85.1094px",
+              "maxWidth": "100%",
+              "minHeight": "38.8px",
+              "display": "block",
+              "border": "0px none rgb(255, 255, 255)",
+              "overflow": "visible",
+              "position": "absolute",
+              "objectFit": "fill",
+              "transition": "transform 0.3s, opacity 0.3s, background 0.3s, box-shadow 0.3s",
+              "transform": "matrix(1, 0, 0, 1, -7.2, 0)",
+              "opacity": "0"
+            },
+            "children": [
+              {
+                "tag": "svg",
+                "cls": "[object SVGAnimatedString]",
+                "rect": {
+                  "w": 36,
+                  "h": 36
+                },
+                "text": null,
+                "img": null,
+                "href": null,
+                "styles": {
+                  "fontSize": "15.52px",
+                  "fontWeight": "700",
+                  "lineHeight": "37.248px",
+                  "letterSpacing": "0.4656px",
+                  "color": "rgb(255, 255, 255)",
+                  "textAlign": "center",
+                  "padding": "7.1875px",
+                  "width": "36px",
+                  "height": "36px",
+                  "maxWidth": "100%",
+                  "display": "block",
+                  "borderRadius": "100%",
+                  "border": "2px solid rgb(255, 255, 255)",
+                  "overflow": "hidden",
+                  "position": "absolute",
+                  "objectFit": "fill",
+                  "transition": "0.3s",
+                  "transform": "matrix(1, 0, 0, 1, -18, -18)",
+                  "opacity": "1"
+                },
+                "children": [
+                  {
+                    "tag": "path",
+                    "cls": "[object SVGAnimatedString]",
+                    "rect": {
+                      "w": 11,
+                      "h": 18
+                    },
+                    "text": "",
+                    "img": null,
+                    "href": null,
+                    "styles": {
+                      "fontSize": "15.52px",
+                      "fontWeight": "700",
+                      "lineHeight": "37.248px",
+                      "letterSpacing": "0.4656px",
+                      "color": "rgb(255, 255, 255)",
+                      "textAlign": "center",
+                      "display": "inline",
+                      "borderRadius": "100%",
+                      "border": "2px solid rgb(255, 255, 255)",
+                      "overflow": "visible",
+                      "position": "static",
+                      "objectFit": "fill",
+                      "transition": "0.3s",
+                      "transform": "matrix(-1, 0, 0, -1, 100, 100)",
+                      "opacity": "1"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "ol",
+            "cls": "flickity-page-dots",
+            "rect": {
+              "w": 630,
+              "h": 16
+            },
+            "text": null,
+            "img": null,
+            "href": null,
+            "styles": {
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "16px",
+              "color": "rgb(0, 0, 0)",
+              "textAlign": "center",
+              "width": "630px",
+              "height": "16px",
+              "display": "block",
+              "border": "0px none rgb(0, 0, 0)",
+              "overflow": "visible",
+              "position": "absolute",
+              "objectFit": "fill",
+              "transition": "all",
+              "opacity": "1"
+            },
+            "children": [
+              {
+                "tag": "li",
+                "cls": "dot is-selected",
+                "rect": {
+                  "w": 12,
+                  "h": 12
+                },
+                "text": "",
+                "img": null,
+                "href": null,
+                "styles": {
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "lineHeight": "16px",
+                  "color": "rgb(0, 0, 0)",
+                  "textAlign": "center",
+                  "backgroundColor": "rgb(255, 255, 255)",
+                  "margin": "0px 5px",
+                  "width": "12px",
+                  "height": "12px",
+                  "display": "inline-block",
+                  "borderRadius": "50%",
+                  "border": "3px solid rgb(255, 255, 255)",
+                  "overflow": "visible",
+                  "position": "static",
+                  "objectFit": "fill",
+                  "transition": "opacity 0.3s",
+                  "opacity": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "li",
+                "cls": "dot",
+                "rect": {
+                  "w": 12,
+                  "h": 12
+                },
+                "text": "",
+                "img": null,
+                "href": null,
+                "styles": {
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "lineHeight": "16px",
+                  "color": "rgb(0, 0, 0)",
+                  "textAlign": "center",
+                  "margin": "0px 5px",
+                  "width": "12px",
+                  "height": "12px",
+                  "display": "inline-block",
+                  "borderRadius": "50%",
+                  "border": "3px solid rgb(255, 255, 255)",
+                  "overflow": "visible",
+                  "position": "static",
+                  "objectFit": "fill",
+                  "transition": "opacity 0.3s",
+                  "opacity": "0.4"
+                },
+                "children": []
+              },
+              {
+                "tag": "li",
+                "cls": "dot",
+                "rect": {
+                  "w": 12,
+                  "h": 12
+                },
+                "text": "",
+                "img": null,
+                "href": null,
+                "styles": {
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "lineHeight": "16px",
+                  "color": "rgb(0, 0, 0)",
+                  "textAlign": "center",
+                  "margin": "0px 5px",
+                  "width": "12px",
+                  "height": "12px",
+                  "display": "inline-block",
+                  "borderRadius": "50%",
+                  "border": "3px solid rgb(255, 255, 255)",
+                  "overflow": "visible",
+                  "position": "static",
+                  "objectFit": "fill",
+                  "transition": "opacity 0.3s",
+                  "opacity": "0.4"
+                },
+                "children": []
+              },
+              {
+                "tag": "li",
+                "cls": "dot",
+                "rect": {
+                  "w": 12,
+                  "h": 12
+                },
+                "text": "",
+                "img": null,
+                "href": null,
+                "styles": {
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "lineHeight": "16px",
+                  "color": "rgb(0, 0, 0)",
+                  "textAlign": "center",
+                  "margin": "0px 5px",
+                  "width": "12px",
+                  "height": "12px",
+                  "display": "inline-block",
+                  "borderRadius": "50%",
+                  "border": "3px solid rgb(255, 255, 255)",
+                  "overflow": "visible",
+                  "position": "static",
+                  "objectFit": "fill",
+                  "transition": "opacity 0.3s",
+                  "opacity": "0.4"
+                },
+                "children": []
+              },
+              {
+                "tag": "li",
+                "cls": "dot",
+                "rect": {
+                  "w": 12,
+                  "h": 12
+                },
+                "text": "",
+                "img": null,
+                "href": null,
+                "styles": {
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "lineHeight": "16px",
+                  "color": "rgb(0, 0, 0)",
+                  "textAlign": "center",
+                  "margin": "0px 5px",
+                  "width": "12px",
+                  "height": "12px",
+                  "display": "inline-block",
+                  "borderRadius": "50%",
+                  "border": "3px solid rgb(255, 255, 255)",
+                  "overflow": "visible",
+                  "position": "static",
+                  "objectFit": "fill",
+                  "transition": "opacity 0.3s",
+                  "opacity": "0.4"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "div",
+        "cls": "loading-spin dark large centered",
+        "rect": {
+          "w": 0,
+          "h": 0
+        },
+        "text": "",
+        "img": null,
+        "href": null,
+        "styles": {
+          "fontSize": "10px",
+          "fontWeight": "400",
+          "lineHeight": "16px",
+          "color": "rgb(241, 241, 241)",
+          "textAlign": "start",
+          "margin": "-15px auto 0px -15px",
+          "width": "30px",
+          "height": "30px",
+          "borderRadius": "50%",
+          "overflow": "visible",
+          "position": "absolute",
+          "objectFit": "fill",
+          "transition": "all",
+          "opacity": "0.8"
+        },
+        "children": []
+      }
+    ]
+  }
+}

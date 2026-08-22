@@ -1,0 +1,566 @@
+{
+  "images": [
+    {
+      "src": "https://minhdathanh.com/wp-content/uploads/2022/06/LOGO.jpg",
+      "alt": "Nhựa giả gỗ Đà Nẵng, tấm ốp vân đá, gỗ ngoài trời, sàn gỗ, sàn nhựa",
+      "w": 281,
+      "h": 59,
+      "displayW": 200,
+      "displayH": 42,
+      "cls": "header_logo header-logo lazyloaded",
+      "parentCls": "",
+      "srcset": ""
+    },
+    {
+      "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20100'%3E%3C/svg%3E",
+      "alt": "Nhựa giả gỗ Đà Nẵng, tấm ốp vân đá, gỗ ngoài trời, sàn gỗ, sàn nhựa",
+      "w": 300,
+      "h": 150,
+      "displayW": 0,
+      "displayH": 0,
+      "cls": "header-logo-dark",
+      "parentCls": "",
+      "srcset": ""
+    },
+    {
+      "src": "https://minhdathanh.com/wp-content/uploads/2025/02/baner-web20251-1024x415.jpg",
+      "alt": "minh da thanh",
+      "w": 1019,
+      "h": 413,
+      "displayW": 1050,
+      "displayH": 426,
+      "cls": "attachment-large size-large lazy-load-active",
+      "parentCls": "img-inner dark",
+      "srcset": "https://minhdathanh.com/wp-content/uploads/2025/02/baner-web20251-1024x415.jpg 1024w, https://minhdathanh.com/wp-content/uploads/2025/02/baner-web20251-300x121.jpg 300w, https://minhdathanh.com/wp-content/uploads/2025/02/baner-web20251-768x311.jpg 768w, https://minhdathanh.com/wp-content/uploads/202"
+    },
+    {
+      "src": "https://minhdathanh.com/wp-content/uploads/2024/02/baner-web-6-1024x415.jpg",
+      "alt": "trần nhựa nano giả gỗ đà nẵng",
+      "w": 1019,
+      "h": 413,
+      "displayW": 1050,
+      "displayH": 426,
+      "cls": "attachment-large size-large lazy-load-active",
+      "parentCls": "img-inner dark",
+      "srcset": "https://minhdathanh.com/wp-content/uploads/2024/02/baner-web-6-1024x415.jpg 1024w, https://minhdathanh.com/wp-content/uploads/2024/02/baner-web-6-300x121.jpg 300w, https://minhdathanh.com/wp-content/uploads/2024/02/baner-web-6-768x311.jpg 768w, https://minhdathanh.com/wp-content/uploads/2024/02/bane"
+    },
+    {
+      "src": "data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%201020%20413%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E",
+      "alt": "tấm ốp nhựa vân đá",
+      "w": 300,
+      "h": 121,
+      "displayW": 1050,
+      "displayH": 425,
+      "cls": "lazy-load attachment-large size-large",
+      "parentCls": "img-inner dark",
+      "srcset": ""
+    },
+    {
+      "src": "data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%201020%20413%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E",
+      "alt": "trần gỗ nhựa green wood",
+      "w": 300,
+      "h": 121,
+      "displayW": 1050,
+      "displayH": 425,
+      "cls": "lazy-load attachment-large size-large",
+      "parentCls": "img-inner dark",
+      "srcset": ""
+    },
+    {
+      "src": "data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%201020%20413%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E",
+      "alt": "sàn hồ bơi awood đà nẵng",
+      "w": 300,
+      "h": 121,
+      "displayW": 1050,
+      "displayH": 425,
+      "cls": "lazy-load attachment-large size-large",
+      "parentCls": "img-inner dark",
+      "srcset": ""
+    },
+    {
+      "src": "https://minhdathanh.com/wp-content/uploads/2024/03/z5226172652933_c3a38db8bcd7f60138aad755424982f2-1024x1024.jpg",
+      "alt": "thi công tấm ốp vân đá có khung xương tại đà nẵng",
+      "w": 1019,
+      "h": 1019,
+      "displayW": 225,
+      "displayH": 225,
+      "cls": "attachment-large size-large lazy-load-active",
+      "parentCls": "img-inner dark",
+      "srcset": "https://minhdathanh.com/wp-content/uploads/2024/03/z5226172652933_c3a38db8bcd7f60138aad755424982f2-1024x1024.jpg 1024w, https://minhdathanh.com/wp-content/uploads/2024/03/z5226172652933_c3a38db8bcd7f60138aad755424982f2-300x300.jpg 300w, https://minhdathanh.com/wp-content/uploads/2024/03/z52261726529"
+    },
+    {
+      "src": "https://minhdathanh.com/wp-content/uploads/2024/03/431645757_796225139192773_5507322386401634928_n-1024x1024.jpg",
+      "alt": "tấm ốp nano đà nẵng",
+      "w": 1019,
+      "h": 1019,
+      "displayW": 225,
+      "displayH": 225,
+      "cls": "attachment-large size-large lazy-load-active",
+      "parentCls": "img-inner dark",
+      "srcset": "https://minhdathanh.com/wp-content/uploads/2024/03/431645757_796225139192773_5507322386401634928_n-1024x1024.jpg 1024w, https://minhdathanh.com/wp-content/uploads/2024/03/431645757_796225139192773_5507322386401634928_n-300x300.jpg 300w, https://minhdathanh.com/wp-content/uploads/2024/03/431645757_79"
+    },
+    {
+      "src": "https://minhdathanh.com/wp-content/uploads/2024/03/15-1024x1024.jpg",
+      "alt": "lam 5 sóng cao 22 nta tại đà nẵng",
+      "w": 1019,
+      "h": 1019,
+      "displayW": 225,
+      "displayH": 225,
+      "cls": "attachment-large size-large lazy-load-active",
+      "parentCls": "img-inner dark",
+      "srcset": "https://minhdathanh.com/wp-content/uploads/2024/03/15-1024x1024.jpg 1024w, https://minhdathanh.com/wp-content/uploads/2024/03/15-300x300.jpg 300w, https://minhdathanh.com/wp-content/uploads/2024/03/15-150x150.jpg 150w, https://minhdathanh.com/wp-content/uploads/2024/03/15-768x768.jpg 768w, https://m"
+    },
+    {
+      "src": "https://minhdathanh.com/wp-content/uploads/2023/11/Untitled-1020x1024.png",
+      "alt": "tấm ốp than tre",
+      "w": 1020,
+      "h": 1024,
+      "displayW": 225,
+      "displayH": 226,
+      "cls": "attachment-large size-large lazy-load-active",
+      "parentCls": "img-inner dark",
+      "srcset": "https://minhdathanh.com/wp-content/uploads/2023/11/Untitled-1020x1024.png 1020w, https://minhdathanh.com/wp-content/uploads/2023/11/Untitled-300x300.png 300w, https://minhdathanh.com/wp-content/uploads/2023/11/Untitled-150x150.png 150w, https://minhdathanh.com/wp-content/uploads/2023/11/Untitled-768"
+    },
+    {
+      "src": "https://minhdathanh.com/wp-content/uploads/2024/03/431770852_796225152526105_8084395895203463587_n-1-1024x1024.jpg",
+      "alt": "tấm nano nhựa",
+      "w": 1019,
+      "h": 1019,
+      "displayW": 225,
+      "displayH": 225,
+      "cls": "attachment-large size-large lazy-load-active",
+      "parentCls": "img-inner dark",
+      "srcset": "https://minhdathanh.com/wp-content/uploads/2024/03/431770852_796225152526105_8084395895203463587_n-1-1024x1024.jpg 1024w, https://minhdathanh.com/wp-content/uploads/2024/03/431770852_796225152526105_8084395895203463587_n-1-300x300.jpg 300w, https://minhdathanh.com/wp-content/uploads/2024/03/43177085"
+    },
+    {
+      "src": "https://minhdathanh.com/wp-content/uploads/2024/04/z5318164420257_35800310d878b602ca660696b9976241-e1712293324815-1024x1024.jpg",
+      "alt": "tranh tráng gương đà nẵng",
+      "w": 1019,
+      "h": 1019,
+      "displayW": 225,
+      "displayH": 225,
+      "cls": "attachment-large size-large lazy-load-active",
+      "parentCls": "img-inner dark",
+      "srcset": "https://minhdathanh.com/wp-content/uploads/2024/04/z5318164420257_35800310d878b602ca660696b9976241-e1712293324815-1024x1024.jpg 1024w, https://minhdathanh.com/wp-content/uploads/2024/04/z5318164420257_35800310d878b602ca660696b9976241-e1712293324815-300x300.jpg 300w, https://minhdathanh.com/wp-conten"
+    },
+    {
+      "src": "https://minhdathanh.com/wp-content/uploads/2024/06/z5519102554242_56af0e5bdf44b9585d6d9bf2b0551653-e1722505323208-1024x1024.jpg",
+      "alt": "trần than tre",
+      "w": 1019,
+      "h": 1019,
+      "displayW": 225,
+      "displayH": 225,
+      "cls": "attachment-large size-large lazy-load-active",
+      "parentCls": "img-inner dark",
+      "srcset": "https://minhdathanh.com/wp-content/uploads/2024/06/z5519102554242_56af0e5bdf44b9585d6d9bf2b0551653-e1722505323208-1024x1024.jpg 1024w, https://minhdathanh.com/wp-content/uploads/2024/06/z5519102554242_56af0e5bdf44b9585d6d9bf2b0551653-e1722505323208-300x300.jpg 300w, https://minhdathanh.com/wp-conten"
+    },
+    {
+      "src": "https://minhdathanh.com/wp-content/uploads/2024/11/348615257_3617595541802576_1642573497052084296_n-e1731456136366-1024x1024.jpg",
+      "alt": "lam hộp cầu thang tại đà nẵng",
+      "w": 1019,
+      "h": 1019,
+      "displayW": 225,
+      "displayH": 225,
+      "cls": "attachment-large size-large lazy-load-active",
+      "parentCls": "img-inner dark",
+      "srcset": "https://minhdathanh.com/wp-content/uploads/2024/11/348615257_3617595541802576_1642573497052084296_n-e1731456136366-1024x1024.jpg 1024w, https://minhdathanh.com/wp-content/uploads/2024/11/348615257_3617595541802576_1642573497052084296_n-e1731456136366-300x300.jpg 300w, https://minhdathanh.com/wp-cont"
+    },
+    {
+      "src": "https://minhdathanh.com/wp-content/uploads/2024/03/Awood_WG148x21_wood.png",
+      "alt": "gỗ nhựa awood tại đà nẵng",
+      "w": 800,
+      "h": 800,
+      "displayW": 225,
+      "displayH": 225,
+      "cls": "attachment-large size-large lazy-load-active",
+      "parentCls": "img-inner dark",
+      "srcset": "https://minhdathanh.com/wp-content/uploads/2024/03/Awood_WG148x21_wood.png 800w, https://minhdathanh.com/wp-content/uploads/2024/03/Awood_WG148x21_wood-300x300.png 300w, https://minhdathanh.com/wp-content/uploads/2024/03/Awood_WG148x21_wood-150x150.png 150w, https://minhdathanh.com/wp-content/upload"
+    },
+    {
+      "src": "https://minhdathanh.com/wp-content/uploads/2024/03/z5226327746325_76bea21df7c92a902f09dd920fc74f73-1024x1024.jpg",
+      "alt": "sàn gỗ ngoài trời đà nẵng miền trung",
+      "w": 1019,
+      "h": 1019,
+      "displayW": 225,
+      "displayH": 225,
+      "cls": "attachment-large size-large lazy-load-active",
+      "parentCls": "img-inner dark",
+      "srcset": "https://minhdathanh.com/wp-content/uploads/2024/03/z5226327746325_76bea21df7c92a902f09dd920fc74f73-1024x1024.jpg 1024w, https://minhdathanh.com/wp-content/uploads/2024/03/z5226327746325_76bea21df7c92a902f09dd920fc74f73-300x300.jpg 300w, https://minhdathanh.com/wp-content/uploads/2024/03/z52263277463"
+    },
+    {
+      "src": "https://minhdathanh.com/wp-content/uploads/2024/03/2-1024x1024.jpg",
+      "alt": "giàn lam gỗ che nắng miền trung",
+      "w": 1019,
+      "h": 1019,
+      "displayW": 225,
+      "displayH": 225,
+      "cls": "attachment-large size-large lazy-load-active",
+      "parentCls": "img-inner dark",
+      "srcset": "https://minhdathanh.com/wp-content/uploads/2024/03/2-1024x1024.jpg 1024w, https://minhdathanh.com/wp-content/uploads/2024/03/2-300x300.jpg 300w, https://minhdathanh.com/wp-content/uploads/2024/03/2-150x150.jpg 150w, https://minhdathanh.com/wp-content/uploads/2024/03/2-768x768.jpg 768w, https://minhd"
+    },
+    {
+      "src": "https://minhdathanh.com/wp-content/uploads/2022/12/316284429_1402282606966887_5337370943267008309_n-e1731492341747-1024x1024.jpg",
+      "alt": "gỗ nhựa greenwood đà nẵng",
+      "w": 1019,
+      "h": 1019,
+      "displayW": 225,
+      "displayH": 225,
+      "cls": "attachment-large size-large lazy-load-active",
+      "parentCls": "img-inner dark",
+      "srcset": "https://minhdathanh.com/wp-content/uploads/2022/12/316284429_1402282606966887_5337370943267008309_n-e1731492341747-1024x1024.jpg 1024w, https://minhdathanh.com/wp-content/uploads/2022/12/316284429_1402282606966887_5337370943267008309_n-e1731492341747-300x300.jpg 300w, https://minhdathanh.com/wp-cont"
+    },
+    {
+      "src": "https://minhdathanh.com/wp-content/uploads/2024/02/423235739_1209577580005922_2902256099652880025_n-e1722501488606-1024x1024.jpg",
+      "alt": "gỗ nhựa erawood",
+      "w": 1019,
+      "h": 1019,
+      "displayW": 225,
+      "displayH": 225,
+      "cls": "attachment-large size-large lazy-load-active",
+      "parentCls": "img-inner dark",
+      "srcset": "https://minhdathanh.com/wp-content/uploads/2024/02/423235739_1209577580005922_2902256099652880025_n-e1722501488606-1024x1024.jpg 1024w, https://minhdathanh.com/wp-content/uploads/2024/02/423235739_1209577580005922_2902256099652880025_n-e1722501488606-300x300.jpg 300w, https://minhdathanh.com/wp-cont"
+    },
+    {
+      "src": "https://minhdathanh.com/wp-content/uploads/2024/08/tam-op-tuong-op-tran-go-nhua-ngoai-troi-sw-w148h21-3d-mau-deep-grey-700x700-1.jpg",
+      "alt": "gỗ nhựa southwood",
+      "w": 700,
+      "h": 700,
+      "displayW": 225,
+      "displayH": 225,
+      "cls": "attachment-large size-large lazy-load-active",
+      "parentCls": "img-inner dark",
+      "srcset": "https://minhdathanh.com/wp-content/uploads/2024/08/tam-op-tuong-op-tran-go-nhua-ngoai-troi-sw-w148h21-3d-mau-deep-grey-700x700-1.jpg 700w, https://minhdathanh.com/wp-content/uploads/2024/08/tam-op-tuong-op-tran-go-nhua-ngoai-troi-sw-w148h21-3d-mau-deep-grey-700x700-1-300x300.jpg 300w, https://minhda"
+    },
+    {
+      "src": "https://minhdathanh.com/wp-content/uploads/2024/05/423944204_1438234533737154_5333263531782161695_n-e1722504525747-1024x1024.jpg",
+      "alt": "gỗ nhựa plawood tại đà nẵng",
+      "w": 1019,
+      "h": 1019,
+      "displayW": 225,
+      "displayH": 225,
+      "cls": "attachment-large size-large lazy-load-active",
+      "parentCls": "img-inner dark",
+      "srcset": "https://minhdathanh.com/wp-content/uploads/2024/05/423944204_1438234533737154_5333263531782161695_n-e1722504525747-1024x1024.jpg 1024w, https://minhdathanh.com/wp-content/uploads/2024/05/423944204_1438234533737154_5333263531782161695_n-e1722504525747-300x300.jpg 300w, https://minhdathanh.com/wp-cont"
+    },
+    {
+      "src": "https://minhdathanh.com/wp-content/uploads/2024/11/123435601_1420545324815140_3771873423382203650_n.jpg",
+      "alt": "ecowood đà nẵng",
+      "w": 461,
+      "h": 461,
+      "displayW": 225,
+      "displayH": 225,
+      "cls": "attachment-large size-large lazy-load-active",
+      "parentCls": "img-inner dark",
+      "srcset": "https://minhdathanh.com/wp-content/uploads/2024/11/123435601_1420545324815140_3771873423382203650_n.jpg 461w, https://minhdathanh.com/wp-content/uploads/2024/11/123435601_1420545324815140_3771873423382203650_n-300x300.jpg 300w, https://minhdathanh.com/wp-content/uploads/2024/11/123435601_14205453248"
+    },
+    {
+      "src": "https://minhdathanh.com/wp-content/uploads/2024/08/454197155_1776279109567233_1218368745463502155_n-e1731489702434-1024x1024.jpg",
+      "alt": "sàn gỗ janmi tại đà nẵng",
+      "w": 1019,
+      "h": 1019,
+      "displayW": 225,
+      "displayH": 225,
+      "cls": "attachment-large size-large lazy-load-active",
+      "parentCls": "img-inner dark",
+      "srcset": "https://minhdathanh.com/wp-content/uploads/2024/08/454197155_1776279109567233_1218368745463502155_n-e1731489702434-1024x1024.jpg 1024w, https://minhdathanh.com/wp-content/uploads/2024/08/454197155_1776279109567233_1218368745463502155_n-e1731489702434-300x300.jpg 300w, https://minhdathanh.com/wp-cont"
+    },
+    {
+      "src": "https://minhdathanh.com/wp-content/uploads/2024/03/fm-1-1024x1024.jpg",
+      "alt": "sàn gỗ famax green",
+      "w": 1019,
+      "h": 1019,
+      "displayW": 225,
+      "displayH": 225,
+      "cls": "attachment-large size-large lazy-load-active",
+      "parentCls": "img-inner dark",
+      "srcset": "https://minhdathanh.com/wp-content/uploads/2024/03/fm-1-1024x1024.jpg 1024w, https://minhdathanh.com/wp-content/uploads/2024/03/fm-1-300x300.jpg 300w, https://minhdathanh.com/wp-content/uploads/2024/03/fm-1-150x150.jpg 150w, https://minhdathanh.com/wp-content/uploads/2024/03/fm-1-768x768.jpg 768w, h"
+    },
+    {
+      "src": "https://minhdathanh.com/wp-content/uploads/2024/03/433315009_1455604741980868_8230311593539301982_n-1024x1024.jpg",
+      "alt": "sàn gỗ xương cá famax pro đà nẵng",
+      "w": 1019,
+      "h": 1019,
+      "displayW": 225,
+      "displayH": 225,
+      "cls": "attachment-large size-large lazy-load-active",
+      "parentCls": "img-inner dark",
+      "srcset": "https://minhdathanh.com/wp-content/uploads/2024/03/433315009_1455604741980868_8230311593539301982_n-1024x1024.jpg 1024w, https://minhdathanh.com/wp-content/uploads/2024/03/433315009_1455604741980868_8230311593539301982_n-300x300.jpg 300w, https://minhdathanh.com/wp-content/uploads/2024/03/433315009_"
+    },
+    {
+      "src": "https://minhdathanh.com/wp-content/uploads/2024/10/MF863_BurmeseTeak_1920X1030-1-e1731456602400-1024x1022.jpg",
+      "alt": "sàn gỗ inovar đà nẵng",
+      "w": 1019,
+      "h": 1018,
+      "displayW": 225,
+      "displayH": 225,
+      "cls": "attachment-large size-large lazy-load-active",
+      "parentCls": "img-inner dark",
+      "srcset": "https://minhdathanh.com/wp-content/uploads/2024/10/MF863_BurmeseTeak_1920X1030-1-e1731456602400-1024x1022.jpg 1024w, https://minhdathanh.com/wp-content/uploads/2024/10/MF863_BurmeseTeak_1920X1030-1-e1731456602400-300x300.jpg 300w, https://minhdathanh.com/wp-content/uploads/2024/10/MF863_BurmeseTeak_"
+    },
+    {
+      "src": "https://minhdathanh.com/wp-content/uploads/2024/08/eger.png",
+      "alt": "sàn gỗ đức Egger",
+      "w": 619,
+      "h": 619,
+      "displayW": 225,
+      "displayH": 225,
+      "cls": "attachment-large size-large lazy-load-active",
+      "parentCls": "img-inner dark",
+      "srcset": "https://minhdathanh.com/wp-content/uploads/2024/08/eger.png 619w, https://minhdathanh.com/wp-content/uploads/2024/08/eger-300x300.png 300w, https://minhdathanh.com/wp-content/uploads/2024/08/eger-150x150.png 150w"
+    },
+    {
+      "src": "https://minhdathanh.com/wp-content/uploads/2024/09/459223742_1801796723682138_2018649676811082162_n-e1731456854338-1024x1024.jpg",
+      "alt": "sàn gỗ xương cá đà nẵng",
+      "w": 1019,
+      "h": 1019,
+      "displayW": 225,
+      "displayH": 225,
+      "cls": "attachment-large size-large lazy-load-active",
+      "parentCls": "img-inner dark",
+      "srcset": "https://minhdathanh.com/wp-content/uploads/2024/09/459223742_1801796723682138_2018649676811082162_n-e1731456854338-1024x1024.jpg 1024w, https://minhdathanh.com/wp-content/uploads/2024/09/459223742_1801796723682138_2018649676811082162_n-e1731456854338-300x300.jpg 300w, https://minhdathanh.com/wp-cont"
+    },
+    {
+      "src": "https://minhdathanh.com/wp-content/uploads/2024/08/mat.png",
+      "alt": "sàn nhựa xương cá matfloor",
+      "w": 605,
+      "h": 605,
+      "displayW": 225,
+      "displayH": 225,
+      "cls": "attachment-large size-large lazy-load-active",
+      "parentCls": "img-inner dark",
+      "srcset": "https://minhdathanh.com/wp-content/uploads/2024/08/mat.png 605w, https://minhdathanh.com/wp-content/uploads/2024/08/mat-300x300.png 300w, https://minhdathanh.com/wp-content/uploads/2024/08/mat-150x150.png 150w"
+    },
+    {
+      "src": "https://minhdathanh.com/wp-content/uploads/2024/12/462579013_2313194389047728_3347040219631906728_n.jpg",
+      "alt": "sàn nhựa xương cá mia đà nẵng 5.7mm",
+      "w": 255,
+      "h": 247,
+      "displayW": 225,
+      "displayH": 218,
+      "cls": "attachment-large size-large lazy-load-active",
+      "parentCls": "img-inner dark",
+      "srcset": ""
+    },
+    {
+      "src": "https://minhdathanh.com/wp-content/uploads/2025/05/1.2-vach-ngan-nhua-van-go.jpg",
+      "alt": "vách ngăn nhựa 2 mặt",
+      "w": 510,
+      "h": 511,
+      "displayW": 225,
+      "displayH": 225,
+      "cls": "attachment-large size-large lazy-load-active",
+      "parentCls": "img-inner dark",
+      "srcset": "https://minhdathanh.com/wp-content/uploads/2025/05/1.2-vach-ngan-nhua-van-go.jpg 510w, https://minhdathanh.com/wp-content/uploads/2025/05/1.2-vach-ngan-nhua-van-go-300x300.jpg 300w, https://minhdathanh.com/wp-content/uploads/2025/05/1.2-vach-ngan-nhua-van-go-150x150.jpg 150w"
+    },
+    {
+      "src": "https://minhdathanh.com/wp-content/uploads/2024/05/438264406_826360499512570_7156978771737231114_n-e1719650128254-1024x1024.jpg",
+      "alt": "tủ kệ nội thất",
+      "w": 1019,
+      "h": 1019,
+      "displayW": 225,
+      "displayH": 225,
+      "cls": "attachment-large size-large lazy-load-active",
+      "parentCls": "img-inner dark",
+      "srcset": "https://minhdathanh.com/wp-content/uploads/2024/05/438264406_826360499512570_7156978771737231114_n-e1719650128254-1024x1024.jpg 1024w, https://minhdathanh.com/wp-content/uploads/2024/05/438264406_826360499512570_7156978771737231114_n-e1719650128254-300x300.jpg 300w, https://minhdathanh.com/wp-conten"
+    },
+    {
+      "src": "https://minhdathanh.com/wp-content/uploads/2024/04/z5282831838285_b33df6307bf7d53c57c28b143ab073da.jpg",
+      "alt": "thảm trải sàn văn phòng tại đà nẵng",
+      "w": 970,
+      "h": 1020,
+      "displayW": 225,
+      "displayH": 237,
+      "cls": "attachment-large size-large lazy-load-active",
+      "parentCls": "img-inner dark",
+      "srcset": "https://minhdathanh.com/wp-content/uploads/2024/04/z5282831838285_b33df6307bf7d53c57c28b143ab073da.jpg 970w, https://minhdathanh.com/wp-content/uploads/2024/04/z5282831838285_b33df6307bf7d53c57c28b143ab073da-285x300.jpg 285w, https://minhdathanh.com/wp-content/uploads/2024/04/z5282831838285_b33df630"
+    },
+    {
+      "src": "https://minhdathanh.com/wp-content/uploads/2024/04/Untitled.png",
+      "alt": "",
+      "w": 600,
+      "h": 600,
+      "displayW": 225,
+      "displayH": 225,
+      "cls": "attachment-large size-large lazy-load-active",
+      "parentCls": "img-inner dark",
+      "srcset": "https://minhdathanh.com/wp-content/uploads/2024/04/Untitled.png 600w, https://minhdathanh.com/wp-content/uploads/2024/04/Untitled-300x300.png 300w, https://minhdathanh.com/wp-content/uploads/2024/04/Untitled-150x150.png 150w"
+    },
+    {
+      "src": "data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20300%20225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E",
+      "alt": "",
+      "w": 200,
+      "h": 150,
+      "displayW": 310,
+      "displayH": 174,
+      "cls": "lazy-load attachment-medium size-medium wp-post-image",
+      "parentCls": "image-cover",
+      "srcset": ""
+    },
+    {
+      "src": "data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20300%20225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E",
+      "alt": "tấm ốp nano tại thanh khê",
+      "w": 200,
+      "h": 150,
+      "displayW": 310,
+      "displayH": 174,
+      "cls": "lazy-load attachment-medium size-medium wp-post-image",
+      "parentCls": "image-cover",
+      "srcset": ""
+    },
+    {
+      "src": "data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20300%20226%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E",
+      "alt": "tấm ốp than tre sơn trà",
+      "w": 199,
+      "h": 150,
+      "displayW": 310,
+      "displayH": 174,
+      "cls": "lazy-load attachment-medium size-medium wp-post-image",
+      "parentCls": "image-cover",
+      "srcset": ""
+    },
+    {
+      "src": "https://minhdathanh.com/wp-content/uploads/2026/05/tam-op-nano-tai-da-nang-1-300x224.jpg",
+      "alt": "tấm ốp nhựa nano đà nẵng",
+      "w": 300,
+      "h": 224,
+      "displayW": 310,
+      "displayH": 174,
+      "cls": "attachment-medium size-medium wp-post-image lazy-load-active",
+      "parentCls": "image-cover",
+      "srcset": "https://minhdathanh.com/wp-content/uploads/2026/05/tam-op-nano-tai-da-nang-1-300x224.jpg 300w, https://minhdathanh.com/wp-content/uploads/2026/05/tam-op-nano-tai-da-nang-1-1024x766.jpg 1024w, https://minhdathanh.com/wp-content/uploads/2026/05/tam-op-nano-tai-da-nang-1-768x575.jpg 768w, https://minhd"
+    },
+    {
+      "src": "https://minhdathanh.com/wp-content/uploads/2026/04/657456310_2249937915534681_4584902833367128270_n-300x224.jpg",
+      "alt": "tấm ốp than tre hòa xuân đà nẵng",
+      "w": 300,
+      "h": 224,
+      "displayW": 310,
+      "displayH": 174,
+      "cls": "attachment-medium size-medium wp-post-image lazy-load-active",
+      "parentCls": "image-cover",
+      "srcset": "https://minhdathanh.com/wp-content/uploads/2026/04/657456310_2249937915534681_4584902833367128270_n-300x224.jpg 300w, https://minhdathanh.com/wp-content/uploads/2026/04/657456310_2249937915534681_4584902833367128270_n-1024x766.jpg 1024w, https://minhdathanh.com/wp-content/uploads/2026/04/657456310_2"
+    },
+    {
+      "src": "https://minhdathanh.com/wp-content/uploads/2026/03/1-300x224.jpg",
+      "alt": "tấm ốp tường chung cư tại đà nẵng",
+      "w": 300,
+      "h": 224,
+      "displayW": 310,
+      "displayH": 174,
+      "cls": "attachment-medium size-medium wp-post-image lazy-load-active",
+      "parentCls": "image-cover",
+      "srcset": "https://minhdathanh.com/wp-content/uploads/2026/03/1-300x224.jpg 300w, https://minhdathanh.com/wp-content/uploads/2026/03/1-1024x766.jpg 1024w, https://minhdathanh.com/wp-content/uploads/2026/03/1-768x575.jpg 768w, https://minhdathanh.com/wp-content/uploads/2026/03/1-1536x1149.jpg 1536w, https://min"
+    },
+    {
+      "src": "data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20300%20224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E",
+      "alt": "trần nhựa lam sóng giả gỗ đà nẵng",
+      "w": 201,
+      "h": 150,
+      "displayW": 310,
+      "displayH": 174,
+      "cls": "lazy-load attachment-medium size-medium wp-post-image",
+      "parentCls": "image-cover",
+      "srcset": ""
+    },
+    {
+      "src": "data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20300%20225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E",
+      "alt": "thi công tấm than tre đà nẵng",
+      "w": 200,
+      "h": 150,
+      "displayW": 310,
+      "displayH": 174,
+      "cls": "lazy-load attachment-medium size-medium wp-post-image",
+      "parentCls": "image-cover",
+      "srcset": ""
+    },
+    {
+      "src": "data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20300%20225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E",
+      "alt": "tấm than tre đà nẵng",
+      "w": 200,
+      "h": 150,
+      "displayW": 310,
+      "displayH": 174,
+      "cls": "lazy-load attachment-medium size-medium wp-post-image",
+      "parentCls": "image-cover",
+      "srcset": ""
+    },
+    {
+      "src": "https://minhdathanh.com/wp-content/uploads/2022/04/Du-an-moi2.png",
+      "alt": "minh đà thành",
+      "w": 1080,
+      "h": 1080,
+      "displayW": 383,
+      "displayH": 383,
+      "cls": "attachment-original size-original lazy-load-active",
+      "parentCls": "img-inner image-cover dark",
+      "srcset": "https://minhdathanh.com/wp-content/uploads/2022/04/Du-an-moi2.png 1080w, https://minhdathanh.com/wp-content/uploads/2022/04/Du-an-moi2-300x300.png 300w, https://minhdathanh.com/wp-content/uploads/2022/04/Du-an-moi2-1024x1024.png 1024w, https://minhdathanh.com/wp-content/uploads/2022/04/Du-an-moi2-15"
+    }
+  ],
+  "backgroundImages": [],
+  "videos": [],
+  "inlineSvgs": [
+    {
+      "cls": "",
+      "viewBox": "0 0 0 0",
+      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 0 0\" width=\"0\" height=\"0\" focusable=\"false\" role=\"none\" style=\"visibility: hidden; position: absolute; left: -9999px; overflow: hidden;\"><defs><filter id=\"wp-duotone-dark-grayscale\"><feColorMatrix color-interpolation-filters=\"sRGB\" type=\"matrix\" values=\" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 \"></feColorMatrix><feComponentTransfer color-interpolation-filters=\"sRGB\"><feFuncR type=\"table\" tableValues=\"0 0.49803921568627\"></feFuncR><feFuncG type=\"table\" tableValues=\"0 0.49803921568627\"></feFuncG><feFuncB type=\"table\" tableValues=\"0 0.49803921568627\"></feFuncB><feFuncA type=\"table\" tableValues=\"1 1\"></feFuncA></feComponentTransfer><feComposite in2=\"SourceGraphic\" operator=\"in\"></feComposite></filter></defs></svg>"
+    },
+    {
+      "cls": "",
+      "viewBox": "0 0 0 0",
+      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 0 0\" width=\"0\" height=\"0\" focusable=\"false\" role=\"none\" style=\"visibility: hidden; position: absolute; left: -9999px; overflow: hidden;\"><defs><filter id=\"wp-duotone-grayscale\"><feColorMatrix color-interpolation-filters=\"sRGB\" type=\"matrix\" values=\" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 \"></feColorMatrix><feComponentTransfer color-interpolation-filters=\"sRGB\"><feFuncR type=\"table\" tableValues=\"0 1\"></feFuncR><feFuncG type=\"table\" tableValues=\"0 1\"></feFuncG><feFuncB type=\"table\" tableValues=\"0 1\"></feFuncB><feFuncA type=\"table\" tableValues=\"1 1\"></feFuncA></feComponentTransfer><feComposite in2=\"SourceGraphic\" operator=\"in\"></feComposite></filter></defs></svg>"
+    },
+    {
+      "cls": "",
+      "viewBox": "0 0 0 0",
+      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 0 0\" width=\"0\" height=\"0\" focusable=\"false\" role=\"none\" style=\"visibility: hidden; position: absolute; left: -9999px; overflow: hidden;\"><defs><filter id=\"wp-duotone-purple-yellow\"><feColorMatrix color-interpolation-filters=\"sRGB\" type=\"matrix\" values=\" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 \"></feColorMatrix><feComponentTransfer color-interpolation-filters=\"sRGB\"><feFuncR type=\"table\" tableValues=\"0.54901960784314 0.98823529411765\"></feFuncR><feFuncG type=\"table\" tableValues=\"0 1\"></feFuncG><feFuncB type=\"table\" tableValues=\"0.71764705882353 0.25490196078431\"></feFuncB><feFuncA type=\"table\" tableValues=\"1 1\"></feFuncA></feComponentTransfer><feComposite in2=\"SourceGraphic\" operator=\"in\"></feComposite></filter></defs></svg>"
+    },
+    {
+      "cls": "",
+      "viewBox": "0 0 0 0",
+      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 0 0\" width=\"0\" height=\"0\" focusable=\"false\" role=\"none\" style=\"visibility: hidden; position: absolute; left: -9999px; overflow: hidden;\"><defs><filter id=\"wp-duotone-blue-red\"><feColorMatrix color-interpolation-filters=\"sRGB\" type=\"matrix\" values=\" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 \"></feColorMatrix><feComponentTransfer color-interpolation-filters=\"sRGB\"><feFuncR type=\"table\" tableValues=\"0 1\"></feFuncR><feFuncG type=\"table\" tableValues=\"0 0.27843137254902\"></feFuncG><feFuncB type=\"table\" tableValues=\"0.5921568627451 0.27843137254902\"></feFuncB><feFuncA type=\"table\" tableValues=\"1 1\"></feFuncA></feComponentTransfer><feComposite in2=\"SourceGraphic\" operator=\"in\"></feComposite></filter></defs></svg>"
+    },
+    {
+      "cls": "",
+      "viewBox": "0 0 0 0",
+      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 0 0\" width=\"0\" height=\"0\" focusable=\"false\" role=\"none\" style=\"visibility: hidden; position: absolute; left: -9999px; overflow: hidden;\"><defs><filter id=\"wp-duotone-midnight\"><feColorMatrix color-interpolation-filters=\"sRGB\" type=\"matrix\" values=\" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 \"></feColorMatrix><feComponentTransfer color-interpolation-filters=\"sRGB\"><feFuncR type=\"table\" tableValues=\"0 0\"></feFuncR><feFuncG type=\"table\" tableValues=\"0 0.64705882352941\"></feFuncG><feFuncB type=\"table\" tableValues=\"0 1\"></feFuncB><feFuncA type=\"table\" tableValues=\"1 1\"></feFuncA></feComponentTransfer><feComposite in2=\"SourceGraphic\" operator=\"in\"></feComposite></filter></defs></svg>"
+    },
+    {
+      "cls": "",
+      "viewBox": "0 0 0 0",
+      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 0 0\" width=\"0\" height=\"0\" focusable=\"false\" role=\"none\" style=\"visibility: hidden; position: absolute; left: -9999px; overflow: hidden;\"><defs><filter id=\"wp-duotone-magenta-yellow\"><feColorMatrix color-interpolation-filters=\"sRGB\" type=\"matrix\" values=\" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 \"></feColorMatrix><feComponentTransfer color-interpolation-filters=\"sRGB\"><feFuncR type=\"table\" tableValues=\"0.78039215686275 1\"></feFuncR><feFuncG type=\"table\" tableValues=\"0 0.94901960784314\"></feFuncG><feFuncB type=\"table\" tableValues=\"0.35294117647059 0.47058823529412\"></feFuncB><feFuncA type=\"table\" tableValues=\"1 1\"></feFuncA></feComponentTransfer><feComposite in2=\"SourceGraphic\" operator=\"in\"></feComposite></filter></defs></svg>"
+    },
+    {
+      "cls": "",
+      "viewBox": "0 0 0 0",
+      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 0 0\" width=\"0\" height=\"0\" focusable=\"false\" role=\"none\" style=\"visibility: hidden; position: absolute; left: -9999px; overflow: hidden;\"><defs><filter id=\"wp-duotone-purple-green\"><feColorMatrix color-interpolation-filters=\"sRGB\" type=\"matrix\" values=\" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 \"></feColorMatrix><feComponentTransfer color-interpolation-filters=\"sRGB\"><feFuncR type=\"table\" tableValues=\"0.65098039215686 0.40392156862745\"></feFuncR><feFuncG type=\"table\" tableValues=\"0 1\"></feFuncG><feFuncB type=\"table\" tableValues=\"0.44705882352941 0.4\"></feFuncB><feFuncA type=\"table\" tableValues=\"1 1\"></feFuncA></feComponentTransfer><feComposite in2=\"SourceGraphic\" operator=\"in\"></feComposite></filter></defs></svg>"
+    },
+    {
+      "cls": "",
+      "viewBox": "0 0 0 0",
+      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 0 0\" width=\"0\" height=\"0\" focusable=\"false\" role=\"none\" style=\"visibility: hidden; position: absolute; left: -9999px; overflow: hidden;\"><defs><filter id=\"wp-duotone-blue-orange\"><feColorMatrix color-interpolation-filters=\"sRGB\" type=\"matrix\" values=\" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 \"></feColorMatrix><feComponentTransfer color-interpolation-filters=\"sRGB\"><feFuncR type=\"table\" tableValues=\"0.098039215686275 1\"></feFuncR><feFuncG type=\"table\" tableValues=\"0 0.66274509803922\"></feFuncG><feFuncB type=\"table\" tableValues=\"0.84705882352941 0.41960784313725\"></feFuncB><feFuncA type=\"table\" tableValues=\"1 1\"></feFuncA></feComponentTransfer><feComposite in2=\"SourceGraphic\" operator=\"in\"></feComposite></filter></defs></svg>"
+    },
+    {
+      "cls": "flickity-button-icon",
+      "viewBox": "0 0 100 100",
+      "html": "<svg class=\"flickity-button-icon\" viewBox=\"0 0 100 100\"><path d=\"M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z\" class=\"arrow\"></path></svg>"
+    },
+    {
+      "cls": "flickity-button-icon",
+      "viewBox": "0 0 100 100",
+      "html": "<svg class=\"flickity-button-icon\" viewBox=\"0 0 100 100\"><path d=\"M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z\" class=\"arrow\" transform=\"translate(100, 100) rotate(180) \"></path></svg>"
+    },
+    {
+      "cls": "flickity-button-icon",
+      "viewBox": "0 0 100 100",
+      "html": "<svg class=\"flickity-button-icon\" viewBox=\"0 0 100 100\"><path d=\"M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z\" class=\"arrow\"></path></svg>"
+    },
+    {
+      "cls": "flickity-button-icon",
+      "viewBox": "0 0 100 100",
+      "html": "<svg class=\"flickity-button-icon\" viewBox=\"0 0 100 100\"><path d=\"M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z\" class=\"arrow\" transform=\"translate(100, 100) rotate(180) \"></path></svg>"
+    }
+  ],
+  "iconFonts": [
+    "fl-icons"
+  ]
+}

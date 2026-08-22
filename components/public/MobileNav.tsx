@@ -4,7 +4,6 @@ import Link from 'next/link'
 import { useEffect, useRef, useSyncExternalStore } from 'react'
 import { createPortal } from 'react-dom'
 import { useMenuDisclosure } from '@/components/useMenuDisclosure'
-import { buttonClass } from '@/lib/ui/button'
 
 type NavItem = { href: string; label: string }
 
@@ -14,7 +13,7 @@ type NavItem = { href: string; label: string }
 const subscribe = () => () => {}
 const useIsClient = () => useSyncExternalStore(subscribe, () => true, () => false)
 
-export function MobileNav({ items, ctaHref, ctaLabel }: { items: NavItem[]; ctaHref: string; ctaLabel: string }) {
+export function MobileNav({ items }: { items: NavItem[] }) {
   const { open, setOpen } = useMenuDisclosure()
   const isClient = useIsClient()
   const triggerRef = useRef<HTMLButtonElement>(null)
@@ -41,7 +40,7 @@ export function MobileNav({ items, ctaHref, ctaLabel }: { items: NavItem[]; ctaH
         aria-label={open ? 'Đóng menu' : 'Mở menu'}
         aria-expanded={open}
         aria-controls="mobile-nav-panel"
-        className="-mr-2 flex h-11 w-11 items-center justify-center rounded-lg text-slate-700 transition-colors hover:bg-slate-100 sm:hidden"
+        className="-mr-2 flex h-11 w-11 items-center justify-center rounded-lg text-slate-700 transition-colors hover:bg-slate-100 nav:hidden"
       >
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
           strokeLinecap="round" aria-hidden>
@@ -65,7 +64,7 @@ export function MobileNav({ items, ctaHref, ctaLabel }: { items: NavItem[]; ctaH
       <div
         onClick={() => setOpen(false)}
         aria-hidden
-        className={`fixed inset-0 z-40 bg-slate-950/40 transition-opacity duration-300 sm:hidden ${
+        className={`fixed inset-0 z-40 bg-slate-950/40 transition-opacity duration-300 nav:hidden ${
           open ? 'visible opacity-100' : 'invisible opacity-0'
         }`}
       />
@@ -80,7 +79,7 @@ export function MobileNav({ items, ctaHref, ctaLabel }: { items: NavItem[]; ctaH
           nền mờ nằm dưới; riêng panel bật lại pointer-events. */}
       <div
         aria-hidden={!open}
-        className={`pointer-events-none fixed inset-0 z-50 overflow-hidden sm:hidden ${
+        className={`pointer-events-none fixed inset-0 z-50 overflow-hidden nav:hidden ${
           open ? 'visible' : 'invisible'
         }`}
       >
@@ -104,15 +103,10 @@ export function MobileNav({ items, ctaHref, ctaLabel }: { items: NavItem[]; ctaH
 
           {items.map((item) => (
             <Link key={item.href} href={item.href}
-              className="rounded-lg px-3 py-3 text-base font-medium text-slate-700 transition-colors hover:bg-slate-50 hover:text-slate-900">
+              className="rounded-lg px-3 py-3 text-[14.4px]/[23.04px] font-bold uppercase tracking-[0.288px] text-black transition-colors hover:bg-primary-50 hover:text-primary-600">
               {item.label}
             </Link>
           ))}
-
-          <Link href={ctaHref}
-            className={`mt-3 w-full ${buttonClass({ size: 'md', lift: false })}`}>
-            {ctaLabel}
-          </Link>
         </div>
       </div>
         </>,

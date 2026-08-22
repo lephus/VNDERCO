@@ -56,8 +56,15 @@ export function buildPalette(hex: string): Palette {
   }
 
   const primary = shades[500]
+  // Đo tương phản trên shade 600 chứ không phải 500: `--vnd-primary-fg` chỉ được
+  // dùng làm chữ trên NỀN ĐẶC, mà mọi nền đặc trong site đều là bg-primary-600
+  // (xem VARIANTS.primary trong lib/ui/button.ts). Đo trên 500 rồi đem dùng trên
+  // 600 là đo một màu, tô một màu khác — với tông xanh mặc định, phép đo cũ chọn
+  // chữ tối (4,87:1 trên shade 500) nhưng đặt lên shade 600 chỉ còn 3,68:1, dưới
+  // ngưỡng AA 4,5:1; chữ trắng ở đó đạt 4,82:1.
+  const solid = shades[600]
   const foreground =
-    wcagContrast(primary, LIGHT_TEXT) >= wcagContrast(primary, DARK_TEXT) ? LIGHT_TEXT : DARK_TEXT
+    wcagContrast(solid, LIGHT_TEXT) >= wcagContrast(solid, DARK_TEXT) ? LIGHT_TEXT : DARK_TEXT
 
   const mid = { l: RAMP[500].l, c: base.c, h: base.h }
 

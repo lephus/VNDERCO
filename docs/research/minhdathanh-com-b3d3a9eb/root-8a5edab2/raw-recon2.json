@@ -1,0 +1,1906 @@
+{
+  "docHeight": 4481,
+  "assembly": [
+    {
+      "tag": "div",
+      "classes": "slider-wrapper relative",
+      "w": 1050,
+      "h": 425.52,
+      "top": 160,
+      "bg": "rgba(0, 0, 0, 0)",
+      "padding": "0px",
+      "text": "#image_272204068 { width: 100%; } #image_1990883283 { width: 100%; } #"
+    },
+    {
+      "tag": "div",
+      "classes": "container section-title-container",
+      "w": 1050,
+      "h": 43.41,
+      "top": 616,
+      "bg": "rgba(0, 0, 0, 0)",
+      "padding": "0px",
+      "text": "Tấm ốp trong nhà"
+    },
+    {
+      "tag": "section",
+      "classes": "section",
+      "w": 1050,
+      "h": 637.66,
+      "top": 683,
+      "bg": "rgb(50, 137, 245)",
+      "padding": "0px 30px",
+      "text": "#image_1559618297 { width: 100%; } Tấm ốp vân đá #image_1124826757 { w"
+    },
+    {
+      "tag": "section",
+      "classes": "section",
+      "w": 1050,
+      "h": 2300.67,
+      "top": 1321,
+      "bg": "rgba(0, 0, 0, 0)",
+      "padding": "30px",
+      "text": "Tấm ốp - Sàn gỗ ngoài trời #image_710525972 { width: 100%; } Gỗ nhựa n"
+    },
+    {
+      "tag": "section",
+      "classes": "section",
+      "w": 1050,
+      "h": 493.09,
+      "top": 3622,
+      "bg": "rgb(20, 135, 201)",
+      "padding": "30px",
+      "text": "#image_2036973906 { width: 100%; } CAM KẾT CHẤT LƯỢNG CÔNG TRÌNH TỪ MI"
+    },
+    {
+      "tag": "div",
+      "classes": "zalo-share-button",
+      "w": 70,
+      "h": 20,
+      "top": 4115,
+      "bg": "rgba(0, 0, 0, 0)",
+      "padding": "0px",
+      "text": ""
+    }
+  ],
+  "titles": [
+    {
+      "w": 1050,
+      "h": 43.41,
+      "top": 616,
+      "containerStyles": {
+        "margin": "30px 0px 24px",
+        "padding": "0px",
+        "maxWidth": "1080px",
+        "width": "1050px"
+      },
+      "h2": {
+        "w": 1050,
+        "h": 30.61,
+        "top": 616,
+        "fontSize": "25.6px",
+        "lineHeight": "33.28px",
+        "fontWeight": "700",
+        "color": "rgb(35, 144, 239)",
+        "textAlign": "start",
+        "textTransform": "none",
+        "letterSpacing": "normal",
+        "margin": "0px 0px 12.8px",
+        "padding": "0px",
+        "display": "flex",
+        "justifyContent": "space-between",
+        "alignItems": "center",
+        "flexWrap": "wrap"
+      },
+      "span": {
+        "text": "Tấm ốp trong nhà",
+        "w": 186.91,
+        "h": 30.61,
+        "top": 616,
+        "fontSize": "23.552px",
+        "lineHeight": "30.6176px",
+        "fontWeight": "700",
+        "color": "rgb(35, 144, 239)",
+        "textAlign": "center",
+        "textTransform": "none",
+        "letterSpacing": "normal",
+        "margin": "0px 15px",
+        "padding": "0px"
+      },
+      "rule": {
+        "w": 400.06,
+        "h": 2,
+        "top": 630,
+        "backgroundColor": "rgb(35, 144, 239)",
+        "height": "2px",
+        "display": "block",
+        "flexGrow": "1",
+        "flex": "1 1 0%"
+      },
+      "link": {
+        "text": "",
+        "href": "https://minhdathanh.com/san-pham/",
+        "fontSize": "20.48px",
+        "lineHeight": "26.624px",
+        "fontWeight": "700",
+        "color": "rgb(34, 143, 245)",
+        "textAlign": "start",
+        "textTransform": "none",
+        "letterSpacing": "normal",
+        "margin": "0px",
+        "padding": "0px 0px 0px 15px",
+        "display": "block",
+        "alignItems": "normal"
+      }
+    },
+    {
+      "w": 990,
+      "h": 43.41,
+      "top": 1351,
+      "containerStyles": {
+        "margin": "0px 0px 24px",
+        "padding": "0px",
+        "maxWidth": "1080px",
+        "width": "990px"
+      },
+      "h2": {
+        "w": 990,
+        "h": 30.61,
+        "top": 1351,
+        "fontSize": "25.6px",
+        "lineHeight": "33.28px",
+        "fontWeight": "700",
+        "color": "rgb(35, 144, 239)",
+        "textAlign": "start",
+        "textTransform": "none",
+        "letterSpacing": "normal",
+        "margin": "0px 0px 12.8px",
+        "padding": "0px",
+        "display": "flex",
+        "justifyContent": "space-between",
+        "alignItems": "center",
+        "flexWrap": "wrap"
+      },
+      "span": {
+        "text": "Tấm ốp - Sàn gỗ ngoài trời",
+        "w": 280.92,
+        "h": 30.61,
+        "top": 1351,
+        "fontSize": "23.552px",
+        "lineHeight": "30.6176px",
+        "fontWeight": "700",
+        "color": "rgb(35, 144, 239)",
+        "textAlign": "center",
+        "textTransform": "none",
+        "letterSpacing": "normal",
+        "margin": "0px 15px",
+        "padding": "0px"
+      },
+      "rule": {
+        "w": 339.53,
+        "h": 2,
+        "top": 1365,
+        "backgroundColor": "rgb(35, 144, 239)",
+        "height": "2px",
+        "display": "block",
+        "flexGrow": "1",
+        "flex": "1 1 0%"
+      },
+      "link": null
+    },
+    {
+      "w": 990,
+      "h": 43.41,
+      "top": 2055,
+      "containerStyles": {
+        "margin": "0px 0px 24px",
+        "padding": "0px",
+        "maxWidth": "1080px",
+        "width": "990px"
+      },
+      "h2": {
+        "w": 990,
+        "h": 30.61,
+        "top": 2055,
+        "fontSize": "25.6px",
+        "lineHeight": "33.28px",
+        "fontWeight": "700",
+        "color": "rgb(35, 144, 239)",
+        "textAlign": "start",
+        "textTransform": "none",
+        "letterSpacing": "normal",
+        "margin": "0px 0px 12.8px",
+        "padding": "0px",
+        "display": "flex",
+        "justifyContent": "space-between",
+        "alignItems": "center",
+        "flexWrap": "wrap"
+      },
+      "span": {
+        "text": "Sàn gỗ sàn nhựa",
+        "w": 175.83,
+        "h": 30.61,
+        "top": 2055,
+        "fontSize": "23.552px",
+        "lineHeight": "30.6176px",
+        "fontWeight": "700",
+        "color": "rgb(35, 144, 239)",
+        "textAlign": "center",
+        "textTransform": "none",
+        "letterSpacing": "normal",
+        "margin": "0px 15px",
+        "padding": "0px"
+      },
+      "rule": {
+        "w": 392.08,
+        "h": 2,
+        "top": 2070,
+        "backgroundColor": "rgb(35, 144, 239)",
+        "height": "2px",
+        "display": "block",
+        "flexGrow": "1",
+        "flex": "1 1 0%"
+      },
+      "link": null
+    },
+    {
+      "w": 990,
+      "h": 43.41,
+      "top": 2758,
+      "containerStyles": {
+        "margin": "0px 0px 24px",
+        "padding": "0px",
+        "maxWidth": "1080px",
+        "width": "990px"
+      },
+      "h2": {
+        "w": 990,
+        "h": 30.61,
+        "top": 2758,
+        "fontSize": "25.6px",
+        "lineHeight": "33.28px",
+        "fontWeight": "700",
+        "color": "rgb(35, 144, 239)",
+        "textAlign": "start",
+        "textTransform": "none",
+        "letterSpacing": "normal",
+        "margin": "0px 0px 12.8px",
+        "padding": "0px",
+        "display": "flex",
+        "justifyContent": "space-between",
+        "alignItems": "center",
+        "flexWrap": "wrap"
+      },
+      "span": {
+        "text": "Cửa nhựa - Vách ngăn - Thảm lót sàn",
+        "w": 391.98,
+        "h": 30.61,
+        "top": 2758,
+        "fontSize": "23.552px",
+        "lineHeight": "30.6176px",
+        "fontWeight": "700",
+        "color": "rgb(35, 144, 239)",
+        "textAlign": "center",
+        "textTransform": "none",
+        "letterSpacing": "normal",
+        "margin": "0px 15px",
+        "padding": "0px"
+      },
+      "rule": {
+        "w": 284,
+        "h": 2,
+        "top": 2773,
+        "backgroundColor": "rgb(35, 144, 239)",
+        "height": "2px",
+        "display": "block",
+        "flexGrow": "1",
+        "flex": "1 1 0%"
+      },
+      "link": null
+    },
+    {
+      "w": 990,
+      "h": 43.41,
+      "top": 3155,
+      "containerStyles": {
+        "margin": "0px 0px 24px",
+        "padding": "0px",
+        "maxWidth": "1080px",
+        "width": "990px"
+      },
+      "h2": {
+        "w": 990,
+        "h": 30.61,
+        "top": 3155,
+        "fontSize": "25.6px",
+        "lineHeight": "33.28px",
+        "fontWeight": "700",
+        "color": "rgb(35, 144, 239)",
+        "textAlign": "start",
+        "textTransform": "none",
+        "letterSpacing": "normal",
+        "margin": "0px 0px 12.8px",
+        "padding": "0px",
+        "display": "flex",
+        "justifyContent": "space-between",
+        "alignItems": "center",
+        "flexWrap": "wrap"
+      },
+      "span": {
+        "text": "Tin tức công trình",
+        "w": 187.77,
+        "h": 30.61,
+        "top": 3155,
+        "fontSize": "23.552px",
+        "lineHeight": "30.6176px",
+        "fontWeight": "700",
+        "color": "rgb(35, 144, 239)",
+        "textAlign": "center",
+        "textTransform": "none",
+        "letterSpacing": "normal",
+        "margin": "0px 15px",
+        "padding": "0px"
+      },
+      "rule": {
+        "w": 386.11,
+        "h": 2,
+        "top": 3169,
+        "backgroundColor": "rgb(35, 144, 239)",
+        "height": "2px",
+        "display": "block",
+        "flexGrow": "1",
+        "flex": "1 1 0%"
+      },
+      "link": null
+    }
+  ],
+  "rows": [
+    {
+      "classes": "row row-main",
+      "w": 1080,
+      "h": 4011.94,
+      "top": 160,
+      "display": "flex",
+      "flexWrap": "wrap",
+      "margin": "0px",
+      "cols": 1,
+      "colWidth": "100%",
+      "colPadding": "0px 15px 30px",
+      "tiles": [
+        {
+          "caption": "Tấm ốp vân đá",
+          "capStyles": {
+            "fontSize": "16px",
+            "lineHeight": "25.6px",
+            "fontWeight": "400",
+            "color": "rgb(0, 0, 0)",
+            "textAlign": "center"
+          },
+          "capP": {
+            "margin": "0px 0px 20.8px",
+            "textAlign": "center"
+          },
+          "imgWrap": {
+            "w": 1050,
+            "h": 425.53,
+            "top": 160,
+            "margin": "0px",
+            "overflow": "visible",
+            "borderRadius": "0px"
+          },
+          "img": {
+            "natural": "1019x413",
+            "w": 1050,
+            "h": 425.53,
+            "top": 160,
+            "objectFit": "fill",
+            "borderRadius": "0px",
+            "aspectRatio": "auto 1020 / 413",
+            "transition": "opacity 1s"
+          }
+        }
+      ]
+    },
+    {
+      "classes": "row",
+      "w": 1020,
+      "h": 637.66,
+      "top": 683,
+      "display": "flex",
+      "flexWrap": "wrap",
+      "margin": "0px -15px",
+      "cols": 8,
+      "colWidth": "25%",
+      "colPadding": "0px 15px 30px",
+      "tiles": [
+        {
+          "caption": "Tấm ốp vân đá",
+          "capStyles": {
+            "fontSize": "16px",
+            "lineHeight": "25.6px",
+            "fontWeight": "400",
+            "color": "rgb(0, 0, 0)",
+            "textAlign": "center"
+          },
+          "capP": {
+            "margin": "0px 0px 20.8px",
+            "textAlign": "center"
+          },
+          "imgWrap": {
+            "w": 225,
+            "h": 225,
+            "top": 683,
+            "margin": "0px 0px 16px",
+            "overflow": "visible",
+            "borderRadius": "0px"
+          },
+          "img": {
+            "natural": "1019x1019",
+            "w": 225,
+            "h": 225,
+            "top": 683,
+            "objectFit": "fill",
+            "borderRadius": "0px",
+            "aspectRatio": "auto 1020 / 1020",
+            "transition": "opacity 1s"
+          }
+        },
+        {
+          "caption": "Tấm ốp Nano",
+          "capStyles": {
+            "fontSize": "16px",
+            "lineHeight": "25.6px",
+            "fontWeight": "400",
+            "color": "rgb(0, 0, 0)",
+            "textAlign": "center"
+          },
+          "capP": {
+            "margin": "0px 0px 20.8px",
+            "textAlign": "center"
+          },
+          "imgWrap": {
+            "w": 225,
+            "h": 225,
+            "top": 683,
+            "margin": "0px 0px 16px",
+            "overflow": "visible",
+            "borderRadius": "0px"
+          },
+          "img": {
+            "natural": "1019x1019",
+            "w": 225,
+            "h": 225,
+            "top": 683,
+            "objectFit": "fill",
+            "borderRadius": "0px",
+            "aspectRatio": "auto 1020 / 1020",
+            "transition": "opacity 1s"
+          }
+        },
+        {
+          "caption": "Lam sóng",
+          "capStyles": {
+            "fontSize": "16px",
+            "lineHeight": "25.6px",
+            "fontWeight": "400",
+            "color": "rgb(0, 0, 0)",
+            "textAlign": "center"
+          },
+          "capP": {
+            "margin": "0px 0px 20.8px",
+            "textAlign": "center"
+          },
+          "imgWrap": {
+            "w": 225,
+            "h": 225,
+            "top": 683,
+            "margin": "0px 0px 16px",
+            "overflow": "visible",
+            "borderRadius": "0px"
+          },
+          "img": {
+            "natural": "1019x1019",
+            "w": 225,
+            "h": 225,
+            "top": 683,
+            "objectFit": "fill",
+            "borderRadius": "0px",
+            "aspectRatio": "auto 1020 / 1020",
+            "transition": "opacity 1s"
+          }
+        },
+        {
+          "caption": "Tấm ốp than tre",
+          "capStyles": {
+            "fontSize": "16px",
+            "lineHeight": "25.6px",
+            "fontWeight": "400",
+            "color": "rgb(0, 0, 0)",
+            "textAlign": "center"
+          },
+          "capP": {
+            "margin": "0px 0px 20.8px",
+            "textAlign": "center"
+          },
+          "imgWrap": {
+            "w": 225,
+            "h": 225.88,
+            "top": 683,
+            "margin": "0px 0px 16px",
+            "overflow": "visible",
+            "borderRadius": "0px"
+          },
+          "img": {
+            "natural": "1020x1024",
+            "w": 225,
+            "h": 225.88,
+            "top": 683,
+            "objectFit": "fill",
+            "borderRadius": "0px",
+            "aspectRatio": "auto 1020 / 1024",
+            "transition": "opacity 1s"
+          }
+        },
+        {
+          "caption": "Trần nhựa giật cấp",
+          "capStyles": {
+            "fontSize": "16px",
+            "lineHeight": "25.6px",
+            "fontWeight": "400",
+            "color": "rgb(0, 0, 0)",
+            "textAlign": "center"
+          },
+          "capP": {
+            "margin": "0px 0px 20.8px",
+            "textAlign": "center"
+          },
+          "imgWrap": {
+            "w": 225,
+            "h": 225,
+            "top": 1003,
+            "margin": "0px 0px 16px",
+            "overflow": "visible",
+            "borderRadius": "0px"
+          },
+          "img": {
+            "natural": "1019x1019",
+            "w": 225,
+            "h": 225,
+            "top": 1003,
+            "objectFit": "fill",
+            "borderRadius": "0px",
+            "aspectRatio": "auto 1020 / 1020",
+            "transition": "opacity 1s"
+          }
+        },
+        {
+          "caption": "Tranh tráng gương",
+          "capStyles": {
+            "fontSize": "16px",
+            "lineHeight": "25.6px",
+            "fontWeight": "400",
+            "color": "rgb(0, 0, 0)",
+            "textAlign": "center"
+          },
+          "capP": {
+            "margin": "0px 0px 20.8px",
+            "textAlign": "center"
+          },
+          "imgWrap": {
+            "w": 225,
+            "h": 225,
+            "top": 1003,
+            "margin": "0px 0px 16px",
+            "overflow": "visible",
+            "borderRadius": "0px"
+          },
+          "img": {
+            "natural": "1019x1019",
+            "w": 225,
+            "h": 225,
+            "top": 1003,
+            "objectFit": "fill",
+            "borderRadius": "0px",
+            "aspectRatio": "auto 1020 / 1020",
+            "transition": "opacity 1s"
+          }
+        },
+        {
+          "caption": "Trần than tre",
+          "capStyles": {
+            "fontSize": "16px",
+            "lineHeight": "25.6px",
+            "fontWeight": "400",
+            "color": "rgb(0, 0, 0)",
+            "textAlign": "center"
+          },
+          "capP": {
+            "margin": "0px 0px 20.8px",
+            "textAlign": "center"
+          },
+          "imgWrap": {
+            "w": 225,
+            "h": 225,
+            "top": 1003,
+            "margin": "0px 0px 16px",
+            "overflow": "visible",
+            "borderRadius": "0px"
+          },
+          "img": {
+            "natural": "1019x1019",
+            "w": 225,
+            "h": 225,
+            "top": 1003,
+            "objectFit": "fill",
+            "borderRadius": "0px",
+            "aspectRatio": "auto 1020 / 1020",
+            "transition": "opacity 1s"
+          }
+        },
+        {
+          "caption": "Lam hộp cầu thang",
+          "capStyles": {
+            "fontSize": "16px",
+            "lineHeight": "25.6px",
+            "fontWeight": "400",
+            "color": "rgb(0, 0, 0)",
+            "textAlign": "center"
+          },
+          "capP": {
+            "margin": "0px 0px 20.8px",
+            "textAlign": "center"
+          },
+          "imgWrap": {
+            "w": 225,
+            "h": 225,
+            "top": 1003,
+            "margin": "0px 0px 16px",
+            "overflow": "visible",
+            "borderRadius": "0px"
+          },
+          "img": {
+            "natural": "1019x1019",
+            "w": 225,
+            "h": 225,
+            "top": 1003,
+            "objectFit": "fill",
+            "borderRadius": "0px",
+            "aspectRatio": "auto 1020 / 1020",
+            "transition": "opacity 1s"
+          }
+        }
+      ]
+    },
+    {
+      "classes": "row",
+      "w": 1020,
+      "h": 636.78,
+      "top": 1418,
+      "display": "flex",
+      "flexWrap": "wrap",
+      "margin": "0px -15px",
+      "cols": 8,
+      "colWidth": "25%",
+      "colPadding": "0px 15px 30px",
+      "tiles": [
+        {
+          "caption": "Gỗ nhựa ngoài trời Awood",
+          "capStyles": {
+            "fontSize": "16px",
+            "lineHeight": "25.6px",
+            "fontWeight": "400",
+            "color": "rgb(0, 0, 0)",
+            "textAlign": "center"
+          },
+          "capP": {
+            "margin": "0px 0px 20.8px",
+            "textAlign": "center"
+          },
+          "imgWrap": {
+            "w": 225,
+            "h": 225,
+            "top": 1418,
+            "margin": "0px 0px 16px",
+            "overflow": "visible",
+            "borderRadius": "0px"
+          },
+          "img": {
+            "natural": "800x800",
+            "w": 225,
+            "h": 225,
+            "top": 1418,
+            "objectFit": "fill",
+            "borderRadius": "0px",
+            "aspectRatio": "auto 800 / 800",
+            "transition": "opacity 1s"
+          }
+        },
+        {
+          "caption": "Sàn gỗ ngoài trời Awood",
+          "capStyles": {
+            "fontSize": "16px",
+            "lineHeight": "25.6px",
+            "fontWeight": "400",
+            "color": "rgb(0, 0, 0)",
+            "textAlign": "center"
+          },
+          "capP": {
+            "margin": "0px 0px 20.8px",
+            "textAlign": "center"
+          },
+          "imgWrap": {
+            "w": 225,
+            "h": 225,
+            "top": 1418,
+            "margin": "0px 0px 16px",
+            "overflow": "visible",
+            "borderRadius": "0px"
+          },
+          "img": {
+            "natural": "1019x1019",
+            "w": 225,
+            "h": 225,
+            "top": 1418,
+            "objectFit": "fill",
+            "borderRadius": "0px",
+            "aspectRatio": "auto 1020 / 1020",
+            "transition": "opacity 1s"
+          }
+        },
+        {
+          "caption": "Lam hộp ngoài trời Awood",
+          "capStyles": {
+            "fontSize": "16px",
+            "lineHeight": "25.6px",
+            "fontWeight": "400",
+            "color": "rgb(0, 0, 0)",
+            "textAlign": "center"
+          },
+          "capP": {
+            "margin": "0px 0px 20.8px",
+            "textAlign": "center"
+          },
+          "imgWrap": {
+            "w": 225,
+            "h": 225,
+            "top": 1418,
+            "margin": "0px 0px 16px",
+            "overflow": "visible",
+            "borderRadius": "0px"
+          },
+          "img": {
+            "natural": "1019x1019",
+            "w": 225,
+            "h": 225,
+            "top": 1418,
+            "objectFit": "fill",
+            "borderRadius": "0px",
+            "aspectRatio": "auto 1020 / 1020",
+            "transition": "opacity 1s"
+          }
+        },
+        {
+          "caption": "Gỗ nhựa Pvc Greenwood",
+          "capStyles": {
+            "fontSize": "16px",
+            "lineHeight": "25.6px",
+            "fontWeight": "400",
+            "color": "rgb(0, 0, 0)",
+            "textAlign": "center"
+          },
+          "capP": {
+            "margin": "0px 0px 20.8px",
+            "textAlign": "center"
+          },
+          "imgWrap": {
+            "w": 225,
+            "h": 225,
+            "top": 1418,
+            "margin": "0px 0px 16px",
+            "overflow": "visible",
+            "borderRadius": "0px"
+          },
+          "img": {
+            "natural": "1019x1019",
+            "w": 225,
+            "h": 225,
+            "top": 1418,
+            "objectFit": "fill",
+            "borderRadius": "0px",
+            "aspectRatio": "auto 1020 / 1020",
+            "transition": "opacity 1s"
+          }
+        },
+        {
+          "caption": "Gỗ nhựa phủ ASA Erawood",
+          "capStyles": {
+            "fontSize": "16px",
+            "lineHeight": "25.6px",
+            "fontWeight": "400",
+            "color": "rgb(0, 0, 0)",
+            "textAlign": "center"
+          },
+          "capP": {
+            "margin": "0px 0px 20.8px",
+            "textAlign": "center"
+          },
+          "imgWrap": {
+            "w": 225,
+            "h": 225,
+            "top": 1737,
+            "margin": "0px 0px 16px",
+            "overflow": "visible",
+            "borderRadius": "0px"
+          },
+          "img": {
+            "natural": "1019x1019",
+            "w": 225,
+            "h": 225,
+            "top": 1737,
+            "objectFit": "fill",
+            "borderRadius": "0px",
+            "aspectRatio": "auto 1020 / 1020",
+            "transition": "opacity 1s"
+          }
+        },
+        {
+          "caption": "Gỗ nhựa ngoài trời SouthWood",
+          "capStyles": {
+            "fontSize": "16px",
+            "lineHeight": "25.6px",
+            "fontWeight": "400",
+            "color": "rgb(0, 0, 0)",
+            "textAlign": "center"
+          },
+          "capP": {
+            "margin": "0px 0px 20.8px",
+            "textAlign": "center"
+          },
+          "imgWrap": {
+            "w": 225,
+            "h": 225,
+            "top": 1737,
+            "margin": "0px 0px 16px",
+            "overflow": "visible",
+            "borderRadius": "0px"
+          },
+          "img": {
+            "natural": "700x700",
+            "w": 225,
+            "h": 225,
+            "top": 1737,
+            "objectFit": "fill",
+            "borderRadius": "0px",
+            "aspectRatio": "auto 700 / 700",
+            "transition": "opacity 1s"
+          }
+        },
+        {
+          "caption": "Gỗ nhựa Pvc Plawood",
+          "capStyles": {
+            "fontSize": "16px",
+            "lineHeight": "25.6px",
+            "fontWeight": "400",
+            "color": "rgb(0, 0, 0)",
+            "textAlign": "center"
+          },
+          "capP": {
+            "margin": "0px 0px 20.8px",
+            "textAlign": "center"
+          },
+          "imgWrap": {
+            "w": 225,
+            "h": 225,
+            "top": 1737,
+            "margin": "0px 0px 16px",
+            "overflow": "visible",
+            "borderRadius": "0px"
+          },
+          "img": {
+            "natural": "1019x1019",
+            "w": 225,
+            "h": 225,
+            "top": 1737,
+            "objectFit": "fill",
+            "borderRadius": "0px",
+            "aspectRatio": "auto 1020 / 1020",
+            "transition": "opacity 1s"
+          }
+        },
+        {
+          "caption": "Gỗ nhựa Ecowood",
+          "capStyles": {
+            "fontSize": "16px",
+            "lineHeight": "25.6px",
+            "fontWeight": "400",
+            "color": "rgb(0, 0, 0)",
+            "textAlign": "center"
+          },
+          "capP": {
+            "margin": "0px 0px 20.8px",
+            "textAlign": "center"
+          },
+          "imgWrap": {
+            "w": 225,
+            "h": 225,
+            "top": 1737,
+            "margin": "0px 0px 16px",
+            "overflow": "visible",
+            "borderRadius": "0px"
+          },
+          "img": {
+            "natural": "461x461",
+            "w": 225,
+            "h": 225,
+            "top": 1737,
+            "objectFit": "fill",
+            "borderRadius": "0px",
+            "aspectRatio": "auto 461 / 461",
+            "transition": "opacity 1s"
+          }
+        }
+      ]
+    },
+    {
+      "classes": "row",
+      "w": 1020,
+      "h": 635.78,
+      "top": 2123,
+      "display": "flex",
+      "flexWrap": "wrap",
+      "margin": "0px -15px",
+      "cols": 8,
+      "colWidth": "25%",
+      "colPadding": "0px 15px 30px",
+      "tiles": [
+        {
+          "caption": "Sàn gỗ Janmi Malaysia",
+          "capStyles": {
+            "fontSize": "16px",
+            "lineHeight": "25.6px",
+            "fontWeight": "400",
+            "color": "rgb(0, 0, 0)",
+            "textAlign": "center"
+          },
+          "capP": {
+            "margin": "0px 0px 20.8px",
+            "textAlign": "center"
+          },
+          "imgWrap": {
+            "w": 225,
+            "h": 225,
+            "top": 2123,
+            "margin": "0px 0px 16px",
+            "overflow": "visible",
+            "borderRadius": "0px"
+          },
+          "img": {
+            "natural": "1019x1019",
+            "w": 225,
+            "h": 225,
+            "top": 2123,
+            "objectFit": "fill",
+            "borderRadius": "0px",
+            "aspectRatio": "auto 1020 / 1020",
+            "transition": "opacity 1s"
+          }
+        },
+        {
+          "caption": "Sàn gỗ Famax Green",
+          "capStyles": {
+            "fontSize": "16px",
+            "lineHeight": "25.6px",
+            "fontWeight": "400",
+            "color": "rgb(0, 0, 0)",
+            "textAlign": "center"
+          },
+          "capP": {
+            "margin": "0px 0px 20.8px",
+            "textAlign": "center"
+          },
+          "imgWrap": {
+            "w": 225,
+            "h": 225,
+            "top": 2123,
+            "margin": "0px 0px 16px",
+            "overflow": "visible",
+            "borderRadius": "0px"
+          },
+          "img": {
+            "natural": "1019x1019",
+            "w": 225,
+            "h": 225,
+            "top": 2123,
+            "objectFit": "fill",
+            "borderRadius": "0px",
+            "aspectRatio": "auto 1020 / 1020",
+            "transition": "opacity 1s"
+          }
+        },
+        {
+          "caption": "Sàn gỗ xương cá Famax",
+          "capStyles": {
+            "fontSize": "16px",
+            "lineHeight": "25.6px",
+            "fontWeight": "400",
+            "color": "rgb(0, 0, 0)",
+            "textAlign": "center"
+          },
+          "capP": {
+            "margin": "0px 0px 20.8px",
+            "textAlign": "center"
+          },
+          "imgWrap": {
+            "w": 225,
+            "h": 225,
+            "top": 2123,
+            "margin": "0px 0px 16px",
+            "overflow": "visible",
+            "borderRadius": "0px"
+          },
+          "img": {
+            "natural": "1019x1019",
+            "w": 225,
+            "h": 225,
+            "top": 2123,
+            "objectFit": "fill",
+            "borderRadius": "0px",
+            "aspectRatio": "auto 1020 / 1020",
+            "transition": "opacity 1s"
+          }
+        },
+        {
+          "caption": "Sàn gỗ Inovar Malaysia",
+          "capStyles": {
+            "fontSize": "16px",
+            "lineHeight": "25.6px",
+            "fontWeight": "400",
+            "color": "rgb(0, 0, 0)",
+            "textAlign": "center"
+          },
+          "capP": {
+            "margin": "0px 0px 20.8px",
+            "textAlign": "center"
+          },
+          "imgWrap": {
+            "w": 225,
+            "h": 224.55,
+            "top": 2123,
+            "margin": "0px 0px 16px",
+            "overflow": "visible",
+            "borderRadius": "0px"
+          },
+          "img": {
+            "natural": "1019x1018",
+            "w": 225,
+            "h": 224.55,
+            "top": 2123,
+            "objectFit": "fill",
+            "borderRadius": "0px",
+            "aspectRatio": "auto 1020 / 1018",
+            "transition": "opacity 1s"
+          }
+        },
+        {
+          "caption": "Sàn gỗ Egger Châu Âu",
+          "capStyles": {
+            "fontSize": "16px",
+            "lineHeight": "25.6px",
+            "fontWeight": "400",
+            "color": "rgb(0, 0, 0)",
+            "textAlign": "center"
+          },
+          "capP": {
+            "margin": "0px 0px 20.8px",
+            "textAlign": "center"
+          },
+          "imgWrap": {
+            "w": 225,
+            "h": 225,
+            "top": 2441,
+            "margin": "0px 0px 16px",
+            "overflow": "visible",
+            "borderRadius": "0px"
+          },
+          "img": {
+            "natural": "619x619",
+            "w": 225,
+            "h": 225,
+            "top": 2441,
+            "objectFit": "fill",
+            "borderRadius": "0px",
+            "aspectRatio": "auto 619 / 619",
+            "transition": "opacity 1s"
+          }
+        },
+        {
+          "caption": "Sàn gỗ cốt đen Oneblack",
+          "capStyles": {
+            "fontSize": "16px",
+            "lineHeight": "25.6px",
+            "fontWeight": "400",
+            "color": "rgb(0, 0, 0)",
+            "textAlign": "center"
+          },
+          "capP": {
+            "margin": "0px 0px 20.8px",
+            "textAlign": "center"
+          },
+          "imgWrap": {
+            "w": 225,
+            "h": 225,
+            "top": 2441,
+            "margin": "0px 0px 16px",
+            "overflow": "visible",
+            "borderRadius": "0px"
+          },
+          "img": {
+            "natural": "1019x1019",
+            "w": 225,
+            "h": 225,
+            "top": 2441,
+            "objectFit": "fill",
+            "borderRadius": "0px",
+            "aspectRatio": "auto 1020 / 1020",
+            "transition": "opacity 1s"
+          }
+        },
+        {
+          "caption": "Sàn nhựa hèm khóa Matfloor",
+          "capStyles": {
+            "fontSize": "16px",
+            "lineHeight": "25.6px",
+            "fontWeight": "400",
+            "color": "rgb(0, 0, 0)",
+            "textAlign": "center"
+          },
+          "capP": {
+            "margin": "0px 0px 20.8px",
+            "textAlign": "center"
+          },
+          "imgWrap": {
+            "w": 225,
+            "h": 225,
+            "top": 2441,
+            "margin": "0px 0px 16px",
+            "overflow": "visible",
+            "borderRadius": "0px"
+          },
+          "img": {
+            "natural": "605x605",
+            "w": 225,
+            "h": 225,
+            "top": 2441,
+            "objectFit": "fill",
+            "borderRadius": "0px",
+            "aspectRatio": "auto 605 / 605",
+            "transition": "opacity 1s"
+          }
+        },
+        {
+          "caption": "Sàn nhựa hèm khóa MIA",
+          "capStyles": {
+            "fontSize": "16px",
+            "lineHeight": "25.6px",
+            "fontWeight": "400",
+            "color": "rgb(0, 0, 0)",
+            "textAlign": "center"
+          },
+          "capP": {
+            "margin": "0px 0px 20.8px",
+            "textAlign": "center"
+          },
+          "imgWrap": {
+            "w": 225,
+            "h": 217.94,
+            "top": 2441,
+            "margin": "0px 0px 16px",
+            "overflow": "visible",
+            "borderRadius": "0px"
+          },
+          "img": {
+            "natural": "255x247",
+            "w": 225,
+            "h": 217.94,
+            "top": 2441,
+            "objectFit": "fill",
+            "borderRadius": "0px",
+            "aspectRatio": "auto 255 / 247",
+            "transition": "opacity 1s"
+          }
+        }
+      ]
+    },
+    {
+      "classes": "row",
+      "w": 1020,
+      "h": 328.98,
+      "top": 2826,
+      "display": "flex",
+      "flexWrap": "wrap",
+      "margin": "0px -15px",
+      "cols": 4,
+      "colWidth": "25%",
+      "colPadding": "0px 15px 30px",
+      "tiles": [
+        {
+          "caption": "Vách ngăn nhựa 2 mặt",
+          "capStyles": {
+            "fontSize": "16px",
+            "lineHeight": "25.6px",
+            "fontWeight": "400",
+            "color": "rgb(0, 0, 0)",
+            "textAlign": "center"
+          },
+          "capP": {
+            "margin": "0px 0px 20.8px",
+            "textAlign": "center"
+          },
+          "imgWrap": {
+            "w": 225,
+            "h": 225.44,
+            "top": 2826,
+            "margin": "0px 0px 16px",
+            "overflow": "visible",
+            "borderRadius": "0px"
+          },
+          "img": {
+            "natural": "510x511",
+            "w": 225,
+            "h": 225.44,
+            "top": 2826,
+            "objectFit": "fill",
+            "borderRadius": "0px",
+            "aspectRatio": "auto 510 / 511",
+            "transition": "opacity 1s"
+          }
+        },
+        {
+          "caption": "Tủ kệ gỗ công nghiệp",
+          "capStyles": {
+            "fontSize": "16px",
+            "lineHeight": "25.6px",
+            "fontWeight": "400",
+            "color": "rgb(0, 0, 0)",
+            "textAlign": "center"
+          },
+          "capP": {
+            "margin": "0px 0px 20.8px",
+            "textAlign": "center"
+          },
+          "imgWrap": {
+            "w": 225,
+            "h": 225,
+            "top": 2826,
+            "margin": "0px 0px 16px",
+            "overflow": "visible",
+            "borderRadius": "0px"
+          },
+          "img": {
+            "natural": "1019x1019",
+            "w": 225,
+            "h": 225,
+            "top": 2826,
+            "objectFit": "fill",
+            "borderRadius": "0px",
+            "aspectRatio": "auto 1020 / 1020",
+            "transition": "opacity 1s"
+          }
+        },
+        {
+          "caption": "Thảm trải sàn",
+          "capStyles": {
+            "fontSize": "16px",
+            "lineHeight": "25.6px",
+            "fontWeight": "400",
+            "color": "rgb(0, 0, 0)",
+            "textAlign": "center"
+          },
+          "capP": {
+            "margin": "0px 0px 20.8px",
+            "textAlign": "center"
+          },
+          "imgWrap": {
+            "w": 225,
+            "h": 236.59,
+            "top": 2826,
+            "margin": "0px 0px 16px",
+            "overflow": "visible",
+            "borderRadius": "0px"
+          },
+          "img": {
+            "natural": "970x1020",
+            "w": 225,
+            "h": 236.59,
+            "top": 2826,
+            "objectFit": "fill",
+            "borderRadius": "0px",
+            "aspectRatio": "auto 970 / 1020",
+            "transition": "opacity 1s"
+          }
+        },
+        {
+          "caption": "Cửa nhựa Composite",
+          "capStyles": {
+            "fontSize": "16px",
+            "lineHeight": "25.6px",
+            "fontWeight": "400",
+            "color": "rgb(0, 0, 0)",
+            "textAlign": "center"
+          },
+          "capP": {
+            "margin": "0px 0px 20.8px",
+            "textAlign": "center"
+          },
+          "imgWrap": {
+            "w": 225,
+            "h": 225,
+            "top": 2826,
+            "margin": "0px 0px 16px",
+            "overflow": "visible",
+            "borderRadius": "0px"
+          },
+          "img": {
+            "natural": "600x600",
+            "w": 225,
+            "h": 225,
+            "top": 2826,
+            "objectFit": "fill",
+            "borderRadius": "0px",
+            "aspectRatio": "auto 600 / 600",
+            "transition": "opacity 1s"
+          }
+        }
+      ]
+    },
+    {
+      "classes": "row row-full-width align-center",
+      "w": 990,
+      "h": 433.09,
+      "top": 3652,
+      "display": "flex",
+      "flexWrap": "wrap",
+      "margin": "0px -15px",
+      "cols": 2,
+      "colWidth": "41.6667%",
+      "colPadding": "0px 15px 30px",
+      "tiles": [
+        {
+          "caption": null,
+          "capStyles": null,
+          "capP": null,
+          "imgWrap": {
+            "w": 382.5,
+            "h": 382.5,
+            "top": 3652,
+            "margin": "0px",
+            "overflow": "visible",
+            "borderRadius": "0px"
+          },
+          "img": {
+            "natural": "1080x1080",
+            "w": 382.5,
+            "h": 382.5,
+            "top": 3652,
+            "objectFit": "cover",
+            "borderRadius": "0px",
+            "aspectRatio": "auto 1080 / 1080",
+            "transition": "filter 0.6s, opacity 0.6s, transform 0.6s, box-shadow 0.3s"
+          }
+        },
+        {
+          "caption": "CAM KẾT CHẤT LƯỢNG CÔNG TRÌNH TỪ MINH ĐÀ THÀNH:",
+          "capStyles": {
+            "fontSize": "16px",
+            "lineHeight": "25.6px",
+            "fontWeight": "400",
+            "color": "rgb(0, 0, 0)",
+            "textAlign": "start"
+          },
+          "capP": {
+            "margin": "0px 0px 20.8px",
+            "textAlign": "start"
+          },
+          "imgWrap": null,
+          "img": null
+        }
+      ]
+    }
+  ],
+  "bandStyles": {
+    "w": 1050,
+    "h": 493.09,
+    "top": 3622,
+    "display": "flex",
+    "flexDirection": "row",
+    "flexWrap": "nowrap",
+    "justifyContent": "normal",
+    "alignItems": "center",
+    "gap": "normal",
+    "width": "1050px",
+    "maxWidth": "none",
+    "minHeight": "0px",
+    "padding": "30px",
+    "margin": "0px",
+    "backgroundColor": "rgb(20, 135, 201)",
+    "borderRadius": "0px",
+    "boxShadow": "none",
+    "position": "relative",
+    "overflow": "visible"
+  },
+  "bandCols": [
+    {
+      "w": 412.5,
+      "h": 433.09,
+      "top": 3652,
+      "maxWidth": "41.6667%",
+      "padding": "0px 15px 30px",
+      "textAlign": "start",
+      "html": " <div class=\"col-inner text-center\"> <div class=\"img has-hover x md-x lg-x y md-y lg-y\" id=\"image_2036973906\"> <div class=\"img-inner image-cover dark\" style=\"padding-top:100%;\"> <img width=\"1080\" height=\"1080\" src=\"https://minhdathanh.com/wp-content/uploads/2022/04/Du-an-moi2.png\" data-src=\"https://minhdathanh.com/wp-content/uploads/2022/04/Du-an-moi2.png\" class=\"attachment-original size-original lazy-load-active\" alt=\"minh đà thành\" srcset=\"https://minhdathanh.com/wp-content/uploads/2022/04/Du-an-moi2.png 1080w, https://minhdathanh.com/wp-content/uploads/2022/04/Du-an-moi2-300x300.png 300w, https://minhdathanh.com/wp-content/uploads/2022/04/Du-an-moi2-1024x1024.png 1024w, https://minhdathan",
+      "nodes": [
+        {
+          "tag": "img",
+          "text": "",
+          "fontSize": "16px",
+          "lineHeight": "25.6px",
+          "fontWeight": "400",
+          "color": "rgb(241, 241, 241)",
+          "textAlign": "center",
+          "textTransform": "none",
+          "letterSpacing": "normal",
+          "margin": "0px",
+          "padding": "0px",
+          "src": "https://minhdathanh.com/wp-content/uploads/2022/04/Du-an-moi2.png",
+          "natural": "1080x1080",
+          "w": 382.5,
+          "h": 382.5,
+          "top": 3652
+        }
+      ]
+    },
+    {
+      "w": 577.48,
+      "h": 433.09,
+      "top": 3652,
+      "maxWidth": "58.3333%",
+      "padding": "0px 15px 30px",
+      "textAlign": "start",
+      "html": " <div class=\"col-inner\"> <p><span style=\"color: #f5f0f0;\">CAM KẾT CHẤT LƯỢNG CÔNG TRÌNH TỪ MINH ĐÀ THÀNH:</span></p> <ul> <li><span style=\"color: #f5f0f0;\">VẬT TƯ CHÍNH HÃNG : tấm ốp/ sàn gỗ sàn nhựa / gỗ nhựa ngoài trời được nhập từ thương hiệu uy tín, chất lượng tốt tuổi thọ cao. Không dùng hàng kém chất lượng dễ hư hỏng. Đa dạng hơn +100 mẫu mã từ 20 thương hiệu khác nhau.</span></li> <li><span style=\"color: #f5f0f0;\">KẾT CẤU CHẮC CHẮN : công trình được thi công theo BỘ TIÊU CHUẨN Minh Đà Thành, đảm bảo kết cấu bền bỉ nhất thị trường mang lại độ bền tốt nhất cho nhà Bạn.</span></li> <li><span style=\"color: #f5f0f0;\">THẨM MỸ SẮC NÉT : Minh Đà Thành chú trọng từng chi tiết góc cạnh, nẹp chỉ",
+      "nodes": [
+        {
+          "tag": "p",
+          "text": "CAM KẾT CHẤT LƯỢNG CÔNG TRÌNH TỪ MINH ĐÀ THÀNH:",
+          "fontSize": "16px",
+          "lineHeight": "25.6px",
+          "fontWeight": "400",
+          "color": "rgb(0, 0, 0)",
+          "textAlign": "start",
+          "textTransform": "none",
+          "letterSpacing": "normal",
+          "margin": "0px 0px 20.8px",
+          "padding": "0px"
+        },
+        {
+          "tag": "span",
+          "text": "CAM KẾT CHẤT LƯỢNG CÔNG TRÌNH TỪ MINH ĐÀ THÀNH:",
+          "fontSize": "16px",
+          "lineHeight": "25.6px",
+          "fontWeight": "400",
+          "color": "rgb(245, 240, 240)",
+          "textAlign": "start",
+          "textTransform": "none",
+          "letterSpacing": "normal",
+          "margin": "0px",
+          "padding": "0px"
+        },
+        {
+          "tag": "li",
+          "text": "VẬT TƯ CHÍNH HÃNG : tấm ốp/ sàn gỗ sàn nhựa / gỗ nhựa ngoài trời được nhập từ th",
+          "fontSize": "16px",
+          "lineHeight": "25.6px",
+          "fontWeight": "400",
+          "color": "rgb(0, 0, 0)",
+          "textAlign": "start",
+          "textTransform": "none",
+          "letterSpacing": "normal",
+          "margin": "0px 0px 9.6px 20.8px",
+          "padding": "0px"
+        },
+        {
+          "tag": "span",
+          "text": "VẬT TƯ CHÍNH HÃNG : tấm ốp/ sàn gỗ sàn nhựa / gỗ nhựa ngoài trời được nhập từ th",
+          "fontSize": "16px",
+          "lineHeight": "25.6px",
+          "fontWeight": "400",
+          "color": "rgb(245, 240, 240)",
+          "textAlign": "start",
+          "textTransform": "none",
+          "letterSpacing": "normal",
+          "margin": "0px",
+          "padding": "0px"
+        },
+        {
+          "tag": "li",
+          "text": "KẾT CẤU CHẮC CHẮN : công trình được thi công theo BỘ TIÊU CHUẨN Minh Đà Thành, đ",
+          "fontSize": "16px",
+          "lineHeight": "25.6px",
+          "fontWeight": "400",
+          "color": "rgb(0, 0, 0)",
+          "textAlign": "start",
+          "textTransform": "none",
+          "letterSpacing": "normal",
+          "margin": "0px 0px 9.6px 20.8px",
+          "padding": "0px"
+        },
+        {
+          "tag": "span",
+          "text": "KẾT CẤU CHẮC CHẮN : công trình được thi công theo BỘ TIÊU CHUẨN Minh Đà Thành, đ",
+          "fontSize": "16px",
+          "lineHeight": "25.6px",
+          "fontWeight": "400",
+          "color": "rgb(245, 240, 240)",
+          "textAlign": "start",
+          "textTransform": "none",
+          "letterSpacing": "normal",
+          "margin": "0px",
+          "padding": "0px"
+        },
+        {
+          "tag": "li",
+          "text": "THẨM MỸ SẮC NÉT : Minh Đà Thành chú trọng từng chi tiết góc cạnh, nẹp chỉ sắc né",
+          "fontSize": "16px",
+          "lineHeight": "25.6px",
+          "fontWeight": "400",
+          "color": "rgb(0, 0, 0)",
+          "textAlign": "start",
+          "textTransform": "none",
+          "letterSpacing": "normal",
+          "margin": "0px 0px 9.6px 20.8px",
+          "padding": "0px"
+        },
+        {
+          "tag": "span",
+          "text": "THẨM MỸ SẮC NÉT : Minh Đà Thành chú trọng từng chi tiết góc cạnh, nẹp chỉ sắc né",
+          "fontSize": "16px",
+          "lineHeight": "25.6px",
+          "fontWeight": "400",
+          "color": "rgb(245, 240, 240)",
+          "textAlign": "start",
+          "textTransform": "none",
+          "letterSpacing": "normal",
+          "margin": "0px",
+          "padding": "0px"
+        },
+        {
+          "tag": "li",
+          "text": "PHỤC VỤ TẬN TÂM : đội ngũ Minh Đà Thành thi công chuyên nghiệp bài bản, luôn nhi",
+          "fontSize": "16px",
+          "lineHeight": "25.6px",
+          "fontWeight": "400",
+          "color": "rgb(0, 0, 0)",
+          "textAlign": "start",
+          "textTransform": "none",
+          "letterSpacing": "normal",
+          "margin": "0px 0px 9.6px 20.8px",
+          "padding": "0px"
+        },
+        {
+          "tag": "span",
+          "text": "PHỤC VỤ TẬN TÂM : đội ngũ Minh Đà Thành thi công chuyên nghiệp bài bản, luôn nhi",
+          "fontSize": "16px",
+          "lineHeight": "25.6px",
+          "fontWeight": "400",
+          "color": "rgb(245, 240, 240)",
+          "textAlign": "start",
+          "textTransform": "none",
+          "letterSpacing": "normal",
+          "margin": "0px",
+          "padding": "0px"
+        }
+      ]
+    }
+  ],
+  "blueInfo": {
+    "section": {
+      "w": 1050,
+      "h": 637.66,
+      "top": 683,
+      "display": "flex",
+      "flexDirection": "row",
+      "flexWrap": "nowrap",
+      "justifyContent": "normal",
+      "alignItems": "center",
+      "gap": "normal",
+      "width": "1050px",
+      "maxWidth": "none",
+      "minHeight": "600px",
+      "padding": "0px 30px",
+      "margin": "0px",
+      "backgroundColor": "rgb(50, 137, 245)",
+      "borderRadius": "0px",
+      "boxShadow": "none",
+      "position": "relative",
+      "overflow": "visible"
+    },
+    "bg": {
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "backgroundImage": "none",
+      "position": "absolute",
+      "width": "1050px",
+      "height": "637.656px"
+    },
+    "overlay": {
+      "backgroundColor": "rgba(255, 255, 255, 0.85)",
+      "position": "absolute",
+      "width": "1050px",
+      "height": "637.656px"
+    },
+    "inner": {
+      "w": 225,
+      "h": 266.59,
+      "top": 683
+    }
+  },
+  "header": {
+    "w": 1440,
+    "h": 130.47,
+    "top": 0,
+    "position": "relative",
+    "zIndex": "30"
+  },
+  "nav": [
+    {
+      "text": "",
+      "href": "https://minhdathanh.com/#",
+      "fontSize": "14.4px",
+      "lineHeight": "23.04px",
+      "fontWeight": "700",
+      "color": "rgb(0, 0, 0)",
+      "textAlign": "start",
+      "textTransform": "uppercase",
+      "letterSpacing": "0.288px",
+      "margin": "0px",
+      "padding": "10px 0px",
+      "display": "inline-flex",
+      "hasChildren": true
+    },
+    {
+      "text": "Trang Chủ",
+      "href": "https://minhdathanh.com/",
+      "fontSize": "14.4px",
+      "lineHeight": "23.04px",
+      "fontWeight": "700",
+      "color": "rgb(0, 0, 0)",
+      "textAlign": "start",
+      "textTransform": "uppercase",
+      "letterSpacing": "0.288px",
+      "margin": "0px",
+      "padding": "10px 0px",
+      "display": "inline-flex",
+      "hasChildren": false
+    },
+    {
+      "text": "Sản Phẩm",
+      "href": "https://minhdathanh.com/san-pham/",
+      "fontSize": "14.4px",
+      "lineHeight": "23.04px",
+      "fontWeight": "700",
+      "color": "rgb(0, 0, 0)",
+      "textAlign": "start",
+      "textTransform": "uppercase",
+      "letterSpacing": "0.288px",
+      "margin": "0px",
+      "padding": "10px 0px",
+      "display": "inline-flex",
+      "hasChildren": true
+    },
+    {
+      "text": "Công trình thi công",
+      "href": "https://minhdathanh.com/congtrinhthicong/",
+      "fontSize": "14.4px",
+      "lineHeight": "23.04px",
+      "fontWeight": "700",
+      "color": "rgb(0, 0, 0)",
+      "textAlign": "start",
+      "textTransform": "uppercase",
+      "letterSpacing": "0.288px",
+      "margin": "0px",
+      "padding": "10px 0px",
+      "display": "inline-flex",
+      "hasChildren": false
+    },
+    {
+      "text": "Giới Thiệu",
+      "href": "https://minhdathanh.com/gioi-thieu/",
+      "fontSize": "14.4px",
+      "lineHeight": "23.04px",
+      "fontWeight": "700",
+      "color": "rgb(0, 0, 0)",
+      "textAlign": "start",
+      "textTransform": "uppercase",
+      "letterSpacing": "0.288px",
+      "margin": "0px",
+      "padding": "10px 0px",
+      "display": "inline-flex",
+      "hasChildren": false
+    },
+    {
+      "text": "Tin Tức",
+      "href": "https://minhdathanh.com/tintuc/",
+      "fontSize": "14.4px",
+      "lineHeight": "23.04px",
+      "fontWeight": "700",
+      "color": "rgb(0, 0, 0)",
+      "textAlign": "start",
+      "textTransform": "uppercase",
+      "letterSpacing": "0.288px",
+      "margin": "0px",
+      "padding": "10px 0px",
+      "display": "inline-flex",
+      "hasChildren": false
+    },
+    {
+      "text": "Liên Hệ",
+      "href": "https://minhdathanh.com/lien-he/",
+      "fontSize": "14.4px",
+      "lineHeight": "23.04px",
+      "fontWeight": "700",
+      "color": "rgb(0, 0, 0)",
+      "textAlign": "start",
+      "textTransform": "uppercase",
+      "letterSpacing": "0.288px",
+      "margin": "0px",
+      "padding": "10px 0px",
+      "display": "inline-flex",
+      "hasChildren": false
+    }
+  ],
+  "logo": {
+    "src": "https://minhdathanh.com/wp-content/uploads/2022/06/LOGO.jpg",
+    "w": 199.95,
+    "h": 41.98,
+    "top": 59,
+    "natural": "281x59"
+  },
+  "topbarText": [
+    {
+      "text": "319 Ngô Quyền, Đà Nẵng 0905183169",
+      "fontSize": "16px",
+      "lineHeight": "25.6px",
+      "fontWeight": "400",
+      "color": "rgb(0, 0, 0)",
+      "textAlign": "start",
+      "textTransform": "none",
+      "letterSpacing": "normal",
+      "margin": "0px 188.516px 0px 0px",
+      "padding": "0px"
+    },
+    {
+      "text": "",
+      "fontSize": "16px",
+      "lineHeight": "25.6px",
+      "fontWeight": "400",
+      "color": "rgb(0, 0, 0)",
+      "textAlign": "start",
+      "textTransform": "none",
+      "letterSpacing": "normal",
+      "margin": "0px 188.516px 0px 188.5px",
+      "padding": "0px"
+    },
+    {
+      "text": "",
+      "fontSize": "16px",
+      "lineHeight": "25.6px",
+      "fontWeight": "400",
+      "color": "rgb(0, 0, 0)",
+      "textAlign": "start",
+      "textTransform": "none",
+      "letterSpacing": "normal",
+      "margin": "0px 0px 0px 188.5px",
+      "padding": "0px"
+    },
+    {
+      "text": "319 Ngô Quyền, Đà Nẵng 0905183169",
+      "fontSize": "16px",
+      "lineHeight": "25.6px",
+      "fontWeight": "400",
+      "color": "rgb(0, 0, 0)",
+      "textAlign": "start",
+      "textTransform": "none",
+      "letterSpacing": "normal",
+      "margin": "0px",
+      "padding": "0px"
+    }
+  ],
+  "slider": {
+    "w": 1050,
+    "h": 425.52,
+    "top": 160,
+    "overflow": "visible",
+    "position": "relative",
+    "margin": "0px"
+  },
+  "slides": [
+    {
+      "w": 1050,
+      "h": 425.53,
+      "top": 160,
+      "img": {
+        "src": "https://minhdathanh.com/wp-content/uploads/2025/02/baner-web20251-1024x415.jpg",
+        "natural": "1019x413"
+      }
+    },
+    {
+      "w": 1050,
+      "h": 425.14,
+      "top": 160,
+      "img": {
+        "src": "data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%201020%20413%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E",
+        "natural": "300x121"
+      }
+    },
+    {
+      "w": 1050,
+      "h": 425.14,
+      "top": 160,
+      "img": {
+        "src": "data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%201020%20413%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E",
+        "natural": "300x121"
+      }
+    },
+    {
+      "w": 1050,
+      "h": 425.14,
+      "top": 160,
+      "img": {
+        "src": "data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%201020%20413%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E",
+        "natural": "300x121"
+      }
+    },
+    {
+      "w": 1050,
+      "h": 425.14,
+      "top": 160,
+      "img": {
+        "src": "data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%201020%20413%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E",
+        "natural": "300x121"
+      }
+    },
+    {
+      "w": 339.98,
+      "h": 347.97,
+      "top": 3222,
+      "img": {
+        "src": "data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20300%20225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E",
+        "natural": "200x150"
+      }
+    },
+    {
+      "w": 339.98,
+      "h": 369.5,
+      "top": 3222,
+      "img": {
+        "src": "data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20300%20225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E",
+        "natural": "200x150"
+      }
+    },
+    {
+      "w": 339.98,
+      "h": 347.97,
+      "top": 3222,
+      "img": {
+        "src": "https://minhdathanh.com/wp-content/uploads/2026/06/ok2-300x226.png",
+        "natural": "300x226"
+      }
+    }
+  ],
+  "contentWrapper": {
+    "padding": "30px 0px",
+    "backgroundColor": "rgba(0, 0, 0, 0)"
+  },
+  "rowMain": {
+    "maxWidth": "1080px",
+    "margin": "0px",
+    "padding": "0px",
+    "width": "1080px"
+  }
+}

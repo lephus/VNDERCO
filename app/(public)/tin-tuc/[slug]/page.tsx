@@ -86,7 +86,7 @@ export default async function PostDetailPage({ params }: { params: Promise<{ slu
       {related.length > 0 && (
         <section className="mt-16">
           <SectionHeading title="Bài liên quan" />
-          <div className="grid gap-6 sm:grid-cols-3">
+          <div className="grid grid-cols-2 gap-x-[30px] gap-y-2 tile:grid-cols-4">
             {related.map((item) => <PostCard key={item.id} post={item} />)}
           </div>
         </section>

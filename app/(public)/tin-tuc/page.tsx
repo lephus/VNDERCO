@@ -14,7 +14,7 @@ export default function NewsListPage({
       basePath="/tin-tuc"
       categoryType="NEWS"
       emptyMessage="Chưa có bài viết nào trong mục này."
-      gridClassName="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
+      gridClassName="grid grid-cols-2 gap-x-[30px] gap-y-2 tile:grid-cols-4"
       fetchItems={getPublishedPosts}
       renderItem={(post) => <PostCard key={post.id} post={post} />}
       searchParams={searchParams}

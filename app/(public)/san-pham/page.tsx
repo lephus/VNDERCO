@@ -14,7 +14,7 @@ export default function ProductListPage({
       basePath="/san-pham"
       categoryType="PRODUCT"
       emptyMessage="Chưa có sản phẩm nào trong mục này."
-      gridClassName="grid gap-6 sm:grid-cols-2 lg:grid-cols-4"
+      gridClassName="grid grid-cols-2 gap-x-[30px] gap-y-2 tile:grid-cols-4"
       fetchItems={getPublishedProducts}
       renderItem={(product) => <ProductCard key={product.id} product={product} />}
       searchParams={searchParams}

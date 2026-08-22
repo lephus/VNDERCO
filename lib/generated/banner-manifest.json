@@ -1,8 +1,17 @@
 {
   "note": "File này do scripts/build-banner-manifest.ts sinh ra — đừng sửa tay. Thêm ảnh vào public/banners/.",
   "files": [
-    "01-thi-cong-tam-op-tuong-phong-khach.jpg",
-    "02-logo-thuong-hieu.jpg"
+    "01.jpeg",
+    "02.jpg",
+    "03.jpg",
+    "04.jpg",
+    "05.jpg",
+    "06.jpg",
+    "07.jpg",
+    "08.jpg",
+    "09.jpg",
+    "10.jpg",
+    "11.jpg"
   ],
   "captions": {
     "01-thi-cong-tam-op-tuong-phong-khach.jpg": {

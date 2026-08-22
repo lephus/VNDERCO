@@ -3,13 +3,24 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  /* Đen tuyền, không phải xám-đen: bản tham chiếu đo được rgb(0,0,0) cho thân
+     bài. Tương phản cao và hơi thô là chủ ý của bản thiết kế, đổi sang #171717
+     là mất ngay cái vẻ "trang kỹ thuật" đó. */
+  --foreground: #000000;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-sans-vnd), ui-sans-serif, system-ui, sans-serif;
+
+  /* Hai điểm ngắt đo được từ bản thiết kế tham chiếu, không trùng thang mặc định
+     của Tailwind (640/768/1024) nên phải khai báo riêng — dùng sm/lg thay thế là
+     lệch bố cục cả trăm pixel:
+       nav  850px — thanh điều hướng ngang đổi sang nút hamburger
+       tile 550px — lưới ô danh mục từ 4 cột xuống 2 cột, header co 100px → 70px */
+  --breakpoint-tile: 550px;
+  --breakpoint-nav: 850px;
 
   --color-primary-50:  var(--vnd-primary-50);
   --color-primary-100: var(--vnd-primary-100);
@@ -25,19 +36,41 @@
 }
 
 /* Giá trị dự phòng khi biến chưa được layout nhúng vào (ví dụ trang lỗi toàn cục) */
-/* Sinh bởi buildPalette('#6C3DF4') qua paletteToCssVars — xem báo cáo Task 3 để đối chiếu. */
+/* Sinh bởi buildPalette('#2390EF') qua paletteToCssVars — preset `azure`, mặc định. */
 :root {
-  --vnd-primary-50:  #f1f0ff; --vnd-primary-100: #e5e2ff; --vnd-primary-200: #cfc8ff;
-  --vnd-primary-300: #b6a5ff; --vnd-primary-400: #987cff; --vnd-primary-500: #825cff;
-  --vnd-primary-600: #7043f9; --vnd-primary-700: #5a2cd3; --vnd-primary-800: #4617ab;
-  --vnd-primary-900: #320482; --vnd-primary-fg: #ffffff;
-  --vnd-gradient-from: #825cff; --vnd-gradient-via: #e24ce9; --vnd-gradient-to: #ff5a3d;
+  --vnd-primary-50:  #e1f8ff; --vnd-primary-100: #caefff; --vnd-primary-200: #a4ddff;
+  --vnd-primary-300: #77c3ff; --vnd-primary-400: #43a3fe; --vnd-primary-500: #1789e7;
+  --vnd-primary-600: #0073cf; --vnd-primary-700: #005bae; --vnd-primary-800: #00458b;
+  --vnd-primary-900: #002f69; --vnd-primary-fg: #ffffff;
+  --vnd-gradient-from: #1789e7; --vnd-gradient-via: #9a82f8; --vnd-gradient-to: #ff7eb6;
+}
+
+/* ------------------------------------------------------- thang đo bản thiết kế
+   Bề ngang khung nội dung và nhịp chữ đo trực tiếp bằng getComputedStyle trên
+   bản tham chiếu. Khung 1080px đã GỒM 15px đệm mỗi bên → lòng trong 1050px.
+   Đây là con số bất thường (Tailwind không có lớp nào ra 1080px) nên đặt thành
+   biến thay vì rải max-w-[1080px] khắp nơi. */
+:root {
+  --vnd-container: 1080px;
+  --vnd-container-pad: 15px;
+  --vnd-gutter: 15px;          /* .row margin -15px / .col padding 15px */
+}
+
+.vnd-container {
+  max-width: var(--vnd-container);
+  margin-inline: auto;
+  padding-inline: var(--vnd-container-pad);
+  width: 100%;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans-vnd), ui-sans-serif, system-ui, sans-serif;
+  /* 16px/25.6px = 1,6 — nhịp dòng đo trên bản tham chiếu, thoáng hơn mức 1,5
+     mặc định của Tailwind. Đặt ở body để mọi đoạn văn thừa hưởng. */
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 /* ------------------------------------------------------------------ chuyển động

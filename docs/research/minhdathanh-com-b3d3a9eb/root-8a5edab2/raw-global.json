@@ -1,0 +1,246 @@
+{
+  "title": "Trang Chủ | Nhựa giả gỗ Đà Nẵng, tấm ốp vân đá, gỗ ngoài trời, sàn gỗ, sàn nhựa",
+  "lang": "vi",
+  "bodyFont": "Roboto, sans-serif",
+  "bodyFontSize": "16px",
+  "bodyLineHeight": "25.6px",
+  "bodyColor": "rgb(0, 0, 0)",
+  "bodyBg": "rgba(0, 0, 0, 0)",
+  "scrollHeight": 4481,
+  "topColors": [
+    [
+      "rgb(0, 0, 0)",
+      312
+    ],
+    [
+      "rgb(241, 241, 241)",
+      83
+    ],
+    [
+      "rgb(34, 143, 245)",
+      69
+    ],
+    [
+      "rgb(35, 144, 239)",
+      29
+    ],
+    [
+      "rgb(119, 119, 119)",
+      19
+    ],
+    [
+      "rgb(255, 255, 255)",
+      10
+    ],
+    [
+      "rgba(102, 102, 102, 0.85)",
+      10
+    ],
+    [
+      "rgba(255, 255, 255, 0.8)",
+      6
+    ],
+    [
+      "rgb(17, 17, 17)",
+      6
+    ],
+    [
+      "rgb(6, 147, 227)",
+      5
+    ],
+    [
+      "rgb(245, 240, 240)",
+      5
+    ],
+    [
+      "rgba(255, 255, 255, 0.5)",
+      4
+    ],
+    [
+      "rgb(50, 128, 245)",
+      2
+    ],
+    [
+      "rgb(51, 51, 51)",
+      1
+    ]
+  ],
+  "topBackgrounds": [
+    [
+      "rgb(35, 144, 239)",
+      10
+    ],
+    [
+      "rgba(0, 0, 0, 0.03)",
+      9
+    ],
+    [
+      "rgba(0, 0, 0, 0.1)",
+      9
+    ],
+    [
+      "rgb(255, 255, 255)",
+      6
+    ],
+    [
+      "rgb(30, 115, 190)",
+      2
+    ],
+    [
+      "rgba(255, 255, 255, 0.3)",
+      2
+    ],
+    [
+      "rgb(0, 0, 0)",
+      1
+    ],
+    [
+      "rgb(50, 128, 245)",
+      1
+    ],
+    [
+      "rgba(255, 255, 255, 0.9)",
+      1
+    ],
+    [
+      "rgb(50, 137, 245)",
+      1
+    ],
+    [
+      "rgba(255, 255, 255, 0.85)",
+      1
+    ],
+    [
+      "rgb(20, 135, 201)",
+      1
+    ],
+    [
+      "rgb(91, 91, 91)",
+      1
+    ]
+  ],
+  "topFonts": [
+    [
+      "Roboto, sans-serif",
+      535
+    ],
+    [
+      "\"object-fit: cover;\"",
+      10
+    ],
+    [
+      "tahoma, arial, helvetica, sans-serif",
+      9
+    ],
+    [
+      "fl-icons",
+      7
+    ]
+  ],
+  "topTextStyles": [
+    [
+      "16px/25.6px/400",
+      36
+    ],
+    [
+      "16px/20.8px/400",
+      10
+    ],
+    [
+      "14.4px/23.04px/400",
+      10
+    ],
+    [
+      "16.56px/21.528px/700",
+      9
+    ],
+    [
+      "14.4px/23.04px/700",
+      5
+    ],
+    [
+      "23.552px/30.6176px/700",
+      5
+    ],
+    [
+      "13px/20.8px/400",
+      3
+    ],
+    [
+      "12.8px/20.48px/400",
+      2
+    ],
+    [
+      "16px/16.8px/600",
+      2
+    ],
+    [
+      "13.192px/21.1072px/700",
+      1
+    ]
+  ],
+  "headings": [
+    {
+      "tag": "h2",
+      "text": "Tấm ốp trong nhà",
+      "fontSize": "25.6px",
+      "fontWeight": "700",
+      "lineHeight": "33.28px",
+      "color": "rgb(35, 144, 239)",
+      "fontFamily": "Roboto, sans-serif",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "margin": "0px 0px 12.8px"
+    },
+    {
+      "tag": "h5",
+      "text": "Tấm ốp vân đá tại Ngũ Hành Sơn – Chống ẩm độ bền cao 30 năm",
+      "fontSize": "16.56px",
+      "fontWeight": "700",
+      "lineHeight": "21.528px",
+      "color": "rgb(35, 144, 239)",
+      "fontFamily": "Roboto, sans-serif",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "margin": "1.656px 0px"
+    }
+  ],
+  "fontLinks": [
+    "https://fonts.googleapis.com/css?family=Roboto%3Aregular%2C700%2Cregular%2C700%2Cregular&display=swap&ver=3.9"
+  ],
+  "stylesheets": [
+    "https://minhdathanh.com/wp-content/cache/min/1/7e67d9bb2f24f81760231c43ff427f7a.css",
+    "https://fonts.googleapis.com/css?family=Roboto%3Aregular%2C700%2Cregular%2C700%2Cregular&display=swap&ver=3.9"
+  ],
+  "favicons": [
+    {
+      "href": "https://minhdathanh.com/wp-content/uploads/2022/06/cropped-logo-tron-32x32.png",
+      "sizes": "32x32",
+      "rel": "icon"
+    },
+    {
+      "href": "https://minhdathanh.com/wp-content/uploads/2022/06/cropped-logo-tron-192x192.png",
+      "sizes": "192x192",
+      "rel": "icon"
+    },
+    {
+      "href": "https://minhdathanh.com/wp-content/uploads/2022/06/cropped-logo-tron-180x180.png",
+      "sizes": "",
+      "rel": "apple-touch-icon"
+    }
+  ],
+  "scripts": [
+    "https://za.zdn.vn/v3/za.js?20687",
+    "https://minhdathanh.com/wp-content/plugins/wp-rocket/assets/js/lazyload/16.1/lazyload.min.js",
+    "https://minhdathanh.com/wp-content/cache/min/1/da2de12202516453b24e59b6b36526d5.js"
+  ],
+  "containerWidths": [
+    "1080px / max 1080px",
+    "260px / max none",
+    "1050px / max 1080px",
+    "990px / max none",
+    "1020px / max 1080px",
+    "990px / max 1080px",
+    "990px / max 100%"
+  ]
+}

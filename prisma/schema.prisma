@@ -161,7 +161,7 @@ model SiteSetting {
   zaloUrl            String?
   facebookUrl        String?
   themeMode          ThemeMode @default(PRESET)
-  presetKey          String    @default("violet")
+  presetKey          String    @default("azure")
   customPrimary      String?                     // mã hex, chỉ dùng khi themeMode = CUSTOM
   homeIntroTitle     String    @default("")      // dải giới thiệu công ty ở trang chủ
   homeIntroBody      String    @default("")
