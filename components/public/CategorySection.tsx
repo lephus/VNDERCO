@@ -35,7 +35,7 @@ export function CategorySection({ items }: { items: CategoryTileItem[] }) {
       <div className="relative w-full">
         <div className="-mx-[15px] flex flex-wrap">
           {items.map((item) => (
-            <div key={item.id} className="w-1/2 px-[15px] pb-[30px] tile:w-1/4">
+            <div key={item.id} className="vnd-reveal-item w-1/2 px-[15px] pb-[30px] tile:w-1/4">
               <CategoryTile name={item.name} href={item.href} imageUrl={item.imageUrl} />
             </div>
           ))}

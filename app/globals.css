@@ -13,6 +13,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-sans-vnd), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-serif-vnd), ui-serif, Georgia, serif;
 
   /* Hai điểm ngắt đo được từ bản thiết kế tham chiếu, không trùng thang mặc định
      của Tailwind (640/768/1024) nên phải khai báo riêng — dùng sm/lg thay thế là
@@ -113,6 +114,26 @@ html {
   to   { opacity: 1; transform: none; }
 }
 
+/* Hai vạch của tiêu đề mục vẽ ra từ phía chữ. `transform-origin` đặt ngược
+   nhau ở hai bên để vạch chạy RA NGOÀI khỏi chữ chứ không cùng chạy sang phải. */
+@keyframes vnd-rule-grow {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+
+/* Hộp chữ trên băng ảnh: hộp nở ra, rồi từng dòng chữ trồi lên sau một nhịp.
+   Tách làm hai keyframe thay vì một để chữ vào SAU hộp — vào cùng lúc thì mắt
+   không kịp thấy hộp xuất hiện, hiệu ứng thành ra chỉ là một cú nháy. */
+@keyframes vnd-hero-box {
+  from { opacity: 0; transform: scale(0.94); }
+  to   { opacity: 1; transform: none; }
+}
+
+@keyframes vnd-hero-line {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: none; }
+}
+
 /* Hiện dần tại chỗ — dùng cho lớp phủ ảnh lớn, nơi không có chuyện cuộn tới
    nên animation-timeline: view() không kích hoạt được. */
 @keyframes vnd-fade {
@@ -126,6 +147,21 @@ html {
       animation: vnd-reveal linear both;
       animation-timeline: view();
       animation-range: entry 0% cover 24%;
+    }
+
+    /* Mỗi ô trong lưới tự có một timeline riêng, nên khi hàng trên vào khung
+       nhìn trước hàng dưới thì chúng lần lượt hiện ra — hiệu ứng so le có sẵn,
+       không cần gán delay thủ công cho từng ô. */
+    .vnd-reveal-item {
+      animation: vnd-reveal linear both;
+      animation-timeline: view();
+      animation-range: entry 0% cover 18%;
+    }
+
+    .vnd-rule {
+      animation: vnd-rule-grow linear both;
+      animation-timeline: view();
+      animation-range: entry 0% cover 22%;
     }
   }
 }

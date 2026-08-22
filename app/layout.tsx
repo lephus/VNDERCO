@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Roboto } from 'next/font/google'
+import { Lora, Roboto } from 'next/font/google'
 import './globals.css'
 
 // Roboto là font của bản thiết kế tham chiếu — cả trang chỉ dùng đúng hai nét
@@ -17,11 +17,23 @@ const sans = Roboto({
   variable: '--font-sans-vnd',
 })
 
+// Serif CHỈ dùng cho hộp chữ trên băng ảnh đầu trang — nơi cần một giọng khác
+// hẳn phần còn lại để câu giới thiệu không bị đọc như một dòng nội dung nữa.
+// Lora có subset `vietnamese` và có nét nghiêng thật (không phải nghiêng giả do
+// trình duyệt bóp chữ), nên phụ đề nghiêng vẫn ra đúng dáng chữ.
+const serif = Lora({
+  subsets: ['vietnamese', 'latin'],
+  weight: ['400', '700'],
+  style: ['normal', 'italic'],
+  display: 'swap',
+  variable: '--font-serif-vnd',
+})
+
 export const metadata: Metadata = { title: 'VNDERCO' }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="vi" className={sans.variable}>
+    <html lang="vi" className={`${sans.variable} ${serif.variable}`}>
       <body className="bg-white text-slate-900 antialiased">{children}</body>
     </html>
   )

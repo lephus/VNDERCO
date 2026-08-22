@@ -1,7 +1,8 @@
 'use client'
 
 import Image from 'next/image'
-import { useCallback, useEffect, useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState, useSyncExternalStore } from 'react'
+import { createPortal } from 'react-dom'
 
 export type Project = {
   title: string
@@ -22,6 +23,13 @@ export type Project = {
  *
  * Thẻ bị lọc ra vẫn nằm đó nhưng `hidden` — không chiếm chỗ trong lưới, không
  * nhận tab, không bị trình đọc màn hình đọc.
+ *
+ * Ảnh lớn PHẢI dựng qua portal ra `document.body`, không được để tại chỗ. Mục
+ * chứa lưới này mang class `.vnd-reveal`, mà keyframe của nó có `transform` —
+ * một phần tử đang chạy animation có transform sẽ thành containing block cho
+ * mọi con `position: fixed` bên trong. Để tại chỗ thì lớp phủ "toàn màn hình"
+ * bị nhốt trong mục đó: đo được top 378px và cao 1489px trên màn 900px, tức là
+ * nền mờ không phủ hết và ảnh rơi xuống dưới tầm nhìn.
  */
 export function ProjectGallery({ projects }: { projects: Project[] }) {
   const kinds = useMemo(
@@ -30,6 +38,11 @@ export function ProjectGallery({ projects }: { projects: Project[] }) {
   )
   const [active, setActive] = useState('Tất cả')
   const [lightbox, setLightbox] = useState<Project | null>(null)
+
+  // Server không có `document` nên portal chỉ dựng được sau khi đã lên trình
+  // duyệt. useSyncExternalStore cho biết điều đó mà không phải setState trong
+  // effect (một lượt render thừa, và eslint chặn đúng chỗ đó).
+  const mounted = useSyncExternalStore(() => () => {}, () => true, () => false)
 
   const close = useCallback(() => setLightbox(null), [])
 
@@ -112,7 +125,7 @@ export function ProjectGallery({ projects }: { projects: Project[] }) {
         })}
       </div>
 
-      {lightbox && (
+      {mounted && lightbox && createPortal(
         <div
           role="dialog"
           aria-modal="true"
@@ -141,7 +154,8 @@ export function ProjectGallery({ projects }: { projects: Project[] }) {
               </svg>
             </button>
           </div>
-        </div>
+        </div>,
+        document.body,
       )}
     </>
   )

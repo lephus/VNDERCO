@@ -25,11 +25,11 @@ export function SectionHeading({
           lề dưới h2 12,8→9,6px. Đây là một bước nhảy ở đúng 550px chứ không
           phải co giãn dần, nên dùng điểm ngắt `tile` chứ không phải clamp(). */}
       <h2 className="mb-[9.6px] flex items-center justify-between text-[19.2px]/[24.96px] font-bold text-primary-600 tile:mb-[12.8px] tile:text-[25.6px]/[33.28px]">
-        <Rule />
+        <Rule side="left" />
         <span className="mx-[15px] shrink-0 text-center text-[17.664px]/[22.9632px] font-bold tile:text-[23.552px]/[30.6176px]">
           {title}
         </span>
-        <Rule />
+        <Rule side="right" />
         {href && linkLabel && (
           <Link
             href={href}
@@ -59,6 +59,13 @@ export function SectionHeading({
   )
 }
 
-function Rule() {
-  return <span aria-hidden className="h-[2px] min-w-0 flex-1 bg-primary-600" />
+function Rule({ side }: { side: 'left' | 'right' }) {
+  return (
+    <span
+      aria-hidden
+      // Vạch trái mọc từ mép phải của nó (sát chữ) ra ngoài, vạch phải ngược lại.
+      style={{ transformOrigin: side === 'left' ? 'right' : 'left' }}
+      className="vnd-rule h-[2px] min-w-0 flex-1 bg-primary-600"
+    />
+  )
 }

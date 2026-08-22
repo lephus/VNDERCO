@@ -41,12 +41,13 @@ export default async function HomePage() {
   // public/banners/README.md). Banner trong admin đứng trước vì nó được soạn có
   // chủ đích; ảnh trong thư mục chạy tiếp sau.
   //
-  // Tiêu đề mặc định để RỖNG: bản tham chiếu chạy banner ảnh trần, không có hộp
-  // chữ đè lên. Ảnh thả vào thư mục vì thế không mượn tên site nữa — HeroSlider
-  // chỉ dựng hộp chữ khi slide thật sự có tiêu đề. Muốn một tấm cụ thể có chữ
-  // thì khai `title` cho nó trong public/banners/captions.json, hoặc tạo banner
-  // trong admin.
-  const slides = [...banners, ...getFolderBanners({ title: '' })]
+  // Ảnh thả vào thư mục mượn tên site và câu giới thiệu làm hộp chữ giữa ảnh.
+  // Muốn một tấm cụ thể mang chữ khác thì khai `title`/`subtitle` cho riêng nó
+  // trong public/banners/captions.json; muốn một tấm để trần thì đặt title rỗng.
+  const slides = [
+    ...banners,
+    ...getFolderBanners({ title: settings.siteName, subtitle: settings.seoDescription }),
+  ]
 
   // Dải xanh lấy 8 danh mục đầu, các nhóm bên dưới lấy phần còn lại — hai tập
   // khác nhau, đúng như bản tham chiếu (xem HOME_TILE_COUNT).
@@ -80,7 +81,7 @@ export default async function HomePage() {
                 <SectionHeading inSection title={group.name} />
                 <div className="-mx-[15px] flex flex-wrap">
                   {group.products.map((product) => (
-                    <div key={product.id} className="w-1/2 px-[15px] pb-[30px] tile:w-1/4">
+                    <div key={product.id} className="vnd-reveal-item w-1/2 px-[15px] pb-[30px] tile:w-1/4">
                       <ProductCard product={product} />
                     </div>
                   ))}
@@ -96,7 +97,7 @@ export default async function HomePage() {
                     ngay phía trên mà không cần thêm đường kẻ hay nền. */}
                 <div className="-mx-[15px] flex flex-wrap">
                   {newsItems.map((post) => (
-                    <div key={post.id} className="w-full px-[15px] pb-[30px] tile:w-1/3">
+                    <div key={post.id} className="vnd-reveal-item w-full px-[15px] pb-[30px] tile:w-1/3">
                       <PostBoxCard post={post} />
                     </div>
                   ))}
@@ -106,7 +107,9 @@ export default async function HomePage() {
           </section>
         )}
 
-        <CommitmentBand settings={settings} />
+        <div className="vnd-reveal">
+          <CommitmentBand settings={settings} />
+        </div>
       </div>
     </div>
   )
