@@ -1,7 +1,7 @@
 import { Fragment } from 'react'
 import { getActiveBanners } from '@/lib/queries/banners'
 import { getFolderBanners } from '@/lib/queries/banner-folder'
-import { getHomeCategoryGroups } from '@/lib/queries/home'
+import { getHomeCategoryGroups, HOME_TILE_COUNT } from '@/lib/queries/home'
 import { getFeaturedPosts } from '@/lib/queries/posts'
 import { getSiteSettings } from '@/lib/queries/settings'
 import { CategorySection } from '@/components/public/CategorySection'
@@ -48,15 +48,17 @@ export default async function HomePage() {
   // trong admin.
   const slides = [...banners, ...getFolderBanners({ title: '' })]
 
-  // Ô danh mục mượn ảnh của sản phẩm đầu tiên trong danh mục — xem lib/queries/home.ts.
-  const tiles = groups.map((group) => ({
+  // Dải xanh lấy 8 danh mục đầu, các nhóm bên dưới lấy phần còn lại — hai tập
+  // khác nhau, đúng như bản tham chiếu (xem HOME_TILE_COUNT).
+  // Ô danh mục mượn ảnh của sản phẩm đầu tiên trong danh mục.
+  const tiles = groups.slice(0, HOME_TILE_COUNT).map((group) => ({
     id: group.id,
     name: group.name,
     href: `/san-pham?danh-muc=${group.slug}`,
     imageUrl: group.products[0]?.images[0]?.url ?? null,
   }))
 
-  const productGroups = groups.filter((group) => group.products.length > 0)
+  const productGroups = groups.slice(HOME_TILE_COUNT).filter((group) => group.products.length > 0)
   const newsItems = posts.slice(0, NEWS_ON_HOME)
   const hasContentGrid = productGroups.length > 0 || newsItems.length > 0
 
@@ -65,7 +67,7 @@ export default async function HomePage() {
       <div className="vnd-container pb-[30px]">
         <HeroSlider banners={slides} fallbackTitle={settings.homeIntroTitle} />
 
-        <SectionHeading title="Danh mục sản phẩm" href="/san-pham" linkLabel="Xem tất cả" />
+        <SectionHeading title="Tấm ốp trong nhà" href="/san-pham" linkLabel="Xem tất cả" />
 
         <CategorySection items={tiles} />
 
@@ -88,7 +90,7 @@ export default async function HomePage() {
 
             {newsItems.length > 0 && (
               <>
-                <SectionHeading inSection title="Tin tức" />
+                <SectionHeading inSection title="Tin tức công trình" />
                 {/* Tin xếp 3 cột với ảnh 16:9, khác hẳn ô sản phẩm 4 cột ảnh
                     vuông — đó là cách bản gốc tách hàng tin khỏi hàng sản phẩm
                     ngay phía trên mà không cần thêm đường kẻ hay nền. */}

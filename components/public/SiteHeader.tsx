@@ -4,9 +4,11 @@ import type { SiteSetting } from '@prisma/client'
 import { MobileNav } from '@/components/public/MobileNav'
 
 const NAV = [
+  { href: '/', label: 'Trang chủ' },
   { href: '/san-pham', label: 'Sản phẩm' },
+  { href: '/cong-trinh-thi-cong', label: 'Công trình thi công' },
+  { href: '/gioi-thieu', label: 'Giới thiệu' },
   { href: '/tin-tuc', label: 'Tin tức' },
-  { href: '/gioi-thieu', label: 'Về chúng tôi' },
   { href: '/lien-he', label: 'Liên hệ' },
 ]
 

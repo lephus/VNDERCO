@@ -39,3 +39,6 @@ Thumbs.db
 
 # Vercel
 .vercel
+
+# Bản dump DB sinh khi dựng lại nội dung — dữ liệu thật, không đẩy lên remote.
+backups/

@@ -1,0 +1,74 @@
+{
+  "nav": [
+    {
+      "label": "",
+      "children": [
+        ""
+      ]
+    },
+    {
+      "label": "Trang Chủ",
+      "children": [
+        "Trang Chủ"
+      ]
+    },
+    {
+      "label": "Sản Phẩm",
+      "children": [
+        "Sản Phẩm",
+        "Tấm Ốp Vân Đá",
+        "Lam Nhựa Giả Gỗ",
+        "Tấm Ốp Nano",
+        "Trần Nhựa Giật Cấp",
+        "Gỗ Nhựa Ngoài Trời",
+        "Tấm ốp than tre",
+        "Lam Hộp Trang Trí",
+        "Sàn Gỗ Công Nghiệp",
+        "Sàn Nhựa Hèm Khoá",
+        "Cửa Nhựa Composite Dewoo"
+      ]
+    },
+    {
+      "label": "Công trình thi công",
+      "children": [
+        "Công trình thi công"
+      ]
+    },
+    {
+      "label": "Giới Thiệu",
+      "children": [
+        "Giới Thiệu"
+      ]
+    },
+    {
+      "label": "Tin Tức",
+      "children": [
+        "Tin Tức"
+      ]
+    },
+    {
+      "label": "Liên Hệ",
+      "children": [
+        "Liên Hệ"
+      ]
+    },
+    {
+      "label": "",
+      "children": [
+        "GỌI NGAY 0905183169"
+      ]
+    }
+  ],
+  "tiles": [
+    "Tấm ốp vân đá",
+    "Tấm ốp Nano",
+    "Lam sóng",
+    "Tấm ốp than tre",
+    "Trần nhựa giật cấp",
+    "Tranh tráng gương",
+    "Trần than tre",
+    "Lam hộp cầu thang"
+  ],
+  "groups": [],
+  "standaloneTitle": "Tấm ốp trong nhà"
+}

@@ -6,6 +6,16 @@ import { TAGS } from '@/lib/cache-tags'
 export const HOME_GROUP_SIZE = 8
 
 /**
+ * Bao nhiêu danh mục đầu tiên hiện thành ô trong dải xanh.
+ *
+ * Bản tham chiếu dùng HAI tập danh mục khác nhau trên cùng trang chủ: dải xanh
+ * là 8 loại vật liệu ốp trong nhà, còn các nhóm bên dưới là những họ sản phẩm
+ * khác (ngoài trời, sàn, cửa & vách). Schema không có cột cha-con nên ranh giới
+ * đặt theo `order`: 8 danh mục đầu lên dải xanh, phần còn lại xuống dưới.
+ */
+export const HOME_TILE_COUNT = 8
+
+/**
  * Danh mục sản phẩm kèm vài sản phẩm đầu của từng danh mục.
  *
  * Trang chủ cần đúng hai thứ từ cùng một nguồn: dải ô danh mục ở trên (mỗi ô là
